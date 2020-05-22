@@ -153,20 +153,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-OM Setup Steps VI - Payment terms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Shipping Parameters" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/">OM Setup Steps VI - Payment terms</a>
+      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Parameters/">OM Shipping Parameters</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:00:35.302Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Shipping%20Parameters/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:31:35.184Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -179,54 +179,419 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Payment-terms"><a href="#Payment-terms" class="headerlink" title="Payment terms"></a>Payment terms</h1><p>Receivables lets you define standard payment terms for your customers to specify the <strong><em>due date and discount date</em></strong> for their open items.<br>Payment terms can include a discount percent for early payment and you can assign multiple discounts to each payment term line. For example, the payment term ’2% 10, Net 30’ indicates that a customer is allowed a two percent discount if payment is received within 10 days; after 10 days, the entire balance is due within 30 days of the transaction date with no applicable discount.</p>
-<p>Prepayment check box if you are defining a prepayment payment term. Receivables feeder systems, such as Oracle Order Management, can optionally implement business processes around prepayment payment terms to indicate that a particular business transaction requires the capture of funds before the delivery of a product or service.</p>
-<p>Enter the Date on which payment is due for this installment term (optional). If you do not complete this field, enter a value for either Due Days or both Day of Month and Months Ahead</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522085425.png" alt=""></p>
-<p><strong><em>Default Payment Terms Hierarchy</em></strong><br>Receivables use the following hierarchy to determine the default payment term for your transactions, stopping when one is found:</p>
+        <h1 id="Shipping-Parameters"><a href="#Shipping-Parameters" class="headerlink" title="Shipping Parameters"></a>Shipping Parameters</h1><p>You can define the default values for basic shipping information such as units of measurement, pick release rules, weight and volume calculations, and delivery grouping rules. Shipping parameters are organization specific.<br>The parameters are arranged into the following tabbed regions in the Shipping Parameters window:</p>
+<p><strong>■ General:</strong> You can define shipping units of measurement such as weight, volume, and the unit of measure used for percent fill basis calculations.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093253.png" alt=""></p>
+<p><strong>■ Pick Release:</strong> You can define release rules, pick slip grouping rules, release sequence rules, and printing parameters</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093400.png" alt=""></p>
+<p><strong>■ Shipping Transaction:</strong> You can define automatic or manual weight and volume calculations, container volume calculations, container inventory control, and goods dispatched (COGS) account</p>
+<p><img src="http://www.oracleug.com/sites/default/files/users/oracleug/ug/om/oe/se101_0.PNG" alt="img"></p>
+<p><strong>■ Delivery Grouping</strong>: You can define how to group delivery lines for a delivery</p>
+<p><img src="http://www.oracleug.com/sites/default/files/users/oracleug/ug/om/oe/se102_0.PNG" alt="img"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Parameters/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Defining Roles and Users" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Defining%20Roles%20and%20Users/">OM Defining Roles and Users</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Defining%20Roles%20and%20Users/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:28:58.250Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Defining-Roles-and-Users"><a href="#Defining-Roles-and-Users" class="headerlink" title="Defining Roles and Users"></a>Defining Roles and Users</h1><p>Shipping Execution provides data access controls called roles that control users’ access to the Actions list and Tools menu in the Shipping Transactions form. Roles are assigned to users using grants that control access to view or edit specific shipping data or actions.<br>This is useful, for example, if you want to assign a grant to inexperienced users that provides view-only access or assign grants that prevent unwanted actions such as unintentional pick releases across multiple organizations.</p>
+<p><em>First we define roles with different permissions of all the available functions in shipping execution form i.e role1 can have view access to few things and edit to the rest, role2 has different set of view/edit access in the SE form. After that we give grants to different users to the defined roles.</em></p>
+<p> <img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092914.png" alt=""></p>
+<p><strong>Define Roles</strong><br>For each role, you can select the following data access controls that control edit and view access to shipping entities such as trips, stops, deliveries, lines/LPNs.<br>■ Data Access Edit enables you to edit and view the data<br>■ Data Access View enables you to browse the data<br>■ Data Access None prevents you from editing and browsing data and performing actions</p>
+<p>A role can provide either view-only, edit-only, or a combination of view and edit access depending on the set up of the role. You can create customized roles by defining the access controls you want. During the set-up for each role, you can<br>quickly enable or disable actions by selecting the Disable or Enable Actions button.</p>
+<p><em>Set up -&gt; Shipping -&gt; Grant &amp; Roles Defination -&gt; Roles</em></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093002.png" alt=""></p>
+<p><strong>Granting a Role to a User</strong><br>You can grant a user a role in one organization or all organizations for a period of time. The role is assigned to a user by a grant. The grant is specific to a particular user and defines the role(s) assigned to the user, the organization where the grant is effective, the start date and optionally, an end date</p>
+<p>A grant can have one or all inventory organizations. If an organization is not specified, the grant is applicable to all organizations. If the user’s activities span more than one organization, for example, a stock picker who pick releases across multiple organizations (but not all), then separate grants for each organization must be created to associate the user, the user’s role, and effective dates for the grant. Alternately, if you do not select a specific organization, the stock picker can pick across all organizations.</p>
+<p><em>Set up -&gt; Shipping -&gt; Grant &amp; Roles Defination -&gt; User</em></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093032.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Defining%20Roles%20and%20Users/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Internal Approval for Quotes &amp; Sales Agreements" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Internal%20Approval%20for%20Quotes%20&%20Sales%20Agreements/">OM Internal Approval for Quotes &amp; Sales Agreements</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Internal%20Approval%20for%20Quotes%20&%20Sales%20Agreements/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:23:40.715Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Internal-Approval-for-Quotes-amp-Sales-Agreements"><a href="#Internal-Approval-for-Quotes-amp-Sales-Agreements" class="headerlink" title="Internal Approval for Quotes &amp; Sales Agreements"></a>Internal Approval for Quotes &amp; Sales Agreements</h1><p>Quotes and Sales Agreements leverage the flexibility of Workflow to manage the quote life cycle. There are two phases for workflow: Negotiation and Fulfillment. Workflow flexibility allows you to tailor your Negotiation and Fulfillment phases to your specific processes. You can choose one of the following generic seeded header-level negotiation flows, these flows can be associated to transaction types for both Sales Orders and Sales Agreements. Both can be converted to an order. Quotes can be converted to sales orders in either the Entered or Booked status (if the booking activity is synchronous). The seeded workflows are as follows:</p>
+<p>• Negotiation Flow - Simple:This workflow does not require any approvals nor customer acceptance. However the quote can either expire or get lost if it does not progress to being converted to an order.<br>• Negotiation Flow—Generic: Simple negotiation flow, without approval. Prepares quote document, get customer final acceptance, convert quote to the Sales Order.<br>• Negotiation Flow—Generic with Approval: Flow with Approval. Prepare quote document, get management approval, get customer final acceptance, and convert the quote to an order.</p>
+<p>In support of a quote the following Status types are predefined:<br>Draft, Pending Internal Approval<br>Lost,  Pending Customer Acceptance<br>Draft Submitted, Internal Approved<br>Customer Accepted,<br>Offer Expired - This status does not apply to Sales Agreements.<br>Draft - Customer Accepted, Draft - Customer Rejected</p>
+<p>After a quote has been put together, it can be submitted for approval. The relevant documents can be routed to various people in the organization, including people from Sales, Business Practice, Legal, or Finance, for review.<br>The list of approvers is defined at the Transaction Type level. The document must be approved by each participant in the list before the transaction is eligible to move forward in the workflow. If the approver fails to respond within the time limit, the system will re-send the notification. If the approver again fails to respond, the system will either send the notification to the next approver (if the current approver is not the last approver), or reject the notification based on the system parameter setup.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092403.png" alt=""></p>
+<p>The Approver List can be accessed two ways:<br>\1. From the Transaction Type setup window: (N) &gt; Orders, Returns &gt; Setup &gt; Transaction Type &gt; Define. Select the Approvals button to bring up the Approver List.</p>
+<p>\2. Navigate directly to the window: (N) &gt; Orders, Returns &gt; Setup &gt; Transaction Type &gt; Approvals.</p>
+<p>If an approver is deleted from the list the notifications still need to be processed.</p>
+<p>If an approver is added to the list and any transaction is pending approval they will receive a notification.</p>
+<p>The user will receive a notification and must approve or reject.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Internal%20Approval%20for%20Quotes%20&%20Sales%20Agreements/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Assigning Workflows to Transaction Types" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Assigning%20Workflows%20to%20Transaction%20Types/">OM Assigning Workflows to Transaction Types</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Assigning%20Workflows%20to%20Transaction%20Types/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:22:46.343Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Assigning-Workflows-to-Transaction-Types"><a href="#Assigning-Workflows-to-Transaction-Types" class="headerlink" title="Assigning Workflows to Transaction Types"></a>Assigning Workflows to Transaction Types</h1><p>Select appropriate workflows for your order type and line types. Several header and line workflows are seeded. You can perform all standard OM processing including orders, returns, drop ship orders, orders for configured items and orders for assemble to order items using only seeded workflows. You may also define your own workflows if you need additional steps (such as notifications) or additional processes.</p>
+<p>The combination of the order type, the line type and the item type determine the workflow that a line will have. For this reason, you define the line workflows from the order type workflow definition window. Press the Assign Line Flows button. Enter the order type. For each combination of line type and item type that you want to use with this order enter a line in the Assign Workflow processes window. The line types are the ones that you defined. The item types are based on the definition of the items in the inventory module and include values such as standard item, kit, and PTO model. If you leave the item type blank the workflow process that you define will be used for all item types.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092306.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Assigning%20Workflows%20to%20Transaction%20Types/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Transaction Types" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Transaction%20Types/">OM Transaction Types</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Transaction%20Types/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:18:02.517Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OM-Transaction-Types"><a href="#OM-Transaction-Types" class="headerlink" title="OM Transaction Types"></a>OM Transaction Types</h1><p>Transaction Types are used to associate workflows for various phases of sales document (sales orders or sales agreements) processing. You can also associate various values like transaction phases, layout templates, approvers to a transaction type and these will be defaulted on the sales order or sales agreement</p>
+<h1 id="Transaction-Order-Line-Types"><a href="#Transaction-Order-Line-Types" class="headerlink" title="Transaction(Order/Line) Types"></a><strong>Transaction(Order/Line) Types</strong></h1><p>Transaction Types provide default information on orders and establish process controls.<br><em>Transaction type is the generic term that refers to both Order Transaction Types and Line Transaction Types in Order Management. This is not to be confused with the Receivables Transaction Type, which is a completely different object.</em></p>
+<p><em>The transaction type code may have values of Order or Line and determines whether the transaction type is an order transaction type or a line transaction type.</em> In this document order type is used synonymously with order transaction type and line type is used synonymously with line transaction type. A document sequence is a range of numbers that can be used for an order type and is defined by a numbering method (automatic, manual or gapless) and the beginning order number.</p>
+<p>A document category is a specific type of document such as a sales order or a purchase order. These are used in many Oracle applications for key entities. In Order Management when you create an order transaction type the system automatically creates a document category with the same name. This is used to assign the numbering sequence to the order type.</p>
+<p><strong><em>Some of the features of Transaction Types/Workflow are:</em></strong><br>■ Each line in an order has its own workflow so each line may follow a different flow. This allows you to have both order and return lines on the same order.<br>■ You can create new workflow activities from custom PL/SQL code. This makes it very easy to extend OM.<br>■ A workflow process can have subprocesses.<br>■ A workflow process can have an unlimited number of activities.<br>■ There is no limit to the number of custom workflow activities that can be defined in Order Management.<br>■ You can view the status of the workflow on an order or order line in either tabular or graphical format. In graphical format you can see not only the activities that the workflow has completed but also the activities that still require completion.</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><strong>Line Transaction Types</strong></p>
+<p>The Define Transaction Types window is used to define both order and line types.<br>Define your line types first. You should define line types for both order lines and return lines. To access the window from the order management navigation menu choose<br><em>Setup -&gt; Transaction Types -&gt; Define.</em><br>Except the operating unit and transaction type name the other mandatory fields in the header are <em>Order category, Transaction type and effective dates</em>. And we should also specify the sales document type(agreement type: SO/Blanket Agreement)</p>
+<p>\1. Enter a name for the line type in the Transaction Type field. Note that this name must be unique; you cannot create an order type and a line type with the same name.</p>
+<p>\2. <strong>Sales Documnet Type</strong> : Sales Order / Sales Agreement</p>
+<p>\3. <strong>Order Category</strong> : Order / Return /Mixed<br>Enter either Order or Return for the Order Category depending on whetheryour new line type is for sales lines or return lines. For Line transaction type choose wither order/return.<br>The value Mixed is selected for order type which can contains both sales order and return lines.</p>
+<p>\4. <strong>Transaction Type Code</strong> : Order/Line<br>Enter LINE for the Transaction Type Code.</p>
+<p>Many of the other fields on this window as well as the assign line flows button are not applicable to line types so<br>when you enter the transaction type code they will become inaccessible</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092051.png" alt=""></p>
+<p>On the <strong>Shipping tab</strong> the autoschedule flag is inaccessible because it only applies to order types. The inspection required flag determines whether inspection is required when return lines are received. There are five Scheduling level choices to control the way scheduling works at the time of order entry for lines of this type: ATP Only, Allow all scheduling actions, No reservations, Inactive Demand with Reservations and Inactive Demand without Reservations. The remainder of the fields can be used for defaulting.</p>
+<p>Two values on the Schedule Level LOV on the Shipping tab support different requirements for reservations: Inactive Demand with Reservations and Inactive Demand without Reservations. These levels can be set on the transaction types,<br>which would mean that the line will not be scheduled and will not be seen as demand in APS. When this level is set, Schedule Ship Date entered by the user will be accepted and no scheduling is done. If scheduling is done as an action or through WF, Request Date will be copied to the Schedule Ship Date if it is already not there.</p>
+<p>Shipping Source Type: External/Internal. Its used to default the values but can be changed in sales order. The shipping source type External is used for drop ship orders.</p>
+<p>The <strong>Finance tab</strong> fields contain information which affects the interfaces with the financial applications. The Invoicing Rule and Accounting Rule fields are used as defaulting sources for the sales order, and this information on the sales order is<br>passed to Autoinvoicing. For the fields Invoice Source, Non-Delivery Invoice Source, and Receivables Transaction Type these values are required for interfacing to Receivables but they are not on the sales order header or line. When the invoice<br>interface activity in the workflow is executed the system will look for a value in the following order: line transaction type, order transaction type, profile option. If no value is found the invoice interface activity will fail. The Cost of Goods Sold<br>Account can be used by the Account Generator function of the inventory interface when a line is ship confirmed.</p>
+<p><strong>Order Transaction Types</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092130.png" alt=""></p>
+<p>Here the transaction type could would be order.<br>If you want to use the order type as a defaulting source for Price List on the order you may enter a Price List on the Main tab. The Enforce List Price flag will determine whether a user can apply a manual discount to the order at the time of order entry. The Credit Check rules for ordering and shipping determine whether credit check will occur for this order type. If the fields are blank, no credit checking will occur for orders of this type.</p>
+<p>On the Shipping tab the autoschedule flag determines whether scheduling will try to autoschedule the lines on orders of this type. The inspection required flag is not accessible (it only applies to lines). The rest of the fields can be used for defaulting.</p>
+<p>The Finance tab fields are used for information which affects the interfaces with the financial applications. The Currency and Currency Conversion Type can be used as defaulting sources for the order header. The Invoicing Rule and Accounting Rule<br>fields are used as defaulting sources for the sales order line, and this information on the sales order is passed to Autoinvoicing.For the fields Invoice Source, Non-Delivery Invoice Source, and Receivables Transaction Type these values are required for interfacing to Receivables but they are not on the sales order header or line. When the invoice interface activity in the workflow is executed the system will look for a value in the following order: line transaction type, order transaction type, profile option. If no value is found the invoice interface activity will fail. The Cost of Goods Sold Account is used by the inventory interface when a line is ship confirmed.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092210.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Transaction%20Types/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Price List" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Price%20List/">OM Price List</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Price%20List/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:15:21.212Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OM-Price-List"><a href="#OM-Price-List" class="headerlink" title="OM Price List"></a>OM Price List</h1><p>The pricing engine requires that all items, services, models, option class and options should be selected and displayed on price list.</p>
+<p>Fields such as payment terms, freight terms and freight carrier are available on the price list form. By defining the OM defaulting rules to use these fields from the price list window, you are able to default values directly into the SO based upon which price list has been selected for the order.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091557.png" alt=""></p>
+<p><strong>Price List Currency</strong><br>For international sales, you can record transactions in different currencies by defining a price list for each currency. After entering the currency for an order or return, you must choose a price list in the same currency.</p>
+<p>Multi-Currency Conversion Lists<br>For pricing in different currencies, multi-currency conversion lists enable you to maintain a single price list for multiple currencies. However, this is an Oracle Advanced Pricing feature which is available only if Oracle Advanced Pricing is<br>fully installed and multi-currency lists are enabled.</p>
+<p><strong>Round To Factor</strong><br>You can define the number of places to the right or left of the decimal point to which the pricing engine rounds prices from price lists and modifiers from modifier lists. If you enter a negative number, you increase the number of characters to the<br>Note: The pricing engine does select inactive price lists when doing a pricing request. Other applications can call an inactive price list and use relevant information.</p>
+<p>right of the decimal point. If you enter a positive number, you affect more columns to the left of the decimal point. If you enter zero, rounding occurs to whole decimals. Rounding factor -3 indicates rounding to the nearest thousands (for example,.1007 rounds to .101). Rounding factor of +2 indicates rounding to the nearest hundred; for example 107 rounds to 100).</p>
+<p><strong>Secondary Price List</strong><br>The pricing engine uses secondary price lists when it cannot determine the price for an item using the price list assigned to an order. Primary and secondary price lists have the same currency.</p>
 <ol>
-<li><p>Bill–to site</p>
-</li>
-<li><p>Customer Address</p>
-</li>
-<li><p>Customer</p>
-</li>
-<li><p>Transaction Type</p>
-</li>
+<li>You can assign the same secondary price list to multiple price lists but you can not assign a secondary price list to a secondary price list.</li>
+<li>If the item that you are ordering is not in the primary price list, the pricing engine uses the highest-precedence secondary price list (the secondary price list with the lowest value for the precedence field).</li>
+<li>Line-level discounts and modifiers that apply to the primary price list do not apply to the secondary price list.</li>
+<li>If an item appears on both the primary and a secondary price list with the same effective dates, the pricing engine uses the primary price list to price the item.</li>
+<li>If an item appears on the primary price list but is not active (the effective end date has passed), the pricing engine uses the price on the secondary price list.</li>
 </ol>
-<p><strong><em>Predefined Payment Terms</em></strong><br>Receivables provides the following predefined payment terms:<br><em>30 NET:</em> The balance of the transaction is due within 30 days.<br><em>IMMEDIATE:</em> The balance of the transaction is due immediately (i.e. on the transaction date). You can use this payment term with your chargeback and debit memos.</p>
-<p><strong>To define a payment term:</strong><br>Navigate to the Payment Terms window and Enter the Name of the payment term.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522085632.png" alt=""></p>
-<p><strong>1.</strong> Select the <strong>Prepayment check box</strong> if you are defining a prepayment payment term.<br>Receivables feeder systems, such as Oracle Order Management, can optionally implement business processes around prepayment payment terms to indicate that a particular business transaction requires the capture of funds before the delivery of a product or service.</p>
-<p><strong>2.</strong> To associate a <strong>credit check</strong> with this payment term, check the Credit Check box. Oracle Order Management uses this information to determine when to place an order on hold.<br>In Oracle Order Management, if the profile for an address does not have credit checking limits defined in a particular currency but the customer does, then the order passes credit check. If the address does not have limits in the currency and neither does the customer, then the order is compared to the customer limit in that currency.</p>
-<p><strong>3.</strong> If you do not want to let your customers take discounts for <strong>partial payments</strong> on items associated with this payment term, then uncheck both the Allow Discount on Partial Payments check box as well as the check box for the Discount on Partial Payment system option.</p>
-<p><strong>4.</strong> Enter the <strong>Discount Basis</strong> you want Receivables to use when calculating discounts for your invoices. Choose one of the following discount methods:</p>
-<ul>
-<li>Invoice Amount: Choose this option to calculate the discount amount based on the sum of the tax, freight charges, and line amounts of your invoices.</li>
-<li>Lines Only: Choose this option to calculate the discount amount based on only the line amounts of your invoices.</li>
-<li>Lines, Freight Items and Tax: Choose this option to calculate the discount amount based on the amount of line items, freight, and tax of your invoices, but not freight and charges at the invoice header level.</li>
-<li>Lines and Tax, not Freight Items and Tax: Choose this option to calculate the discount amount based on the line items and their tax amounts, but not the freight items and their tax lines, of your invoices.</li>
-</ul>
-<p><strong>5</strong>. Enter the <strong>Installment Option</strong> for items assigned to this payment term. This indicates how Receivables will allocate the freight and tax charged to transactions using this payment term. Choose ‘Include tax and freight in first installment’ to include all tax and freight charges in the first installment. Choose ‘Allocate tax and freight’ to distribute tax and freight charges across all installments.</p>
-<p><strong>6.</strong> Enter the <strong>Base Amount</strong> for this payment term. The default is 100, but you can change it. The base amount is the denominator for the ratio Receivables uses to determine the amount due for installments of invoices to which you assign this payment term. The sum of the relative amounts for all of the payment schedules that you define for these payment terms must be equal to the value that you specify as a base amount.</p>
-<p>If the base amount is different from the relative amount, and you set the Installment Options field for this payment term to ‘Allocate tax and freight’, Receivables prorates the base amount across the relative amounts of this term’s payment schedules based upon the ratio you define. Receivables uses the following equation to determine the original amount due for each installment of invoices to which you assign this payment term:<br>Amount Due = Relative Amount/Base Amount * Invoice Amount</p>
-<p>If you select ‘Include tax and freight in first installment’ as the Installment Options field value for a payment term, the base amount and the relative amounts that you specify for this term’s payment schedules only indicate how the original line amounts of the invoices to which you assign this term are distributed across different installments.</p>
-<p>In this case, the original freight and tax amounts are included in the first installment in addition to the line amount allocated by the ratio of the base amount and the relative amount that you specify for the term’s first payment schedule. Receivables uses the following equation to determine the original amount due for the first installment of invoices to which you assign this payment term:<br>Amount Due = (Relative Amount/Base Amount * Base Line Amount) + Base Freight Amount + Base Tax Amount</p>
-<p><strong>7</strong>. If you want transactions assigned to this payment term to be printed before the due date, enter a number of <strong>Print Lead Days</strong>. Receivables will print this transaction x number of days before the due date, where x is the number of days you enter here.</p>
-<p><strong>8</strong>. Enter a range of <strong>Effective Dates</strong> for this payment term. If you do not enter an end date, this payment term will be active indefinitely.</p>
-<p>9.1 Enter a line number for the installment term that you are defining in the ‘Seq’ field. Enter a higher number for each installment term with a later due date. For example, if you create terms with 50% due in 15 days and 50% in 30 days, enter ‘1’ in this field for the first line and ‘2’ for the second line.</p>
-<p>9.2 Enter the Relative Amount for this payment term. This is the numerator of the ratio that Receivables uses to determine the amount due for this installment of these payment terms. The sum of the relative amounts for all of the payment schedules that you define for each payment term must be equal to the base amount for this term.</p>
-<p>9.3 Enter the number of Days after the invoice date that payment is due for this installment term (optional). For split payment terms, this number indicates the number of days after the invoice date that an installment is due.</p>
-<p>9.4 Enter the Date on which payment is due for this installment term (optional). If you do not complete this field, enter a value for either Due Days or both Day of Month and Months Ahead.</p>
-<p>9.5 If you are defining proxima terms, enter the Day of Month that payment is due for this installment term. For example, if payment is due on the fifteenth of each month, enter ‘15.’</p>
-<p>9.6 If you are defining proxima terms and you entered a value for Day of Month, enter the Months Ahead to which this installment term of the proxima terms refer. For example, if you entered ‘15’ for Day of Month and you enter ‘2’ here, an invoice dated in May will have a due date of July 15.</p>
-<p><strong>New in R12</strong><br>If you want to use this payment term for balance forward billing, select an appropriate balance forward billing cycle from the Billing Cycle LOV.</p>
-<ul>
-<li>Balance Forward Billing.</li>
-<li>Balance Forward Billing Cycles.</li>
-<li>Setting Up Balance Forward Billing.</li>
-</ul>
-<p>Note: You cannot update the billing cycle, once a balance forward billing payment term is attached to a profile.<br>Because balance forward bills cannot be split across installments, in the case of a balance forward payment term:<br>Any value entered in Base Amount defaults to 100.<br>Installment Options becomes disabled and any data entered before selecting a cycle defaults to Include tax and freight in first installment.<br>You can populate only one row in the Payment Schedule section and the Sequence Number and Relative Amount values for the row default respectively to 1 and 100.<br>Date Due becomes disabled. However, you can populate Days, Day of Month, and Months Ahead.<br>Note: You cannot change existing payment terms from regular payment terms to balance forward billing payment terms and vice versa.</p>
+<p><strong>Enter the price list line details as given below</strong><br>\1. Product context is always item.<br>\2. Depending on the value of Product Attribute, select an item number or an item category for the Product Value.<br>\3. Select a UOM (unit of measure).<br>Select Primary UOM if this price list line UOM is the primary pricing unit of measure for the item. Oracle Pricing uses the primary pricing unit of measure and the Oracle Inventory unit of measure conversion information to price an order whose unit of measure does not have a price list line.<br>Select an Application Method. Use Unit Price for inventory items and either the Unit Price or Percent Price for service items<br>\4. Enter Value and Formula as follows:<br>■ For inventory items, enter the base list price of the item in Value.<br>■ For service items, enter a value in the Value field. If Application Method is Unit Price, enter the base list price of the item. If Application Method is Percent Price, enter a percent of another item’s price.<br>■ Enter the name of a previously defined static formula in Static Formula.<br>If you enter a static formula, you must submit the concurrent program Update Formula Price’s to calculate the value. The result of the calculation changes the value of Value.<br>\5. Enter the starting and ending effectivity dates of this price list line in Start Date and End Date.<br>The dates should be within the start and end effectivity dates of the price list.<br>\6. Enter a numeric value in Precedence; this is the product precedence. When the pricing engine is trying to locate a price, it uses precedence to resolve conflicts when it selects more than one price list line from a price list.<br>\7. Save your work<br>**<br>Copying a Price List**<br>You can quickly create a new price list by copying an existing price list. Only active price list lines (those with an effective end date later than the current date) can be copied.</p>
+<p><strong>Adjusting a Price List</strong><br>Use this process to adjust the prices for a price list. You can adjust prices for the entire price list or selected items, item category sets, and item categories. You can define your criteria further by selecting the item status or creation date of the items to adjust.<br>For example, you can specify a category so that only the price list lines for the selected category are adjusted. If you leave any of the fields blank, pricing adjusts the price list regardless of that field. You can adjust the price by either an amount or percent:<br>■ Percent: Enter a value to adjust list prices by a certain percentage. For example, when adjusting by a percentage, entering 10 raises list prices by 10 percent while -10 lowers list prices by 10 percent.<br>■ Amount: Enter a value to adjust list prices by a fixed amount. For example, when adjusting by an amount, entering 5 increases list prices by five whole units of currency. Entering -5 decreases list prices by five whole units of currency.</p>
 
       
 
@@ -239,7 +604,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Price%20List/">展开全文 >></a>
         </p>
       
 
@@ -269,20 +634,20 @@
 
 
   
-    <article id="post-OM Setup Steps  I - V" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Order Import Sources" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/">OM Setup Steps  I - V</a>
+      <a class="article-title" href="/2020/05/22/OM%20Order%20Import%20Sources/">OM Order Import Sources</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:50.742Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Order%20Import%20Sources/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:13:31.838Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -295,12 +660,9 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Setup-Steps-I-V"><a href="#Setup-Steps-I-V" class="headerlink" title="Setup Steps : I - V"></a>Setup Steps : I - V</h1><p>The following is a list of each setup step defined in detail.</p>
-<p><strong>Step 1<br>Flexfields</strong><br>Define key and descriptive flexfields to capture additional information about orders and transactions.<br>This step is required for Key Flexfields, and optional if you plan on using the functionality surrounding Descriptive Flexfields. Several defaulting values are provided.</p>
-<p><strong>Step 2<br>Multiple Organizations</strong><br>Define multiple organizations in Oracle Inventory.<br>This step is optional.</p>
-<p><strong>Step 3<br>Inventory Organizations</strong><br>Define inventory organizations (warehouses), parameters, subinventories, and picking rules in Oracle Inventory.<br>You must define at least one item validation organization and at least one organization that acts as an inventory source for orders fulfilled internally. If you plan to drop ship some orders, you must also define at least one logical organization for receiving purposes. Your item validation organization can be the same as your inventory source or your logical receiving organization, but you cannot use one organization for all three purposes. See Step 5 for setting your item validation organization.<br>This step is required.</p>
-<p><strong>Step 4<br>Profile Options</strong><br>Define profile options to specify certain implementation parameters, processing options, and system options.<br>This step is required.</p>
-<p><strong>Step 5<br>Parameters</strong><br>Set your Order Management Parameters to validate items, enable customer relationships, and operating unit defaults.<br>This step is required.</p>
+        <h1 id="OM-Order-Import-Sources"><a href="#OM-Order-Import-Sources" class="headerlink" title="OM Order Import Sources"></a>OM Order Import Sources</h1><p>You can define Order Import Sources from which to import order information. You can import historical orders, orders from other quote or sales systems, and changes to orders. Oracle Order Management recommends that you define a unique name for each source of order information you are importing. When you run the Order Import program, you can enter the source or sources for each execution. You can run Order Import for multiple sources at one time.</p>
+<p><strong>Internal Sales Orders</strong><br>If you are importing internal sales orders from Oracle Purchasing, you need to define an Order Import source to be used when you transfer the internal requisition information from Oracle Purchasing to create an internal sales order in Order Management.<br>You need to choose an Order Import source (Currently Internal is the only option) for internal requisitions/internal sales orders when you define purchasing options in Oracle Purchasing. You choose this same Order Import source as a parameter when you run the Order Import program in Order Management.<br>**<br>To define an Order Import source**<br>\1. Navigate to the Order Import Sources window.<br>\2. Enter the Order Import source name and a description.<br>\3. Check Enabled to activate the Order Import source.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091353.png" alt=""></p>
 
       
 
@@ -313,7 +675,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Order%20Import%20Sources/">展开全文 >></a>
         </p>
       
 
@@ -343,20 +705,20 @@
 
 
   
-    <article id="post-OM Introduction to OM" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Defaulting Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Introduction%20to%20OM/">OM Introduction to OM</a>
+      <a class="article-title" href="/2020/05/22/OM%20Defaulting%20Rules/">OM Defaulting Rules</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Introduction%20to%20OM/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:50.740Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Defaulting%20Rules/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:09:42.832Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -369,52 +731,16 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Introduction-to-OM"><a href="#Introduction-to-OM" class="headerlink" title="Introduction to OM"></a>Introduction to OM</h1><p>The Oracle Order Management Suite consists of:</p>
-<ol>
-<li>Oracle Order Management</li>
-<li>Oracle Shipping Execution</li>
-<li>Basic Pricing</li>
-</ol>
-<p>Order Management implementation involves several phases, including setting up other integrated applications, which include Oracle General Ledger, Oracle Receivables, and Oracle Inventory. Some setup steps are optional, depending on whether you have the integrating applications installed and whether you use the associated feature. For example, if your business supports drop shipments, you should also set up Oracle Purchasing. If you sell models and kits, set up Oracle Bills of Material and Oracle<br>Configurator.</p>
-<p>\1. A detailed process of order to cash cycle is shown below</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225454.png" alt=""></p>
-<p>\2. Oracle Manufacturing and Supply Chain Applications enable customers to operate using various supply-chain stocking strategies. The term stocking strategy denotes a process that identifies and maintains the optimum level of your bills of material at which you should maintain your inventory, so that your inventory investment is a minimum. For example, in the ship building industry, you would not keep any inventory, whereas you would have to keep inventory in your retail outlets if you were selling shoes.</p>
-<p>The amount of time a customer is willing to wait to buy a product (delivery lead-time) is a very important determinant of the supply-chain stocking strategy. As the delivery lead-time decreases, the finished goods inventory moves closer to the consumption point. To a certain extent, product complexity can also be an important determinant of a supply-chain stocking strategy. Below Figure shows the typical position of each of these strategies in a lead-time–product complexity graph.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225525.png" alt=""></p>
-<ul>
-<li>Ship from stock (MTS make to stock) :</li>
-</ul>
-<p>  You have sufficient inventory items in stock and the order is directly fullfilled from inventory. In an MTS environment, you produce your products and stock them in anticipation of customer orders. A good forecasting system is very important to this environment because most of the material and capacity planning is done using forecasts rather than actual demand. Examples include stereo systems and television sets.</p>
-<ul>
-<li>Make to order:</li>
-</ul>
-<p>  After entering the sales order the schedule and planning process creates a job to fulfill the order. Once the job is completed the on hand of that particular customer ordered item is increased in the inventory and later is shipped to the customer.</p>
-<p>  Standard products are designed and published in catalogs. The actual product is built on receipt of the customer order. Customers might be able to choose certain characteristics optionally. An example of this would be machine building. Each customer order may have an associated project to manage the production and delivery schedule.</p>
-<ul>
-<li><p>Configure to order(ATO, PTO, CTO)</p>
-<p>:</p>
-<p><strong><em>Pick-To-Order (PTO)</em></strong><br>Under this strategy, a variety of shippable components are stocked. Customers order <strong><em>“kits”</em></strong> or collections of these parts under a single item number; kits can be either predefined or configured by the customer during the order entry process. The components of the kit are picked and shipped from stock; there is no additional value added after the customer order, other than perhaps packing the components for shipment. A computer system (including the central processing unit, monitor, and printer) is an example of this.</p>
-</li>
-</ul>
-<p><strong><em>Assemble-To-Order (ATO)</em></strong><br>These are also standard products and are often configured by customers. You don’t wait until the order is received to build an ATO product. Subassemblies are manufactured prior to receiving the order and when the order is received, the subassemblies are assembled to make the finished product. Automobiles and computers are examples of this type of production.<br>**<br><strong><em>**Configure to order(CTO)</em></strong><br>It includes both the ATO and PTO.Similar to the above processes but here the customer has the facility of configuring the items on the basis of its requirement.</p>
-<ul>
-<li></li>
-<li><p>Dropship to customer: </p>
-<p>Drop shipments is a method of fullfilling sales order by selling products without the order taker handling, stocking, or delivering them. The seller buys a product and the supplier ships the product directly to the seller’s customer. Drop shipments are done because of the following reasons</p>
-<p>Customer requires an item that is not normally stocked<br>Customer requires a large quantity of the item which is not available with you<br>It is more economical when the supplier ships directly to the customer</p>
-<p>In drop ship cycle, the seller receives a sales order from the customer and sends a purchase order to the supplier. The supplier ships directly to the customer. The seller receives an invoice from the supplier and sends an invoice to the customer. The seller receives an invoice from the supplier and sends an invoice to the customer.</p>
-</li>
-</ul>
-<ul>
-<li>Internal Order:</li>
-</ul>
-<p>  When the material required in one organization is available in another org we create an internal requisition and oracle converts that to a SO in the org where the item is available. The complete process is as shown below.</p>
-<ul>
-<li>Back to Back order:</li>
-</ul>
-<p>  It involves the concept of soft-pegging.</p>
-<p><strong>Important setups</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225647.png" alt=""></p>
+        <h1 id="Defaulting-Rules"><a href="#Defaulting-Rules" class="headerlink" title="Defaulting Rules"></a>Defaulting Rules</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090953.png" alt=""></p>
+<p>Defaulting Rules are used to populate values in fields(like order type, price list etc) on forms (SO form) automatically.<br>Values can be populated from various sourcs like customer’s record, item’s record, price list, profile option or PL/SQL Code.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091034.png" alt=""></p>
+<p>An <strong>Entity</strong> in this context is a group of related attributes that roughly correspond to a table or a form in Order Management. There are entities of Order Header, Order Line, Order Price Adjustment, Line Price Adjustment, and so on.</p>
+<p>An <strong>Attribute</strong> is a field or column that belongs to that entity. Therefore, the ordered unit of measure is an attribute of the Order Line entity. When you query up the Defaulting Setup window for a particular entity, a list of all the attributes for which you can define defaulting rules display. You will not be able to define defaulting rules for descriptive flexfields, since their defaulting is controlled by AOL’s flexfield routines.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091106.png" alt=""></p>
+<p>Conditions are rules set up that to control when a particular group of default sources will be looked at. Define one or more condition validation templates per entity based on common business rules to meet your business needs. Then you can use them over and over for the attributes of that entity. For example, you might set up a condition template for all return lines, or another one for all internal order lines. The ALWAYS condition is seeded for each entity. When defining a set of Conditions and using them in rules, be sure to place the ALWAYS condition last in the Precedence for Defaulting Conditions.</p>
+<p>(In condition template we define condition of the order for which we ‘ll define the defaulting rule. ALWAYS condtion is the default one but we can define one condtion for return, one condition for internal orders and so on. once we have defined the conditions we set the defaulting rule of each attribute for different conditions. So the defaulting value is a combination of <strong><em>entity, condition template &amp; attribute\</em></strong>)<br>*<br><strong>Notes: The Group Number is an arbitrary number used to control AND and OR conditions. Indicate that rules are to be connected by an AND rule by giving them the same group number. Rules to be connected with OR should be given different group numbers</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091141.png" alt=""></p>
+<p>On the main Defaulting Setup screen, where all the attributes of the entity are listed, there is a column called Defaulting Sequence. This number determines the order in which attribute defaulting takes place. When attributes have equal sequence numbers, defaulting takes place alphabetically. All the attributes are seeded with a sequence of 50. You can change these sequences, if you need defaulting to happen in some different order. For example, you might define a sourcing rule that says default attribute A on the line from attribute B on the same line. In this case, you need to insure that the Attribute B gets its value before A is defaulted, or the rule will not work as expected.</p>
 
       
 
@@ -427,7 +753,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Introduction%20to%20OM/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Defaulting%20Rules/">展开全文 >></a>
         </p>
       
 
@@ -457,20 +783,20 @@
 
 
   
-    <article id="post-OM Shipping Execution" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Step 11 Document Sequences" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Execution/">OM Shipping Execution</a>
+      <a class="article-title" href="/2020/05/22/OM%20Step%2011%20Document%20Sequences/">OM Step 11 Document Sequences</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Shipping%20Execution/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:50.734Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Step%2011%20Document%20Sequences/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:05:05.196Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -483,10 +809,21 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Shipping-Execution"><a href="#Shipping-Execution" class="headerlink" title="Shipping Execution"></a>Shipping Execution</h1><p>You can manage shipping information such as trips, trip stops, deliveries, delivery lines, containers, and freight costs in the Shipping Transactions form. In addition, you can complete the following shipping tasks:<br>**<br>Pick Release**<br>■ Release eligible delivery lines based on defined picking criteria.<br>■ Select the Release Sequence Rule to control the order in which picking lines are allocated to inventory.<br>■ Enter or validate shipped quantities, back ordered quantities, staged quantities, and inventory control information for delivery lines (after pick release).</p>
-<p><strong>Trip and Delivery Planning</strong><br>■ Create a trip or delivery.<br>■ Assign delivery lines to a delivery or a container.<br>■ Schedule pick-ups and drop-offs.</p>
-<p><strong>Ship Confirm</strong><br>■ Assign delivery lines to trips and deliveries.<br>■ Auto-create a trip and close stops.<br>■ Ship confirm or back order a delivery.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225226.png" alt=""></p>
+        <h1 id="Document-Sequences"><a href="#Document-Sequences" class="headerlink" title="Document Sequences"></a>Document Sequences</h1><p><strong>Step 11: Document Sequences (Order Numbering)</strong></p>
+<p>Define Document Sequences for automatic or manual numbering of orders. This step is required.<br>Order Management uses AOL Document Sequence functionality for order numbering. You can define document sequences that automatically generate numbers for your orders and returns as you enter them. You can define a single document sequence to assign unique consecutive numbers to all your orders and returns, or you can define multiple document sequences that are assigned to different order types. In the latter case, an order or return is uniquely identified by its type and its number, since orders and returns of different types may share numbers.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090525.png" alt=""></p>
+<p>Order and return numbers cannot contain alphabetic characters.</p>
+<p>Following 4 steps need to be completed to enable document sequence<br><strong>1.</strong> Set the profile option <strong>Sequential Numbering</strong> to Always Used at the Order Management Application level</p>
+<p><strong>2. Define document sequence</strong><br>OM: Setup -&gt; Documents -&gt; Define</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090610.png" alt=""></p>
+<p>Many countries have legal and audit requirements for order numbers to be contiguous. You can set up a document sequences as gapless through the Define Documents Sequences window. In addition, Order Management prevents deletion of orders that have been numbered using the gapless numbering sequence. The application uses locks to ensure gapless numbering. If you are using gapless sequences, please save your changes frequently to minimize lock contention issues.</p>
+<p>Order Management enables you to enter the order numbers for certain types of orders. You can define a document sequence as manual and assign it to a desired order type. This order type can be used on orders that you want to manually enter order numbers. When an order number is specified for such an order, Order Management validates that it is unique for a given order type.</p>
+<p><strong><em>Steps for creating document sequence</em></strong><br>\1. Enter a name for the document sequence.<br>\2. Specify Oracle Order Management as the Application.<br>\3. You can define the sequence to be Automatic, Gapless or Manual.<br>■ Automatic sequences: The system will automatically increment document numbers. Automatic sequences do not guarantee contiguous numbering.<br>■ Gapless sequences: The system guarantees that the numbers returned are contiguous.<br>■ Manual: User must specify a unique document number.<br>For all types of numbering, the Order Management system validates that the number specified by you is unique for a given order type.<br>\4. Enter a starting number</p>
+<p><strong>3. Define document categories</strong><br>You can create a document category for shipping documents such as a bill of lading (BOL) and assign it to a location or all locations. You can create more than one document category for a document, for example, if you want each carrier to have its own Bill of Lading number series, you can set up a unique document category to accommodate this requirement.</p>
+<p>You must define a category for each bill of lading and packing slip you wish to create. You can create a bill of lading category for each ship method/carrier or define a single bill of lading category for all. When you use a different bill of lading sequence for each carrier, you can easily identify the carrier by looking at the bill of lading number.<br><strong><em>Whenever we create a new transaction type, a new document category gets created automatically\</em></strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090759.png" alt=""></p>
+<p><strong>4. Assign document sequences</strong><br>After defining document sequences and categories, assign document sequences to document categories. Assigning sequences is application and category specific.<br>You cannot change a document category definition. If you find incorrect information, create a new category with the correct information, re-assign document sequences to the new category, and disable the old category. Either leave alone the existing Category or Disable it cautiously since it may affect other documents using the setting. For that reason disabling cannot be undone.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090832.png" alt=""></p>
 
       
 
@@ -499,7 +836,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Execution/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Step%2011%20Document%20Sequences/">展开全文 >></a>
         </p>
       
 
@@ -529,20 +866,20 @@
 
 
   
-    <article id="post-OM Setup Steps  VI - Payment terms, Accounting Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Setup Steps  12 - 16" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/">OM Setup Steps  VI - Payment terms, Accounting Rules</a>
+      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20%2012%20-%2016/">OM Setup Steps  12 - 16</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:45.224Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Setup%20Steps%20%2012%20-%2016/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:03:36.810Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -555,39 +892,11 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Setup-Steps-VI-Payment-terms-Accounting-Rules"><a href="#Setup-Steps-VI-Payment-terms-Accounting-Rules" class="headerlink" title="Setup Steps : VI - Payment terms, Accounting Rules"></a>Setup Steps : VI - Payment terms, Accounting Rules</h1><p><strong>Step 6<br>Invoicing</strong><br>Define invoicing information, including payment terms, invoicing and accounting rules, Autoaccounting parameters, territories, and invoice sources.<br>This step is required if you plan on transferring invoicing information to Oracle Receivables. Several defaulting values are provided.</p>
-<p><a href="http://www.oracleug.com/user-guide/order-management/payment-terms" target="_blank" rel="noopener"><strong><em>Payment terms</em></strong></a><br><a href="http://www.oracleug.com/user-guide/order-management/payment-terms" target="_blank" rel="noopener">http://www.oracleug.com/user-guide/order-management/payment-terms</a></p>
-<hr>
-<p><strong>***Entering Invoices with Rules</strong><br>Invoicing rules let you determine when to recognize your receivable for invoices that span more than one accounting period. You can assign invoicing rules to invoices that you manually enter or import into Receivables through AutoInvoice.<br>Receivables provides the following invoicing rules:</p>
-<ul>
-<li>Bill in Advance: Use this rule to recognize your receivable immediately.</li>
-<li>Bill in Arrears: Use this rule to recognize the receivable at the end of the revenue recognition schedule.</li>
-</ul>
-<p>Accounting rules determine the number of periods and percentage of total revenue to record in each accounting period.</p>
-<p>You need to set the invoicing rule to either bill in advance or bills in arrears to setup the accounting rule. If you don’t select any value in the invoicing rule then system won’t allow you to enter the accounting rule and the accounting entries are created automatically once the transaction is completed (11i Only). You need to run revenue recognization program for generating account entries for transactions with invoicing rule and accounting rule.***</p>
-<hr>
-<p>Notes :** Invoicing and Accounting Rules are not applicable if you are using the Cash Basis method of accounting. If you use the Cash Basis method, AutoInvoice will reject any transaction lines that are associated with invoice or accounting rules.<strong>*<br>***</strong>Accounting Rules<strong>***<br>*</strong>Define accounting rules to create revenue recognition schedules for your invoices. Accounting rules determine the number of periods and percentage of total revenue to record in each accounting period. You can use accounting rules with transactions that you import into Receivables using AutoInvoice and with invoices that you create manually in the transaction windows. You can define an unlimited number of accounting rules.<br>When you run the Revenue Recognition program for an invoice that is associated with one or more accounting rules, Receivables creates the invoice’s revenue distributions for the period or periods in which the rules fall.</p>
-<p><strong>Define an accounting rule:</strong><br><strong>1.</strong> Navigate to the Invoicing and Accounting Rules window. AR -&gt; Set up -&gt; Transactions -&gt; Accounting rule.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225933.png" alt=""></p>
-<p>Note: Revenue Recognition creates accounting distributions for all periods of status Open, Future, or Not Open. If any period has a status of Closed or Close Pending, then Revenue Recognition creates the distributions in the next Open, Future, or Not Open period.***</p>
-<hr>
-<ul>
-<li>Depending on your business needs, you may require <em>deferred accounting rules</em>, which you can create by selecting the Deferred Revenue check box during rule definition. Deferred accounting rules let you defer revenue to an unearned revenue account until you are ready to specify the revenue recognition schedule.</li>
-<li>You can assign a default accounting rule to your <em>items in the Master Item</em> window (Invoicing tabbed region) and to your Standard Memo Lines in the Standard Memo Lines window.</li>
-</ul>
-<p><strong>2. Enter an accounting rule Type.</strong><br>Enter ’Accounting, Fixed Duration’ to prorate revenue recognition evenly over a predefined period of time. The revenue recognition schedule is always the same every time you choose this accounting rule. For example, if you have four schedules for your rule with this type, you will recognize twenty–five percent of your revenue at the end of each schedule.</p>
-<p>Enter ’Accounting, Variable Duration’ to be able to specify the number of periods over which you want to recognize revenue for invoices to which you assign this rule. You can assign this type of accounting rule to invoices that you manually enter in the Transaction window or import into Receivables using AutoInvoice. The revenue recognition schedule changes for invoices that are assigned this type of accounting rule depending upon the value that you either pass through AutoInvoice or specify when you manually enter an invoice.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521230007.png" alt=""></p>
-<p><strong>3. Enter the Period to use for your accounting rule schedule</strong>. You can choose from any of the Period Types you defined, but you can only choose a period type that has overlapping dates if it is an adjusting period. In addition, you can only choose ’Specific Date’ as your period type for accounting rules to which you have assigned a type of ’Accounting, Fixed Duration.’ You can only update this field for the accounting rule ’IMMEDIATE.’</p>
-<p><strong>4.</strong> If this accounting rule type is ’Accounting, Fixed Duration,’ enter the Number of Periods to use for your accounting rule schedule. For example, if you entered a period of ’Weekly’ and you enter ’3’ here, Receivables creates a rule schedule for three weekly periods.</p>
-<p><strong>5.</strong> Define your revenue recognition schedule for this accounting rule. Enter the percentages of revenue to recognize within each period of your accounting rule.<br>If this accounting rule type is ’Accounting, Fixed Duration,’ Receivables displays a rule schedule according to the period and number of periods you entered. Receivables determines the schedule by evenly prorating all the revenue across all periods (you can change this information). The sum of all periods for this type must equal 100 percent.</p>
-<p>If this accounting rule type is ’Accounting, Variable Duration,’ you do not need to enter any information. Receivables does not display the default rule schedule for an accounting rule of this type because the number of periods is unknown. However, if you want to recognize a specific revenue percentage in the first period, you can enter that percentage here. In this case, Receivables prorates the remaining revenue percentage across the remaining periods.<br>Receivables uses the number of periods that you either pass through AutoInvoice or enter manually in the Transaction window to determine the payment schedule of your accounting rule.</p>
-<p>We can default invocing rule and accounting rule from OM transaction type.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521230046.png" alt=""></p>
-<p><strong>Assign Invoicing and Accounting Rules</strong><br>For invoices that you enter manually, you can assign an invoicing rule in the Transactions window. You can assign a default invoicing and accounting rule to your items in the Master Item window (Invoicing tabbed region) and to your Standard Lines in the Standard Memo Lines window.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521230129.png" alt=""></p>
-<p>If you are entering an invoice manually, you must enter an invoicing rule on the invoice header or you will not be able to associate accounting rules with the invoice lines. If you enter an invoicing rule and include items or standard memo lines that have associated accounting rules, the accounting rules default for the invoice line. You can change or manually enter the accounting rules for these invoice lines if there has been no activity against the invoice.</p>
-<p>Note: You can also assign invoicing rules to items and standard lines, but these will not be used during manual<br>invoice entry. This is because the invoicing rule assigned at the invoice header will override the invoicing rules defined for the item or standard line. </p>
+        <h1 id="Setup-Steps-12-16"><a href="#Setup-Steps-12-16" class="headerlink" title="Setup Steps : 12 - 16"></a>Setup Steps : 12 - 16</h1><p><strong>Step 12: Order Import Sources</strong><br>Define sources for importing orders into Order Management.<br>This step is required if you plan on importing orders or returns into Order Management.</p>
+<p><strong>Step 13: Units of Measure</strong><br>Define the units of measure in which you supply items. This step is required.</p>
+<p><strong>Step 14: Item Information</strong><br>Define item information, including item attribute controls, categories, and statuses.</p>
+<p><strong>Step 15: Items</strong><br>Define the items that you sell, as well as container items. This step is required.</p>
+<p><strong>Step 16: Configurations</strong><br>Define the configurations that you sell.<br>This step is required if you plan on generating orders or returns for configured<br>items. Several defaulting values are provided.</p>
 
       
 
@@ -600,430 +909,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Managing PackingContainersLPNs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Managing%20PackingContainersLPNs/">OM Managing PackingContainersLPNs</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/21/OM%20Managing%20PackingContainersLPNs/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.843Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Managing-Packing-Containers-LPNs"><a href="#Managing-Packing-Containers-LPNs" class="headerlink" title="Managing Packing/Containers/LPNs"></a>Managing Packing/Containers/LPNs</h1><p>In the Shipping Transactions form, you can create and manage containers (LPNs) at any point in the shipping process. If you are using the Auto-packing feature, containers can be automatically packed using the container-item relationships set<br>up in the Container-Item Relationships window.<br>You can create containers without assigning them to a delivery. This is useful if you want to create multiple containers of the same type then pack them with unassigned delivery lines.</p>
-<p>(Note: LPN is an acronym for License Plate Number. A packing container has a license plate number for unit identification and reporting capability, so containers are also called LPNs in Oracle Shipping Execution.)</p>
-<p>Customer Items can be associated with containers within Oracle Inventory. This association is used when packing the Customer Item into a container in Oracle Shipping Execution. When the Customer Item is packed, the container associated with the Customer Item in Oracle Inventory is used as the default container.</p>
-<p>You can pack multiple containers with multiple lines using one of the following packing methods:<br>■ Auto-packing<br>■ Manual packing<br>■ Packing Workbench    </p>
-<ul>
-<li>Equal packing: splits the delivery lines equally between the selected LPNs.You cannot use this method with delivery lines of serial controlled items.</li>
-<li>​    Sequential packing: fully packs one container at a time to its capacity (weight, volume, or quantity) before packing the next selected container.</li>
-</ul>
-<h3 id="1-Auto-packing-Delivery-Lines-into-Containers"><a href="#1-Auto-packing-Delivery-Lines-into-Containers" class="headerlink" title="1.Auto-packing Delivery Lines into Containers"></a>1.Auto-packing Delivery Lines into Containers</h3><p>***Auto-packing provides a convenient and quick way of automatically packing delivery lines into containers (LPNs). The delivery lines are packed into LPNs based on the container-item relationship set up in Oracle Shipping Execution or in Oracle<br>Inventory (defined as a customer item) and the setting of the Shipping parameter Percent Fill Basis must be set to Quantity. The container-item relationship defines the container that is used for packing the delivery lines. If Percent Fill Basis is set to Quantity, then auto-pack will look at Container-Load Relationships set up for the item and the Detail Container.<br>If multiple container-item relationships exist for the same item, the Preferred setting in the Container-Item Relationships window indicates the default container-item relationship used for that item.<br>Auto-packing can also be performed for those items in Oracle Inventory that are defined as Customer Items.</p>
-<p><em>Using the Auto-pack Master Option</em><br>■ If you select Auto-pack, then only the detail LPNs are created and packed.<br>■ If you select Auto-pack Master, the delivery lines are packed into the detail container, and the detail containers are packed into the parent/master container in one action:<br>For example, a delivery line with a quantity of 12 of Item A has a container-load relationship set up so that 6 of Item A fits into Container A and 2 of Container A fits into Container B (the percent fill basis is set to quantity). If you run Auto-pack Master, the line is split into 2 lines of 6, the first line is packed into the first container, the second line is packed into the second container, and the two detail LPNs (2 Container As) are packed into Container B.<br>■ The Auto-pack Master option is available from the Actions menu in the Lines/LPNs tab in the Shipping Transactions form. It is also available at the delivery level</p>
-<p><strong>1.Container type setups are done in inventory -&gt; Setups -&gt;Item -&gt;Container</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210209.png" alt=""></p>
-<p><strong>2. Crate a container Item in item master.</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210421.png" alt=""></p>
-<p><strong>3.Shipping &gt; Setup &gt; Container Load Details &gt; Organizations &gt; [OK]</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210547.png" alt=""></p>
-<p><strong>4.Auto pack it</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210618.png" alt=""></p>
-<h3 id="2-Manual-packing-Delivery-Lines-into-Containers"><a href="#2-Manual-packing-Delivery-Lines-into-Containers" class="headerlink" title="2. Manual packing Delivery Lines into Containers"></a>2. Manual packing Delivery Lines into Containers</h3><p>It involves two steps </p>
-<p>​               i. Creating an LPN<br>​               ii. Assign LPN to lines/deliveries</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521211014.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521211043.png" alt=""></p>
-<h3 id="3-Packing-Work-Bench-Lines-into-Containers"><a href="#3-Packing-Work-Bench-Lines-into-Containers" class="headerlink" title="3.Packing Work Bench Lines into Containers"></a>3.Packing Work Bench Lines into Containers</h3><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/se036_0.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Managing%20PackingContainersLPNs/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Create Delivery" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Create%20Delivery/">OM Create Delivery</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/21/OM%20Create%20Delivery/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.841Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Create-Delivery"><a href="#Create-Delivery" class="headerlink" title="Create Delivery"></a>Create Delivery</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212422.png" alt=""></p>
-<p>A delivery consists of set delivery lines that are <strong>scheduled to be shipped to a customer’s ship-to location on a specific date and time</strong>. In a delivery, you can include items from different sales orders as well as back orders. You can either manually or automatically group delivery lines to create a delivery. If a delivery is auto-created, the delivery lines are grouped together by the mandatory default criteria, ship-from location and ship-to location. However, additional grouping criteria can be included.</p>
-<p>1.1 In operating unit level we can control the auto create delivery in shipping parameter.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212606.png" alt=""></p>
-<p>1.2. Deliveries can be automatically created during the process of pick release by enabling auto-create delivery in pick release form.</p>
-<p>1.3. we can manually create the delivery number in shipping transaction form.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212650.png" alt=""></p>
-<p>2.1 Delivery parameters enable you to define how to group delivery lines for a delivery. The mandatory default attributes are Ship From Location and Ship To Location; however, you can select additional optional grouping parameters that include:</p>
-<ul>
-<li>Customer</li>
-<li>Freight Terms</li>
-<li>FOB Code</li>
-<li>Intermediate Ship To location</li>
-<li>Ship Method</li>
-</ul>
-<p>The delivery attributes determine how delivery lines are grouped into deliveries when auto-creating deliveries. For example, if the grouping attribute Customer is selected, the delivery lines are grouped into deliveries by customer: for example, deliveries for Customer A are grouped into Delivery A, deliveries for Customer B are grouped into Delivery B.</p>
-<p>You can select more than one grouping attribute to refine your grouping criteria further: for example, if you select Customer and Ship Method as grouping criteria, delivery lines with the same customer and carrier criteria are grouped into deliveries.<br>If each optional grouping attribute is checked, the delivery’s corresponding field cannot be updated if delivery lines are assigned to the delivery. This ensures that the delivery lines’ grouping criteria is not broken by a different attribute value: for example, if someone tries to select a different ship method.</p>
-<p>If each optional grouping attribute is unchecked, its field in the delivery record can be updated until the ship confirm stage.<br>For example, if you want to change the Ship Method in the delivery and do not need to enforce it as a grouping attribute, you can unselect Ship Method. Do not change these options if you have deliveries that are not ship confirmed.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212736.png" alt=""></p>
-<p>Optionally, select a <strong>Auto-create Delivery Criteria</strong> if you enabled the Auto-create Delivery option on the Pick Release tab.</p>
-<ul>
-<li>Select Within An Order to auto-create deliveries whose lines all belong to the same sales order and match on the Delivery Grouping Attributes.</li>
-<li>Select Across Orders to auto-create deliveries across orders. All selected delivery lines that match on the Delivery Grouping Attributes are eligible to appear on one delivery.</li>
-</ul>
-<p><strong>Select an Appending Limit.</strong><br>The Appending Limit enables you to indicate the point at which you want to stop the system from adding lines to a delivery (the point that ends the ability to merge deliveries). You must set the Appending Limit to a value other than Do Not Append in order to use the Append Deliveries option within Release Rules and the Process Deliveries SRS.</p>
-<p>The Appending Limits include:</p>
-<ul>
-<li>Do Not Append</li>
-<li>Start of Staging</li>
-<li>End of Staging</li>
-<li>Start of Packing (Oracle WMS enabled organizations only)</li>
-<li>Start of Shipping (Oracle WMS enabled organizations only)</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Create%20Delivery/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Configuring Picking Process" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Configuring%20Picking%20Process/">OM Configuring Picking Process</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/21/OM%20Configuring%20Picking%20Process/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.836Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Configuring-Picking-Process"><a href="#Configuring-Picking-Process" class="headerlink" title="Configuring Picking Process"></a>Configuring Picking Process</h1><p>You can determine the number of pick release steps the system will prompt to move material from pick release to ship confirmation. These steps are:</p>
-<ol>
-<li><p>Pick Release</p>
-</li>
-<li><p>Move Order Line Allocation (detailing)</p>
-</li>
-<li><p>Move Order Line Pick Confirmation</p>
-</li>
-</ol>
-<p><strong>Pick Release</strong><br>Oracle Shipping Execution’s Pick Release process creates move orders. One order is created per pick release batch per organization, so if you pick release across multiple organizations, one move order is generated in each facility. One move<br>order line is generated for each order line included in the picking batch. That move order line includes the item, quantity, the staging location (the destination sub inventory and locator) and a source sub inventory and locator if one was specified<br>on the sales order line or on the Release Sales Orders window.</p>
-<p>For non-reservable items, allocation and pick release run, but suggestions are not created during pick release, and pick confirm will not run for the item. You can print pick slips, but they will not be detailed with sub-inventory and stock locator to pick from, however they will list the item and quantity to be picked. Auto-allocate should be Yes and Auto-pick-confirm can be set to any.</p>
-<p><strong>Detail Line Allocation (Detailing)</strong><br>To release the move order lines created at Pick Release to the warehouse and to print pick slips, the lines must be allocated. The allocation process for a pick wave move order line also creates a high level (organization level) reservation for the item(s) if no previous reservations exist for them. You can choose to do this immediately after the move order lines are created or to postpone this step until a later point in time. Once the lines are allocated, they have a status of Released to<br>Warehouse.</p>
-<p><strong>The reservation is a soft reservation and from the transact move order form we can back order the move order line and the quantity would be available for reservation again.</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521213026.png" alt=""></p>
-<p>Postponing the detailing process might be employed by organizations that pick release across multiple warehouses but prefer to enable each warehouse to determine when to release their order lines to the floor. Detailing the order lines immediately after they are created is called auto-detailing. Postponing the detailing process is referred to as manual-detail. You can set up a default detailing mode in the <strong>Shipping Parameters</strong> window. This default can be overridden at each Pick Release through the Release Sales Orders window.</p>
-<p><u><strong>Pick Confirmation</strong></u><br>The move order line details must be transacted (in Inventory) to confirm the material drop-off in staging. Pick confirmation executes the sub inventory transfer that systematically moves the material from its source location in the warehouse to<br>the staging location. Pick Confirmation automatically transfers the high level reservation to a allocated reservation (including lots, sub inventory and locators) in the staging location.<br>Inventory updates Shipping Execution with the results of the pick confirm:<br>■ Pick Confirmed quantity is assigned a status of Staged/Pick Confirmed.<br>■ Unconfirmed quantity is assigned a status of Backordered.</p>
-<p><em>Pick confirmation follows the allocation and reservation process automatically if both the Auto Allocate and Auto Pick Confirm options are selected in the Release Rules window. Pick Confirm always follows the detailing and reservation process.<br>If Auto Allocate is not chosen, it is not possible to Auto Pick Confirm.</em></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521213304.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Configuring%20Picking%20Process/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Pick Slip Grouping Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Pick%20Slip%20Grouping%20Rules/">OM Pick Slip Grouping Rules</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/21/OM%20Pick%20Slip%20Grouping%20Rules/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.829Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Pick-Slip-Grouping-Rules"><a href="#Pick-Slip-Grouping-Rules" class="headerlink" title="Pick Slip Grouping Rules"></a>Pick Slip Grouping Rules</h1><p>You can create grouping rules to organize how picking lines for released sales orders are grouped on to pick slips. For example, if you select Delivery as a grouping criteria, all picking lines for the same delivery are grouped together on a pick slip. If there are multiple deliveries, multiple pick slips are created.<br>You can also define your grouping criteria further by selecting additional grouping attributes. For example, if you select Delivery and Carrier as grouping criteria, picking lines for the same delivery and carrier are grouped together on a pick slip.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521214256.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Pick%20Slip%20Grouping%20Rules/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Release Sequence Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Release%20Sequence%20Rules/">OM Release Sequence Rules</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/21/OM%20Release%20Sequence%20Rules/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.823Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Release-Sequence-Rules"><a href="#Release-Sequence-Rules" class="headerlink" title="Release Sequence Rules"></a>Release Sequence Rules</h1><p>You can define release sequence rules to specify the order in which eligible picking lines are allocated to Inventory during pick release. Release sequence rules are given on “release sales order for picking” form and can be defaulted from release rule tab in shipping parameter or from the release rule it self.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/so_007_0.png" alt=""></p>
-<p><strong>Notes</strong>: While its not mandatory to provide the sales order number/delivery/trip while doing the pick release, its always advisible to do so to restrict the number of lines seleceted during pick release. The release sequence rule determines the priority given to selected lines while doing pick release.</p>
-<p>You can release the picking lines by:<br>■ Order number<br>■ Outstanding Invoice Value<br>■ Scheduled Date<br>■ Departure Date<br>■ Shipment Priority</p>
-<p>You can assign a priority level to one or more attributes with 1 being the highest priority and 5 being the lowest. You can also define whether you want the picking lines released in ascending or descending order.</p>
-<p>For example, if you select the Ascending button for Order, picking lines are released by ascending order number–Order 1 is released first, then Order 2, Order 3, and so on. If the Descending button is selected, the picking lines are released by<br>descending Order number from highest to lowest–Order 4 is released first, then Order 3, Order 2, and Order 1.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521215611.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Release%20Sequence%20Rules/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20%2012%20-%2016/">展开全文 >></a>
         </p>
       
 
@@ -1055,7 +941,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1170,11 +1056,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">openpyxl python</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">openpyxl python</a>
               </li>
             
             <div class="clearfix"></div>

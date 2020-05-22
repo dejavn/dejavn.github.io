@@ -153,20 +153,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-OM Pricing Formula" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Sales Order Flow" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Pricing%20Formula/">OM Pricing Formula</a>
+      <a class="article-title" href="/2020/05/22/OM%20Sales%20Order%20Flow/">OM Sales Order Flow</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Pricing%20Formula/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:55:31.519Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Sales%20Order%20Flow/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:48:36.150Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -179,24 +179,24 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Pricing-Formula"><a href="#Pricing-Formula" class="headerlink" title="Pricing Formula"></a>Pricing Formula</h1><p>Formulas are mathematical expressions that the pricing engine uses to determine the list prices of items and the discounts that apply to those items. You can use them to:</p>
-<ul>
-<li>Create a price from a computation as an alternative to entering prices in a price list.</li>
-<li>Calculate a price adjustment. For example, you can instruct the pricing engine to calculate a discount by attaching a formula to a discount line.</li>
-</ul>
-<p>You can set up and maintain formulas based on one or more of the following formula component types:</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155551.png" alt=""></p>
-<p><strong>List price:</strong> The price of the item in a specific price list to which you have attached a formula. List Price and Price List Line are supported Formula types for Advanced Pricing.</p>
-<p><strong>Price list line:</strong> The price of the item in a specific line number of a specific price list.</p>
-<p><strong>Pricing attribute:</strong> The absolute value of a pricing attribute (such as thickness or height) of an item. Pricing attributes are characteristics of products and services that you can use to determine the price of a product or service. Distance, age of a related product, customer class, product family group, and level of service are examples of pricing attributes. You can specify one or more pricing attributes and assign them to a product or service. At order entry time, the pricing engine evaluates the attributes you have specified during formula setup to calculate the price.<br>You can define as many attributes as you need to meet your pricing business needs. For example, you may use the formula 1<em>2 to calculate the price of a glass item. Step 1 is a pricing attribute for thickness and step 2 is the list price to calculate the price of a glass item; if 100 is the base price of the glass item and 0.3 is the value of the thickness attribute of the glass then the pricing engine evaluates the formula as 0.3</em>100 which is 30.</p>
-<p><strong>Numeric constant:</strong> A numeric value.</p>
-<p><strong>Factor List:</strong> You can also relate multiple factor conditions. For example, if the base pricing attribute for glass thickness is between 0.1 and 0.3 mm AND the length of the glass is between 0.5 and 2 m, apply the factor of 3 OR if the base pricing attribute for glass thickness is between 0.4 and 0.8 mm AND the length of the glass is between 0.5 and 2 m, apply the factor of 5.</p>
-<p><strong>Creating a Pricing Formula</strong><br>You can set up and update formulas and formula lines in the Pricing Formulas window. A formula is a valid mathematical expression used to determine the list prices of items and the discounts applied to those items. The formula lines provide details about each part of the formula.<br>Note: The concurrent program Build Formula Package should be run after setting up or changing a formula to improve performance. This program can be accessed from the Tools menu within the Formulas Setup window.<br>The formula can contain any of the following:<br>• Parentheses: ()<br>• Mathematical operators: +, -, /, and *<br>• Built-in functions: NVL, SQRT, and MOD<br>• Operands: Operands are step numbers about which you provide more detail. You can use as many step numbers as you need, up to the limit of the field. You can repeat a step number in a formula, for example, 1+2*2..<br>Note: An operand is not a numeric constant. To use a numeric constant in a formula, you can:<br>• Create a step number in the formula expression.<br>• Assign the numeric constant to the step number in a formula line.</p>
-<p>For example, the valid formula (1+2*SQRT(3)) / 4 contains:<br>• 1, 2, 3, and 4 as operands<br>• +, *, and / as mathematical operators<br>• SQRT as a built-in function<br>• Parentheses to group the operands and operators<br>For each step number, create a formula line. In the previous formula example, four formula lines are created since the formula has four step numbers. When Oracle Pricing calculates a formula, it does not use the face value of the step<br>number. It refers to the formula line and evaluates it to obtain the value of the operand.</p>
-<p><strong>Attach Items to the pricing formula</strong><br>Link your formula to a price list by putting the formula name in the static formula field on the list line that has the item numbers that are to get their prices derived from the formula (don’t enter a price, let the processing program calculate the price value)</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155627.png" alt=""></p>
-<p>You must run the <strong>update formula prices</strong> after entering your formula name in the static formula field on the price list. This concurrent request will use your formula to calculate the price that will populate the list line’s value field. Link a formula to a freight and special charge modifier. With basic pricing you are restricted to three formula types, Numeric Constant, Pricing Attribute and Factor list. Basic Pricing uses the seeded pricing context which has up to 100 pricing attributes.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155648.png" alt=""></p>
+        <h1 id="Sales-Order-Flow"><a href="#Sales-Order-Flow" class="headerlink" title="Sales Order Flow"></a>Sales Order Flow</h1><p>A standard sales order moves through the following steps<br><strong>1. Create SO</strong><br>   \1. Create<br>   \2. Import<br>Order Header in Entered Status<br>Order Line in Entered Status<br>**<br>2.a. Configure the ATO/PTO item (not applicable in case of standard item)<br>**The process of selecting the option classes and options from the model item.</p>
+<p><strong>b. Book the SO</strong><br>    \1. ATP Calculation<br>    \2. Scheduling<br>    \3. Reservation (Reserve time fence)<br>what actions ‘ll be taken depends upon the scheduling level setup done in transaction type.<br>Order Header in Booked Status<br>Order Line in Awaiting shipping<br>Order in SE – Ready to Release</p>
+<p><strong>2.c. Create Configuration Line - Eligible</strong> (Applicable only in case of ATO/PTO Models)<br>Creating the configured item.</p>
+<p><strong>2.d Supply Eligible</strong><br>Progress order Starts the process AutoCreate Final Assembly Orders for ATO/CTO</p>
+<p><strong>3. Pick Release</strong><br>    \1. Create MO<br>    \2. Allocation/Detailing<br>    \3. Transact/Pick Confirm<br>Order Header in Booked Status<br>Order Line in Picked<br>Order in SE – Stage confirmed/Released<br>            Backordered<br><strong><em>Pick List</em></strong></p>
+<p><strong>4. Create Delivery</strong><br>**<br>****5. Packing</p>
+<hr>
+<p>\6. Trip**</p>
+<p><strong>7. Ship Confirm</strong><br><strong><em>Packing List<br>Bill of Ladding</em></strong><br>     COGS debited             INV valuation AC credited<br>At the ship confirm Interface Trip Trop Process starts<br>The “<strong>Interface Trip Stop</strong>” process is executed either real time or later as a concurrent request. Typically, the process accomplishes three main objectives:<br>i. Deducts on-hand quantity and debits Cost of Goods Sold.<br>ii. Progresses the order line to “<strong>Shipped</strong>” status so that it can progress to the next workflow activity.<br>iii. Progresses the shipment line to an “<strong>Interfaced</strong>” status and sets the trip to “In-Transit” or “Closed” depending on whether you elected to close the trip.</p>
+<p><strong>W/O ITS run</strong><br>Order Header in Booked Status<br>Order Line in Picked Status<br>Order in SE - Line Status Shipped - Next Step Run Interfaces</p>
+<p><strong>After ITS run</strong><br>Order Header in Booked Status<br>Order Line in Shipped Status<br>Order in SE - Line Status Interfaced - Next Step Not Applicable</p>
+<p>After the ITS we need to run <strong>work flow back ground process</strong> untill it is run the line wont progress to fullfill activity.<br>So After running ITS (even though the workflow back ground process has not run) the SO issue (Deducts of onhand and debit of cogs/deffered cogs) takes place.<br><strong><em>Notes</em></strong><br>The Workflow background engine processes deferred activities, notifications, wait activities and time out activities. You setup the Workflow background engine when setting up Workflow in your environment. You also need to schedule the Workflow Background Process concurrent program to re-submit periodically. When scheduling the concurrent program, please specify Order Management work item types as the parameter so that it will only pick up the activities or notifications for Order Management work items.<br>**<br>\8. Fulfill**<br>The workflow activity after the ship line workflow is Fullfill Deffered. which checks if all the lines are fullfilled or not. If all the lines are fullfilled then on next workflow back ground process run the lines will be moved to <strong>fullfilled</strong> status.</p>
+<p>So for fullfilling process just run workflow background process.<br>Order Header in Booked Status<br>Order Line in fullfilled Shipped<br>Order in SE - Line Status Interfaced - Next Step Not Applicable</p>
+<p><strong>9. Invoicing</strong></p>
+<p><strong>10. Recipt</strong> <strong>&amp; Transfer to GL</strong></p>
+<p>Once Order is fulfilled an invoice is created if auto invoice in enabled and the invoice details are available in AR and the following accountings takes place<br>\1.  Account Receivables gets debited<br>\2.                                     Revenue get credited<br>After the receipt is created and applied to the above invoice<br>\1.  Cash Account gets debited<br>\2.                                     Receivables account gets credited</p>
+<p><strong>Workflow</strong><br>A basic order flow, from entry to invoicing, will most commonly use the Generic Order and Line flows which are assigned to a Generic order type</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522165155.png" alt=""></p>
 
       
 
@@ -209,7 +209,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Pricing%20Formula/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Sales%20Order%20Flow/">展开全文 >></a>
         </p>
       
 
@@ -239,20 +239,20 @@
 
 
   
-    <article id="post-OM Usage of price agreement" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Workflows in Quotes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Usage%20of%20price%20agreement/">OM Usage of price agreement</a>
+      <a class="article-title" href="/2020/05/22/OM%20Workflows%20in%20Quotes/">OM Workflows in Quotes</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Usage%20of%20price%20agreement/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:53:45.233Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Workflows%20in%20Quotes/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:47:38.157Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -265,8 +265,34 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Usage-of-price-agreement"><a href="#Usage-of-price-agreement" class="headerlink" title="Usage of price agreement"></a>Usage of price agreement</h1><p>Price agreement can be used while entering a SO and in that case price list, payment terms, fright terms</p>
-<p><img src="http://www.oracleug.com/sites/default/files/users/oracleug/ug/om/oe/1001so_1_0.png" alt="img"></p>
+        <h1 id="Workflows-in-Quotes"><a href="#Workflows-in-Quotes" class="headerlink" title="Workflows in Quotes"></a>Workflows in Quotes</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522164747.png" alt=""></p>
+<p>Quotes and Sales Agreements leverage the flexibility of Workflow to manage the quote life cycle. There are two phases for workflow: Negotiation and Fulfillment. Workflow flexibility allows you to tailor your Negotiation and Fulfillment phases to your specific processes. You can choose one of the following generic seeded header-level negotiation flows, these flows can be associated to transaction types for both Sales Orders and Sales Agreements. Both can be converted to an order. Quotes can be converted to sales orders in either the Entered or Booked status (if the booking activity is synchronous). The seeded workflows are as follows:</p>
+<ul>
+<li>Negotiation Flow - Simple:This workflow does not require any approvals nor customer acceptance. However the quote can either expire or get lost if it does not progress to being converted to an order.</li>
+<li>Negotiation Flow—Generic: Simple negotiation flow, without approval. Prepares quote document, get customer final acceptance, convert quote to the Sales Order.</li>
+<li>Negotiation Flow—Generic with Approval: Flow with Approval. Prepare quote document, get management approval, get customer final acceptance, and convert the quote to an order.</li>
+</ul>
+<p>In support of a quote the following Status types are predefined:</p>
+<ul>
+<li>Draft</li>
+<li>Pending Internal Approval</li>
+<li>Lost</li>
+<li>Pending Customer Acceptance</li>
+<li>Draft Submitted</li>
+<li>Internal Approved</li>
+<li>Customer Accepted</li>
+<li>Offer Expired - This status does not apply to Sales Agreements.</li>
+<li>Draft - Customer Accepted</li>
+<li>Draft - Customer Rejected</li>
+</ul>
+<p>Seeded workflow that incorporates Internal Approval and customer acceptance After a quote has been put together, it can be submitted for approval. The relevant documents can be routed to various people in the organization, including people from Sales, Business Practice, Legal, or Finance, for review.</p>
+<p>The list of approvers is defined at the Transaction Type level. The document must be approved by each participant in the list before the transaction is eligible to move forward in the workflow. If the approver fails to respond within the time limit, the system will re-send the notification. If the approver again fails to respond, the system will either send the notification to the next approver (if the current approver is not the last approver), or reject the notification based on the system parameter setup.</p>
+<p>The Approver List can be accessed two ways:</p>
+<ul>
+<li>From the Transaction Type setup window: (N) &gt; Orders, Returns &gt; Setup &gt; Transaction Type &gt; Define. Select the Approvals button to bring up the Approver List.</li>
+<li>Navigate directly to the window: (N) &gt; Orders, Returns &gt; Setup &gt; Transaction Type &gt; Approvals.</li>
+</ul>
+<p>If an approver is deleted from the list the notifications still need to be processed.<br>If an approver is added to the list and any transaction is pending approval they will receive a notification. The user will receive a notification and must approve or reject.</p>
 
       
 
@@ -279,7 +305,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Usage%20of%20price%20agreement/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Workflows%20in%20Quotes/">展开全文 >></a>
         </p>
       
 
@@ -309,20 +335,20 @@
 
 
   
-    <article id="post-OM Revising an Existing Agreement" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Setup Transaction type" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Revising%20an%20Existing%20Agreement/">OM Revising an Existing Agreement</a>
+      <a class="article-title" href="/2020/05/22/OM%20Setup%20Transaction%20type/">OM Setup Transaction type</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Revising%20an%20Existing%20Agreement/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:52:56.732Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Setup%20Transaction%20type/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:45:52.692Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -335,9 +361,19 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Revising-an-Existing-Agreement"><a href="#Revising-an-Existing-Agreement" class="headerlink" title="Revising an Existing Agreement"></a>Revising an Existing Agreement</h1><p>To make minor changes to an existing agreement such as changing the payment terms, you can simply update the existing agreement and save your changes.<br>However, if significant changes are required and you want to track versions of your changes, you can create a new revision. When a revision is created, a new version of the original agreement is created. This is useful for tracking and managing multiple<br>versions of the same agreement. You must determine when changes warrant a new agreement version, and then you can<br>manually create a new revision with a new revision number. It is helpful to use a logical numbering sequence such as 1, 2, and 3 to number your revisions. Once the new agreement revision is created, you can update the agreement header information.</p>
-<p>Note: You must end the current revision before creating a new revision. An agreement can have multiple revisions but the effective dates cannot overlap. Only one revision can be effective for a given range of effective dates.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155313.png" alt=""></p>
+        <h1 id="Setup-Transaction-type"><a href="#Setup-Transaction-type" class="headerlink" title="Setup: Transaction type"></a>Setup: Transaction type</h1><p>Select the transaction type informations as shown in below form</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522164608.png" alt=""></p>
+<p><strong>1.</strong> See Transaction Types @ <a href="http://www.oracleug.com/user-guide/order-management/setup-step-22-transaction-types" target="_blank" rel="noopener">http://www.oracleug.com/user-guide/order-management/setup-step-22-trans…</a><br>for generic setup instructions. Note that when the transaction type contains both a fulfilment and negotiation phase there are some additional implementation considerations associated with set up. These impact when and how document numbers are<br>generated by document sequencing.<br>On the transaction type set up form there is a check box for retain Document Number. When an order type is created two categories are created. Depending upon the value of Retain Document Number the following steps need to be taken.</p>
+<p><strong>2.</strong> If you want to keep the document number from the quote when the transaction moves to fulfilment, use the category appended with “TTXXX-Quote” when creating and assigning document sequencing.</p>
+<p><strong>3.</strong> If you need to generate a new document number for the transaction in the fulfilment phase, two document sequences need to be set up:</p>
+<ul>
+<li>One for fulfilment, using the category with no appending text “TTXXX”</li>
+<li>One for the category appended with “-Quote”.</li>
+</ul>
+<p>If this is not set up correctly then the document will not transition to fulfilment because the document cannot be assigned a Sales Order Number.<br>NOTE: Retain Document Number check box applies only to transaction types with Sales Document Type of Sales Order. Sales Agreements have only one document number, Sales Agreement Number, associated with the transaction irrespective of whether agreement is in negotiation or fulfillment phase.</p>
+<p><strong>4.</strong> Then optionally assign a default transaction phase. The transaction phase defaults to either Negotiation or Fulfillment based on Order Management defaulting rules when the quick sales or standard sales order form is opened. The transaction phase always defaults to Negotiation independent of the defaulting rules when the form is opened through the Quotes menu option. If the transaction phase defaults to Negotiation, only the transaction types that also have a negotiation workflow associated with it are displayed.<br>In the absence of a default, the fulfillment phase is automatically populated by the system.<br>Note: The transaction phase can be changed up to the point of saving the transaction or before lines are entered. Once the transaction is saved or lines are entered, the transaction phase cannot be changed and the transaction phase field is non-updatable.</p>
+<p>You can set the transaction phase directly on the sales document; the transaction phase determines where in the workflow the ransaction starts. Using a single transaction type you can choose to begin the transaction process in either phase if both fulfillment and negotiation workflow assignments exist on that transaction type.</p>
+<p>Note: While Sales Orders lines are assigned a line type through which the transaction is processed, quotes and SAs do not use line types and follow a header flow only.<br>Transaction type designed for use with Sales documents For example in addition to header and line block data:<br>SA uses the following settings on the transaction types:<br>Document numbering<br>Flow assignments<br>Layout and contract templates.<br>Transaction phase<br>Quotes use:<br>Retain document number<br>Header flow assignment<br>Transaction phase<br>5-6 Oracle Order Management Implementation Manual<br>Layout and contract templates.</p>
 
       
 
@@ -350,7 +386,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Revising%20an%20Existing%20Agreement/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Transaction%20type/">展开全文 >></a>
         </p>
       
 
@@ -380,20 +416,20 @@
 
 
   
-    <article id="post-OM Pricing Agreements" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Complete business flow" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Pricing%20Agreements/">OM Pricing Agreements</a>
+      <a class="article-title" href="/2020/05/22/OM%20Complete%20business%20flow/">OM Complete business flow</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Pricing%20Agreements/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:44:25.284Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Complete%20business%20flow/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:37:48.692Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -406,87 +442,12 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Pricing-Agreements"><a href="#Pricing-Agreements" class="headerlink" title="Pricing Agreements"></a>Pricing Agreements</h1><p>Oracle Order Management enables you to establish agreements with your customers that let you define the prices, payment terms and freight terms that you negotiated in the agreement.</p>
-<p>When pricing, the pricing engine ignores qualifiers attached to a price list associated with an agreement if the agreement is chosen at the time of order entry. The pricing engine, will however, still check for product and pricing attributes in the price list associated with the agreement.</p>
-<p><strong>Agreement</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154720.png" alt=""></p>
-<ol>
-<li><p>In the Agreement tab, enter an Agreement Name. Use a naming convention that is consistent and meaningful. Consider using separate naming conventions for Standard Agreements versus Pricing Agreements.</p>
-</li>
-<li><p>Enter an Agreement Number. A consistent, meaningful naming convention should be considered and business practices established. This field is optional.<br>Enter a Revision number. The Revision number defaults to 1 at setup time. Additional versions of the same agreement can be maintained by updating the revision number for each new revision.</p>
-</li>
-<li><p>If you want this Agreement to be used only for a particular customer and their related customers, enter the customer name in Customer. The customer number displays in Cust Number.<br>Alternatively, you can enter the Customer number in Cust Number field and the customer’s name will default to Customer field.<br>If you want this agreement to be available for any customer, leave the Customer and Cust Number fields blank.</p>
-</li>
-<li><p>Select an Agreement Type to classify agreements by type for reporting or control purposes.</p>
-</li>
-</ol>
-<p><strong>Pricing</strong><br>Select an Agreement price list type from the Price List Type field. Once a Pricing Agreement has been saved, you cannot update or change the value for Price List Type. Select from:</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154750.png" alt=""></p>
-<p><strong>Pricing Agreements using Standard Price List</strong></p>
-<ul>
-<li>Agreements using Standard Price List cannot have any agreement lines</li>
-<li>Price list and price list lines can only be viewed and maintained through the Price List Setup window</li>
-<li>A Standard Price List can be used with any number of Standard Agreements or to price orders which are not associated with a specific agreement</li>
-<li>You cannot create revisions for price list lines</li>
-<li>The Agreement Number is not automatically created as a qualifier for the associated price list</li>
-</ul>
-<p><strong>Pricing Agreements using Agreement Price List</strong></p>
-<ul>
-<li>Pricing Agreements must have at least one agreement line</li>
-<li>Pricing Agreements can only be viewed and maintained through the Pricing Agreement Setup window</li>
-<li>Pricing Agreements must be associated with an Agreement price list</li>
-<li>An Agreement Price List can be used with any number of pricing agreements but cannot be used to price an order which is not associated with a pricing agreement</li>
-<li>Revisions can be created on pricing agreement lines through the Pricing Agreement Setup window</li>
-<li>Price list will always have the Agreement Number as a qualifier (and hence can only be used when the pricing agreement is specified on the Order Line)</li>
-</ul>
-<p>Note: If you select Standard Price List, the price list must be an existing price list, and additional fields within this window will default from the standard price list selected. You can update the defaulted fields in the Agreements window, and the values will be used as defaulting sources for any orders using these agreements.<br>Note: If you select Agreement Price List, you can create or make changes to price list lines, and you can enter values for:</p>
-<ol>
-<li>Description</li>
-<li>Currency</li>
-<li>Rounding Factor</li>
-<li>Freight Carrier</li>
-<li>Freight Terms</li>
-<li>Comments</li>
-</ol>
-<p><strong>Payment</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154840.png" alt=""></p>
-<ol>
-<li>Select the Payment Terms.</li>
-<li>Enter the Bill To name in Invoice To.</li>
-<li>Enter the Bill To Address.</li>
-<li>Enter the Bill To contact in Invoice Contact.</li>
-<li>In the Rules region, enter a default Accounting Rule.</li>
-<li>Enter an Invoicing rule.</li>
-</ol>
-<p><strong>Agreement Price List</strong><br>If you have selected price list type as “Agreement Price List” in pricing tab then in the line level you can add item to the price list:</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154922.png" alt=""></p>
-<ol>
-<li>Enter a Customer Item number. Customer item is a pricing attribute.<br>When you enter a customer item, pricing creates one pricing attribute and one product attribute for the agreement line for the customer item and its corresponding internal inventory item.</li>
-<li>Enter a customer Address and Address Category.</li>
-<li>Enter an inventory item number in Product Value.<br>Note: You cannot enter an item category in Product Value. If you entered a customer item which is associated with more that one inventory item, you must select the correct inventory item for the agreement line.</li>
-<li>Enter a UOM (unit of measure).</li>
-<li>Select Unit Price for the Application Method.</li>
-<li>Enter base price in Value.</li>
-<li>Enter the effective Start/End Dates.</li>
-<li>Select Price List Line in Line Type.</li>
-<li>Select Primary UOM if this price list line unit of measure is the primary pricing unit of measure for the item.<br>Order Management uses the primary pricing unit of measure and the Oracle Inventory unit of measure conversion information to price an order whose unit of measure does not have a price list line.<br>For example, a price list has two price list lines for item A11111, one with unit of measure EA—the primary UOM—and one for boxes. When the pricing engine receives an order in unit of measure CS, it accesses the unit of measure conversion tables to convert CS to EA.</li>
-<li>Select a Line Type:<br>• Price List Line<br>• Price Break Header: This option enables you to set up a price breaks, and is only available if Agreement Price List has been selected as the Price List Type.</li>
-<li>Select Unit Price as the Application Method..</li>
-<li>Enter the base price in Value.</li>
-<li>Enter the effective Start and End Dates.**<br>Defining Price Breaks for an Agreement Price List**<br>You can create price breaks or “bracket pricing” for Agreement price lists to define prices that vary depending on the quantity ordered. For example, if a customer buys 10 items the price is $20 per item, but if the customer buys more, then they get a lower per unit price.<br>Note: If you define a price break for an item category, all the items within the category are eligible for the price break.</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154958.png" alt=""></p>
-<p>In Basic Pricing, you can use Point Break as the Price Break Type. This calculates the price based on the price break bracket in which the total quantity falls.<br>For example, if you ordered 14 units of Item A11111, the total quantity falls into the Price Break 2 bracket where the unit price is $19. So the price for all units is the price defined for Price Break 2. The total price is calculated as follows:<br>Total price = 14 * $19 each = $266</p>
-<p><strong>To define price breaks:</strong></p>
-<ol>
-<li>Complete the Agreement header information as outlined in the preceding section.<br>Note: You can create price breaks only for Agreement price lists using the Pricing Agreements window. You cannot create price breaks in the Price List window.</li>
-<li>In the Pricing tab of the agreement, ensure the Price List Type is Agreement Price List. You can only set up price breaks for an Agreement Price List.</li>
-<li>For the agreement line, complete the values (where required) for Customer Item, Address, Address Category, Product Value, Product Description, and UOM, Primary UOM, the Line Type.</li>
-<li>Select Price Break Header as the Line Type.<br>The Price Break Type is Point which means the pricing engine charges each unit of volume at the price of the break within which the total falls.</li>
-<li>Select Unit Price as the Application Method.</li>
-<li>Enter the Break UOM.</li>
-<li>Enter the effective Start and End Dates.</li>
-</ol>
+        <h1 id="Complete-business-flow"><a href="#Complete-business-flow" class="headerlink" title="Complete business flow"></a>Complete business flow</h1><p>*<em>1. Create and Submit the draft<br>*</em>Create an quote by entering the customer details, transaction type, currency and line level details.<br>Save it and submit the draft.<br>The status of the quote changes from Draft to Pending for internal Approval.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163912.png" alt=""></p>
+<p><strong>2. Approve the Quote</strong><br>The Quote needs to be approved by all the persons in the approval list of the transaction type.<br>Once approved the status of the quote changes from Pending for internal Approval to Pending Customer Acceptance.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163947.png" alt=""></p>
+<p><strong>3. Customer Acceptance</strong><br>Do the customer acceptance and the quote ‘ll be converted to sales order with status Entered.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522164232.png" alt=""></p>
 
       
 
@@ -499,7 +460,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Pricing%20Agreements/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Complete%20business%20flow/">展开全文 >></a>
         </p>
       
 
@@ -529,20 +490,20 @@
 
 
   
-    <article id="post-OM Basic Pricing" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Approvals" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Basic%20Pricing/">OM Basic Pricing</a>
+      <a class="article-title" href="/2020/05/22/OM%20Approvals/">OM Approvals</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Basic%20Pricing/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:39:15.863Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Approvals/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:35:39.931Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -555,212 +516,31 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Basic-Pricing"><a href="#Basic-Pricing" class="headerlink" title="Basic Pricing"></a>Basic Pricing</h1><p>The Basic Pricing component of Oracle Order Management provides the capability to price orders according to price lists, pricing formulas, or agreements. You can also apply discounts, control the lowest level price that may be given in order to comply with General Services Administration Agency (GSA) regulations, and apply freight and logistics related charges to orders.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153935.png" alt=""></p>
-<p>In OM the pricing engine prices the items after the order is entered or booked (depending on the pricing setup). Once the order is booked, it proceeds through the workflow process. If it is a shipping item and the quantities are available, the order is processed by SE. During shipping, the freight and special charges can be calculated and the price of the item is adjusted accordingly.</p>
-<p><strong>Customer Hierarchy</strong><br>The customer hierarchy in Basic Pricing enables you to roll up individual customers according to the following structure:<br>■ The sold-to organization<br>■ The ship-to organization<br>■ The bill-to organization<br>■ Site<br>■ Customer Class<br>You can use elements of the customer hierarchy as defaults to control the operation of price lists and modifiers.<br>**<br><strong>**Pricing Engine</strong><br>The pricing engine is the program module called by Order Management that prices the order as orders are entered or order data changed.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154105.png" alt=""></p>
-<p>The pricing engine works through open APIs to provide the pricing results to the calling application. It consists of a search engine and a calculation engine. From the pricing request, the pricing engine evaluates the appropriate modifiers and price lists, resolve incompatibility issues, retrieves the list price, and calculates the unit selling price and adjustments. The search engine receives pricing information from entities like price lists, modifier, qualifiers, formulas, products and pricing attributes.</p>
-<p><strong>Inputs to the Pricing Engine</strong><br><strong>Pricing qualifiers:</strong> Determines who is eligible for a price or modifier list, for example, customer class, customer site, buying group, and sales territory.<br><strong>Pricing Attribute:</strong> Determines what is being priced or modified on a price or modifier list, for example, product group, brand, location, distance, age, volume. Based on the inputs, the pricing engine selects the appropriate price list and adjusts the price by the chosen modifiers.<br><strong>Modifiers:</strong> Determines how the eligible pricing request or pricing request line should be adjusted, for example, discounts, surcharges, coupon issue, item upgrade, other item discount, terms substitution, freight charge, and promotional goods. You can define price lists and modifiers from the most general level to the most specific level, for example, Price List B is for all products and all customers and Price List A is for Product 1 and Customer 1.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Basic%20Pricing/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Holds" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Holds/">OM Holds</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Holds/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:38:01.838Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Holds"><a href="#Holds" class="headerlink" title="Holds"></a>Holds</h1><p>When you prevent further processing on an order through an exception, you are placing a hold on the order.</p>
-<p>Order Management enables you to hold an order, return, order line, or return line from continuing to progress through its workflow by utilizing the holds feature. Holds can be applied manually or automatically based on a set of criteria you define, such as a credit check hold.</p>
-<p><strong>System Holds</strong></p>
+        <h1 id="Approvals"><a href="#Approvals" class="headerlink" title="Approvals"></a>Approvals</h1><p>This window is used to setup the list of the approvers (used for Quotes and BSA), which could be associated to the <strong>transaction type</strong> and/or <strong>transaction phase.</strong> </p>
+<p>You can define a different set of approvers for different transaction types and the transaction phase combinations. E.g. we have defined two transaction types, “Standard A” and “Standard B.” You can use one set of approvers for Negotiation and “Standard A” transaction type and another setup of approvers for Negotiation a “Standard B” transaction type.</p>
+<p>Note: Currently, the approval activity is only seeded in the Negotiation phase. For the Fulfillment phase, approval related activities have been seeded in the OM Standard WF item type. You can use this to create an approval subflow.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163559.png" alt=""></p>
+<p><strong><em>Notes : A role can be any employee of the organization</em></strong></p>
+<p>When the next approver in the chain of approvers is notified that a document requires review and approval/rejection, the approver can either:</p>
 <ul>
-<li><strong>GSA</strong> (USA General Services Administration): Automatically stops order lines on which a GSA customer does not receive the lowest price for an item on all price lists.</li>
-<li><strong>Credit hold</strong>: Automatically stops orders exceeding credit limits.</li>
-<li><strong>Margin Hold</strong>: If the system is setup for margin calculation, and orders are enabled for same, any order or order line not meeting a minimum margin percentage is put on hold</li>
-<li><strong>Export Compliance Hold</strong>: Order Management now provides inbuilt adapters to connect to partner International Trade Management applications for providing export screening on order <strong>lines. An order line failing the export compliance check would be automatically put on hold</strong></li>
+<li>View a summary or abstract from the workflow (WF) e-mail notification, including: Quote or BSA number, Description, Customer name, Forwarded from, Requester, Total Amount</li>
+<li>View the entire sales document as it would appear for printing, including all products/services, pricing/discounts, and all other terms from the PDF link on the workflow notification</li>
+<li>You can view the summary information from the notification, and view the entire sales document from an attachment on the WF notification.</li>
+<li>Approval Recipient(s)</li>
 </ul>
-<p><strong>User-defined:</strong></p>
-<ul>
-<li>Item</li>
-<li>Customer</li>
-<li>Customer site</li>
-<li>Warehouse</li>
-<li>Combination</li>
-</ul>
-<p>In release 11i Oracle Order Management, applying and releasing holds can be performed directly from the Sales Order Pad. You can manually send a notification through Oracle Workflow to specific individuals when an order hold is applied. A concurrent program can automatically release holds based on the Hold Until date. Additionally, you can track and view history information on holds at the order and/or line level.</p>
-<p><strong>Notes</strong></p>
-<ul>
-<li>Holds are assigned a Hold Type and are authorized for application and release for specific Responsibilities.</li>
-<li>You can define holds that are effective only at certain steps of the order or line workflow, as well as, holds that apply regardless of the stage in the order’s flow.  Holds can be defined to be specific for pick, pack, or ship activities.</li>
-<li>Holds may be designed to be applied automatically, or may be applied manually based on a set criteria you define.</li>
-<li><strong>Hold Sources</strong></li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153837.png" alt=""></p>
-<ul>
-<li><p>Hold sources allow you to apply a particular hold to a group of existing orders, returns, or their lines, and to new orders or lines meeting your criteria. A hold source is the combination of a parameter (i.e. customer, item, order, wh) and hold name that you specify. Hold sources are valuable when you want to hold all current and future orders for an item, customer, order, warehouse or customer site (bill-to and ship-to locations). For example, you create a hold source to hold an unreleased item. Once the item is available, you simply remove the hold source for the item, and all holds on individual order lines are released. A hold source can:<br>•  Hold all existing and new orders, returns, or their lines that meet your hold source criteria.<br>•  Hold some existing and new orders, returns, or their lines from the Order Organizer window.<br>•  Hold only new orders, returns, or their lines that meet your hold criteria.</p>
-</li>
-<li><p><strong>Credit Checking</strong><br>You can automatically prevent shipping of products to customers with unacceptable outstanding credit exposure using automatic credit checking.<br>In the Transaction Order Type set-up you may opt to have Credit Checking occur at Sales Order Booking, at Shipping, or both (which you may want if you have long lead times between Booking and Shipping).<br>The Credit Checking can be enabled in the following 3 places:<br>•  For the specific Payment Term<br>•  For the specific Customer<br>•  For the specific Transaction Order Type</p>
-</li>
-<li><p>You must define Credit Limits for each of your Customers. You can determine balances to include when calculating total credit exposure, and set total exposure limits for a customer or customer site.<br>These limits may default in with the Profile Class or be manually maintained in the Profile: Amounts alternate region in the Customer Master.<br>You must define a Credit Limit which is the total limit at any one time for the Customer, as well as an Order Credit Limit, which is specific to an individual sales order.<br>Oracle uses all of these criteria to place sales orders on Credit Check Hold.</p>
-</li>
-<li><p>You can control who is authorized to release Credit Check holds when you want to make an exception or when the customer’s credit balance is acceptable.<br>Also, Oracle maintains a complete audit trail of credit check holds so you can track who applied or removed each hold, the date it was applied or removed, and why.<br>**<br>Hold Release**<br>Holds are released automatically when you supply a hold expiration date. Once the date is reached, the<br>Order can proceed along its workflow. Releasing a hold source release all the orders, returns, and lines to which that hold source applied.</p>
-</li>
-<li><p>Note: You must set up and run Release Expired Holds concurrent program on a nightly basis to take advantage of the expiration date based release of holds.</p>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Holds/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Versioning" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Versioning/">OM Versioning</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Versioning/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:35:38.215Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Versioning"><a href="#Versioning" class="headerlink" title="Versioning"></a>Versioning</h1><p>Versioning is a method to capture changes and updates made to a transaction. Versioning is currently available for sales orders, quotes and Blanket Sales agreements. There is support for both manual versioning as well as automatic versioning.</p>
-<p><strong>Versioning includes the following:</strong></p>
-<ul>
-<li>Version Control: Capture of changes and updates made to Sales Orders, Quotes and Blanket Sales Agreements. This feature offers:</li>
-</ul>
+<p>With this approach you can send notifications to a different set of recipients based on the setup in the Order Management Approval setup window. This gives more flexibility for setting up different hierarchical lists for different transaction phases and transaction type combinations.</p>
+<p><strong>Complete Approval Flow</strong></p>
 <ol>
-<li>Version generation</li>
-<li>Validation of version number</li>
-<li>Version history maintenance and comparison</li>
-<li>Searching prior versions</li>
-<li>Reasons and comments for versioning</li>
-<li>Tracking Clause versions in Blanket Sales Agreements</li>
-<li>API’s and Order Import: Versioning support for sales transactions created or updated from multiple modes</li>
+<li>Select the Negotiation Flow as Negotiation Flow - Generic with Approval.</li>
 </ol>
-<ul>
-<li>Versions can be created, managed, viewed and compared, providing comprehensive information about a given transaction</li>
-<li>Assists during the negotiation phase of a sales transaction by maintaining a history of the transaction cycle</li>
-</ul>
-<p>Note: Price Lists and Modifiers are not versioned on a Blanket Sales Agreement.</p>
-<p><strong>Version Generation</strong><br>Versioning is manual by default. If you want to enable automatic versioning, you must set up the appropriate processing constraints. For example, you can use validation templates to drive versioning by transaction type as a condition. By<br>using the processing constraints and workflow activity, you can determine when to increment the version and which statuses are available to version. For example, you can increment a version only when specific attributes of the transaction are changed/updated. You can increment the version number Versioning whenever there is a change in order quantity, payment terms, price list, required date, or other attributes.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153635.png" alt=""></p>
-<p>You can link versioning control to workflow activities statuses. Version generation functionality includes:<br>■ Manual / Automatic option<br>■ Version number as a whole number and as separate field, following the document number<br>■ Update manually at any time, provided the setup allows amendment in a specific status<br>■ Option to retain the document number during the transition to a Sales Order<br>■ Specify the required conditions for automatic versioning</p>
-<p><strong>Version History</strong><br>Version history maintenance is useful for reference and comparison. This is particularly true of quotes and Blanket Sale Agreements (BSAs) with a negotiation phase where the transaction document changes a number of times before it is approved. This may occur with complex products that are frequently redesigned to meet customer requirements, or with a loyal customer who negotiates for a long time for the best price with the promise of higher order quantities over an extended period of time.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153716.png" alt=""></p>
-<p>Versioning maintains the history of previous versions, when the active version is changed. However, one can use the previous versions as templates for creating new sales order, quotes or blanket sale agreements at any time with the copy feature. Version history maintenance and comparison enables:<br>■ Maintenance of transaction history of previous versions<br>■ Ability to amend the current version of the transaction<br>■ Tracking changes over a period of time and view those changes<br>■ Comparison of changes made to transactions across versions<br>■ Copy any version of a Quote to a Sales Order</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163630.png" alt=""></p>
+<ol start="2">
+<li><p>Create the quote and progress it. The status changes from Draft to Pending Internal Approval.</p>
+</li>
+<li><p>Go to WF Notifications and approve the quote.</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163657.png" alt=""></p>
 
       
 
@@ -773,7 +553,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Versioning/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Approvals/">展开全文 >></a>
         </p>
       
 
@@ -803,20 +583,20 @@
 
 
   
-    <article id="post-OM Audit Trail" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Quote" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Audit%20Trail/">OM Audit Trail</a>
+      <a class="article-title" href="/2020/05/22/OM%20Quote/">OM Quote</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Audit%20Trail/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:32:49.115Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Quote/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:33:53.423Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -829,34 +609,47 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Audit-Trail"><a href="#Audit-Trail" class="headerlink" title="Audit Trail"></a>Audit Trail</h1><p>Audit Trail records and tracks updates to specified order attributes as they occur. Reports of comprehensive audit trail updates of Oracle Order Management are generated using Processing Constraints, Lookups, a system parameter, and the Audit Trail Consolidator concurrent program. Current Processing Constraints functionality enables you to specify exactly what business functions, by entity you wish to control when performing order modifications. You can define new processing constraints that specify when, and for what attributes of an order, audit trail updates are recorded. The Order Management system parameter Audit Trail must be enabled to use this feature.</p>
-<p><strong>Process Flow</strong><br>Oracle Order Management gives businesses the flexibility to audit as much or as little of their order process as they require. Each business can decide what order attributes are so critical that an audit needs to be maintained and then set up the<br>processing constraints accordingly. Once the constraints are defined, users can enter and change orders as they always have. If a change is made to an attribute that has been defined as requiring a reason to change it, then the user is prompted to select a reason code from a user-defined list.<br>Finally, queries can be run or reports produced to show what actual changes have been made to auditable attributes, who made the changes and when.</p>
-<p><strong>Versioning V/S Audit Trial</strong></p>
-<ol>
-<li>Versioning works in conjunction with audit trail only when the transaction enters the fulfillment phase, not during the negotiation phase.</li>
-<li>Version control applies to all sales documents including Sales Orders, Quotes and Blanket Sales Agreements but audit trail is ONLY applicable to Sales Orders.</li>
-<li>Versioning can be manual or automatic.</li>
-<li>Audit trail captures changes within a version but version control captures changes that increment a version. The audit trail may track all sales order changes that may not necessarily constitute revising the sales order to a new version. You cannot track a single change with both Versioning and Audit Trail. The user must decide what method they wish to use to track the change history.</li>
-<li>Version Control records the entire business object, allowing users to view the changes to the document real time and online. Whereas, Audit Trail records a single change in order to capture who made the change and what the change was.</li>
-<li>Version control can compare against previous versions where audit trail cannot.</li>
-</ol>
-<p><strong>Example</strong><br>Business requirement is that whenever the currency code is changed in sales order header an audit trial needs to be generated.<br><strong>1. Setups</strong></p>
+        <h1 id="Quote"><a href="#Quote" class="headerlink" title="Quote"></a>Quote</h1><p>A quote encompasses many stages before becoming a sales order or sales agreement. These stages can include a draft, customer negotiations, internal and external business approvals. Versioning can capture changes and the transaction seamlessly converts to a<br>sales order or can be archived as a lost or expired quote. Quoting draws all relevant information from the Order Management schema for use by the customer service representatives (CSR), enabling a seamless flow from a quote status through a sales order.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163411.png" alt=""></p>
+<p><strong>Why Should Business use Quote?</strong></p>
 <ul>
-<li>Enable audit trial in system parameters.</li>
-<li>Set up Processing Constraints to indicate which attributes on the order you want to have audit trail recorded for currency change.</li>
+<li>The creation and management of quote as a negotiation tool and transitioning the quote to a sales order, thus acting as a single point of entry into Order Management.</li>
+<li>Preparation of quote for assisted selling of products and services to customers and business partners.</li>
+<li>Processing the quote with or without approvals.</li>
+<li>Quick entry of order lines with minimum data entry as the information captured on the quote gets carried forward into the sales order.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153423.png" alt=""></p>
-<p><strong>2. Process</strong></p>
+<p><strong>Using Quotes you can:</strong></p>
 <ul>
-<li>Change the currency of the sales order.</li>
-<li>Run the request Audit History Consolidator with correct parameters</li>
-<li>Verify the record in audit history window</li>
+<li>Create, modify, and select quotes</li>
+<li>Configure complex products</li>
+<li>Manually adjust quote prices</li>
+<li>Perform real time global availability checks</li>
+<li>Up Sell, Cross Sell</li>
+<li>Calculate taxes</li>
+<li>Assign sales credits</li>
+<li>Convert quotes to sales orders</li>
+<li>Support E-Business requirements</li>
+<li>Reduce administration expenses and increase a sales person’s productivity</li>
 </ul>
-<p><strong>Setups</strong><br>\1. Set the OM System Parameter Audit Trail.<br>Navigate to Order Management &gt; Setup &gt; System Parameters &gt; Values.<br>Select your Operating Unit.<br>Select Generic Parameters from the list of values.<br>For the Audit Trail Parameter, select from the list of values: “Enable when Order is Booked,” “Enable when Order is Entered,” or “Disabled.”</p>
-<p>\2. Set up Processing Constraints to indicate which attributes on the order you want to have audit trail recorded for<br>Create some new Validation Templates if you have specific conditions to control whether or not to record audit information.</p>
-<p>\3. Add “View Audit History” menu option to the Order Management menu for those responsibilities that need to be able to view the new Audit History forms - this menu option will be created through seed data.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153458.png" alt=""></p>
-<p>\4. Schedule the Consolidator program (<strong>Audit History Consolidator</strong>) to run periodically to make audit information available to query and report.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163437.png" alt=""></p>
+<p><strong>Workflows</strong></p>
+<ul>
+<li>Both Quotes and Sales Agreements(SAs) use the same seeded Negotiation workflows.</li>
+<li>After Customer Acceptance, Quotes transition to a sales order and Sales Agreements become Active.</li>
+<li>SAs do not capture an Offer Expiration date and therefore do not leverage this functionality in the Negotiation flow.</li>
+</ul>
+<p><strong>Unsupported Features</strong><br>The functionality supported with Quotes is similar to the level of support for Sales Orders. There are a few Sales Order features that are not available during the negotiation phase of a transaction including:</p>
+<ul>
+<li>Holds</li>
+<li>Scheduling</li>
+<li>Copy a return from a quote.</li>
+<li>Independent line flows</li>
+<li>Cancellations – progress to LOST Status</li>
+<li>Ship and Arrival Sets</li>
+<li>Commitments</li>
+<li>Quotes for returns or Internal Sales Orders</li>
+<li>Sales Agreements - Can specify sales agreement reference on a quote but released quantity and released amount on a sales agreement are updated only when a quote is converted to an order</li>
+</ul>
 
       
 
@@ -869,7 +662,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Audit%20Trail/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Quote/">展开全文 >></a>
         </p>
       
 
@@ -899,20 +692,20 @@
 
 
   
-    <article id="post-OM Change Management" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Gross Margin Set Up" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Change%20Management/">OM Change Management</a>
+      <a class="article-title" href="/2020/05/22/OM%20Gross%20Margin%20Set%20Up/">OM Gross Margin Set Up</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Change%20Management/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:29:54.470Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Gross%20Margin%20Set%20Up/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:32:26.040Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -925,43 +718,21 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Change-Management"><a href="#Change-Management" class="headerlink" title="Change Management"></a>Change Management</h1><p>This chapter covers the following topics:</p>
-<ul>
-<li>Processing Constraints</li>
-<li>Versioning</li>
-<li>Audit Trail</li>
-<li>Open Interface Considerations</li>
-</ul>
-<p><strong>Processing Constraints</strong><br>Processing Constraints enable you to control changes to sales documents in Oracle Order Management.</p>
-<ul>
-<li>Processing constraints are rules that control <strong>who</strong> can change <strong>what</strong> and <strong>when</strong> they can change it. Who can make changes based on responsibility. A constraint (rule) may apply to all responsibilities, to only a list of constrained responsibilities or to all except a list of authorized responsibilities.</li>
-<li>Processing constraints can prevent certain changes, but can also be set up to perform actions based on those changes. They can define actions that can result from these changes, such as requiring a reason for the change, triggering an action in Audit Trail or Versioning, or raising an Integration Event.</li>
-<li>More than just what can be updated. The following operations can be controlled: Create, update, delete, cancel, and split all at the entity level. For example, given a set of conditions you may not want to allow a user to create a new order line. You can also control the update operation down to the attribute level. For example, given a set of conditions, you could choose to allow update to the warehouse field of an order line but not to the price list field.</li>
-<li>Changes based on a group of conditions. The conditions must be collectively true for the constraint to fire or prevent the changes. The conditions may be based on either the state of a workflow activity (where the entity is in the flow) or a value in a table. A condition may also be based on a custom API, which means that you can call your own PL/SQL code to evaluate the condition.<br>Multiple conditions can be combined using either AND logic (all the conditions must be true) or OR logic (at least one of the conditions must be true.) A custom message can display when an attempt is made to violate a constraint.</li>
-</ul>
-<p><strong>Examples:</strong></p>
+        <h1 id="Gross-Margin-Set-Up"><a href="#Gross-Margin-Set-Up" class="headerlink" title="Gross Margin Set Up"></a>Gross Margin Set Up</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163235.png" alt=""></p>
 <ol>
-<li>No one can change the customer purchase order at the line level; your company requires that one sales order can relate to only one customer purchase order.</li>
-<li>No one can add a line to an order after any of the lines on the order have been invoice interfaced.</li>
-<li>A reason is required to cancel an order line after it has been booked.</li>
-<li>Only the Customer Service Manager can change the discount percentage on an order line after the line has been shipped.</li>
-<li>Require all return orders, identified by order type = Return, to be shipped to a central returns processing facility.</li>
+<li>Navigate to the Order Management Parameters window. The default for Calculate Margin is No. To use margin, you must enable Calculate Margin control. Choose whether to do the calculation based on Price or Cost. Save your work.</li>
 </ol>
-<p><strong>Defining Processing Constraints</strong><br>Navigate to the Processing Constraints window. Order Management &gt; Setup &gt; Rules &gt; Security &gt; Processing Constraints.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153129.png" alt=""></p>
-<p>Note that the window is divided into several regions. The top region has fields for the Application and the Entity. Any one of the OM entities are the valid values for the entity field. This is used for querying—you cannot create new entities. When you query an entity you will see all the constraints defined against that entity.</p>
-<p><strong>1. Constraints</strong><br>The Constraints region is where most of the details of a processing constraint are defined. The region enables you to view the seeded constraints, view, or update the constraints that were created for your company. You can create new constraints, but you cannot change the seeded constraints with the system check box marked.</p>
-<p><strong>1.1. Operation Field</strong><br>The Operation field can have the values of Create, Update, and Delete for any of the entities, Cancel for Order Header and Order Line entities only, and Split for the Order Line Entity only.</p>
-<p><strong>1.2. Attribute Field</strong><br>The Attribute field can only be used if the operation selected is UPDATE. You may enter a value here, and the constraint will only apply to that field. For instance you may define a constraint that affects only the warehouse field on the order line. If the Attribute field is left blank the constraint will be in effect for all the attributes of the entity. For instance, you may define a constraint which prevents updates to any of the fields of an order line. Please note that only when constrainable attributes are updated, processing constraints execute. All attributes are not constrainable, therefore processing constraints will not execute for such attributes, even though the operation selected is UPDATE.</p>
-<p><strong>1.3 Action Field</strong><br>The Action field allows you to select the action to be taken if the constraining conditions are met.<br>Note: There is no unique Require Reason action; it must be used in conjunction with Versioning or Audit.<br>Actions of Require Reason and Require Reasons and Require History for audit history are supported only for the UPDATE operation. Constraints are evaluated in the following order (Only one constraint may take effect for a change):</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153201.png" alt=""></p>
-<p>Actions that Require Reason take precedence over actions that do not.</p>
-<p><strong>Example</strong><br>Assume that both versioning and audit constraints apply to update of price list. Only version is captured as it takes precedence and audit history is not available for this update. However, if audit constraint is on a different attribute like update of payment term and you change the payment term and price list, both version and audit history are captured.</p>
-<p><strong>1.4</strong> <strong>Applies To Field</strong><br>The Applies To field is used to define whether the constraint is applicable in the Negotiation or Fulfillment transaction phase. If the field is blank, then it is applicable to both phases.</p>
-<p><strong>1.5 System Changes Field</strong><br>Use the System Changes field to indicate if system changes are allowed even if the constraining conditions are met. The system changes here refer to an attribute initially getting a default value or being re-defaulted when a source attribute changes. This is applicable only for attribute or field level UPDATE operations. The possible values are:<br>• Never after Insert: System changes are allowed to this field only if the entity has not yet been saved to the database. This is the default value.<br>• Always: System changes are always allowed on the attribute</p>
-<p><strong>1.6 User Changes Field</strong><br>Use the User Changes field to indicate when the user performing the operation is constrained. This is applicable only for attribute or field level UPDATE operations. The possible values are:<br>• Never after Insert: You can change this field only if the entity has not yet been saved to the database. This is the default value.<br>• Always: You can never enter a value for this attribute, even if the entity (for example an order) is being created for the first time.</p>
-<p><strong>1.7 System Field</strong><br>The System Field indicates if a constraint included with the OM system is user updateable. System constraints help prevent data integrity problems and cannot be updated. Any operation, field, action, or list of responsibilities attached to these<br>constraints cannot be modified. However, additional validation conditions can be included as long as they do not have the same group number.</p>
-<p><strong>1.8 Enabled Field</strong><br>The Enabled field indicates whether the current Condition is active. This allows conditions to be temporarily disabled if necessary. Note that if all conditions are disabled and the constraint itself is not disabled, the constraint always applies for that change. Care must be taken to ensure that the disabling of conditions does not introduce problems in the business flow.</p>
+<ol start="2">
+<li>Decide if you want to hold orders that do not meet minimum margin percentages. If you do, decide which order types you want to do this for. Go to the Order Management Transaction Type window and query up each Order Type record and enter the minimum margin percentage. Save each record.</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163301.png" alt=""></p>
+<ol start="3">
+<li><p>Determine which responsibilities do NOT need to be able to see Gross Margin information in the Sales Orders window and the Pricing &amp; Availability window.<br>Using the System Administrator responsibility, navigate to Applications &gt; Responsibility, define or query up a responsibility with “Orders, Returns Main Menu” attached, and exclude the View Margin function from those responsibilities.</p>
+</li>
+<li><p>Create a folder for the Sales Orders window, Order Information tab, Other sub-tab to display both or either Margin Amount and Order Margin %, and a folder for the Line Items tab to display any or all of the Cost, Margin Amount and Margin % fields on the Main sub-tab or the Pricing sub-tab. Assign that folder to be the default folder for those responsibilities who can see margin.</p>
+</li>
+</ol>
+<p>Create a folder for the Pricing &amp; Availability window Pricing tab to display any or all of the Cost, Margin Amount and Margin % fields and assign that folder for those responsibilities who are allowed to see margin.</p>
 
       
 
@@ -974,7 +745,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Change%20Management/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Gross%20Margin%20Set%20Up/">展开全文 >></a>
         </p>
       
 
@@ -1004,20 +775,20 @@
 
 
   
-    <article id="post-OM Shipping Tolerances" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Gross Margin Procedures" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Tolerances/">OM Shipping Tolerances</a>
+      <a class="article-title" href="/2020/05/22/OM%20Gross%20Margin%20Procedures/">OM Gross Margin Procedures</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Shipping%20Tolerances/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:53:18.692Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Gross%20Margin%20Procedures/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:30:33.990Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -1030,27 +801,28 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Shipping-Tolerances"><a href="#Shipping-Tolerances" class="headerlink" title="Shipping Tolerances"></a>Shipping Tolerances</h1><p>Oracle Order Management provides you with the ability to capture shipping tolerance levels for over and under shipments recorded during ship confirmation. The shipping tolerance feature enables you to define various shipping tolerance<br>levels for ordered and expected return quantities. Order Management shipping tolerances are used to validate the percentage of the ordered quantity. Once shipping tolerances have been defined, Order Management then automatically<br>fulfills order lines using the tolerances you defined.</p>
-<p><strong>Order Management’s shipping tolerances feature captures the following:</strong><br>■ Over and under shipments and returns percentages at the system, customer,site, item, site-item, and customer item levels<br>■ Different tolerances for ordered and returned quantities<br>■ Defaulted tolerances from various sources based on your defaulting rules<br>■ Automatic fulfillment of total shipped quantities for order lines within the under tolerance limit<br>■ Tolerances levels that enable you to over ship at the time of ship confirmation</p>
-<p><strong>Over Shipments</strong><br>When Oracle Shipping Execution attempts to over ship an order, Order Management processes the order based on the shipping tolerances you define. In order to perform an over shipment, Order Management:<br>■ Determines if the ship quantity is within the defined over shipment tolerance levels you defined by setting the OM: Overshipment Tolerance profile option or setting your shipment tolerances in Order Management.<br>■ Notifies the appropriate personnel when an over shipment is above the set shipping tolerance.<br>■ Issues the material for any unpicked or unreserved quantity.</p>
-<p><strong>Over Shipments Report</strong><br>Oracle Shipping Execution provides the Over Shipments Report for displaying shipping tolerances. This report displays shipping tolerance information based on</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095338.png" alt=""></p>
-<p>the customer, site, item,warehouse, ship date, and order type.</p>
-<p><strong>Under Shipments</strong><br>When Oracle Shipping Execution attempts to under ship an order, Order Management processes the order based on the shipping tolerances you define. In order to perform an under shipment, you must:<br>■ Ship confirm the quantity at the time of closing the delivery<br>■ Determine if the total quantity shipped is within the under shipment tolerances you defined. Any remaining shipment allocations are removed Under Shipment tolerances greater than 100% are treated as the equivalent of a 100% tolerance; to close order lines a shipment of a non-zero quantity is required, even if the under shipment tolerance is set to 100%.</p>
-<p><strong>Defining Shipping Tolerances</strong><br>Defining shipping tolerances are based on your customers and items or your customer site and item tolerances.</p>
-<p><strong>Prerequisites</strong><br>■ Set up your customer and customer site tolerances in the Customer window<br>■ Set up your tolerances for items in the Master Items window</p>
-<p><strong>To define shipping tolerances for orders or returns</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095427.png" alt=""></p>
+        <h1 id="Gross-Margin-Procedures"><a href="#Gross-Margin-Procedures" class="headerlink" title="Gross Margin Procedures"></a>Gross Margin Procedures</h1><p>To view Gross Margin while entering orders:</p>
 <ol>
-<li>Navigate to the Setup Tolerance window. Order Management &gt; Setup &gt; Shipping Tolerances</li>
-<li>Select the Customer name for the shipping tolerance.</li>
-<li>Select the customer Address for the shipping tolerance.</li>
-<li>Select the Item Number for the shipping tolerance.</li>
-<li>Enter the Over Shipment Tolerance percentage.<br>The over shipment tolerance percentage determines the amount of the shipment you can exceed at the time of ship confirmation.</li>
-<li>Enter the Under Shipment Tolerance percentage.<br>The under shipment tolerance percentage determines the minimums amount of the shipment at the time of ship confirmation. If you enter more than 100, the shipping process will use 100.</li>
-<li>Enter the Over Return Tolerance percentage for return receipts. The over return tolerance percentage determines the amount of the return you can accept above.</li>
-<li>Enter the Under Return Tolerance percentage for return receipts. The under return tolerance percentage determines the amount of the return you can accept below.</li>
+<li><p>Navigate to the Sales Orders window.</p>
+</li>
+<li><p>Enter order header information.</p>
+</li>
+<li><p>Enter line information. As each line is priced, the cost is obtained and the margin is calculated. The cost and/or margin information will be displayed.</p>
+</li>
 </ol>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163057.png" alt=""></p>
+<ol start="4">
+<li>While entering the order, you can go back to the Order Information tab, Other sub-tab, to check the order margin.<br>Note: You can see gross margin for the following types of outbound lines -service lines, standard lines (both process or discrete), and ATO items - for which costing is enabled.</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522163122.png" alt=""></p>
+<ol start="5">
+<li><p>When you finish entering the order, you can also view the order level margin by going back to the Order Information tab, Others sub-tab.</p>
+</li>
+<li><p>Book the order. If there is a minimum margin set up for this Order Type and the order has an overall margin percentage below the minimum, the order will be placed on hold. You will get a message saying a Gross Margin hold is being applied.<br>Note: When the order margin is displayed on the order header, if one or more non-return lines have been excluded from the calculation because its cost is null, then a message displays: ‘Order margin has been calculated excluding one or more lines.’<br>Note: The entire order is held if the order margin is less than the minimum margin for the order type. This will be determined at booking time. The calculation of order margin will exclude return lines and also any lines with null cost. If order changes occur that result in the order margin meeting or exceeding the minimum margin for the order type, then the hold is automatically released.</p>
+</li>
+</ol>
+<p>The margin hold may be released manually by authorized users. If it has been manually released, then it is not applied again automatically. This order level hold, holds up return lines if the outbound lines cause the order to go on margin hold. Processing of ATO and PTO models, which are not used in the margin calculation, will also be affected if the order goes on margin hold.</p>
+<p>Also, it is possible that an order with some shipped lines may go on margin hold, if for example a line is added to the order later. In this case, the hold may hold the invoicing of lines that have been shipped.</p>
 
       
 
@@ -1063,7 +835,195 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Tolerances/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Gross%20Margin%20Procedures/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Gross Margin Display" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Gross%20Margin%20Display/">OM Gross Margin Display</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Gross%20Margin%20Display/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:26:13.415Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Gross-Margin-Display"><a href="#Gross-Margin-Display" class="headerlink" title="Gross Margin Display"></a>Gross Margin Display</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522162622.png" alt=""></p>
+<p>Gross Margin is most commonly calculated by dividing the difference of the selling price and the cost by the selling price (or by unit cost). In an Order Management application it is important to know what the gross margin of an order line and an order itself is, and also to take action on orders based on business rules that use Gross Margin.<br>Order Management uses Oracle Costing to get a cost that is consistent within the eBusiness suite.</p>
+<p>Gross Margin is a number that represents the profit to be made when selling something.  In general, higher margins are more desirable than lower ones. During order entry you may need to:</p>
+<ul>
+<li>Ensure that an item is not selling below its cost</li>
+<li>See if a line is worth fulfilling</li>
+<li>Substitute a product with a higher margin</li>
+</ul>
+<p>Note: For drop-shipped items, the cost is the price from the purchase order issue. Order Management obtains that information when the purchase order is created for these items. We will attempt to get the cost from the purchase order which is our purchase price, however; this price might not be available before item is shipped. If the price is not yet available, we will get the cost from the List Price of the Purchasing tab of the Item Master in Inventory setup, specified in the financial system parameters of the Purchasing responsibility.</p>
+<p>During Order Management you might want to view the gross margin of an order or line:<br>• To expedite shipments – to prioritize shipments of lines with higher margins<br>• To allocate scarce product – you might want to allocate the product to the orders/lines with the highest gross margin<br>• Review orders that request a certain product and allocate the product to those orders with the largest margin<br>• Specify what the minimal acceptable margin on an order level should be, and orders that did not meet that margin would be set aside for review</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Gross%20Margin%20Display/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Modifiers" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Modifiers/">OM Modifiers</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Modifiers/" class="archive-article-date">
+  	<time datetime="2020-05-22T08:09:46.112Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Modifiers"><a href="#Modifiers" class="headerlink" title="Modifiers"></a>Modifiers</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522161231.png" alt=""></p>
+<p>Modifiers determine the adjustments made to the list price. These are dependant on various business factors such as <strong>type of adjustment</strong> to make, the <strong>level at which adjustments</strong> are made, how the <strong>modifiers are qualified</strong>, how they are applied, etc.</p>
+<p>■Using <strong><em>modifier lists</em></strong>, you can create groupings of price adjustments, and freight and special charges that you offer and report together to meet various business needs.At the list level, you define criteria that is common to all of the line level modifiers. You can create three modifier list types in oracle pricing<br><strong>1. Discount List<br>2. Surcharge List<br>3. Fright and Special Charges list</strong></p>
+<p>■Use <strong><em>modifier lines</em></strong> to define the type of price adjustments, or freight and special charges that the pricing engine applies to pricing requests. You can associate certain line types with each list type. You can use the following line types:<br> <strong><em>Discount:</em></strong> Creates a negative price adjustment.<br> <strong><em>Surcharge</em>:</strong> Creates a positive price adjustment.<br> <strong><em>Freight charge:</em></strong> Applies a freight charge.<br> <strong><em>Price Break:</em></strong> Applies a variable discount or surcharge price adjustment to a  pricing request based meeting the condition of a break type.Only point price breaks are allowed in basic pricing modifiers. for ex, the following pricing decisions are:<br>If item quantity = 1-50, then discount=5%</p>
+<p>■The table below describes Modifier List Types and if Discounts, Surcharges, or Freight and Special charges are applicable to the List type. A value of<br> Yes: indicates that the entity is available for the Modifier List Type.<br> No: indicates that the entity is not available for the Modifier List Type.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522161304.png" alt=""></p>
+<p><strong>Create a modifier list</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522161323.png" alt=""></p>
+<ol>
+<li><p>In the Main tab, select the modifier Type.</p>
+</li>
+<li><p>Enter a Number and Name for the modifier list; the value does not have to be numeric.<br>Note: The modifier Name should be unique across all PTEs (Pricing Transaction Entities) otherwise an error occurs. For example, if a modifier named “Corporate” is created in the Order Management PTE, an error message displays if you create a “Corporate” modifier in the Purchasing PTE.</p>
+</li>
+<li><p>The Global box is selected when the Pricing Security Control profile option is set to ON. This means that the modifier list can be used by all operating units for pricing transactions. If Global box is deselected, operating unit field is displayed. If multi-org access is NOT enabled, operating unit defaults from profile MO: Operating Unit. This operating unit field cannot be updated by users. If multi-org access is enabled, operating unit defaults from profile MO: Default Operating Unit.<br>Users can over-ride this default and select an operating unit that they have access to as defined by MO: Security Profile. The use of this modifier is then only restricted to pricing transactions for this operating unit.</p>
+</li>
+<li><p>Select or clear Automatic:<br>• If selected, the Automatic box is also selected at the line level, and the pricing engine automatically applies the modifier.<br>• If cleared, then the modifier must be manually applied.<br>Note: If you select Automatic for a list, all the lines for this list default to Automatic.</p>
+</li>
+<li><p>Enter Currency. This is an optional field.</p>
+</li>
+<li><p>Enter the Start Date range.<br>Note: If you do not enter dates (start/end), the list is effective from the creation date and does not become ineffective.</p>
+</li>
+</ol>
+<p><strong>Creating List Level Qualifiers</strong><br>Modifier list level qualifiers help the pricing engine to determine who is eligible for the modifier lines. If an order is not eligible for a modifier list, it is not eligible for that list’s line level modifiers even if the lines have qualifiers for which the order is eligible.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522161354.png" alt=""></p>
+<p><strong>Creating Modifier Lines</strong><br>Use this process to create modifier lines to define how the price is adjusted. Once you have created and saved a modifier line, you cannot edit or change the Product Attribute Value for the line. To change the Product Attribute Value for a line, you should end date the existing modifier and create a new modifier.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522161421.png" alt=""></p>
+<ol>
+<li><p>Enter the Level.<br>• Line: The pricing engine determines if the pricing request is eligible for this modifier by validating the request for each line. It applies this modifier at the line level.<br>• Order: The pricing engine determines if the pricing request is eligible for this modifier by validating the pricing request header. It applies this modifier at the order level but prorates a percentage value to each line.</p>
+</li>
+<li><p>Enter Modifier Type from the following:<br>• Discount<br>• Surcharge<br>• Freight/Special Charges<br>• Price Break</p>
+</li>
+<li><p>Select or clear Automatic. If you select it, the pricing engine automatically applies this modifier. If you clear it, someone must manually apply it to an order.<br>Note: If you select Automatic at the modifier list level, Automatic for each line appears as selected but you can change it. You can allow manual application of discounts, surcharges, and freight and special charges line types.</p>
+</li>
+<li><p>Select or clear Override.<br>If selected, you can manually change how the modifier is applied for each order.</p>
+</li>
+<li><p>The values of Pricing Phase, Incompatibility Group, and Bucket will be dependent on the modifier level chosen.<br>For Basic Pricing, the Incompatibility Group will always be Level 1 Incompatibility Group, and bucket will be defaulted to 1 for line level modifiers.</p>
+</li>
+</ol>
+<p><strong>Enter discount,surcharge information and freight charge information in appropriate tabs.</strong></p>
+<p><strong>Creating Line Level Qualifiers</strong><br>Modifier line level qualifiers help the pricing engine to determine who is eligible for the modifier lines. If an order is not eligible for a modifier line, it is not eligible for the line level modifiers even if the lines have qualifiers for which the order is eligible.</p>
+<p>Once a qualifier is end dated, the group having that end dated qualifier becomes invalid. The modifier having that end dated qualifier will apply only if there is another group of qualifiers that satisfy the conditions and are within the valid date ranges.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522161449.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Modifiers/">展开全文 >></a>
         </p>
       
 
@@ -1095,7 +1055,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1210,11 +1170,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">openpyxl python</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">openpyxl python</a>
               </li>
             
             <div class="clearfix"></div>
