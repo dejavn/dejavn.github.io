@@ -8,10 +8,12 @@
   <link rel="dns-prefetch" href="https://dejavn.github.io">
   <title>Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Oracle EBS,Python,Shell">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
 <meta property="og:url" content="https:&#x2F;&#x2F;dejavn.github.io&#x2F;page&#x2F;3&#x2F;index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="Oracle EBS,Python,Shell">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
   
@@ -151,20 +153,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Maven build error" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Setup Steps  VII - X" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/04/Maven%20build%20error/">Maven build error</a>
+      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20%20VII%20-%20X/">OM Setup Steps  VII - X</a>
     </h1>
   
 
         
-        <a href="/2020/05/04/Maven%20build%20error/" class="archive-article-date">
-  	<time datetime="2020-05-04T06:08:55.277Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
+        <a href="/2020/05/22/OM%20Setup%20Steps%20%20VII%20-%20X/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:00:48.674Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -177,9 +179,11 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Maven-build-error"><a href="#Maven-build-error" class="headerlink" title="Maven build error"></a>Maven build error</h1><p>[ERROR] Failed to execute goal org.apache.maven.plugins:maven-war-plugin:3.2.3:war (default-war) on project SampleSFG: Error assembling WAR: webxml attribute is required (or pre-existing WEB-INF/web.xml if executing in update mode) -&gt; [Help 1]<br>[ERROR] </p>
-<h1 id="在pom-xml注释掉maven-war-plugin"><a href="#在pom-xml注释掉maven-war-plugin" class="headerlink" title="在pom.xml注释掉maven-war-plugin"></a>在pom.xml注释掉maven-war-plugin</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">	<span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">	<span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.diodes<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>SampleSFG<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">packaging</span>&gt;</span>war<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">name</span>&gt;</span>SampleSFG Maven Webapp<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.apache.org<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">finalName</span>&gt;</span>SampleSFG<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">source</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">target</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 			&lt;plugin&gt;</span></span><br><span class="line"><span class="comment">				&lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;</span></span><br><span class="line"><span class="comment">				&lt;version&gt;3.2.3&lt;/version&gt;</span></span><br><span class="line"><span class="comment">				&lt;configuration&gt;</span></span><br><span class="line"><span class="comment">					&lt;warSourceDirectory&gt;target&lt;/warSourceDirectory&gt;</span></span><br><span class="line"><span class="comment">				&lt;/configuration&gt;</span></span><br><span class="line"><span class="comment">			&lt;/plugin&gt; --&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+        <h1 id="Setup-Steps-VII-X"><a href="#Setup-Steps-VII-X" class="headerlink" title="Setup Steps : VII - X"></a>Setup Steps : VII - X</h1><p><strong>Step 7: Salespersons</strong><br>Define information on your sales representatives.<br>This step is optional.</p>
+<p><strong>Step 8:Tax</strong><br>Define tax features, such as codes, rates, exceptions, and exemptions.<br>This step is required.<br>**<br>Step 9: Quick Codes**<br>Define QuickCodes that provide custom values for many lists of values throughout Order Management.<br>This step is required if you plan on creating user defined Quickcodes for utilization. QuickCode types that you can define include:<br>■ Credit Cards<br>■ Freight Terms<br>■ Hold Types<br>■ Note Usage Formats<br>■ Release Reasons<br>■ Cancellation Codes<br>■ Sales Channels<br>■ Shipment Priorities<br>Navigation: OM -&gt;Set up -&gt;QuickCodes -&gt;OM</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090113.png" alt=""></p>
+<p>You can create as many quickcodes as you need. You can also inactivate QuickCodes.</p>
+<p><strong>Step 10: Workflow</strong><br>Define order and line processing flows to meet different order and line type requirements.<br>This step is required.</p>
 
       
 
@@ -192,7 +196,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/04/Maven%20build%20error/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20%20VII%20-%20X/">展开全文 >></a>
         </p>
       
 
@@ -222,20 +226,20 @@
 
 
   
-    <article id="post-cx_Oracle Output Data to Excel Chinese scrambled code" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Setup Steps VI - Payment terms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/23/cx_Oracle%20Output%20Data%20to%20Excel%20Chinese%20scrambled%20code/">cx_Oracle Output Data to Excel Chinese scrambled code</a>
+      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/">OM Setup Steps VI - Payment terms</a>
     </h1>
   
 
         
-        <a href="/2020/04/23/cx_Oracle%20Output%20Data%20to%20Excel%20Chinese%20scrambled%20code/" class="archive-article-date">
-  	<time datetime="2020-04-23T07:17:30.076Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-23</time>
+        <a href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:00:35.302Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -248,271 +252,54 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="cx-Oracle-Output-Data-to-Excel-Chinese-scrambled-code"><a href="#cx-Oracle-Output-Data-to-Excel-Chinese-scrambled-code" class="headerlink" title="cx_Oracle Output Data to Excel Chinese scrambled code"></a>cx_Oracle Output Data to Excel Chinese scrambled code</h1><p>Chinese character gash problem</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">con = cx_Oracle.connect(conn_info, encoding=<span class="string">"UTF-8"</span>,</span><br><span class="line">                        nencoding=<span class="string">"UTF-8"</span>)</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/23/cx_Oracle%20Output%20Data%20to%20Excel%20Chinese%20scrambled%20code/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Oracle-DB-12c-Installation-on-CentOS-7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/10/Oracle-DB-12c-Installation-on-CentOS-7/">Oracle-DB-12c-Installation-on-CentOS-7</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/10/Oracle-DB-12c-Installation-on-CentOS-7/" class="archive-article-date">
-  	<time datetime="2020-03-10T01:08:00.302Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>title: Oracle DB 12c Installation on CentOS 7<br>date: 2019-12-11 16:38:48<br>tags:</p>
-<hr>
-<p>Oracle Database 12c Installation on CentOS 7<br>&lt;&lt;TableOfContents: 执行失败 [参数过多] (see also the log)&gt;&gt;</p>
-<p>Quote <a href="https://wiki.centos.org/HowTos/Oracle12onCentos7" target="_blank" rel="noopener">Oracle Database 12c Installation on CentOS 7</a></p>
+        <h1 id="Payment-terms"><a href="#Payment-terms" class="headerlink" title="Payment terms"></a>Payment terms</h1><p>Receivables lets you define standard payment terms for your customers to specify the <strong><em>due date and discount date</em></strong> for their open items.<br>Payment terms can include a discount percent for early payment and you can assign multiple discounts to each payment term line. For example, the payment term ’2% 10, Net 30’ indicates that a customer is allowed a two percent discount if payment is received within 10 days; after 10 days, the entire balance is due within 30 days of the transaction date with no applicable discount.</p>
+<p>Prepayment check box if you are defining a prepayment payment term. Receivables feeder systems, such as Oracle Order Management, can optionally implement business processes around prepayment payment terms to indicate that a particular business transaction requires the capture of funds before the delivery of a product or service.</p>
+<p>Enter the Date on which payment is due for this installment term (optional). If you do not complete this field, enter a value for either Due Days or both Day of Month and Months Ahead</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522085425.png" alt=""></p>
+<p><strong><em>Default Payment Terms Hierarchy</em></strong><br>Receivables use the following hierarchy to determine the default payment term for your transactions, stopping when one is found:</p>
 <ol>
-<li>Introduction<br>This guide presents how to deploy Oracle Database 12c (12.1.0.2.0) on CentOS 7.1 (64-bit) using quick installation features.</li>
-</ol>
-<p>Reference System:</p>
-<pre><code class="shell">[root@centos7 ~]# hostnamectl
-   Static hostname: centos7.example.com
-         Icon name: computer
-           Chassis: n/a
-        Machine ID: 583b4d69eaea465ea4bb96ac3b891e15
-           Boot ID: 931ed1af622046ebbde071a87844a7d5
-    Virtualization: kvm
-  Operating System: CentOS Linux 7 (Core)
-       CPE OS Name: cpe:/o:centos:centos:7
-            Kernel: Linux 3.10.0-229.11.1.el7.x86_64
-      Architecture: x86_64</code></pre>
-<ol start="2">
-<li>Prerequisites<br>After a successful OS installation, verify the hostname and register it in your DNS. Alternatively add your hostname/IP to the /etc/hosts.</li>
-</ol>
-<pre><code class="shell">[root@centos7 ~]# cat /etc/hostname
-centos7.example.com</code></pre>
-<p>Leave the SELinux in enforcing mode as well as the firewall enabled</p>
-<pre><code class="shell">[root@centos7 ~]# sestatus
-SELinux status:                 enabled
-SELinuxfs mount:                /sys/fs/selinux
-SELinux root directory:         /etc/selinux
-Loaded policy name:             targeted
-Current mode:                   enforcing
-Mode from config file:          enforcing
-Policy MLS status:              enabled
-Policy deny_unknown status:     allowed
-Max kernel policy version:      28</code></pre>
-<pre><code class="shell">[root@centos7 ~]# firewall-cmd --state
-running</code></pre>
-<p>Update the CentOS system with the latest packages</p>
-<pre><code class="shell">[root@centos7 ~]# yum update -y</code></pre>
-<p>Download the Oracle Database 12c for Linux x86-64 software:</p>
-<p><a href="http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html</a></p>
-<ol start="3">
-<li>Installation Steps<br>Create required OS users and groups for Oracle Database.</li>
-</ol>
-<pre><code class="shell">[root@centos7 ~]# groupadd oinstall
-[root@centos7 ~]# groupadd dba
-[root@centos7 ~]# useradd -g oinstall -G dba oracle
-[root@centos7 ~]# passwd oracle</code></pre>
-<p>Add the following kernel parameters to the /etc/sysctl.conf</p>
-<pre><code class="shell">fs.aio-max-nr = 1048576
-fs.file-max = 6815744
-kernel.shmall = 2097152
-kernel.shmmax = 1987162112
-kernel.shmmni = 4096
-kernel.sem = 250 32000 100 128
-net.ipv4.ip_local_port_range = 9000 65500
-net.core.rmem_default = 262144
-net.core.rmem_max = 4194304
-net.core.wmem_default = 262144
-net.core.wmem_max = 1048586
-Check and apply the new values.</code></pre>
-<pre><code class="shell">[root@centos7 ~]# sysctl -p
-[root@centos7 ~]# sysctl -a</code></pre>
-<p>Specify limits for oracle user in the /etc/security/limits.conf</p>
-<pre><code class="shell">oracle soft nproc 2047
-oracle hard nproc 16384
-oracle soft nofile 1024
-oracle hard nofile 65536</code></pre>
-<p>Extract the zipped Oracle Database Software archives (linuxamd64_12102_database_1of2.zip, linuxamd64_12102_database_2of2.zip) to the /stage folder.</p>
-<pre><code class="shell">[root@centos7 ~]# yum install -y zip unzip
-[root@centos7 ~]# unzip linuxamd64_12102_database_1of2.zip -d /stage/
-[root@centos7 ~]# unzip linuxamd64_12102_database_2of2.zip -d /stage/</code></pre>
-<p>Modify permissions on /stage</p>
-<pre><code class="shell">[root@centos7 ~]# chown -R oracle:oinstall /stage/</code></pre>
-<p>Create /u01 directory for Oracle software and /u02 for database files.</p>
-<pre><code class="shell">[root@centos7 ~]# mkdir /u01
-[root@centos7 ~]# mkdir /u02
-[root@centos7 ~]# chown -R oracle:oinstall /u01
-[root@centos7 ~]# chown -R oracle:oinstall /u02
-[root@centos7 ~]# chmod -R 775 /u01
-[root@centos7 ~]# chmod -R 775 /u02
-[root@centos7 ~]# chmod g+s /u01
-[root@centos7 ~]# chmod g+s /u02</code></pre>
-<p>Install required packages:</p>
-<pre><code class="shell">[root@centos7 ~]# yum install -y binutils.x86_64 compat-libcap1.x86_64 gcc.x86_64 gcc-c++.x86_64 glibc.i686 glibc.x86_64 \
-glibc-devel.i686 glibc-devel.x86_64 ksh compat-libstdc++-33 libaio.i686 libaio.x86_64 libaio-devel.i686 libaio-devel.x86_64 \
-libgcc.i686 libgcc.x86_64 libstdc++.i686 libstdc++.x86_64 libstdc++-devel.i686 libstdc++-devel.x86_64 libXi.i686 libXi.x86_64 \
-libXtst.i686 libXtst.x86_64 make.x86_64 sysstat.x86_64</code></pre>
-<p>Also install the “X Window System” package group.</p>
-<pre><code class="shell">[root@centos7 ~]# yum groupinstall -y &quot;X Window System&quot;</code></pre>
-<p>Because the Oracle installation requires GUI, there are two simple ways how to provide it.</p>
-<p>Solution 1.</p>
-<p>Login remotely from a graphical Linux machine via SSH.</p>
-<pre><code class="shell">ssh -X oracle@centos7.example.com</code></pre>
-<p>Solution 2.</p>
-<p>Use a Microsoft Windows desktop with an SSH Client (PuTTY) and an X-Windows terminal emulator (Xming).</p>
-<p>The following article describes how to install Xming on Windows systems.</p>
-<ul>
-<li>Xming X-Windows terminal emulator for Microsoft Windows computers</li>
-</ul>
-<p>Use a solution above to login as “oracle” user and run the Oracle Installer:</p>
-<pre><code class="shell">[oracle@centos7 ~]$ /stage/database/runInstaller
-Starting Oracle Universal Installer...</code></pre>
-<ol start="4">
-<li>Oracle Installer Screens<pre><code>STEP 1 - Security Updates</code></pre></li>
-</ol>
-<p>If you don’t wish to receive emails from Oracle Support then deselect the check box and click Next.</p>
-<p>Another window opens click YES on it.</p>
-<pre><code>STEP 2 - Installation Option</code></pre><p>Select Create and configure a database and click Next</p>
-<pre><code>STEP 3 - System Class</code></pre><p>Select Desktop Class for a simple default installation of the Oracle Database.</p>
-<pre><code>STEP 4 - Typical Installation</code></pre><p>On the Typical Install Configuration screen, specify the key features.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Oracle base</td>
-<td>/u01/app/oracle</td>
-</tr>
-<tr>
-<td>Software location</td>
-<td>/u01/app/oracle/product/12.1.0/dbhome_1</td>
-</tr>
-<tr>
-<td>Database file location</td>
-<td>/u02</td>
-</tr>
-<tr>
-<td>Global database name</td>
-<td>orcl.example.com</td>
-</tr>
-</tbody></table>
-<p>Also specify the suitable Database edition as well as the Character set. Provide a strong password for database administration and finally deselect the Create as Container database option.</p>
-<pre><code>STEP 5 - Create Inventory</code></pre><p>Accept the default /u01/app/oraInventory and click Next.</p>
-<pre><code>STEP 6 - Prerequisite Checks</code></pre><p>The Installer automatically verifies all required OS packages and OS kernel settings.</p>
-<pre><code>STEP 7 - Summary</code></pre><p>Final chance to edit any installation features. Click Install.</p>
-<pre><code>STEP 8 - Execute Configuration Scripts</code></pre><p>When a request window appears, login as root and execute two scripts:</p>
-<pre><code class="shell">[root@centos7 ~]# /u01/app/oraInventory/orainstRoot.sh
-Changing permissions of /u01/app/oraInventory.
-Adding read,write permissions for group.
-Removing read,write,execute permissions for world.
-Changing groupname of /u01/app/oraInventory to oinstall.
-The execution of the script is complete.</code></pre>
-<pre><code class="shell">[root@centos7 ~]# /u01/app/oracle/product/12.1.0/dbhome_1/root.sh
-Performing root user operation.
-The following environment variables are set as:
-    ORACLE_OWNER= oracle
-    ORACLE_HOME=  /u01/app/oracle/product/12.1.0/dbhome_1
-Enter the full pathname of the local bin directory: [/usr/local/bin]: &lt;PRESS ENTER&gt;
-   Copying dbhome to /usr/local/bin ...
-   Copying oraenv to /usr/local/bin ...
-   Copying coraenv to /usr/local/bin ...
-Creating /etc/oratab file...
-Entries will be added to the /etc/oratab file as needed by
-Database Configuration Assistant when a database is created
-Finished running generic part of root script.
-Now product-specific root actions will be performed.
-You can follow the installation in a separated window.</code></pre>
-<p>Both scripts must run as root.</p>
-<pre><code>STEP 9 - Installation progress</code></pre><p>Another window opens to show you the installation progress. Do not close this window.</p>
-<pre><code>STEP 10 - Installation completed successfully</code></pre><p>The last screen inform that the installation is done and displays the Oracle Enterprise Manager URL.</p>
-<p><a href="https://localhost:5500/em" target="_blank" rel="noopener">https://localhost:5500/em</a></p>
-<p>Click OK to close the Installer.</p>
-<ol start="5">
-<li>Post Installation Tasks</li>
-<li><ol>
-<li>Firewall<br>Login as root and verify the active zones</li>
-</ol>
+<li><p>Bill–to site</p>
+</li>
+<li><p>Customer Address</p>
+</li>
+<li><p>Customer</p>
+</li>
+<li><p>Transaction Type</p>
 </li>
 </ol>
-<pre><code>[root@centos7 ~]# firewall-cmd --get-active-zones
-public
-  interfaces: eth0</code></pre><p>Open the related ports</p>
-<pre><code>[root@centos7 ~]# firewall-cmd --zone=public --add-port=1521/tcp --add-port=5500/tcp --add-port=5520/tcp --add-port=3938/tcp \ 
---permanent
-success</code></pre><pre><code>[root@centos7 ~]# firewall-cmd --reload
-success</code></pre><pre><code>[root@centos7 ~]# firewall-cmd --list-ports
-1521/tcp 3938/tcp 5500/tcp 5520/tcp</code></pre><p>6.5.2. Oracle Environment<br>Login as oracle user and add the following values to the /home/oracle/.bash_profile</p>
-<pre><code>TMPDIR=$TMP; export TMPDIR
-ORACLE_BASE=/u01/app/oracle; export ORACLE_BASE
-ORACLE_HOME=$ORACLE_BASE/product/12.1.0/dbhome_1; export ORACLE_HOME
-ORACLE_SID=orcl; export ORACLE_SID
-PATH=$ORACLE_HOME/bin:$PATH; export PATH
-LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib:/usr/lib64; export LD_LIBRARY_PATH
-CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib; export CLASSPATH</code></pre><p>Reload the bash_profile to apply the new settings:</p>
-<pre><code>[oracle@centos7 ~]$ . .bash_profile</code></pre><p>6.5.3. Login to the database<br>Finally login to the database:</p>
-<pre><code>[oracle@centos7 ~]$ sqlplus system@orcl
-... output omitted ...
-Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
-With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
-SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
-<p>https://<hostname>:5500/em</p>
+<p><strong><em>Predefined Payment Terms</em></strong><br>Receivables provides the following predefined payment terms:<br><em>30 NET:</em> The balance of the transaction is due within 30 days.<br><em>IMMEDIATE:</em> The balance of the transaction is due immediately (i.e. on the transaction date). You can use this payment term with your chargeback and debit memos.</p>
+<p><strong>To define a payment term:</strong><br>Navigate to the Payment Terms window and Enter the Name of the payment term.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522085632.png" alt=""></p>
+<p><strong>1.</strong> Select the <strong>Prepayment check box</strong> if you are defining a prepayment payment term.<br>Receivables feeder systems, such as Oracle Order Management, can optionally implement business processes around prepayment payment terms to indicate that a particular business transaction requires the capture of funds before the delivery of a product or service.</p>
+<p><strong>2.</strong> To associate a <strong>credit check</strong> with this payment term, check the Credit Check box. Oracle Order Management uses this information to determine when to place an order on hold.<br>In Oracle Order Management, if the profile for an address does not have credit checking limits defined in a particular currency but the customer does, then the order passes credit check. If the address does not have limits in the currency and neither does the customer, then the order is compared to the customer limit in that currency.</p>
+<p><strong>3.</strong> If you do not want to let your customers take discounts for <strong>partial payments</strong> on items associated with this payment term, then uncheck both the Allow Discount on Partial Payments check box as well as the check box for the Discount on Partial Payment system option.</p>
+<p><strong>4.</strong> Enter the <strong>Discount Basis</strong> you want Receivables to use when calculating discounts for your invoices. Choose one of the following discount methods:</p>
+<ul>
+<li>Invoice Amount: Choose this option to calculate the discount amount based on the sum of the tax, freight charges, and line amounts of your invoices.</li>
+<li>Lines Only: Choose this option to calculate the discount amount based on only the line amounts of your invoices.</li>
+<li>Lines, Freight Items and Tax: Choose this option to calculate the discount amount based on the amount of line items, freight, and tax of your invoices, but not freight and charges at the invoice header level.</li>
+<li>Lines and Tax, not Freight Items and Tax: Choose this option to calculate the discount amount based on the line items and their tax amounts, but not the freight items and their tax lines, of your invoices.</li>
+</ul>
+<p><strong>5</strong>. Enter the <strong>Installment Option</strong> for items assigned to this payment term. This indicates how Receivables will allocate the freight and tax charged to transactions using this payment term. Choose ‘Include tax and freight in first installment’ to include all tax and freight charges in the first installment. Choose ‘Allocate tax and freight’ to distribute tax and freight charges across all installments.</p>
+<p><strong>6.</strong> Enter the <strong>Base Amount</strong> for this payment term. The default is 100, but you can change it. The base amount is the denominator for the ratio Receivables uses to determine the amount due for installments of invoices to which you assign this payment term. The sum of the relative amounts for all of the payment schedules that you define for these payment terms must be equal to the value that you specify as a base amount.</p>
+<p>If the base amount is different from the relative amount, and you set the Installment Options field for this payment term to ‘Allocate tax and freight’, Receivables prorates the base amount across the relative amounts of this term’s payment schedules based upon the ratio you define. Receivables uses the following equation to determine the original amount due for each installment of invoices to which you assign this payment term:<br>Amount Due = Relative Amount/Base Amount * Invoice Amount</p>
+<p>If you select ‘Include tax and freight in first installment’ as the Installment Options field value for a payment term, the base amount and the relative amounts that you specify for this term’s payment schedules only indicate how the original line amounts of the invoices to which you assign this term are distributed across different installments.</p>
+<p>In this case, the original freight and tax amounts are included in the first installment in addition to the line amount allocated by the ratio of the base amount and the relative amount that you specify for the term’s first payment schedule. Receivables uses the following equation to determine the original amount due for the first installment of invoices to which you assign this payment term:<br>Amount Due = (Relative Amount/Base Amount * Base Line Amount) + Base Freight Amount + Base Tax Amount</p>
+<p><strong>7</strong>. If you want transactions assigned to this payment term to be printed before the due date, enter a number of <strong>Print Lead Days</strong>. Receivables will print this transaction x number of days before the due date, where x is the number of days you enter here.</p>
+<p><strong>8</strong>. Enter a range of <strong>Effective Dates</strong> for this payment term. If you do not enter an end date, this payment term will be active indefinitely.</p>
+<p>9.1 Enter a line number for the installment term that you are defining in the ‘Seq’ field. Enter a higher number for each installment term with a later due date. For example, if you create terms with 50% due in 15 days and 50% in 30 days, enter ‘1’ in this field for the first line and ‘2’ for the second line.</p>
+<p>9.2 Enter the Relative Amount for this payment term. This is the numerator of the ratio that Receivables uses to determine the amount due for this installment of these payment terms. The sum of the relative amounts for all of the payment schedules that you define for each payment term must be equal to the base amount for this term.</p>
+<p>9.3 Enter the number of Days after the invoice date that payment is due for this installment term (optional). For split payment terms, this number indicates the number of days after the invoice date that an installment is due.</p>
+<p>9.4 Enter the Date on which payment is due for this installment term (optional). If you do not complete this field, enter a value for either Due Days or both Day of Month and Months Ahead.</p>
+<p>9.5 If you are defining proxima terms, enter the Day of Month that payment is due for this installment term. For example, if payment is due on the fifteenth of each month, enter ‘15.’</p>
+<p>9.6 If you are defining proxima terms and you entered a value for Day of Month, enter the Months Ahead to which this installment term of the proxima terms refer. For example, if you entered ‘15’ for Day of Month and you enter ‘2’ here, an invoice dated in May will have a due date of July 15.</p>
+<p><strong>New in R12</strong><br>If you want to use this payment term for balance forward billing, select an appropriate balance forward billing cycle from the Billing Cycle LOV.</p>
+<ul>
+<li>Balance Forward Billing.</li>
+<li>Balance Forward Billing Cycles.</li>
+<li>Setting Up Balance Forward Billing.</li>
+</ul>
+<p>Note: You cannot update the billing cycle, once a balance forward billing payment term is attached to a profile.<br>Because balance forward bills cannot be split across installments, in the case of a balance forward payment term:<br>Any value entered in Base Amount defaults to 100.<br>Installment Options becomes disabled and any data entered before selecting a cycle defaults to Include tax and freight in first installment.<br>You can populate only one row in the Payment Schedule section and the Sequence Number and Relative Amount values for the row default respectively to 1 and 100.<br>Date Due becomes disabled. However, you can populate Days, Day of Month, and Months Ahead.<br>Note: You cannot change existing payment terms from regular payment terms to balance forward billing payment terms and vice versa.</p>
 
       
 
@@ -525,7 +312,7 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/10/Oracle-DB-12c-Installation-on-CentOS-7/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/">展开全文 >></a>
         </p>
       
 
@@ -555,20 +342,20 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
 
   
-    <article id="post-JS Get CurrentMonthFirstDay and CurrentMonthLastDay" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Setup Steps  I - V" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/10/JS%20Get%20CurrentMonthFirstDay%20and%20CurrentMonthLastDay/">JS Get CurrentMonthFirstDay and CurrentMonthLastDay</a>
+      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/">OM Setup Steps  I - V</a>
     </h1>
   
 
         
-        <a href="/2020/03/10/JS%20Get%20CurrentMonthFirstDay%20and%20CurrentMonthLastDay/" class="archive-article-date">
-  	<time datetime="2020-03-10T01:08:00.246Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
+        <a href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/" class="archive-article-date">
+  	<time datetime="2020-05-22T00:43:50.742Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -581,10 +368,12 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Get-CurrentMonthFirstDay-and-CurrentMonthLastDay"><a href="#Get-CurrentMonthFirstDay-and-CurrentMonthLastDay" class="headerlink" title="Get CurrentMonthFirstDay and CurrentMonthLastDay"></a>Get CurrentMonthFirstDay and CurrentMonthLastDay</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">getCurrentMonthFirst</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">		date.setDate(<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">var</span> month = <span class="built_in">parseInt</span>(date.getMonth()+<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">var</span> day = date.getDate();</span><br><span class="line">		<span class="keyword">if</span> (month &lt; <span class="number">10</span>) &#123;</span><br><span class="line">		month = <span class="string">'0'</span> + month</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (day &lt; <span class="number">10</span>) &#123;</span><br><span class="line">		day = <span class="string">'0'</span> + day</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> date.getFullYear() + <span class="string">'.'</span> + month + <span class="string">'.'</span> + day;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">getCurrentMonthLast</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> date=<span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">		<span class="keyword">var</span> currentMonth=date.getMonth();</span><br><span class="line">		<span class="keyword">var</span> nextMonth=++currentMonth;</span><br><span class="line">		<span class="keyword">var</span> nextMonthFirstDay=<span class="keyword">new</span> <span class="built_in">Date</span>(date.getFullYear(),nextMonth,<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">var</span> oneDay=<span class="number">1000</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">24</span>;</span><br><span class="line">		<span class="keyword">var</span> lastTime = <span class="keyword">new</span> <span class="built_in">Date</span>(nextMonthFirstDay-oneDay);</span><br><span class="line">		<span class="keyword">var</span> month = <span class="built_in">parseInt</span>(lastTime.getMonth()+<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">var</span> day = lastTime.getDate();</span><br><span class="line">		<span class="keyword">if</span> (month &lt; <span class="number">10</span>) &#123;</span><br><span class="line">		month = <span class="string">'0'</span> + month</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (day &lt; <span class="number">10</span>) &#123;</span><br><span class="line">		day = <span class="string">'0'</span> + day</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> date.getFullYear() + <span class="string">'.'</span> + month + <span class="string">'.'</span> + day;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="After-Page-Loaded"><a href="#After-Page-Loaded" class="headerlink" title="After Page Loaded"></a>After Page Loaded</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script defer=<span class="string">"defer"</span> &gt;</span><br><span class="line">	<span class="keyword">var</span> first_day = getCurrentMonthFirst();</span><br><span class="line">	<span class="keyword">var</span> last_day = getCurrentMonthLast();</span><br><span class="line">	<span class="comment">//alert(last_day)</span></span><br><span class="line">  <span class="built_in">document</span>.getElementById(<span class="string">"balance_date"</span>).innerHTML = first_day + <span class="string">"-"</span> +last_day;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
-
+        <h1 id="Setup-Steps-I-V"><a href="#Setup-Steps-I-V" class="headerlink" title="Setup Steps : I - V"></a>Setup Steps : I - V</h1><p>The following is a list of each setup step defined in detail.</p>
+<p><strong>Step 1<br>Flexfields</strong><br>Define key and descriptive flexfields to capture additional information about orders and transactions.<br>This step is required for Key Flexfields, and optional if you plan on using the functionality surrounding Descriptive Flexfields. Several defaulting values are provided.</p>
+<p><strong>Step 2<br>Multiple Organizations</strong><br>Define multiple organizations in Oracle Inventory.<br>This step is optional.</p>
+<p><strong>Step 3<br>Inventory Organizations</strong><br>Define inventory organizations (warehouses), parameters, subinventories, and picking rules in Oracle Inventory.<br>You must define at least one item validation organization and at least one organization that acts as an inventory source for orders fulfilled internally. If you plan to drop ship some orders, you must also define at least one logical organization for receiving purposes. Your item validation organization can be the same as your inventory source or your logical receiving organization, but you cannot use one organization for all three purposes. See Step 5 for setting your item validation organization.<br>This step is required.</p>
+<p><strong>Step 4<br>Profile Options</strong><br>Define profile options to specify certain implementation parameters, processing options, and system options.<br>This step is required.</p>
+<p><strong>Step 5<br>Parameters</strong><br>Set your Order Management Parameters to validate items, enable customer relationships, and operating unit defaults.<br>This step is required.</p>
 
       
 
@@ -597,7 +386,7 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/10/JS%20Get%20CurrentMonthFirstDay%20and%20CurrentMonthLastDay/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/">展开全文 >></a>
         </p>
       
 
@@ -627,20 +416,20 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Introduction to OM" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/10/hello-world/">Hello World</a>
+      <a class="article-title" href="/2020/05/22/OM%20Introduction%20to%20OM/">OM Introduction to OM</a>
     </h1>
   
 
         
-        <a href="/2020/03/10/hello-world/" class="archive-article-date">
-  	<time datetime="2020-03-10T01:08:00.228Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
+        <a href="/2020/05/22/OM%20Introduction%20to%20OM/" class="archive-article-date">
+  	<time datetime="2020-05-22T00:43:50.740Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -653,19 +442,52 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="Introduction-to-OM"><a href="#Introduction-to-OM" class="headerlink" title="Introduction to OM"></a>Introduction to OM</h1><p>The Oracle Order Management Suite consists of:</p>
+<ol>
+<li>Oracle Order Management</li>
+<li>Oracle Shipping Execution</li>
+<li>Basic Pricing</li>
+</ol>
+<p>Order Management implementation involves several phases, including setting up other integrated applications, which include Oracle General Ledger, Oracle Receivables, and Oracle Inventory. Some setup steps are optional, depending on whether you have the integrating applications installed and whether you use the associated feature. For example, if your business supports drop shipments, you should also set up Oracle Purchasing. If you sell models and kits, set up Oracle Bills of Material and Oracle<br>Configurator.</p>
+<p>\1. A detailed process of order to cash cycle is shown below</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225454.png" alt=""></p>
+<p>\2. Oracle Manufacturing and Supply Chain Applications enable customers to operate using various supply-chain stocking strategies. The term stocking strategy denotes a process that identifies and maintains the optimum level of your bills of material at which you should maintain your inventory, so that your inventory investment is a minimum. For example, in the ship building industry, you would not keep any inventory, whereas you would have to keep inventory in your retail outlets if you were selling shoes.</p>
+<p>The amount of time a customer is willing to wait to buy a product (delivery lead-time) is a very important determinant of the supply-chain stocking strategy. As the delivery lead-time decreases, the finished goods inventory moves closer to the consumption point. To a certain extent, product complexity can also be an important determinant of a supply-chain stocking strategy. Below Figure shows the typical position of each of these strategies in a lead-time–product complexity graph.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225525.png" alt=""></p>
+<ul>
+<li>Ship from stock (MTS make to stock) :</li>
+</ul>
+<p>  You have sufficient inventory items in stock and the order is directly fullfilled from inventory. In an MTS environment, you produce your products and stock them in anticipation of customer orders. A good forecasting system is very important to this environment because most of the material and capacity planning is done using forecasts rather than actual demand. Examples include stereo systems and television sets.</p>
+<ul>
+<li>Make to order:</li>
+</ul>
+<p>  After entering the sales order the schedule and planning process creates a job to fulfill the order. Once the job is completed the on hand of that particular customer ordered item is increased in the inventory and later is shipped to the customer.</p>
+<p>  Standard products are designed and published in catalogs. The actual product is built on receipt of the customer order. Customers might be able to choose certain characteristics optionally. An example of this would be machine building. Each customer order may have an associated project to manage the production and delivery schedule.</p>
+<ul>
+<li><p>Configure to order(ATO, PTO, CTO)</p>
+<p>:</p>
+<p><strong><em>Pick-To-Order (PTO)</em></strong><br>Under this strategy, a variety of shippable components are stocked. Customers order <strong><em>“kits”</em></strong> or collections of these parts under a single item number; kits can be either predefined or configured by the customer during the order entry process. The components of the kit are picked and shipped from stock; there is no additional value added after the customer order, other than perhaps packing the components for shipment. A computer system (including the central processing unit, monitor, and printer) is an example of this.</p>
+</li>
+</ul>
+<p><strong><em>Assemble-To-Order (ATO)</em></strong><br>These are also standard products and are often configured by customers. You don’t wait until the order is received to build an ATO product. Subassemblies are manufactured prior to receiving the order and when the order is received, the subassemblies are assembled to make the finished product. Automobiles and computers are examples of this type of production.<br>**<br><strong><em>**Configure to order(CTO)</em></strong><br>It includes both the ATO and PTO.Similar to the above processes but here the customer has the facility of configuring the items on the basis of its requirement.</p>
+<ul>
+<li></li>
+<li><p>Dropship to customer: </p>
+<p>Drop shipments is a method of fullfilling sales order by selling products without the order taker handling, stocking, or delivering them. The seller buys a product and the supplier ships the product directly to the seller’s customer. Drop shipments are done because of the following reasons</p>
+<p>Customer requires an item that is not normally stocked<br>Customer requires a large quantity of the item which is not available with you<br>It is more economical when the supplier ships directly to the customer</p>
+<p>In drop ship cycle, the seller receives a sales order from the customer and sends a purchase order to the supplier. The supplier ships directly to the customer. The seller receives an invoice from the supplier and sends an invoice to the customer. The seller receives an invoice from the supplier and sends an invoice to the customer.</p>
+</li>
+</ul>
+<ul>
+<li>Internal Order:</li>
+</ul>
+<p>  When the material required in one organization is available in another org we create an internal requisition and oracle converts that to a SO in the org where the item is available. The complete process is as shown below.</p>
+<ul>
+<li>Back to Back order:</li>
+</ul>
+<p>  It involves the concept of soft-pegging.</p>
+<p><strong>Important setups</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225647.png" alt=""></p>
 
       
 
@@ -678,7 +500,7 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/10/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Introduction%20to%20OM/">展开全文 >></a>
         </p>
       
 
@@ -708,20 +530,20 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
 
   
-    <article id="post-Python-Directory-and-Files-Management-Methods" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Shipping Execution" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/03/Python-Directory-and-Files-Management-Methods/">Python Directory and Files Management Methods</a>
+      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Execution/">OM Shipping Execution</a>
     </h1>
   
 
         
-        <a href="/2020/01/03/Python-Directory-and-Files-Management-Methods/" class="archive-article-date">
-  	<time datetime="2020-01-03T01:06:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-03</time>
+        <a href="/2020/05/22/OM%20Shipping%20Execution/" class="archive-article-date">
+  	<time datetime="2020-05-22T00:43:50.734Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -734,29 +556,11 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Get-Current-Directory"><a href="#Get-Current-Directory" class="headerlink" title="Get Current Directory"></a>Get Current Directory</h1><p>We can get the present working directory using the <em>getcwd()</em> method.</p>
-<p>This method returns the current working directory in the form of a string. We can also use the <em>getcwdb()</em> method to get it as bytes object.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.getcwd()</span><br><span class="line"><span class="string">'D:\\ProgramFiles\\Python365'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.getcwdb()</span><br><span class="line"><span class="string">b'D:\\ProgramFiles\\Python365'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(os.getcwd())</span><br><span class="line">D:\ProgramFiles\Python365</span><br></pre></td></tr></table></figure>
+        <h1 id="Shipping-Execution"><a href="#Shipping-Execution" class="headerlink" title="Shipping Execution"></a>Shipping Execution</h1><p>You can manage shipping information such as trips, trip stops, deliveries, delivery lines, containers, and freight costs in the Shipping Transactions form. In addition, you can complete the following shipping tasks:<br>**<br>Pick Release**<br>■ Release eligible delivery lines based on defined picking criteria.<br>■ Select the Release Sequence Rule to control the order in which picking lines are allocated to inventory.<br>■ Enter or validate shipped quantities, back ordered quantities, staged quantities, and inventory control information for delivery lines (after pick release).</p>
+<p><strong>Trip and Delivery Planning</strong><br>■ Create a trip or delivery.<br>■ Assign delivery lines to a delivery or a container.<br>■ Schedule pick-ups and drop-offs.</p>
+<p><strong>Ship Confirm</strong><br>■ Assign delivery lines to trips and deliveries.<br>■ Auto-create a trip and close stops.<br>■ Ship confirm or back order a delivery.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225226.png" alt=""></p>
 
-<h1 id="Changing-Directory"><a href="#Changing-Directory" class="headerlink" title="Changing Directory"></a>Changing Directory</h1><p>using the <em>chdir()</em> method.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.chdir(<span class="string">"d:\\programfiles"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.getcwd()</span><br><span class="line"><span class="string">'d:\\programfiles'</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="List-Directories-and-Files"><a href="#List-Directories-and-Files" class="headerlink" title="List Directories and Files"></a>List Directories and Files</h1><p>using the <em>listdir()</em> method.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.listdir()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.listdir(<span class="string">'d:\\'</span>)</span><br></pre></td></tr></table></figure>
-
-<h1 id="Making-a-New-Directory"><a href="#Making-a-New-Directory" class="headerlink" title="Making a New Directory"></a>Making a New Directory</h1><p>using the <em>mkdir()</em> method.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.mkdir(<span class="string">"test"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.listdir()</span><br></pre></td></tr></table></figure>
-
-<h1 id="Renaming-a-Directory-or-a-File"><a href="#Renaming-a-Directory-or-a-File" class="headerlink" title="Renaming a Directory or a File"></a>Renaming a Directory or a File</h1><p>The <em>rename()</em> method can rename a directory or a file.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.rename(<span class="string">"test"</span>,<span class="string">"test_new"</span>)</span><br></pre></td></tr></table></figure>
-
-<h1 id="Removing-Directory-or-File"><a href="#Removing-Directory-or-File" class="headerlink" title="Removing Directory or File"></a>Removing Directory or File</h1><p>A file can be removed (deleted) using the <em>remove()</em> method.</p>
-<p>Similarly, the <em>rmdir()</em> method removes an empty directory.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.rmdir(<span class="string">"test_new"</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.remove(<span class="string">'old.txt'</span>)</span><br></pre></td></tr></table></figure>
-
-<p>However, note that <em>rmdir()</em> method can only remove empty directories.</p>
-<p>In order to remove a non-empty directory we can use the <em>rmtree()</em> method inside the shutil module.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> shutil</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>shutil.rmtree(<span class="string">'test'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.listdir()</span><br></pre></td></tr></table></figure>
       
 
       
@@ -768,7 +572,7 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/03/Python-Directory-and-Files-Management-Methods/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Execution/">展开全文 >></a>
         </p>
       
 
@@ -798,20 +602,20 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
 
   
-    <article id="post-python-send-mail" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Setup Steps  VI - Payment terms, Accounting Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/02/python-send-mail/">python send mail</a>
+      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/">OM Setup Steps  VI - Payment terms, Accounting Rules</a>
     </h1>
   
 
         
-        <a href="/2020/01/02/python-send-mail/" class="archive-article-date">
-  	<time datetime="2020-01-02T08:49:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-02</time>
+        <a href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/" class="archive-article-date">
+  	<time datetime="2020-05-22T00:43:45.224Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -824,7 +628,40 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> smtplib</span><br><span class="line"><span class="keyword">from</span> email.header <span class="keyword">import</span> Header</span><br><span class="line"><span class="keyword">from</span> email.mime.multipart <span class="keyword">import</span> MIMEMultipart</span><br><span class="line"><span class="keyword">from</span> email.mime.text <span class="keyword">import</span> MIMEText</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_mail_config_data</span><span class="params">(mail_key)</span>:</span></span><br><span class="line">    os.chdir(os.path.dirname(os.path.abspath(__file__)))</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'Mail_Configure_Test.json'</span>, <span class="string">'rt'</span>) <span class="keyword">as</span> jsonFile:</span><br><span class="line">        json_string = json.load(jsonFile)</span><br><span class="line">        data = json_string[mail_key]</span><br><span class="line">    <span class="keyword">return</span> data</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">btn_send_mail_click</span><span class="params">()</span>:</span></span><br><span class="line">    host_server = get_mail_config_data(<span class="string">"host_server"</span>)  <span class="comment">#</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 发件人的邮箱</span></span><br><span class="line">    sender_mail = get_mail_config_data(<span class="string">"sender_mail"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#################s####################</span></span><br><span class="line">    <span class="comment"># receiver_mail = get_mail_config_data("receiver_mail")</span></span><br><span class="line">    <span class="comment"># cc_receiver_mail = get_mail_config_data("cc_receiver_mail")</span></span><br><span class="line"></span><br><span class="line">    receiver_mail = get_mail_config_data(<span class="string">"receiver_mail"</span>)</span><br><span class="line">    cc_receiver_mail = get_mail_config_data(<span class="string">"cc_receiver_mail"</span>)</span><br><span class="line"></span><br><span class="line">    receiver = list((receiver_mail).split(<span class="string">","</span>))</span><br><span class="line">    cc_receiver = list((cc_receiver_mail).split(<span class="string">","</span>))</span><br><span class="line">    print(receiver)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 邮件的正文内容</span></span><br><span class="line">    mail_content = <span class="string">"All，"</span> \</span><br><span class="line">                   <span class="string">"&lt;p&gt;The data loading process has been finished, "</span> \</span><br><span class="line">                   <span class="string">"thanks a lot for your cooperation!&lt;/p&gt;"</span></span><br><span class="line">    <span class="comment"># 邮件标题</span></span><br><span class="line">    mail_title = <span class="string">"The data loading process has been finished"</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 邮件正文内容</span></span><br><span class="line">    msg = MIMEMultipart()</span><br><span class="line">    msg[<span class="string">"Subject"</span>] = Header(mail_title, <span class="string">'utf-8'</span>)</span><br><span class="line">    msg[<span class="string">"From"</span>] = sender_mail</span><br><span class="line">    msg[<span class="string">'To'</span>] = <span class="string">", "</span>.join(receiver)</span><br><span class="line">    msg[<span class="string">'Cc'</span>] = <span class="string">", "</span>.join(cc_receiver)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 邮件正文内容</span></span><br><span class="line">    msg.attach(MIMEText(mail_content, <span class="string">'html'</span>, <span class="string">'utf-8'</span>))</span><br><span class="line"></span><br><span class="line">    sat_mail = smtplib.SMTP(host_server)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># smtp.set_debuglevel(1)</span></span><br><span class="line">    sat_mail.sendmail(sender_mail, receiver+cc_receiver, msg.as_string())</span><br><span class="line">    sat_mail.quit()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">btn_send_mail_click()</span><br></pre></td></tr></table></figure>
+        <h1 id="Setup-Steps-VI-Payment-terms-Accounting-Rules"><a href="#Setup-Steps-VI-Payment-terms-Accounting-Rules" class="headerlink" title="Setup Steps : VI - Payment terms, Accounting Rules"></a>Setup Steps : VI - Payment terms, Accounting Rules</h1><p><strong>Step 6<br>Invoicing</strong><br>Define invoicing information, including payment terms, invoicing and accounting rules, Autoaccounting parameters, territories, and invoice sources.<br>This step is required if you plan on transferring invoicing information to Oracle Receivables. Several defaulting values are provided.</p>
+<p><a href="http://www.oracleug.com/user-guide/order-management/payment-terms" target="_blank" rel="noopener"><strong><em>Payment terms</em></strong></a><br><a href="http://www.oracleug.com/user-guide/order-management/payment-terms" target="_blank" rel="noopener">http://www.oracleug.com/user-guide/order-management/payment-terms</a></p>
+<hr>
+<p><strong>***Entering Invoices with Rules</strong><br>Invoicing rules let you determine when to recognize your receivable for invoices that span more than one accounting period. You can assign invoicing rules to invoices that you manually enter or import into Receivables through AutoInvoice.<br>Receivables provides the following invoicing rules:</p>
+<ul>
+<li>Bill in Advance: Use this rule to recognize your receivable immediately.</li>
+<li>Bill in Arrears: Use this rule to recognize the receivable at the end of the revenue recognition schedule.</li>
+</ul>
+<p>Accounting rules determine the number of periods and percentage of total revenue to record in each accounting period.</p>
+<p>You need to set the invoicing rule to either bill in advance or bills in arrears to setup the accounting rule. If you don’t select any value in the invoicing rule then system won’t allow you to enter the accounting rule and the accounting entries are created automatically once the transaction is completed (11i Only). You need to run revenue recognization program for generating account entries for transactions with invoicing rule and accounting rule.***</p>
+<hr>
+<p>Notes :** Invoicing and Accounting Rules are not applicable if you are using the Cash Basis method of accounting. If you use the Cash Basis method, AutoInvoice will reject any transaction lines that are associated with invoice or accounting rules.<strong>*<br>***</strong>Accounting Rules<strong>***<br>*</strong>Define accounting rules to create revenue recognition schedules for your invoices. Accounting rules determine the number of periods and percentage of total revenue to record in each accounting period. You can use accounting rules with transactions that you import into Receivables using AutoInvoice and with invoices that you create manually in the transaction windows. You can define an unlimited number of accounting rules.<br>When you run the Revenue Recognition program for an invoice that is associated with one or more accounting rules, Receivables creates the invoice’s revenue distributions for the period or periods in which the rules fall.</p>
+<p><strong>Define an accounting rule:</strong><br><strong>1.</strong> Navigate to the Invoicing and Accounting Rules window. AR -&gt; Set up -&gt; Transactions -&gt; Accounting rule.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225933.png" alt=""></p>
+<p>Note: Revenue Recognition creates accounting distributions for all periods of status Open, Future, or Not Open. If any period has a status of Closed or Close Pending, then Revenue Recognition creates the distributions in the next Open, Future, or Not Open period.***</p>
+<hr>
+<ul>
+<li>Depending on your business needs, you may require <em>deferred accounting rules</em>, which you can create by selecting the Deferred Revenue check box during rule definition. Deferred accounting rules let you defer revenue to an unearned revenue account until you are ready to specify the revenue recognition schedule.</li>
+<li>You can assign a default accounting rule to your <em>items in the Master Item</em> window (Invoicing tabbed region) and to your Standard Memo Lines in the Standard Memo Lines window.</li>
+</ul>
+<p><strong>2. Enter an accounting rule Type.</strong><br>Enter ’Accounting, Fixed Duration’ to prorate revenue recognition evenly over a predefined period of time. The revenue recognition schedule is always the same every time you choose this accounting rule. For example, if you have four schedules for your rule with this type, you will recognize twenty–five percent of your revenue at the end of each schedule.</p>
+<p>Enter ’Accounting, Variable Duration’ to be able to specify the number of periods over which you want to recognize revenue for invoices to which you assign this rule. You can assign this type of accounting rule to invoices that you manually enter in the Transaction window or import into Receivables using AutoInvoice. The revenue recognition schedule changes for invoices that are assigned this type of accounting rule depending upon the value that you either pass through AutoInvoice or specify when you manually enter an invoice.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521230007.png" alt=""></p>
+<p><strong>3. Enter the Period to use for your accounting rule schedule</strong>. You can choose from any of the Period Types you defined, but you can only choose a period type that has overlapping dates if it is an adjusting period. In addition, you can only choose ’Specific Date’ as your period type for accounting rules to which you have assigned a type of ’Accounting, Fixed Duration.’ You can only update this field for the accounting rule ’IMMEDIATE.’</p>
+<p><strong>4.</strong> If this accounting rule type is ’Accounting, Fixed Duration,’ enter the Number of Periods to use for your accounting rule schedule. For example, if you entered a period of ’Weekly’ and you enter ’3’ here, Receivables creates a rule schedule for three weekly periods.</p>
+<p><strong>5.</strong> Define your revenue recognition schedule for this accounting rule. Enter the percentages of revenue to recognize within each period of your accounting rule.<br>If this accounting rule type is ’Accounting, Fixed Duration,’ Receivables displays a rule schedule according to the period and number of periods you entered. Receivables determines the schedule by evenly prorating all the revenue across all periods (you can change this information). The sum of all periods for this type must equal 100 percent.</p>
+<p>If this accounting rule type is ’Accounting, Variable Duration,’ you do not need to enter any information. Receivables does not display the default rule schedule for an accounting rule of this type because the number of periods is unknown. However, if you want to recognize a specific revenue percentage in the first period, you can enter that percentage here. In this case, Receivables prorates the remaining revenue percentage across the remaining periods.<br>Receivables uses the number of periods that you either pass through AutoInvoice or enter manually in the Transaction window to determine the payment schedule of your accounting rule.</p>
+<p>We can default invocing rule and accounting rule from OM transaction type.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521230046.png" alt=""></p>
+<p><strong>Assign Invoicing and Accounting Rules</strong><br>For invoices that you enter manually, you can assign an invoicing rule in the Transactions window. You can assign a default invoicing and accounting rule to your items in the Master Item window (Invoicing tabbed region) and to your Standard Lines in the Standard Memo Lines window.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521230129.png" alt=""></p>
+<p>If you are entering an invoice manually, you must enter an invoicing rule on the invoice header or you will not be able to associate accounting rules with the invoice lines. If you enter an invoicing rule and include items or standard memo lines that have associated accounting rules, the accounting rules default for the invoice line. You can change or manually enter the accounting rules for these invoice lines if there has been no activity against the invoice.</p>
+<p>Note: You can also assign invoicing rules to items and standard lines, but these will not be used during manual<br>invoice entry. This is because the invoicing rule assigned at the invoice header will override the invoicing rules defined for the item or standard line. </p>
+
       
 
       
@@ -836,7 +673,7 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/02/python-send-mail/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/">展开全文 >></a>
         </p>
       
 
@@ -866,20 +703,20 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
 
   
-    <article id="post-fixed-layout" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Managing PackingContainersLPNs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/27/fixed-layout/">fixed_layout</a>
+      <a class="article-title" href="/2020/05/21/OM%20Managing%20PackingContainersLPNs/">OM Managing PackingContainersLPNs</a>
     </h1>
   
 
         
-        <a href="/2019/12/27/fixed-layout/" class="archive-article-date">
-  	<time datetime="2019-12-27T07:44:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-27</time>
+        <a href="/2020/05/21/OM%20Managing%20PackingContainersLPNs/" class="archive-article-date">
+  	<time datetime="2020-05-21T14:29:11.843Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
 </a>
         
 
@@ -892,7 +729,30 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="固定layout大小，隐藏最大化、最小化"><a href="#固定layout大小，隐藏最大化、最小化" class="headerlink" title="固定layout大小，隐藏最大化、最小化"></a>固定layout大小，隐藏最大化、最小化</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MainWindow.setFixedSize(<span class="number">900</span>, <span class="number">500</span>)</span><br><span class="line">MainWindow.setWindowFlags(QtCore.Qt.WindowCloseButtonHint)</span><br></pre></td></tr></table></figure>
+        <h1 id="Managing-Packing-Containers-LPNs"><a href="#Managing-Packing-Containers-LPNs" class="headerlink" title="Managing Packing/Containers/LPNs"></a>Managing Packing/Containers/LPNs</h1><p>In the Shipping Transactions form, you can create and manage containers (LPNs) at any point in the shipping process. If you are using the Auto-packing feature, containers can be automatically packed using the container-item relationships set<br>up in the Container-Item Relationships window.<br>You can create containers without assigning them to a delivery. This is useful if you want to create multiple containers of the same type then pack them with unassigned delivery lines.</p>
+<p>(Note: LPN is an acronym for License Plate Number. A packing container has a license plate number for unit identification and reporting capability, so containers are also called LPNs in Oracle Shipping Execution.)</p>
+<p>Customer Items can be associated with containers within Oracle Inventory. This association is used when packing the Customer Item into a container in Oracle Shipping Execution. When the Customer Item is packed, the container associated with the Customer Item in Oracle Inventory is used as the default container.</p>
+<p>You can pack multiple containers with multiple lines using one of the following packing methods:<br>■ Auto-packing<br>■ Manual packing<br>■ Packing Workbench    </p>
+<ul>
+<li>Equal packing: splits the delivery lines equally between the selected LPNs.You cannot use this method with delivery lines of serial controlled items.</li>
+<li>​    Sequential packing: fully packs one container at a time to its capacity (weight, volume, or quantity) before packing the next selected container.</li>
+</ul>
+<h3 id="1-Auto-packing-Delivery-Lines-into-Containers"><a href="#1-Auto-packing-Delivery-Lines-into-Containers" class="headerlink" title="1.Auto-packing Delivery Lines into Containers"></a>1.Auto-packing Delivery Lines into Containers</h3><p>***Auto-packing provides a convenient and quick way of automatically packing delivery lines into containers (LPNs). The delivery lines are packed into LPNs based on the container-item relationship set up in Oracle Shipping Execution or in Oracle<br>Inventory (defined as a customer item) and the setting of the Shipping parameter Percent Fill Basis must be set to Quantity. The container-item relationship defines the container that is used for packing the delivery lines. If Percent Fill Basis is set to Quantity, then auto-pack will look at Container-Load Relationships set up for the item and the Detail Container.<br>If multiple container-item relationships exist for the same item, the Preferred setting in the Container-Item Relationships window indicates the default container-item relationship used for that item.<br>Auto-packing can also be performed for those items in Oracle Inventory that are defined as Customer Items.</p>
+<p><em>Using the Auto-pack Master Option</em><br>■ If you select Auto-pack, then only the detail LPNs are created and packed.<br>■ If you select Auto-pack Master, the delivery lines are packed into the detail container, and the detail containers are packed into the parent/master container in one action:<br>For example, a delivery line with a quantity of 12 of Item A has a container-load relationship set up so that 6 of Item A fits into Container A and 2 of Container A fits into Container B (the percent fill basis is set to quantity). If you run Auto-pack Master, the line is split into 2 lines of 6, the first line is packed into the first container, the second line is packed into the second container, and the two detail LPNs (2 Container As) are packed into Container B.<br>■ The Auto-pack Master option is available from the Actions menu in the Lines/LPNs tab in the Shipping Transactions form. It is also available at the delivery level</p>
+<p><strong>1.Container type setups are done in inventory -&gt; Setups -&gt;Item -&gt;Container</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210209.png" alt=""></p>
+<p><strong>2. Crate a container Item in item master.</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210421.png" alt=""></p>
+<p><strong>3.Shipping &gt; Setup &gt; Container Load Details &gt; Organizations &gt; [OK]</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210547.png" alt=""></p>
+<p><strong>4.Auto pack it</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210618.png" alt=""></p>
+<h3 id="2-Manual-packing-Delivery-Lines-into-Containers"><a href="#2-Manual-packing-Delivery-Lines-into-Containers" class="headerlink" title="2. Manual packing Delivery Lines into Containers"></a>2. Manual packing Delivery Lines into Containers</h3><p>It involves two steps </p>
+<p>​               i. Creating an LPN<br>​               ii. Assign LPN to lines/deliveries</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521211014.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521211043.png" alt=""></p>
+<h3 id="3-Packing-Work-Bench-Lines-into-Containers"><a href="#3-Packing-Work-Bench-Lines-into-Containers" class="headerlink" title="3.Packing Work Bench Lines into Containers"></a>3.Packing Work Bench Lines into Containers</h3><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/se036_0.png" alt=""></p>
+
       
 
       
@@ -904,7 +764,7 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/27/fixed-layout/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/21/OM%20Managing%20PackingContainersLPNs/">展开全文 >></a>
         </p>
       
 
@@ -934,20 +794,20 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
 
   
-    <article id="post-python-qt5-no-object-in-layout" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Create Delivery" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/27/python-qt5-no-object-in-layout/">python_qt5_no_object_in_layout</a>
+      <a class="article-title" href="/2020/05/21/OM%20Create%20Delivery/">OM Create Delivery</a>
     </h1>
   
 
         
-        <a href="/2019/12/27/python-qt5-no-object-in-layout/" class="archive-article-date">
-  	<time datetime="2019-12-27T07:40:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-27</time>
+        <a href="/2020/05/21/OM%20Create%20Delivery/" class="archive-article-date">
+  	<time datetime="2020-05-21T14:29:11.841Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
 </a>
         
 
@@ -960,7 +820,40 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="生成的UI-py代码里添加"><a href="#生成的UI-py代码里添加" class="headerlink" title="生成的UI.py代码里添加"></a>生成的UI.py代码里添加</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">    super(Ui_MainWindow, self).__init__()</span><br><span class="line">    self.setupUi(self)</span><br><span class="line">    self.retranslateUi(self)</span><br></pre></td></tr></table></figure>
+        <h1 id="Create-Delivery"><a href="#Create-Delivery" class="headerlink" title="Create Delivery"></a>Create Delivery</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212422.png" alt=""></p>
+<p>A delivery consists of set delivery lines that are <strong>scheduled to be shipped to a customer’s ship-to location on a specific date and time</strong>. In a delivery, you can include items from different sales orders as well as back orders. You can either manually or automatically group delivery lines to create a delivery. If a delivery is auto-created, the delivery lines are grouped together by the mandatory default criteria, ship-from location and ship-to location. However, additional grouping criteria can be included.</p>
+<p>1.1 In operating unit level we can control the auto create delivery in shipping parameter.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212606.png" alt=""></p>
+<p>1.2. Deliveries can be automatically created during the process of pick release by enabling auto-create delivery in pick release form.</p>
+<p>1.3. we can manually create the delivery number in shipping transaction form.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212650.png" alt=""></p>
+<p>2.1 Delivery parameters enable you to define how to group delivery lines for a delivery. The mandatory default attributes are Ship From Location and Ship To Location; however, you can select additional optional grouping parameters that include:</p>
+<ul>
+<li>Customer</li>
+<li>Freight Terms</li>
+<li>FOB Code</li>
+<li>Intermediate Ship To location</li>
+<li>Ship Method</li>
+</ul>
+<p>The delivery attributes determine how delivery lines are grouped into deliveries when auto-creating deliveries. For example, if the grouping attribute Customer is selected, the delivery lines are grouped into deliveries by customer: for example, deliveries for Customer A are grouped into Delivery A, deliveries for Customer B are grouped into Delivery B.</p>
+<p>You can select more than one grouping attribute to refine your grouping criteria further: for example, if you select Customer and Ship Method as grouping criteria, delivery lines with the same customer and carrier criteria are grouped into deliveries.<br>If each optional grouping attribute is checked, the delivery’s corresponding field cannot be updated if delivery lines are assigned to the delivery. This ensures that the delivery lines’ grouping criteria is not broken by a different attribute value: for example, if someone tries to select a different ship method.</p>
+<p>If each optional grouping attribute is unchecked, its field in the delivery record can be updated until the ship confirm stage.<br>For example, if you want to change the Ship Method in the delivery and do not need to enforce it as a grouping attribute, you can unselect Ship Method. Do not change these options if you have deliveries that are not ship confirmed.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212736.png" alt=""></p>
+<p>Optionally, select a <strong>Auto-create Delivery Criteria</strong> if you enabled the Auto-create Delivery option on the Pick Release tab.</p>
+<ul>
+<li>Select Within An Order to auto-create deliveries whose lines all belong to the same sales order and match on the Delivery Grouping Attributes.</li>
+<li>Select Across Orders to auto-create deliveries across orders. All selected delivery lines that match on the Delivery Grouping Attributes are eligible to appear on one delivery.</li>
+</ul>
+<p><strong>Select an Appending Limit.</strong><br>The Appending Limit enables you to indicate the point at which you want to stop the system from adding lines to a delivery (the point that ends the ability to merge deliveries). You must set the Appending Limit to a value other than Do Not Append in order to use the Append Deliveries option within Release Rules and the Process Deliveries SRS.</p>
+<p>The Appending Limits include:</p>
+<ul>
+<li>Do Not Append</li>
+<li>Start of Staging</li>
+<li>End of Staging</li>
+<li>Start of Packing (Oracle WMS enabled organizations only)</li>
+<li>Start of Shipping (Oracle WMS enabled organizations only)</li>
+</ul>
+
       
 
       
@@ -972,7 +865,7 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/27/python-qt5-no-object-in-layout/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/21/OM%20Create%20Delivery/">展开全文 >></a>
         </p>
       
 
@@ -1002,20 +895,20 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
 
   
-    <article id="post-List-users-on-CentOS" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Configuring Picking Process" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/11/List-users-on-CentOS/">List users on CentOS</a>
+      <a class="article-title" href="/2020/05/21/OM%20Configuring%20Picking%20Process/">OM Configuring Picking Process</a>
     </h1>
   
 
         
-        <a href="/2019/12/11/List-users-on-CentOS/" class="archive-article-date">
-  	<time datetime="2019-12-11T07:30:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-11</time>
+        <a href="/2020/05/21/OM%20Configuring%20Picking%20Process/" class="archive-article-date">
+  	<time datetime="2020-05-21T14:29:11.836Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
 </a>
         
 
@@ -1028,7 +921,25 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">awk -F: '&#123;print $1&#125;' /etc/passwd</span><br><span class="line"></span><br><span class="line">cat /etc/passwd</span><br><span class="line"></span><br><span class="line">more /etc/passwd</span><br><span class="line"></span><br><span class="line">less /etc/passwd</span><br><span class="line"></span><br><span class="line">cut -d: -f1 /etc/passwd</span><br></pre></td></tr></table></figure>
+        <h1 id="Configuring-Picking-Process"><a href="#Configuring-Picking-Process" class="headerlink" title="Configuring Picking Process"></a>Configuring Picking Process</h1><p>You can determine the number of pick release steps the system will prompt to move material from pick release to ship confirmation. These steps are:</p>
+<ol>
+<li><p>Pick Release</p>
+</li>
+<li><p>Move Order Line Allocation (detailing)</p>
+</li>
+<li><p>Move Order Line Pick Confirmation</p>
+</li>
+</ol>
+<p><strong>Pick Release</strong><br>Oracle Shipping Execution’s Pick Release process creates move orders. One order is created per pick release batch per organization, so if you pick release across multiple organizations, one move order is generated in each facility. One move<br>order line is generated for each order line included in the picking batch. That move order line includes the item, quantity, the staging location (the destination sub inventory and locator) and a source sub inventory and locator if one was specified<br>on the sales order line or on the Release Sales Orders window.</p>
+<p>For non-reservable items, allocation and pick release run, but suggestions are not created during pick release, and pick confirm will not run for the item. You can print pick slips, but they will not be detailed with sub-inventory and stock locator to pick from, however they will list the item and quantity to be picked. Auto-allocate should be Yes and Auto-pick-confirm can be set to any.</p>
+<p><strong>Detail Line Allocation (Detailing)</strong><br>To release the move order lines created at Pick Release to the warehouse and to print pick slips, the lines must be allocated. The allocation process for a pick wave move order line also creates a high level (organization level) reservation for the item(s) if no previous reservations exist for them. You can choose to do this immediately after the move order lines are created or to postpone this step until a later point in time. Once the lines are allocated, they have a status of Released to<br>Warehouse.</p>
+<p><strong>The reservation is a soft reservation and from the transact move order form we can back order the move order line and the quantity would be available for reservation again.</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521213026.png" alt=""></p>
+<p>Postponing the detailing process might be employed by organizations that pick release across multiple warehouses but prefer to enable each warehouse to determine when to release their order lines to the floor. Detailing the order lines immediately after they are created is called auto-detailing. Postponing the detailing process is referred to as manual-detail. You can set up a default detailing mode in the <strong>Shipping Parameters</strong> window. This default can be overridden at each Pick Release through the Release Sales Orders window.</p>
+<p><u><strong>Pick Confirmation</strong></u><br>The move order line details must be transacted (in Inventory) to confirm the material drop-off in staging. Pick confirmation executes the sub inventory transfer that systematically moves the material from its source location in the warehouse to<br>the staging location. Pick Confirmation automatically transfers the high level reservation to a allocated reservation (including lots, sub inventory and locators) in the staging location.<br>Inventory updates Shipping Execution with the results of the pick confirm:<br>■ Pick Confirmed quantity is assigned a status of Staged/Pick Confirmed.<br>■ Unconfirmed quantity is assigned a status of Backordered.</p>
+<p><em>Pick confirmation follows the allocation and reservation process automatically if both the Auto Allocate and Auto Pick Confirm options are selected in the Release Rules window. Pick Confirm always follows the detailing and reservation process.<br>If Auto Allocate is not chosen, it is not possible to Auto Pick Confirm.</em></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521213304.png" alt=""></p>
+
       
 
       
@@ -1040,7 +951,77 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/11/List-users-on-CentOS/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/21/OM%20Configuring%20Picking%20Process/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Pick Slip Grouping Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/21/OM%20Pick%20Slip%20Grouping%20Rules/">OM Pick Slip Grouping Rules</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/21/OM%20Pick%20Slip%20Grouping%20Rules/" class="archive-article-date">
+  	<time datetime="2020-05-21T14:29:11.829Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Pick-Slip-Grouping-Rules"><a href="#Pick-Slip-Grouping-Rules" class="headerlink" title="Pick Slip Grouping Rules"></a>Pick Slip Grouping Rules</h1><p>You can create grouping rules to organize how picking lines for released sales orders are grouped on to pick slips. For example, if you select Delivery as a grouping criteria, all picking lines for the same delivery are grouped together on a pick slip. If there are multiple deliveries, multiple pick slips are created.<br>You can also define your grouping criteria further by selecting additional grouping attributes. For example, if you select Delivery and Carrier as grouping criteria, picking lines for the same delivery and carrier are grouped together on a pick slip.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521214256.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/21/OM%20Pick%20Slip%20Grouping%20Rules/">展开全文 >></a>
         </p>
       
 
@@ -1072,7 +1053,7 @@ SQL&gt;</code></pre><p>Manage database with Oracle Enterprise Manager:</p>
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
     </nav>
   
 

@@ -8,10 +8,12 @@
   <link rel="dns-prefetch" href="https://dejavn.github.io">
   <title>Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Oracle EBS,Python,Shell">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
 <meta property="og:url" content="https:&#x2F;&#x2F;dejavn.github.io&#x2F;index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="Oracle EBS,Python,Shell">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
   
@@ -151,20 +153,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-OM Setup Steps  I - V" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Shipping Tolerances" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/">OM Setup Steps  I - V</a>
+      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Tolerances/">OM Shipping Tolerances</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:50.742Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Shipping%20Tolerances/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:53:18.692Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -177,126 +179,27 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Setup-Steps-I-V"><a href="#Setup-Steps-I-V" class="headerlink" title="Setup Steps : I - V"></a>Setup Steps : I - V</h1><p>The following is a list of each setup step defined in detail.</p>
-<p><strong>Step 1<br>Flexfields</strong><br>Define key and descriptive flexfields to capture additional information about orders and transactions.<br>This step is required for Key Flexfields, and optional if you plan on using the functionality surrounding Descriptive Flexfields. Several defaulting values are provided.</p>
-<p><strong>Step 2<br>Multiple Organizations</strong><br>Define multiple organizations in Oracle Inventory.<br>This step is optional.</p>
-<p><strong>Step 3<br>Inventory Organizations</strong><br>Define inventory organizations (warehouses), parameters, subinventories, and picking rules in Oracle Inventory.<br>You must define at least one item validation organization and at least one organization that acts as an inventory source for orders fulfilled internally. If you plan to drop ship some orders, you must also define at least one logical organization for receiving purposes. Your item validation organization can be the same as your inventory source or your logical receiving organization, but you cannot use one organization for all three purposes. See Step 5 for setting your item validation organization.<br>This step is required.</p>
-<p><strong>Step 4<br>Profile Options</strong><br>Define profile options to specify certain implementation parameters, processing options, and system options.<br>This step is required.</p>
-<p><strong>Step 5<br>Parameters</strong><br>Set your Order Management Parameters to validate items, enable customer relationships, and operating unit defaults.<br>This step is required.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Introduction to OM" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Introduction%20to%20OM/">OM Introduction to OM</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Introduction%20to%20OM/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:50.740Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Introduction-to-OM"><a href="#Introduction-to-OM" class="headerlink" title="Introduction to OM"></a>Introduction to OM</h1><p>The Oracle Order Management Suite consists of:</p>
+        <h1 id="Shipping-Tolerances"><a href="#Shipping-Tolerances" class="headerlink" title="Shipping Tolerances"></a>Shipping Tolerances</h1><p>Oracle Order Management provides you with the ability to capture shipping tolerance levels for over and under shipments recorded during ship confirmation. The shipping tolerance feature enables you to define various shipping tolerance<br>levels for ordered and expected return quantities. Order Management shipping tolerances are used to validate the percentage of the ordered quantity. Once shipping tolerances have been defined, Order Management then automatically<br>fulfills order lines using the tolerances you defined.</p>
+<p><strong>Order Management’s shipping tolerances feature captures the following:</strong><br>■ Over and under shipments and returns percentages at the system, customer,site, item, site-item, and customer item levels<br>■ Different tolerances for ordered and returned quantities<br>■ Defaulted tolerances from various sources based on your defaulting rules<br>■ Automatic fulfillment of total shipped quantities for order lines within the under tolerance limit<br>■ Tolerances levels that enable you to over ship at the time of ship confirmation</p>
+<p><strong>Over Shipments</strong><br>When Oracle Shipping Execution attempts to over ship an order, Order Management processes the order based on the shipping tolerances you define. In order to perform an over shipment, Order Management:<br>■ Determines if the ship quantity is within the defined over shipment tolerance levels you defined by setting the OM: Overshipment Tolerance profile option or setting your shipment tolerances in Order Management.<br>■ Notifies the appropriate personnel when an over shipment is above the set shipping tolerance.<br>■ Issues the material for any unpicked or unreserved quantity.</p>
+<p><strong>Over Shipments Report</strong><br>Oracle Shipping Execution provides the Over Shipments Report for displaying shipping tolerances. This report displays shipping tolerance information based on</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095338.png" alt=""></p>
+<p>the customer, site, item,warehouse, ship date, and order type.</p>
+<p><strong>Under Shipments</strong><br>When Oracle Shipping Execution attempts to under ship an order, Order Management processes the order based on the shipping tolerances you define. In order to perform an under shipment, you must:<br>■ Ship confirm the quantity at the time of closing the delivery<br>■ Determine if the total quantity shipped is within the under shipment tolerances you defined. Any remaining shipment allocations are removed Under Shipment tolerances greater than 100% are treated as the equivalent of a 100% tolerance; to close order lines a shipment of a non-zero quantity is required, even if the under shipment tolerance is set to 100%.</p>
+<p><strong>Defining Shipping Tolerances</strong><br>Defining shipping tolerances are based on your customers and items or your customer site and item tolerances.</p>
+<p><strong>Prerequisites</strong><br>■ Set up your customer and customer site tolerances in the Customer window<br>■ Set up your tolerances for items in the Master Items window</p>
+<p><strong>To define shipping tolerances for orders or returns</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095427.png" alt=""></p>
 <ol>
-<li>Oracle Order Management</li>
-<li>Oracle Shipping Execution</li>
-<li>Basic Pricing</li>
+<li>Navigate to the Setup Tolerance window. Order Management &gt; Setup &gt; Shipping Tolerances</li>
+<li>Select the Customer name for the shipping tolerance.</li>
+<li>Select the customer Address for the shipping tolerance.</li>
+<li>Select the Item Number for the shipping tolerance.</li>
+<li>Enter the Over Shipment Tolerance percentage.<br>The over shipment tolerance percentage determines the amount of the shipment you can exceed at the time of ship confirmation.</li>
+<li>Enter the Under Shipment Tolerance percentage.<br>The under shipment tolerance percentage determines the minimums amount of the shipment at the time of ship confirmation. If you enter more than 100, the shipping process will use 100.</li>
+<li>Enter the Over Return Tolerance percentage for return receipts. The over return tolerance percentage determines the amount of the return you can accept above.</li>
+<li>Enter the Under Return Tolerance percentage for return receipts. The under return tolerance percentage determines the amount of the return you can accept below.</li>
 </ol>
-<p>Order Management implementation involves several phases, including setting up other integrated applications, which include Oracle General Ledger, Oracle Receivables, and Oracle Inventory. Some setup steps are optional, depending on whether you have the integrating applications installed and whether you use the associated feature. For example, if your business supports drop shipments, you should also set up Oracle Purchasing. If you sell models and kits, set up Oracle Bills of Material and Oracle<br>Configurator.</p>
-<p>\1. A detailed process of order to cash cycle is shown below</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225454.png" alt=""></p>
-<p>\2. Oracle Manufacturing and Supply Chain Applications enable customers to operate using various supply-chain stocking strategies. The term stocking strategy denotes a process that identifies and maintains the optimum level of your bills of material at which you should maintain your inventory, so that your inventory investment is a minimum. For example, in the ship building industry, you would not keep any inventory, whereas you would have to keep inventory in your retail outlets if you were selling shoes.</p>
-<p>The amount of time a customer is willing to wait to buy a product (delivery lead-time) is a very important determinant of the supply-chain stocking strategy. As the delivery lead-time decreases, the finished goods inventory moves closer to the consumption point. To a certain extent, product complexity can also be an important determinant of a supply-chain stocking strategy. Below Figure shows the typical position of each of these strategies in a lead-time–product complexity graph.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225525.png" alt=""></p>
-<ul>
-<li>Ship from stock (MTS make to stock) :</li>
-</ul>
-<p>  You have sufficient inventory items in stock and the order is directly fullfilled from inventory. In an MTS environment, you produce your products and stock them in anticipation of customer orders. A good forecasting system is very important to this environment because most of the material and capacity planning is done using forecasts rather than actual demand. Examples include stereo systems and television sets.</p>
-<ul>
-<li>Make to order:</li>
-</ul>
-<p>  After entering the sales order the schedule and planning process creates a job to fulfill the order. Once the job is completed the on hand of that particular customer ordered item is increased in the inventory and later is shipped to the customer.</p>
-<p>  Standard products are designed and published in catalogs. The actual product is built on receipt of the customer order. Customers might be able to choose certain characteristics optionally. An example of this would be machine building. Each customer order may have an associated project to manage the production and delivery schedule.</p>
-<ul>
-<li><p>Configure to order(ATO, PTO, CTO)</p>
-<p>:</p>
-<p><strong><em>Pick-To-Order (PTO)</em></strong><br>Under this strategy, a variety of shippable components are stocked. Customers order <strong><em>“kits”</em></strong> or collections of these parts under a single item number; kits can be either predefined or configured by the customer during the order entry process. The components of the kit are picked and shipped from stock; there is no additional value added after the customer order, other than perhaps packing the components for shipment. A computer system (including the central processing unit, monitor, and printer) is an example of this.</p>
-</li>
-</ul>
-<p><strong><em>Assemble-To-Order (ATO)</em></strong><br>These are also standard products and are often configured by customers. You don’t wait until the order is received to build an ATO product. Subassemblies are manufactured prior to receiving the order and when the order is received, the subassemblies are assembled to make the finished product. Automobiles and computers are examples of this type of production.<br>**<br><strong><em>**Configure to order(CTO)</em></strong><br>It includes both the ATO and PTO.Similar to the above processes but here the customer has the facility of configuring the items on the basis of its requirement.</p>
-<ul>
-<li></li>
-<li><p>Dropship to customer: </p>
-<p>Drop shipments is a method of fullfilling sales order by selling products without the order taker handling, stocking, or delivering them. The seller buys a product and the supplier ships the product directly to the seller’s customer. Drop shipments are done because of the following reasons</p>
-<p>Customer requires an item that is not normally stocked<br>Customer requires a large quantity of the item which is not available with you<br>It is more economical when the supplier ships directly to the customer</p>
-<p>In drop ship cycle, the seller receives a sales order from the customer and sends a purchase order to the supplier. The supplier ships directly to the customer. The seller receives an invoice from the supplier and sends an invoice to the customer. The seller receives an invoice from the supplier and sends an invoice to the customer.</p>
-</li>
-</ul>
-<ul>
-<li>Internal Order:</li>
-</ul>
-<p>  When the material required in one organization is available in another org we create an internal requisition and oracle converts that to a SO in the org where the item is available. The complete process is as shown below.</p>
-<ul>
-<li>Back to Back order:</li>
-</ul>
-<p>  It involves the concept of soft-pegging.</p>
-<p><strong>Important setups</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225647.png" alt=""></p>
 
       
 
@@ -309,7 +212,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Introduction%20to%20OM/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Tolerances/">展开全文 >></a>
         </p>
       
 
@@ -339,20 +242,20 @@
 
 
   
-    <article id="post-OM Shipping Execution" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Shipping Exceptions" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Execution/">OM Shipping Execution</a>
+      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Exceptions/">OM Shipping Exceptions</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Shipping%20Execution/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:50.734Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Shipping%20Exceptions/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:52:06.194Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -365,10 +268,11 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Shipping-Execution"><a href="#Shipping-Execution" class="headerlink" title="Shipping Execution"></a>Shipping Execution</h1><p>You can manage shipping information such as trips, trip stops, deliveries, delivery lines, containers, and freight costs in the Shipping Transactions form. In addition, you can complete the following shipping tasks:<br>**<br>Pick Release**<br>■ Release eligible delivery lines based on defined picking criteria.<br>■ Select the Release Sequence Rule to control the order in which picking lines are allocated to inventory.<br>■ Enter or validate shipped quantities, back ordered quantities, staged quantities, and inventory control information for delivery lines (after pick release).</p>
-<p><strong>Trip and Delivery Planning</strong><br>■ Create a trip or delivery.<br>■ Assign delivery lines to a delivery or a container.<br>■ Schedule pick-ups and drop-offs.</p>
-<p><strong>Ship Confirm</strong><br>■ Assign delivery lines to trips and deliveries.<br>■ Auto-create a trip and close stops.<br>■ Ship confirm or back order a delivery.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225226.png" alt=""></p>
+        <h1 id="Shipping-Exceptions"><a href="#Shipping-Exceptions" class="headerlink" title="Shipping Exceptions"></a>Shipping Exceptions</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095212.png" alt=""></p>
+<p>During the shipping and transportation of goods, unforeseen shipping exceptions can occur that conflict with the actual requirements of the shipper, transportation carrier, or customer.</p>
+<p>If these exceptions are not handled promptly or properly, it could result in reduced customer satisfaction and loss of business and revenue for a company. Tracking exceptions can also be helpful to identify and correct defects in the business process. The seeded exceptions are logged automatically against delivery lines, LPNs, deliveries, and trip stops when specific change management events occur.</p>
+<p>The change management events are shown in the descriptions below:</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095238.png" alt=""></p>
 
       
 
@@ -381,7 +285,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Execution/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Exceptions/">展开全文 >></a>
         </p>
       
 
@@ -411,20 +315,20 @@
 
 
   
-    <article id="post-OM Setup Steps VI - Payment terms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Shipping Document Sets" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/">OM Setup Steps VI - Payment terms</a>
+      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Document%20Sets/">OM Shipping Document Sets</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:45.226Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Shipping%20Document%20Sets/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:51:10.132Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -437,9 +341,10 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Payment-terms"><a href="#Payment-terms" class="headerlink" title="Payment terms"></a>Payment terms</h1><p>Receivables lets you define standard payment terms for your customers to specify the <strong><em>due date and discount date</em></strong> for their open items.<br>Payment terms can include a discount percent for early payment and you can assign multiple discounts to each payment term line. For example, the payment term ’2% 10, Net 30’ indicates that a customer is allowed a two percent discount if payment is received within 10 days; after 10 days, the entire balance is due within 30 days of the transaction date with no applicable discount.</p>
-<p>Prepayment check box if you are defining a prepayment payment term. Receivables feeder systems, such as Oracle Order Management, can optionally implement business processes around prepayment payment terms to indicate that a particular business transaction requires the capture of funds before the delivery of a product or service.</p>
-<p>Enter the Date on which payment is due for this installment term (optional). If you do not complete this field, enter a value for either Due Days or both Day of Month and Months Ahead</p>
+        <h1 id="Shipping-Document-Sets"><a href="#Shipping-Document-Sets" class="headerlink" title="Shipping Document Sets"></a>Shipping Document Sets</h1><p>You can group related shipping documents and other reports in a set that can be printed at <strong>pick release or ship confirm.</strong> You can include a variety of shipping documents in a set such as a Bill of Lading and Packing Slip Report and determine the print sequence.</p>
+<p>Shipping Execution provides three pre-defined (seeded) document sets:<br>■ All Pick Release documents: You can set the default Pick Release Document Set in the Pick Release tab of the Shipping Parameters window.<br>■ Ship Confirm documents: You can set the default in the Document Set field of the ship confirm window.<br>■ Pack Slip only (at ship confirm): You can set the default in the Document Set field of the ship confirm window.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095125.png" alt=""></p>
+<p>Shipping document sets are used to run and print a standard/customized report at the end of picking/shipping. Steps of the processes are given below<br>\1. Decide the report needs to be run after the pick release/shipment. If required then develop a customized report.<br>\2. Create a new document set and select the appropriate usage – Ship confirm/Pick Release<br>\3. Assign the reports in the documents with the correct sequence<br>\4. Assign the document set in Shipping parameter in pick release /shipping transaction tab.</p>
 
       
 
@@ -452,7 +357,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Document%20Sets/">展开全文 >></a>
         </p>
       
 
@@ -482,20 +387,20 @@
 
 
   
-    <article id="post-OM Setup Steps  VI - Payment terms, Accounting Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Ship Confirm Rule" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/">OM Setup Steps  VI - Payment terms, Accounting Rules</a>
+      <a class="article-title" href="/2020/05/22/OM%20Ship%20Confirm%20Rule/">OM Ship Confirm Rule</a>
     </h1>
   
 
         
-        <a href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:45.224Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/05/22/OM%20Ship%20Confirm%20Rule/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:50:03.293Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -508,317 +413,26 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Setup-Steps-VI-Payment-terms-Accounting-Rules"><a href="#Setup-Steps-VI-Payment-terms-Accounting-Rules" class="headerlink" title="Setup Steps : VI - Payment terms, Accounting Rules"></a>Setup Steps : VI - Payment terms, Accounting Rules</h1><p><strong>Step 6<br>Invoicing</strong><br>Define invoicing information, including payment terms, invoicing and accounting rules, Autoaccounting parameters, territories, and invoice sources.<br>This step is required if you plan on transferring invoicing information to Oracle Receivables. Several defaulting values are provided.</p>
-<p><a href="http://www.oracleug.com/user-guide/order-management/payment-terms" target="_blank" rel="noopener"><strong><em>Payment terms</em></strong></a><br><a href="http://www.oracleug.com/user-guide/order-management/payment-terms" target="_blank" rel="noopener">http://www.oracleug.com/user-guide/order-management/payment-terms</a></p>
-<hr>
-<p><strong>***Entering Invoices with Rules</strong><br>Invoicing rules let you determine when to recognize your receivable for invoices that span more than one accounting period. You can assign invoicing rules to invoices that you manually enter or import into Receivables through AutoInvoice.<br>Receivables provides the following invoicing rules:</p>
-<ul>
-<li>Bill in Advance: Use this rule to recognize your receivable immediately.</li>
-<li>Bill in Arrears: Use this rule to recognize the receivable at the end of the revenue recognition schedule.</li>
-</ul>
-<p>Accounting rules determine the number of periods and percentage of total revenue to record in each accounting period.</p>
-<p>You need to set the invoicing rule to either bill in advance or bills in arrears to setup the accounting rule. If you don’t select any value in the invoicing rule then system won’t allow you to enter the accounting rule and the accounting entries are created automatically once the transaction is completed (11i Only). You need to run revenue recognization program for generating account entries for transactions with invoicing rule and accounting rule.***</p>
-<hr>
-<p>Notes :** Invoicing and Accounting Rules are not applicable if you are using the Cash Basis method of accounting. If you use the Cash Basis method, AutoInvoice will reject any transaction lines that are associated with invoice or accounting rules.<strong>*<br>***</strong>Accounting Rules<strong>***<br>*</strong>Define accounting rules to create revenue recognition schedules for your invoices. Accounting rules determine the number of periods and percentage of total revenue to record in each accounting period. You can use accounting rules with transactions that you import into Receivables using AutoInvoice and with invoices that you create manually in the transaction windows. You can define an unlimited number of accounting rules.<br>When you run the Revenue Recognition program for an invoice that is associated with one or more accounting rules, Receivables creates the invoice’s revenue distributions for the period or periods in which the rules fall.</p>
-<p><strong>Define an accounting rule:</strong><br><strong>1.</strong> Navigate to the Invoicing and Accounting Rules window. AR -&gt; Set up -&gt; Transactions -&gt; Accounting rule.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521225933.png" alt=""></p>
-<p>Note: Revenue Recognition creates accounting distributions for all periods of status Open, Future, or Not Open. If any period has a status of Closed or Close Pending, then Revenue Recognition creates the distributions in the next Open, Future, or Not Open period.***</p>
-<hr>
-<ul>
-<li>Depending on your business needs, you may require <em>deferred accounting rules</em>, which you can create by selecting the Deferred Revenue check box during rule definition. Deferred accounting rules let you defer revenue to an unearned revenue account until you are ready to specify the revenue recognition schedule.</li>
-<li>You can assign a default accounting rule to your <em>items in the Master Item</em> window (Invoicing tabbed region) and to your Standard Memo Lines in the Standard Memo Lines window.</li>
-</ul>
-<p><strong>2. Enter an accounting rule Type.</strong><br>Enter ’Accounting, Fixed Duration’ to prorate revenue recognition evenly over a predefined period of time. The revenue recognition schedule is always the same every time you choose this accounting rule. For example, if you have four schedules for your rule with this type, you will recognize twenty–five percent of your revenue at the end of each schedule.</p>
-<p>Enter ’Accounting, Variable Duration’ to be able to specify the number of periods over which you want to recognize revenue for invoices to which you assign this rule. You can assign this type of accounting rule to invoices that you manually enter in the Transaction window or import into Receivables using AutoInvoice. The revenue recognition schedule changes for invoices that are assigned this type of accounting rule depending upon the value that you either pass through AutoInvoice or specify when you manually enter an invoice.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521230007.png" alt=""></p>
-<p><strong>3. Enter the Period to use for your accounting rule schedule</strong>. You can choose from any of the Period Types you defined, but you can only choose a period type that has overlapping dates if it is an adjusting period. In addition, you can only choose ’Specific Date’ as your period type for accounting rules to which you have assigned a type of ’Accounting, Fixed Duration.’ You can only update this field for the accounting rule ’IMMEDIATE.’</p>
-<p><strong>4.</strong> If this accounting rule type is ’Accounting, Fixed Duration,’ enter the Number of Periods to use for your accounting rule schedule. For example, if you entered a period of ’Weekly’ and you enter ’3’ here, Receivables creates a rule schedule for three weekly periods.</p>
-<p><strong>5.</strong> Define your revenue recognition schedule for this accounting rule. Enter the percentages of revenue to recognize within each period of your accounting rule.<br>If this accounting rule type is ’Accounting, Fixed Duration,’ Receivables displays a rule schedule according to the period and number of periods you entered. Receivables determines the schedule by evenly prorating all the revenue across all periods (you can change this information). The sum of all periods for this type must equal 100 percent.</p>
-<p>If this accounting rule type is ’Accounting, Variable Duration,’ you do not need to enter any information. Receivables does not display the default rule schedule for an accounting rule of this type because the number of periods is unknown. However, if you want to recognize a specific revenue percentage in the first period, you can enter that percentage here. In this case, Receivables prorates the remaining revenue percentage across the remaining periods.<br>Receivables uses the number of periods that you either pass through AutoInvoice or enter manually in the Transaction window to determine the payment schedule of your accounting rule.</p>
-<p>We can default invocing rule and accounting rule from OM transaction type.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521230046.png" alt=""></p>
-<p><strong>Assign Invoicing and Accounting Rules</strong><br>For invoices that you enter manually, you can assign an invoicing rule in the Transactions window. You can assign a default invoicing and accounting rule to your items in the Master Item window (Invoicing tabbed region) and to your Standard Lines in the Standard Memo Lines window.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521230129.png" alt=""></p>
-<p>If you are entering an invoice manually, you must enter an invoicing rule on the invoice header or you will not be able to associate accounting rules with the invoice lines. If you enter an invoicing rule and include items or standard memo lines that have associated accounting rules, the accounting rules default for the invoice line. You can change or manually enter the accounting rules for these invoice lines if there has been no activity against the invoice.</p>
-<p>Note: You can also assign invoicing rules to items and standard lines, but these will not be used during manual<br>invoice entry. This is because the invoicing rule assigned at the invoice header will override the invoicing rules defined for the item or standard line. </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Managing PackingContainersLPNs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Managing%20PackingContainersLPNs/">OM Managing PackingContainersLPNs</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/21/OM%20Managing%20PackingContainersLPNs/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.843Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Managing-Packing-Containers-LPNs"><a href="#Managing-Packing-Containers-LPNs" class="headerlink" title="Managing Packing/Containers/LPNs"></a>Managing Packing/Containers/LPNs</h1><p>In the Shipping Transactions form, you can create and manage containers (LPNs) at any point in the shipping process. If you are using the Auto-packing feature, containers can be automatically packed using the container-item relationships set<br>up in the Container-Item Relationships window.<br>You can create containers without assigning them to a delivery. This is useful if you want to create multiple containers of the same type then pack them with unassigned delivery lines.</p>
-<p>(Note: LPN is an acronym for License Plate Number. A packing container has a license plate number for unit identification and reporting capability, so containers are also called LPNs in Oracle Shipping Execution.)</p>
-<p>Customer Items can be associated with containers within Oracle Inventory. This association is used when packing the Customer Item into a container in Oracle Shipping Execution. When the Customer Item is packed, the container associated with the Customer Item in Oracle Inventory is used as the default container.</p>
-<p>You can pack multiple containers with multiple lines using one of the following packing methods:<br>■ Auto-packing<br>■ Manual packing<br>■ Packing Workbench    </p>
-<ul>
-<li>Equal packing: splits the delivery lines equally between the selected LPNs.You cannot use this method with delivery lines of serial controlled items.</li>
-<li>​    Sequential packing: fully packs one container at a time to its capacity (weight, volume, or quantity) before packing the next selected container.</li>
-</ul>
-<h3 id="1-Auto-packing-Delivery-Lines-into-Containers"><a href="#1-Auto-packing-Delivery-Lines-into-Containers" class="headerlink" title="1.Auto-packing Delivery Lines into Containers"></a>1.Auto-packing Delivery Lines into Containers</h3><p>***Auto-packing provides a convenient and quick way of automatically packing delivery lines into containers (LPNs). The delivery lines are packed into LPNs based on the container-item relationship set up in Oracle Shipping Execution or in Oracle<br>Inventory (defined as a customer item) and the setting of the Shipping parameter Percent Fill Basis must be set to Quantity. The container-item relationship defines the container that is used for packing the delivery lines. If Percent Fill Basis is set to Quantity, then auto-pack will look at Container-Load Relationships set up for the item and the Detail Container.<br>If multiple container-item relationships exist for the same item, the Preferred setting in the Container-Item Relationships window indicates the default container-item relationship used for that item.<br>Auto-packing can also be performed for those items in Oracle Inventory that are defined as Customer Items.</p>
-<p><em>Using the Auto-pack Master Option</em><br>■ If you select Auto-pack, then only the detail LPNs are created and packed.<br>■ If you select Auto-pack Master, the delivery lines are packed into the detail container, and the detail containers are packed into the parent/master container in one action:<br>For example, a delivery line with a quantity of 12 of Item A has a container-load relationship set up so that 6 of Item A fits into Container A and 2 of Container A fits into Container B (the percent fill basis is set to quantity). If you run Auto-pack Master, the line is split into 2 lines of 6, the first line is packed into the first container, the second line is packed into the second container, and the two detail LPNs (2 Container As) are packed into Container B.<br>■ The Auto-pack Master option is available from the Actions menu in the Lines/LPNs tab in the Shipping Transactions form. It is also available at the delivery level</p>
-<p><strong>1.Container type setups are done in inventory -&gt; Setups -&gt;Item -&gt;Container</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210209.png" alt=""></p>
-<p><strong>2. Crate a container Item in item master.</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210421.png" alt=""></p>
-<p><strong>3.Shipping &gt; Setup &gt; Container Load Details &gt; Organizations &gt; [OK]</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210547.png" alt=""></p>
-<p><strong>4.Auto pack it</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521210618.png" alt=""></p>
-<h3 id="2-Manual-packing-Delivery-Lines-into-Containers"><a href="#2-Manual-packing-Delivery-Lines-into-Containers" class="headerlink" title="2. Manual packing Delivery Lines into Containers"></a>2. Manual packing Delivery Lines into Containers</h3><p>It involves two steps </p>
-<p>​               i. Creating an LPN<br>​               ii. Assign LPN to lines/deliveries</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521211014.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521211043.png" alt=""></p>
-<h3 id="3-Packing-Work-Bench-Lines-into-Containers"><a href="#3-Packing-Work-Bench-Lines-into-Containers" class="headerlink" title="3.Packing Work Bench Lines into Containers"></a>3.Packing Work Bench Lines into Containers</h3><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/se036_0.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Managing%20PackingContainersLPNs/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Create Delivery" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Create%20Delivery/">OM Create Delivery</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/21/OM%20Create%20Delivery/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.841Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Create-Delivery"><a href="#Create-Delivery" class="headerlink" title="Create Delivery"></a>Create Delivery</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212422.png" alt=""></p>
-<p>A delivery consists of set delivery lines that are <strong>scheduled to be shipped to a customer’s ship-to location on a specific date and time</strong>. In a delivery, you can include items from different sales orders as well as back orders. You can either manually or automatically group delivery lines to create a delivery. If a delivery is auto-created, the delivery lines are grouped together by the mandatory default criteria, ship-from location and ship-to location. However, additional grouping criteria can be included.</p>
-<p>1.1 In operating unit level we can control the auto create delivery in shipping parameter.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212606.png" alt=""></p>
-<p>1.2. Deliveries can be automatically created during the process of pick release by enabling auto-create delivery in pick release form.</p>
-<p>1.3. we can manually create the delivery number in shipping transaction form.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212650.png" alt=""></p>
-<p>2.1 Delivery parameters enable you to define how to group delivery lines for a delivery. The mandatory default attributes are Ship From Location and Ship To Location; however, you can select additional optional grouping parameters that include:</p>
-<ul>
-<li>Customer</li>
-<li>Freight Terms</li>
-<li>FOB Code</li>
-<li>Intermediate Ship To location</li>
-<li>Ship Method</li>
-</ul>
-<p>The delivery attributes determine how delivery lines are grouped into deliveries when auto-creating deliveries. For example, if the grouping attribute Customer is selected, the delivery lines are grouped into deliveries by customer: for example, deliveries for Customer A are grouped into Delivery A, deliveries for Customer B are grouped into Delivery B.</p>
-<p>You can select more than one grouping attribute to refine your grouping criteria further: for example, if you select Customer and Ship Method as grouping criteria, delivery lines with the same customer and carrier criteria are grouped into deliveries.<br>If each optional grouping attribute is checked, the delivery’s corresponding field cannot be updated if delivery lines are assigned to the delivery. This ensures that the delivery lines’ grouping criteria is not broken by a different attribute value: for example, if someone tries to select a different ship method.</p>
-<p>If each optional grouping attribute is unchecked, its field in the delivery record can be updated until the ship confirm stage.<br>For example, if you want to change the Ship Method in the delivery and do not need to enforce it as a grouping attribute, you can unselect Ship Method. Do not change these options if you have deliveries that are not ship confirmed.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521212736.png" alt=""></p>
-<p>Optionally, select a <strong>Auto-create Delivery Criteria</strong> if you enabled the Auto-create Delivery option on the Pick Release tab.</p>
-<ul>
-<li>Select Within An Order to auto-create deliveries whose lines all belong to the same sales order and match on the Delivery Grouping Attributes.</li>
-<li>Select Across Orders to auto-create deliveries across orders. All selected delivery lines that match on the Delivery Grouping Attributes are eligible to appear on one delivery.</li>
-</ul>
-<p><strong>Select an Appending Limit.</strong><br>The Appending Limit enables you to indicate the point at which you want to stop the system from adding lines to a delivery (the point that ends the ability to merge deliveries). You must set the Appending Limit to a value other than Do Not Append in order to use the Append Deliveries option within Release Rules and the Process Deliveries SRS.</p>
-<p>The Appending Limits include:</p>
-<ul>
-<li>Do Not Append</li>
-<li>Start of Staging</li>
-<li>End of Staging</li>
-<li>Start of Packing (Oracle WMS enabled organizations only)</li>
-<li>Start of Shipping (Oracle WMS enabled organizations only)</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Create%20Delivery/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Configuring Picking Process" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Configuring%20Picking%20Process/">OM Configuring Picking Process</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/21/OM%20Configuring%20Picking%20Process/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.836Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Configuring-Picking-Process"><a href="#Configuring-Picking-Process" class="headerlink" title="Configuring Picking Process"></a>Configuring Picking Process</h1><p>You can determine the number of pick release steps the system will prompt to move material from pick release to ship confirmation. These steps are:</p>
+        <h1 id="Ship-Confirm-Rule"><a href="#Ship-Confirm-Rule" class="headerlink" title="Ship Confirm Rule"></a>Ship Confirm Rule</h1><p>You define Ship Confirm Rules within the Ship Confirm Rules window.<br>To define a Ship Confirm Rule:</p>
 <ol>
-<li><p>Pick Release</p>
+<li><p>Navigate to the Ship Confirm Rules window.<br> Shipping -&gt; Set up -&gt; Ship Confirm Rules</p>
 </li>
-<li><p>Move Order Line Allocation (detailing)</p>
+<li><p>Enter a unique rule name in the Ship Confirm Rule field &amp; Optionally, select an Effective date.</p>
 </li>
-<li><p>Move Order Line Pick Confirmation</p>
+<li><p>Within the Ship Options region, select one of the following options from the<br>Action list of values:<br>■ Ship Entered Quantities: To ship the quantities entered<br>■ Ship All: To ship all<br>■ Backorder All: To backorder all<br>■ Cycle Count All: To cycle count all</p>
+</li>
+<li><p>The Ship Options region also enables you to determine the action to perform with Unspecified Quantities. Select one of the following options:<br>■ Ship<br>■ Backorder<br>■ Stage<br>■ Cycle Count</p>
+</li>
+<li><p>Determine whether you want to Create Delivery for Staged Quantities.<br>If this option is selected, the system will create deliveries for delivery lines that are staged but not yet assigned to a delivery, and subsequently perform the other operations defined by this Ship Confirm Rule. If this option is not selected, delivery lines not assigned to deliveries will not be considered for ship confirm using this rule.</p>
+</li>
+<li><p>Within the Trip Options region, select a Ship Method using the list of values.</p>
+</li>
+<li><p>The remaining options within the Trip Options region also require attention.<br>These options include the following:<br>■ Set Delivery In-Transit<br>■ Close Trip<br>■ Defer Interface<br>■ Create Bill of Lading</p>
+</li>
+<li><p>Optionally, select a Document Set that will print with the shipment.</p>
 </li>
 </ol>
-<p><strong>Pick Release</strong><br>Oracle Shipping Execution’s Pick Release process creates move orders. One order is created per pick release batch per organization, so if you pick release across multiple organizations, one move order is generated in each facility. One move<br>order line is generated for each order line included in the picking batch. That move order line includes the item, quantity, the staging location (the destination sub inventory and locator) and a source sub inventory and locator if one was specified<br>on the sales order line or on the Release Sales Orders window.</p>
-<p>For non-reservable items, allocation and pick release run, but suggestions are not created during pick release, and pick confirm will not run for the item. You can print pick slips, but they will not be detailed with sub-inventory and stock locator to pick from, however they will list the item and quantity to be picked. Auto-allocate should be Yes and Auto-pick-confirm can be set to any.</p>
-<p><strong>Detail Line Allocation (Detailing)</strong><br>To release the move order lines created at Pick Release to the warehouse and to print pick slips, the lines must be allocated. The allocation process for a pick wave move order line also creates a high level (organization level) reservation for the item(s) if no previous reservations exist for them. You can choose to do this immediately after the move order lines are created or to postpone this step until a later point in time. Once the lines are allocated, they have a status of Released to<br>Warehouse.</p>
-<p><strong>The reservation is a soft reservation and from the transact move order form we can back order the move order line and the quantity would be available for reservation again.</strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521213026.png" alt=""></p>
-<p>Postponing the detailing process might be employed by organizations that pick release across multiple warehouses but prefer to enable each warehouse to determine when to release their order lines to the floor. Detailing the order lines immediately after they are created is called auto-detailing. Postponing the detailing process is referred to as manual-detail. You can set up a default detailing mode in the <strong>Shipping Parameters</strong> window. This default can be overridden at each Pick Release through the Release Sales Orders window.</p>
-<p><u><strong>Pick Confirmation</strong></u><br>The move order line details must be transacted (in Inventory) to confirm the material drop-off in staging. Pick confirmation executes the sub inventory transfer that systematically moves the material from its source location in the warehouse to<br>the staging location. Pick Confirmation automatically transfers the high level reservation to a allocated reservation (including lots, sub inventory and locators) in the staging location.<br>Inventory updates Shipping Execution with the results of the pick confirm:<br>■ Pick Confirmed quantity is assigned a status of Staged/Pick Confirmed.<br>■ Unconfirmed quantity is assigned a status of Backordered.</p>
-<p><em>Pick confirmation follows the allocation and reservation process automatically if both the Auto Allocate and Auto Pick Confirm options are selected in the Release Rules window. Pick Confirm always follows the detailing and reservation process.<br>If Auto Allocate is not chosen, it is not possible to Auto Pick Confirm.</em></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521213304.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095031.png" alt=""></p>
 
       
 
@@ -831,7 +445,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Configuring%20Picking%20Process/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Ship%20Confirm%20Rule/">展开全文 >></a>
         </p>
       
 
@@ -861,20 +475,20 @@
 
 
   
-    <article id="post-OM Pick Slip Grouping Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Reports" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Pick%20Slip%20Grouping%20Rules/">OM Pick Slip Grouping Rules</a>
+      <a class="article-title" href="/2020/05/22/OM%20Reports/">OM Reports</a>
     </h1>
   
 
         
-        <a href="/2020/05/21/OM%20Pick%20Slip%20Grouping%20Rules/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.829Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
+        <a href="/2020/05/22/OM%20Reports/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:46:32.061Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -887,8 +501,20 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Pick-Slip-Grouping-Rules"><a href="#Pick-Slip-Grouping-Rules" class="headerlink" title="Pick Slip Grouping Rules"></a>Pick Slip Grouping Rules</h1><p>You can create grouping rules to organize how picking lines for released sales orders are grouped on to pick slips. For example, if you select Delivery as a grouping criteria, all picking lines for the same delivery are grouped together on a pick slip. If there are multiple deliveries, multiple pick slips are created.<br>You can also define your grouping criteria further by selecting additional grouping attributes. For example, if you select Delivery and Carrier as grouping criteria, picking lines for the same delivery and carrier are grouped together on a pick slip.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521214256.png" alt=""></p>
+        <h1 id="Reports"><a href="#Reports" class="headerlink" title="Reports"></a>Reports</h1><p>There are 5 reports that are mostly used in picking and shipping process.</p>
+<ol>
+<li><p><strong>Pick slip report</strong> – Generated after the end of pick release.<br>This is a standard report and is attached to a document set. The document set given in pick release tab of the shipping parameter gives the name of the customized report (if any) which runs automatically after pick release.</p>
+</li>
+<li><p><strong>Bill of lading :</strong><br>Bill of Lading and or Packing Slip for a delivery can be generated as part of a document set that can be run at the completion of ship confirmation, or the documents can be created individually from the document request menu. The<br>documents should also be generated automatically when you click Generate BOL and Create Packing List. A Delivery must meet the following prerequisites in order for a Bill of Lading to be created.</p>
+</li>
+<li><p><strong>Packing Report</strong>:<br>You can create a Packing Slip at any point in the shipping process providing a delivery has been created and a delivery line has been assigned to the delivery.</p>
+</li>
+<li><p><strong>Excise Invoice(India Only):</strong><br>As per the Excise rules, a document called ‘Excise Invoice’ has to accompany the consignments to the customer. This<br>documents shows the details about the Excise duty levied; like the Base Value, Applicable Abatement if any,Assessable<br>Value,Basic excise Duty, Education Cess, Secondary and Higher Education cess, etc. at item level and as an aggregated sum at the bottom of document. It also gives the excise chapter ID for each item and the Excise Duty rate applicable for that Chapter ID. The base value can be either the manufacturing cost of the goods or Maximum Retail Price as prescribed by Excise Rules, depending upon the nature of goods sold.</p>
+</li>
+<li><p><strong>Commercial Invoice</strong>:<br>Apart from the Excise Invoice, another document called ‘Commercial Invoice’ also accompanies the consignment. This document shows the commercial details of the sale like Basic Price, Discounts/Mark-ups if any, VAT/CST as applicable, Transport and Handling Charges, etc. In short, the commercial terms as agreed between the Seller and the Buyer. These values are shown at item level as well as the aggregated sum at the end of the document. The sum value of this document is taken for calculating the levies like Octroi and for payments to the seller by the buyer.</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522094751.png" alt=""></p>
 
       
 
@@ -901,7 +527,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Pick%20Slip%20Grouping%20Rules/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Reports/">展开全文 >></a>
         </p>
       
 
@@ -931,20 +557,20 @@
 
 
   
-    <article id="post-OM Release Sequence Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Shipment Transit Times" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Release%20Sequence%20Rules/">OM Release Sequence Rules</a>
+      <a class="article-title" href="/2020/05/22/OM%20Shipment%20Transit%20Times/">OM Shipment Transit Times</a>
     </h1>
   
 
         
-        <a href="/2020/05/21/OM%20Release%20Sequence%20Rules/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.823Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
+        <a href="/2020/05/22/OM%20Shipment%20Transit%20Times/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:42:01.793Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -957,13 +583,8 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Release-Sequence-Rules"><a href="#Release-Sequence-Rules" class="headerlink" title="Release Sequence Rules"></a>Release Sequence Rules</h1><p>You can define release sequence rules to specify the order in which eligible picking lines are allocated to Inventory during pick release. Release sequence rules are given on “release sales order for picking” form and can be defaulted from release rule tab in shipping parameter or from the release rule it self.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/so_007_0.png" alt=""></p>
-<p><strong>Notes</strong>: While its not mandatory to provide the sales order number/delivery/trip while doing the pick release, its always advisible to do so to restrict the number of lines seleceted during pick release. The release sequence rule determines the priority given to selected lines while doing pick release.</p>
-<p>You can release the picking lines by:<br>■ Order number<br>■ Outstanding Invoice Value<br>■ Scheduled Date<br>■ Departure Date<br>■ Shipment Priority</p>
-<p>You can assign a priority level to one or more attributes with 1 being the highest priority and 5 being the lowest. You can also define whether you want the picking lines released in ascending or descending order.</p>
-<p>For example, if you select the Ascending button for Order, picking lines are released by ascending order number–Order 1 is released first, then Order 2, Order 3, and so on. If the Descending button is selected, the picking lines are released by<br>descending Order number from highest to lowest–Order 4 is released first, then Order 3, Order 2, and Order 1.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521215611.png" alt=""></p>
+        <h1 id="Shipment-Transit-Times"><a href="#Shipment-Transit-Times" class="headerlink" title="Shipment Transit Times"></a>Shipment Transit Times</h1><p>Within the Inter-Org Shipping Methods window, you can specify the Ship Method, Intransit Times, Load Weight and the Volume Capacity for any movement between two location types.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522094227.png" alt=""></p>
 
       
 
@@ -976,7 +597,337 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Release%20Sequence%20Rules/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Shipment%20Transit%20Times/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Freight Costs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Freight%20Costs/">OM Freight Costs</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Freight%20Costs/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:40:01.245Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Freight-Costs"><a href="#Freight-Costs" class="headerlink" title="Freight Costs"></a>Freight Costs</h1><p>You can define allowable freight costs and suggested amounts for shipments. These amounts are applied at ship confirm or once a delivery line is planned(Action LOV in transaction form). You can add multiple freight costs to a shipment from the list of allowable freight cost types that you define.</p>
+<p>You can also define multiple freight costs for a specific freight cost type. For example, if you want to track different types of insurance, you can create different insurance costs under the insurance freight cost type such as liability insurance or shipping insurance.</p>
+<p>When you add freight costs at ship confirmation for a foreign currency order, you can use either your functional currency or the order’s foreign currency. If you use your functional currency, the freight charges are converted to the order currency<br>through Oracle Receivables.</p>
+<p>If you want to pass freight costs entered in the Shipping Transactions form to Oracle Order Management for invoicing, then you have to set up a pricing modifier.</p>
+<p><strong><em>Navigation : Setup -&gt; Shipping -&gt; Fright carriers, Cost type -&gt; Fright Cost types</em></strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522094024.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522094038.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Freight%20Costs/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Freight Carrier Ship Methods" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Freight%20Carrier%20Ship%20Methods/">OM Freight Carrier Ship Methods</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Freight%20Carrier%20Ship%20Methods/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:38:22.481Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Freight-Carrier-Ship-Methods"><a href="#Freight-Carrier-Ship-Methods" class="headerlink" title="Freight Carrier Ship Methods"></a>Freight Carrier Ship Methods</h1><p>A freight carrier is a commercial company that transports shipments to and from customers, suppliers, and internal organizations. You must set up each carrier’s information as a party in Oracle Shipping Execution before shipping goods; you<br>should assign a carrier to each delivery. You also must associate a general ledger account with each carrier to collect associated costs.<br>Before you set up the carriers:<br>■ Collect general information about each carrier<br>■ Determine the types of services that your carriers offer and that you use</p>
+<p>To define a freight carrier:</p>
+<ol>
+<li><p>Navigate to the Carriers window.</p>
+</li>
+<li><p>Enter the Name and Short Name for the carrier.</p>
+</li>
+<li><p>Enable the Active and Enable Manifesting check boxes if applicable.</p>
+</li>
+<li><p>In SCAC Code, enter the standard carrier alpha code.</p>
+</li>
+<li><p>Enter the carrier’s Default Currency.</p>
+</li>
+<li><p>In the top portion of the Main tabbed region, enter address and site information for the carrier.</p>
+</li>
+<li><p>Navigate to the Services tabbed region.</p>
+</li>
+<li><p>Select the Service Level for this carrier.<br>Examples of Service Level include: next day air, ground, and next day air early AM.</p>
+</li>
+<li><p>Select the Mode (of transportation) for the carrier.</p>
+</li>
+</ol>
+<p><strong><em>After you enter each Service Level and Mode combination, Oracle Shipping Execution assigns a ship method and displays it in the Ship Method field. The format of the generated ship method is –, for example, Truck-LTL-Ground.</em></strong></p>
+<ol start="10">
+<li><p>Select Enable if you will be assigning this ship method to organizations and to deliveries in Oracle Shipping Execution. Select Web Enable if you will be assigning this ship method in Oracle iStore.</p>
+</li>
+<li><p>Save your work.</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093848.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Freight%20Carrier%20Ship%20Methods/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM System Parameters" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20System%20Parameters/">OM System Parameters</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20System%20Parameters/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:37:13.139Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="System-Parameters"><a href="#System-Parameters" class="headerlink" title="System Parameters"></a>System Parameters</h1><p>Following options are available in new system parameter setup<br>\1. Allow Multiple Payments<br>\2. Item validation org - In OM we create orders in Operating unit level so in order to get the organization attriutes like Sales account and TAX code we use an item validation org.<br>\3. Default Order Type</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093734.png" alt=""></p>
+<p><strong>Show Discount Details On Invoice</strong><br>This parameter determines whether the discount details are passed to Oracle Receivables for printing on an invoice. Default value is No. If you set this parameter to No, then Extended Amounts will includes discounts.</p>
+<p>In Order Management, you have the option to send items and prices to Receivables net of any price adjustments or to send the list price and then send separate adjustment lines for each discount. This is controlled by the system parameter Show Discount Details on Invoice. If you choose to show discounts, they are sent as regular invoice lines to Receivables with a negative price, and are accounted for like the item to which they belong. The Description field for the discount lines is the name of the discount. This feature provides visibility to discounts for printing on invoices, but does not provide separate accounting for discounts.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20System%20Parameters/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Global Parameters" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Global%20Parameters/">OM Global Parameters</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Global%20Parameters/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:35:38.115Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Global-Parameters"><a href="#Global-Parameters" class="headerlink" title="Global Parameters"></a>Global Parameters</h1><p>Global General parameters enable you to define miscellaneous parameters and unit of measure (UOM) defaults for all of your organizations.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093603.png" alt=""></p>
+<p><strong>1.</strong> Select the <strong>Enforce Ship Method</strong> check box to enforce that a ship method (carrier) is entered and recorded for each shipment. This is recommended if your business practices require a record of the ship method/carrier for each shipment.<br><strong>Selected:</strong> During order processing, if a ship method has not been entered, then an error message is displayed at ship confirm and you are prevented from ship confirming until a ship method is entered. You can enter the ship method in the Confirm Delivery window, the Delivery tab of the Shipping Transactions form, or the Sales Order window.<br><strong>Cleared:</strong> The ship method is not enforced at ship confirm and an error message is not displayed. For example, if your organization uses the same ship method (carrier) for all shipments, you may not want to enforce the selection of a ship method.<br>**<br>2.** <strong>Allow Future Ship Date.</strong><br><strong>Selected:</strong> You can enter a future date as the Actual Departure Date while ship confirming the delivery<br><strong>Cleared:</strong> you should not enter a future date as the Actual Departure Date while ship confirming the delivery because you receive an error</p>
+<p><strong>3. Select the Defer Interface</strong> check box if you want to defer shipping interfaces from initiating updates to the Oracle Order Management and Oracle Inventory interface tables.<br><strong>Selected:</strong> You must manually run the interface to update the interface tables. For example, if you defer the Inventory Interface, the inventory tables are not updated until you manually run the Inventory Interface in the Shipping Interfaces window.<br><strong>Cleared:</strong> The interfaces are run automatically at ship confirmation.</p>
+<p><strong>4. Select Consolidate Backordered Lines</strong> if you want to consolidate a line that was split and subsequently backordered. The line will be automatically consolidated with other backordered lines that it was part of originally.</p>
+<p><strong>5. Within the Global UOM Defaults</strong> region,<br>The Weight Class default controls:</p>
+<ul>
+<li>Default weight UOM in deliveries, stops and containers for their respective weights</li>
+<li>Default handling UOMs for facilities</li>
+<li>Default weight UOM in Carrier/Carrier Services Rating/Mode Limits tab</li>
+</ul>
+<p>The Volume Class default controls:</p>
+<ul>
+<li>Default volume UOM in deliveries, stops and containers for their respective volumes</li>
+<li>Default handling UOMs for facilities</li>
+<li>Default volume UOM in Carrier/Carrier Services Rating/Mode Limits tab</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Global%20Parameters/">展开全文 >></a>
         </p>
       
 
@@ -1008,7 +959,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
     </nav>
   
 

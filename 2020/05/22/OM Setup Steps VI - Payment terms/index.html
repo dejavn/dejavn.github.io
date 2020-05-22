@@ -15,8 +15,11 @@
 <meta property="og:site_name" content="Blog">
 <meta property="og:description" content="Payment termsReceivables lets you define standard payment terms for your customers to specify the due date and discount date for their open items.Payment terms can include a discount percent for early">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-05-21T15:15:04.515Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;dejavn&#x2F;Pictures&#x2F;master&#x2F;pic&#x2F;20200522085425.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;dejavn&#x2F;Pictures&#x2F;master&#x2F;pic&#x2F;20200522085632.png">
+<meta property="og:updated_time" content="2020-05-22T00:58:01.335Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;dejavn&#x2F;Pictures&#x2F;master&#x2F;pic&#x2F;20200522085425.png">
   
     <link rel="alternative" href="/atom.xml" title="Blog" type="application/atom+xml">
   
@@ -165,7 +168,7 @@
 
         
         <a href="/2020/05/22/OM%20Setup%20Steps%20VI%20-%20Payment%20terms/" class="archive-article-date">
-  	<time datetime="2020-05-22T00:43:45.226Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+  	<time datetime="2020-05-22T01:00:35.302Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -185,6 +188,51 @@
         <h1 id="Payment-terms"><a href="#Payment-terms" class="headerlink" title="Payment terms"></a>Payment terms</h1><p>Receivables lets you define standard payment terms for your customers to specify the <strong><em>due date and discount date</em></strong> for their open items.<br>Payment terms can include a discount percent for early payment and you can assign multiple discounts to each payment term line. For example, the payment term ’2% 10, Net 30’ indicates that a customer is allowed a two percent discount if payment is received within 10 days; after 10 days, the entire balance is due within 30 days of the transaction date with no applicable discount.</p>
 <p>Prepayment check box if you are defining a prepayment payment term. Receivables feeder systems, such as Oracle Order Management, can optionally implement business processes around prepayment payment terms to indicate that a particular business transaction requires the capture of funds before the delivery of a product or service.</p>
 <p>Enter the Date on which payment is due for this installment term (optional). If you do not complete this field, enter a value for either Due Days or both Day of Month and Months Ahead</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522085425.png" alt=""></p>
+<p><strong><em>Default Payment Terms Hierarchy</em></strong><br>Receivables use the following hierarchy to determine the default payment term for your transactions, stopping when one is found:</p>
+<ol>
+<li><p>Bill–to site</p>
+</li>
+<li><p>Customer Address</p>
+</li>
+<li><p>Customer</p>
+</li>
+<li><p>Transaction Type</p>
+</li>
+</ol>
+<p><strong><em>Predefined Payment Terms</em></strong><br>Receivables provides the following predefined payment terms:<br><em>30 NET:</em> The balance of the transaction is due within 30 days.<br><em>IMMEDIATE:</em> The balance of the transaction is due immediately (i.e. on the transaction date). You can use this payment term with your chargeback and debit memos.</p>
+<p><strong>To define a payment term:</strong><br>Navigate to the Payment Terms window and Enter the Name of the payment term.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522085632.png" alt=""></p>
+<p><strong>1.</strong> Select the <strong>Prepayment check box</strong> if you are defining a prepayment payment term.<br>Receivables feeder systems, such as Oracle Order Management, can optionally implement business processes around prepayment payment terms to indicate that a particular business transaction requires the capture of funds before the delivery of a product or service.</p>
+<p><strong>2.</strong> To associate a <strong>credit check</strong> with this payment term, check the Credit Check box. Oracle Order Management uses this information to determine when to place an order on hold.<br>In Oracle Order Management, if the profile for an address does not have credit checking limits defined in a particular currency but the customer does, then the order passes credit check. If the address does not have limits in the currency and neither does the customer, then the order is compared to the customer limit in that currency.</p>
+<p><strong>3.</strong> If you do not want to let your customers take discounts for <strong>partial payments</strong> on items associated with this payment term, then uncheck both the Allow Discount on Partial Payments check box as well as the check box for the Discount on Partial Payment system option.</p>
+<p><strong>4.</strong> Enter the <strong>Discount Basis</strong> you want Receivables to use when calculating discounts for your invoices. Choose one of the following discount methods:</p>
+<ul>
+<li>Invoice Amount: Choose this option to calculate the discount amount based on the sum of the tax, freight charges, and line amounts of your invoices.</li>
+<li>Lines Only: Choose this option to calculate the discount amount based on only the line amounts of your invoices.</li>
+<li>Lines, Freight Items and Tax: Choose this option to calculate the discount amount based on the amount of line items, freight, and tax of your invoices, but not freight and charges at the invoice header level.</li>
+<li>Lines and Tax, not Freight Items and Tax: Choose this option to calculate the discount amount based on the line items and their tax amounts, but not the freight items and their tax lines, of your invoices.</li>
+</ul>
+<p><strong>5</strong>. Enter the <strong>Installment Option</strong> for items assigned to this payment term. This indicates how Receivables will allocate the freight and tax charged to transactions using this payment term. Choose ‘Include tax and freight in first installment’ to include all tax and freight charges in the first installment. Choose ‘Allocate tax and freight’ to distribute tax and freight charges across all installments.</p>
+<p><strong>6.</strong> Enter the <strong>Base Amount</strong> for this payment term. The default is 100, but you can change it. The base amount is the denominator for the ratio Receivables uses to determine the amount due for installments of invoices to which you assign this payment term. The sum of the relative amounts for all of the payment schedules that you define for these payment terms must be equal to the value that you specify as a base amount.</p>
+<p>If the base amount is different from the relative amount, and you set the Installment Options field for this payment term to ‘Allocate tax and freight’, Receivables prorates the base amount across the relative amounts of this term’s payment schedules based upon the ratio you define. Receivables uses the following equation to determine the original amount due for each installment of invoices to which you assign this payment term:<br>Amount Due = Relative Amount/Base Amount * Invoice Amount</p>
+<p>If you select ‘Include tax and freight in first installment’ as the Installment Options field value for a payment term, the base amount and the relative amounts that you specify for this term’s payment schedules only indicate how the original line amounts of the invoices to which you assign this term are distributed across different installments.</p>
+<p>In this case, the original freight and tax amounts are included in the first installment in addition to the line amount allocated by the ratio of the base amount and the relative amount that you specify for the term’s first payment schedule. Receivables uses the following equation to determine the original amount due for the first installment of invoices to which you assign this payment term:<br>Amount Due = (Relative Amount/Base Amount * Base Line Amount) + Base Freight Amount + Base Tax Amount</p>
+<p><strong>7</strong>. If you want transactions assigned to this payment term to be printed before the due date, enter a number of <strong>Print Lead Days</strong>. Receivables will print this transaction x number of days before the due date, where x is the number of days you enter here.</p>
+<p><strong>8</strong>. Enter a range of <strong>Effective Dates</strong> for this payment term. If you do not enter an end date, this payment term will be active indefinitely.</p>
+<p>9.1 Enter a line number for the installment term that you are defining in the ‘Seq’ field. Enter a higher number for each installment term with a later due date. For example, if you create terms with 50% due in 15 days and 50% in 30 days, enter ‘1’ in this field for the first line and ‘2’ for the second line.</p>
+<p>9.2 Enter the Relative Amount for this payment term. This is the numerator of the ratio that Receivables uses to determine the amount due for this installment of these payment terms. The sum of the relative amounts for all of the payment schedules that you define for each payment term must be equal to the base amount for this term.</p>
+<p>9.3 Enter the number of Days after the invoice date that payment is due for this installment term (optional). For split payment terms, this number indicates the number of days after the invoice date that an installment is due.</p>
+<p>9.4 Enter the Date on which payment is due for this installment term (optional). If you do not complete this field, enter a value for either Due Days or both Day of Month and Months Ahead.</p>
+<p>9.5 If you are defining proxima terms, enter the Day of Month that payment is due for this installment term. For example, if payment is due on the fifteenth of each month, enter ‘15.’</p>
+<p>9.6 If you are defining proxima terms and you entered a value for Day of Month, enter the Months Ahead to which this installment term of the proxima terms refer. For example, if you entered ‘15’ for Day of Month and you enter ‘2’ here, an invoice dated in May will have a due date of July 15.</p>
+<p><strong>New in R12</strong><br>If you want to use this payment term for balance forward billing, select an appropriate balance forward billing cycle from the Billing Cycle LOV.</p>
+<ul>
+<li>Balance Forward Billing.</li>
+<li>Balance Forward Billing Cycles.</li>
+<li>Setting Up Balance Forward Billing.</li>
+</ul>
+<p>Note: You cannot update the billing cycle, once a balance forward billing payment term is attached to a profile.<br>Because balance forward bills cannot be split across installments, in the case of a balance forward payment term:<br>Any value entered in Base Amount defaults to 100.<br>Installment Options becomes disabled and any data entered before selecting a cycle defaults to Include tax and freight in first installment.<br>You can populate only one row in the Payment Schedule section and the Sequence Number and Relative Amount values for the row default respectively to 1 and 100.<br>Date Due becomes disabled. However, you can populate Days, Day of Month, and Months Ahead.<br>Note: You cannot change existing payment terms from regular payment terms to balance forward billing payment terms and vice versa.</p>
 
       
 
@@ -278,18 +326,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/05/22/OM%20Shipping%20Execution/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/05/22/OM%20Setup%20Steps%20%20VII%20-%20X/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          OM Shipping Execution
+          OM Setup Steps  VII - X
         
       </div>
     </a>
   
   
-    <a href="/2020/05/22/OM%20Setup%20Steps%20%20VI%20-%20Payment%20terms,%20Accounting%20Rules/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">OM Setup Steps  VI - Payment terms, Accounting Rules</div>
+    <a href="/2020/05/22/OM%20Setup%20Steps%20%20I%20-%20V/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">OM Setup Steps  I - V</div>
       <i class="icon-circle-right"></i>
     </a>
   

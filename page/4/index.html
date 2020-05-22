@@ -8,10 +8,12 @@
   <link rel="dns-prefetch" href="https://dejavn.github.io">
   <title>Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Oracle EBS,Python,Shell">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
 <meta property="og:url" content="https:&#x2F;&#x2F;dejavn.github.io&#x2F;page&#x2F;4&#x2F;index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="Oracle EBS,Python,Shell">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
   
@@ -151,20 +153,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Oracle-emctl" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Release Sequence Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/11/Oracle-emctl/">Oracle emctl</a>
+      <a class="article-title" href="/2020/05/21/OM%20Release%20Sequence%20Rules/">OM Release Sequence Rules</a>
     </h1>
   
 
         
-        <a href="/2019/12/11/Oracle-emctl/" class="archive-article-date">
-  	<time datetime="2019-12-11T07:26:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-11</time>
+        <a href="/2020/05/21/OM%20Release%20Sequence%20Rules/" class="archive-article-date">
+  	<time datetime="2020-05-21T14:29:11.823Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
 </a>
         
 
@@ -177,7 +179,13 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="command"><a href="#command" class="headerlink" title="command"></a>command</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">emctl status dbconsole</span><br><span class="line">emctl start dbconsole</span><br><span class="line">emctl stop dbconsole</span><br></pre></td></tr></table></figure>
+        <h1 id="Release-Sequence-Rules"><a href="#Release-Sequence-Rules" class="headerlink" title="Release Sequence Rules"></a>Release Sequence Rules</h1><p>You can define release sequence rules to specify the order in which eligible picking lines are allocated to Inventory during pick release. Release sequence rules are given on “release sales order for picking” form and can be defaulted from release rule tab in shipping parameter or from the release rule it self.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/so_007_0.png" alt=""></p>
+<p><strong>Notes</strong>: While its not mandatory to provide the sales order number/delivery/trip while doing the pick release, its always advisible to do so to restrict the number of lines seleceted during pick release. The release sequence rule determines the priority given to selected lines while doing pick release.</p>
+<p>You can release the picking lines by:<br>■ Order number<br>■ Outstanding Invoice Value<br>■ Scheduled Date<br>■ Departure Date<br>■ Shipment Priority</p>
+<p>You can assign a priority level to one or more attributes with 1 being the highest priority and 5 being the lowest. You can also define whether you want the picking lines released in ascending or descending order.</p>
+<p>For example, if you select the Ascending button for Order, picking lines are released by ascending order number–Order 1 is released first, then Order 2, Order 3, and so on. If the Descending button is selected, the picking lines are released by<br>descending Order number from highest to lowest–Order 4 is released first, then Order 3, Order 2, and Order 1.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521215611.png" alt=""></p>
 
       
 
@@ -186,22 +194,11 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">Oracle emctl</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/11/Oracle-emctl/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/21/OM%20Release%20Sequence%20Rules/">展开全文 >></a>
         </p>
       
 
@@ -231,20 +228,20 @@
 
 
   
-    <article id="post-Uninstall-Oracle-in-CentOS" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Defining Release Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/11/Uninstall-Oracle-in-CentOS/">Uninstall Oracle in CentOS</a>
+      <a class="article-title" href="/2020/05/21/OM%20Defining%20Release%20Rules/">OM Defining Release Rules</a>
     </h1>
   
 
         
-        <a href="/2019/12/11/Uninstall-Oracle-in-CentOS/" class="archive-article-date">
-  	<time datetime="2019-12-11T07:14:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-11</time>
+        <a href="/2020/05/21/OM%20Defining%20Release%20Rules/" class="archive-article-date">
+  	<time datetime="2020-05-21T14:29:11.819Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
 </a>
         
 
@@ -257,20 +254,9 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="stop-listener-using-user-oracle"><a href="#stop-listener-using-user-oracle" class="headerlink" title="stop listener using user: oracle"></a>stop listener using user: oracle</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsnrctl stop</span><br></pre></td></tr></table></figure>
-
-<h1 id="shutdown-Database-using-user-sys"><a href="#shutdown-Database-using-user-sys" class="headerlink" title="shutdown Database using user: sys"></a>shutdown Database using user: sys</h1><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SQL&gt;shutdown immediate</span><br></pre></td></tr></table></figure>
-
-<h1 id="delete-install-folder-u01-using-user-root"><a href="#delete-install-folder-u01-using-user-root" class="headerlink" title="delete install folder: u01 using user:root"></a>delete install folder: u01 using user:root</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf u01</span><br></pre></td></tr></table></figure>
-
-<h1 id="delete-etc-oratab-using-user-root"><a href="#delete-etc-oratab-using-user-root" class="headerlink" title="delete etc oratab using user:root"></a>delete etc oratab using user:root</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f /etc/oratab</span><br></pre></td></tr></table></figure>
-
-<h1 id="delete-etc-oraInst-loc-using-user-root"><a href="#delete-etc-oraInst-loc-using-user-root" class="headerlink" title="delete etc oraInst.loc using user:root"></a>delete etc oraInst.loc using user:root</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f /etc/oraInst.loc</span><br></pre></td></tr></table></figure>
-
-<h1 id="delete-user-local-bin-files-and-folders-using-user-root"><a href="#delete-user-local-bin-files-and-folders-using-user-root" class="headerlink" title="delete user local bin files and folders using user:root"></a>delete user local bin files and folders using user:root</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/bin/</span><br><span class="line">rm -f dbhome oraenv coraenv</span><br></pre></td></tr></table></figure>
-
-
-
+        <h1 id="Defining-Release-Rules"><a href="#Defining-Release-Rules" class="headerlink" title="Defining Release Rules"></a>Defining Release Rules</h1><p>You can create default pick release rules that are applied at pick release in the Release Sales Orders window. Each rule can be set up with its own set of unique pick release parameters depending on the pick release criteria required.<br>When pick release is run, the pick release is performed based on the parameters set up in the selected pick release rule. For example, you can create a specific rule that pick releases only backordered lines.</p>
+<p><strong>Note:</strong> Although you can also enter the pick release criteria at pick release time without creating a rule, creating a rule is more efficient if you frequently run the same pick release. Also, note that it is required when releasing using SRS or when using the Auto Pick Pack and Ship features.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521215830.png" alt=""></p>
 
       
 
@@ -279,22 +265,11 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color2">CentOS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/11/Uninstall-Oracle-in-CentOS/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/21/OM%20Defining%20Release%20Rules/">展开全文 >></a>
         </p>
       
 
@@ -324,20 +299,20 @@
 
 
   
-    <article id="post-get excel content using openpyxl" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Pick Release" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/05/get%20excel%20content%20using%20openpyxl/">get excel content using openpyxl</a>
+      <a class="article-title" href="/2020/05/21/OM%20Pick%20Release/">OM Pick Release</a>
     </h1>
   
 
         
-        <a href="/2019/12/05/get%20excel%20content%20using%20openpyxl/" class="archive-article-date">
-  	<time datetime="2019-12-05T06:33:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-05</time>
+        <a href="/2020/05/21/OM%20Pick%20Release/" class="archive-article-date">
+  	<time datetime="2020-05-21T14:29:11.814Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
 </a>
         
 
@@ -350,281 +325,31 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#使用openpyxl获取内容</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> openpyxl</span><br><span class="line"></span><br><span class="line">wb = openpyxl.load_workbook(<span class="string">"nancy.xlsx"</span>)</span><br><span class="line">sheet = wb.get_sheet_by_name(<span class="string">"Sheet1"</span>)</span><br><span class="line">cols = sheet.max_column</span><br><span class="line">print(cols)</span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> sheet.rows:</span><br><span class="line">    <span class="keyword">for</span> cell <span class="keyword">in</span> row:</span><br><span class="line">        print(cell.value, <span class="string">"\t"</span>, end=<span class="string">""</span>)</span><br><span class="line">    print()</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">openpyxl python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/05/get%20excel%20content%20using%20openpyxl/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-get &#39;xx.xxW&#39; using python re" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/05/get%20'xx.xxW'%20using%20python%20re/">get &#39;xx.xxW&#39; using python re</a>
-    </h1>
-  
-
-        
-        <a href="/2019/12/05/get%20'xx.xxW'%20using%20python%20re/" class="archive-article-date">
-  	<time datetime="2019-12-05T06:05:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-05</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> xlsxwriter</span><br><span class="line"></span><br><span class="line">path = <span class="string">'nancy.xlsx'</span>    <span class="comment">#要读取的Excel文件按名</span></span><br><span class="line">data = pd.DataFrame(pd.read_excel(path))  <span class="comment"># 读取数据</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">check</span><span class="params">(floatnum)</span>:</span></span><br><span class="line">    regex_float = <span class="string">r'[+-]?[0-9]+\.[0-9]+W'</span>   <span class="comment">#匹配 小数wW 0.1W</span></span><br><span class="line">    regex_integer = <span class="string">r'[-+]?[0-9]+W'</span>         <span class="comment">#匹配 整数WW 3453W</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> re.search(regex_float, floatnum):</span><br><span class="line">        <span class="keyword">return</span> re.search(regex_float, floatnum).group()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> re.search(regex_integer, floatnum):</span><br><span class="line">            <span class="keyword">return</span> re.search(regex_integer, floatnum).group()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"A"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#结果生成新的Excel</span></span><br><span class="line">workbook = xlsxwriter.Workbook(path + <span class="string">"_110.xlsx"</span>)</span><br><span class="line">worksheet = workbook.add_worksheet()</span><br><span class="line">bold = workbook.add_format(&#123;<span class="string">'bold'</span>: <span class="number">1</span>&#125;)</span><br><span class="line">worksheet.write(<span class="string">'A1'</span>, <span class="string">"watt"</span>, bold)  <span class="comment"># 标题</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取列名为PartDescription的值</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(data[<span class="string">'PartDescription'</span>])):</span><br><span class="line">    <span class="comment"># print(i, data['PartDescription'][i], check((data['PartDescription'][i])))</span></span><br><span class="line">    <span class="comment"># 列：PartDescription的每一行值</span></span><br><span class="line">    worksheet.write(str(<span class="string">"A"</span> + str(i + <span class="number">1</span> + <span class="number">1</span>)), str(check((data[<span class="string">'PartDescription'</span>][i]))))</span><br><span class="line">workbook.close()</span><br></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">python float integer string 小数 整数</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/05/get%20'xx.xxW'%20using%20python%20re/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-change hexo theme" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/18/change%20hexo%20theme/">切换HEXO主题 yilia</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/18/change%20hexo%20theme/" class="archive-article-date">
-  	<time datetime="2019-11-18T08:20:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-18</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-进入Blog主目录"><a href="#1-进入Blog主目录" class="headerlink" title="1.进入Blog主目录"></a>1.进入Blog主目录</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[xxx@oracle Blog]$ <span class="built_in">pwd</span></span><br><span class="line">/home/xxx/Blog</span><br><span class="line">[xxx@oracle Blog]$ ll</span><br><span class="line">total 148</span><br><span class="line">-rw-rw-r--   1 xxx xxx   2374 Nov 18 16:08 _config.yml</span><br><span class="line">-rw-rw-r--   1 xxx xxx    174 Nov 18 16:20 db.json</span><br><span class="line">drwxrwxr-x 273 xxx xxx   8192 Nov 15 14:14 node_modules</span><br><span class="line">-rw-rw-r--   1 xxx xxx    617 Nov 15 13:54 package.json</span><br><span class="line">-rw-rw-r--   1 xxx xxx 126369 Nov 15 13:54 package-lock.json</span><br><span class="line">drwxrwxr-x   7 xxx xxx    181 Nov 18 16:18 public</span><br><span class="line">drwxrwxr-x   2 xxx xxx     52 Nov 15 13:33 scaffolds</span><br><span class="line">drwxrwxr-x   3 xxx xxx     20 Nov 15 13:33 <span class="built_in">source</span></span><br><span class="line">drwxrwxr-x   5 xxx xxx     53 Nov 18 15:59 themes</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-修改配置文件-config-yml"><a href="#3-修改配置文件-config-yml" class="headerlink" title="3.修改配置文件: _config.yml"></a>3.修改配置文件: _config.yml</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">yilia</span></span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/18/change%20hexo%20theme/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-nodejs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/15/nodejs/">温习JS基础</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/15/nodejs/" class="archive-article-date">
-  	<time datetime="2019-11-15T08:29:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-15</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="JS引用方法"><a href="#JS引用方法" class="headerlink" title="JS引用方法"></a>JS引用方法</h1><h2 id="1-js可以嵌套的任何地方，不过通常放到-lt-head-gt-中"><a href="#1-js可以嵌套的任何地方，不过通常放到-lt-head-gt-中" class="headerlink" title="1. js可以嵌套的任何地方，不过通常放到&lt;head&gt;中"></a>1. js可以嵌套的任何地方，不过通常放到<code>&lt;head&gt;</code>中</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;alert(<span class="string">"你吃了吗？"</span>) &lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2-引用js文件-lt-script-src-quot-xx-xx-js-quot-gt-lt-script-gt"><a href="#2-引用js文件-lt-script-src-quot-xx-xx-js-quot-gt-lt-script-gt" class="headerlink" title="2. 引用js文件&lt;script src=&quot;../xx/xx.js&quot;&gt;&lt;/script&gt;"></a>2. 引用js文件<code>&lt;script src=&quot;../xx/xx.js&quot;&gt;&lt;/script&gt;</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;script src=<span class="string">"/public/static/js/hello.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;<span class="regexp">/head&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-<h1 id="JS语法"><a href="#JS语法" class="headerlink" title="JS语法"></a>JS语法</h1><h2 id="1-单行语句以-结束"><a href="#1-单行语句以-结束" class="headerlink" title="1.单行语句以;结束"></a>1.单行语句以<em>;</em>结束</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="string">"我吃了."</span>);  <span class="comment">// 我是注释</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-语句块用-…-包围"><a href="#2-语句块用-…-包围" class="headerlink" title="2.语句块用{…}包围"></a>2.语句块用{…}包围</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age = <span class="number">15</span>;</span><br><span class="line"><span class="keyword">if</span> (age &gt;= <span class="number">18</span>) &#123;</span><br><span class="line">    alert(<span class="string">'adult'</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    alert(<span class="string">'teenager'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>以//开头直到行末的字符被视为行注释<br>块注释是用<code>/*...*/</code>把多行字符包裹起来</p>
-<h2 id="3-数据类型"><a href="#3-数据类型" class="headerlink" title="3.数据类型"></a>3.数据类型</h2><p>JavaScript不区分整数和浮点数，统一用Number表示</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123</span>; <span class="comment">// 整数123</span></span><br><span class="line"><span class="number">0.456</span>; <span class="comment">// 浮点数0.456</span></span><br><span class="line"><span class="number">1.2345e3</span>; <span class="comment">// 科学计数法表示1.2345x1000，等同于1234.5</span></span><br><span class="line"><span class="number">-99</span>; <span class="comment">// 负数</span></span><br><span class="line"><span class="literal">NaN</span>; <span class="comment">// NaN表示Not a Number，当无法计算结果时用NaN表示</span></span><br><span class="line"><span class="literal">Infinity</span>; <span class="comment">// Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity</span></span><br></pre></td></tr></table></figure>
-
-<p>十六进制用0x前缀和0-9，a-f表示,例如：<em>0xff00<em>，</em>0xa5b4c3d2</em></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> + <span class="number">2</span>; <span class="comment">// 3</span></span><br><span class="line">(<span class="number">1</span> + <span class="number">2</span>) * <span class="number">5</span> / <span class="number">2</span>; <span class="comment">// 7.5</span></span><br><span class="line"><span class="number">2</span> / <span class="number">0</span>; <span class="comment">// Infinity</span></span><br><span class="line"><span class="number">0</span> / <span class="number">0</span>; <span class="comment">// NaN</span></span><br><span class="line"><span class="number">10</span> % <span class="number">3</span>; <span class="comment">// 1</span></span><br><span class="line"><span class="number">10.5</span> % <span class="number">3</span>; <span class="comment">// 1.5</span></span><br></pre></td></tr></table></figure>
-
-<p>** 注意%是求余运算。**</p>
-<h2 id="4-字符串"><a href="#4-字符串" class="headerlink" title="4.字符串"></a>4.字符串</h2><p>字符串是以单引号’或双引号”括起来的任意文本，比如’abc’，”xyz”</p>
-<h2 id="5-布尔值"><a href="#5-布尔值" class="headerlink" title="5.布尔值"></a>5.布尔值</h2><p><em>只有true、false</em></p>
-<p>&amp;&amp;运算是与运算，只有所有都为true，&amp;&amp;运算结果才是true</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">true</span> &amp;&amp; <span class="literal">true</span>; <span class="comment">// 这个&amp;&amp;语句计算结果为true</span></span><br><span class="line"><span class="literal">true</span> &amp;&amp; <span class="literal">false</span>; <span class="comment">// 这个&amp;&amp;语句计算结果为false</span></span><br><span class="line"><span class="literal">false</span> &amp;&amp; <span class="literal">true</span> &amp;&amp; <span class="literal">false</span>; <span class="comment">// 这个&amp;&amp;语句计算结果为false</span></span><br></pre></td></tr></table></figure>
-<p>||运算是或运算，只要其中有一个为true，||运算结果就是true：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">false</span> || <span class="literal">false</span>; <span class="comment">// 这个||语句计算结果为false</span></span><br><span class="line"><span class="literal">true</span> || <span class="literal">false</span>; <span class="comment">// 这个||语句计算结果为true</span></span><br><span class="line"><span class="literal">false</span> || <span class="literal">true</span> || <span class="literal">false</span>; <span class="comment">// 这个||语句计算结果为true</span></span><br></pre></td></tr></table></figure>
-<p>!运算是非运算，它是一个单目运算符，把true变成false，false变成true</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">! <span class="literal">true</span>; <span class="comment">// 结果为false</span></span><br><span class="line">! <span class="literal">false</span>; <span class="comment">// 结果为true</span></span><br><span class="line">! (<span class="number">2</span> &gt; <span class="number">5</span>); <span class="comment">// 结果为true</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="6-比较运算符"><a href="#6-比较运算符" class="headerlink" title="6.比较运算符"></a>6.比较运算符</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span> &gt; <span class="number">5</span>; <span class="comment">// false</span></span><br><span class="line"><span class="number">5</span> &gt;= <span class="number">2</span>; <span class="comment">// true</span></span><br><span class="line"><span class="number">7</span> == <span class="number">7</span>; <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-
-<p><em>要特别注意相等运算符==。JavaScript在设计时，有两种比较运算符：</em></p>
+        <h1 id="Pick-Release"><a href="#Pick-Release" class="headerlink" title="Pick Release"></a>Pick Release</h1><p>The pick release process creates move orders which are pre-approved requests for sub inventory transfers to bring material from its source locations in the warehouse (stores/fg sub inventory) to a staging sub inventory.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222240.png" alt=""></p>
+<p><strong>1.</strong> If <strong>auto allocate and auto pick confirm</strong> both are set to NO then pick release does nothing except creating the move order.</p>
+<p>If the auto allocate is set to yes in release rule with the ware house and sub inventory name then pick process also does an allocation/detailing of the item in the pick from sub inventory.<br>**<br>Detailing** is the process by which Oracle Order Picking and Shipping uses the picking rules to determine where to source the material to fulfill a request line (move order line). The detailing process fills in the move order line details with the actual transactions to be performed. If adequate quantity is not available to detail the move order, this process can be repeated later. If no reservation exists before the detailing process, it also creates the reservation for the material. </p>
+<p>During the process of reservation in scheduling a demand line is created and can be seen in reservation form. At thaat point of time the system only does the reservation with type Inventory and w/o specifying the subinventory and locator. During pick release allocation/detailing the system populates the subinvenory and locator if applicable.</p>
+<p>If the <strong>auto pick confirm process is set to yes</strong> then pick release process also does the transact move order and at the end of pick release process the material moves automatically to the staging sub inventory. In this case the delivery line status in SE changes from ready to release to staged/pick confirmed but if either of the auto allocate/auto pick confirm is set to NO, then the status changes to released to ware house and the user needs to manually transact the move order created by the pick release process.</p>
+<p><strong>2.</strong> <strong>If there is no onhand</strong> then the order is back ordered and no move order is created. If there is not sufficient onhand then a move order is created for the available onahand and the delivery line splits in SE form.</p>
+<p><strong>3.</strong> <strong>Pick Slips</strong> can be created after the detailing process completes, and the quantity and source can be manually verified at pick confirm. Pick slip report contains the SO (line, item, quantity, ship set), Mover Order, Delivery and Trip numbers. A custmozied bill of lading &amp; packing slip can be generated after this if required.</p>
+<p><strong>4.</strong> You can run one or more releases and customize release criteria to meet your requirements. You can define:<br>■ Release Rules to specify your picking criteria and set the default Release Rule through Shipping Parameters Pick Release tab.<br>■ Release Sequence Rules to specify the order in which eligible delivery lines are allocated during pick release.<br>■ Pick Slip Grouping Rules to determine how released move order lines are grouped onto pick slips.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222334.png" alt=""></p>
+<p><strong>Picking Rules</strong><br>Move orders will use the picking rules set up in Oracle Inventory to locate the material required to fulfill the move order line. Together with item-sub inventory defaults (required if the staging sub inventory is locator controlled), the picking<br>rules suggest the staging transfer transaction lines with appropriate source information that will be required to obtain enough material in the staging location for the delivery. The process where the Picking Engine generates these transaction<br>line suggestions is called allocating.</p>
+<p>When you define an item you choose a <em>picking rule to determine the order in which revisions, lots, subinventories, and locators are picked for sales orders</em>. Oracle Shipping Execution submits requests to Oracle Inventory, which uses the information you enter in the Picking Rules window to generate pick lists for sales orders. If you choose None for any of the criteria fields, Inventory ignores that criterion. For example, if you choose None for Revision, Inventory picks units of an item without regard to revision levels. Oracle Inventory looks at the picking criteria in the order in which they appear in the Picking Rules window. Then, Inventory looks at the options (except for None options) for each criterion in the order in<br>which they appear beneath each criterion.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222417.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222444.png" alt=""></p>
+<p>Note: If you utilize Oracle Transportation, compatibility constraints can be used in the shipping process up through ship<br>confirmation. Compatibility Constraints enable you to define a variety of transportation related restrictions related to items (goods for shipment), carriers, modes of transport, facilities, organizations, and customers. Then, these restrictions are used by the application to warn or prevent further order processing if the defined undesirable condition is encountered. For example, you can define an item-carrier compatibility constraint stating that designated carriers cannot transport specific inventory items. When a delivery is created violating the constraint, an error or warning message will be generated. You determine the severity of the constraint violation; whether a warning or error should display.</p>
+<p><strong>Staging Locations</strong><br>The destination sub inventory for a pick wave move order is the staging location into which the picked material should be deposited. Each organization should designate at least one staging sub inventory. Staging sub inventories should be<br>reservable. Each batch created at pick release will have the same destination staging sub inventory. The default staging sub inventory and locator to be used for all pick wave move orders are specified through Oracle Shipping Execution’s Shipping<br>Parameters window. This location can be changed at pick release. To model different staging lanes within the staging area, facilities may choose to either create different sub inventories or designate staging lane locators within one staging sub<br>inventory.</p>
+<p><strong>Pick Release from shippng transaction form</strong><br>All the pick release setups can be done so that users can easily do pick release form shipping transaction form.<br>once you do a pick cofirm system fires below requests</p>
 <ul>
-<li>第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；</li>
-<li>第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较。</li>
-<li>由于JavaScript这个设计缺陷，不要使用==比较，始终坚持使用===比较。</li>
-<li>NaN这个特殊的Number与所有其他值都不相等，包括它自己<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">NaN</span> === <span class="literal">NaN</span>; <span class="comment">// false</span></span><br><span class="line"><span class="built_in">isNaN</span>(<span class="literal">NaN</span>); <span class="comment">// true  判断NaN的方法是通过isNaN()函数</span></span><br></pre></td></tr></table></figure>
-
-</li>
+<li>Pick Selection List Generation</li>
+<li>Pick Slip Report</li>
+<li>Shipping Exceptions Report</li>
 </ul>
-<p>最后要注意浮点数的相等比较：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> / <span class="number">3</span> === (<span class="number">1</span> - <span class="number">2</span> / <span class="number">3</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222601.png" alt=""></p>
+<p>When pick release is done from shipping transaction form, the system picks up the auto –allocate and create delivery set up from shipping parameter. If the Pick Confirmation Required box in the Organization Parameters window is not enabled then the system would also does the auto-transaction.<br><strong>Notes:</strong><br>Do not check the Pick Confirmation Required box in the Organization Parameters window. If you check this box, the Auto Pick Confirm parameter on the shipping tab of the Pick Release form will be set to No. To change this you would navigate to Setup -&gt; Shipping -&gt; Organization Parameters-&gt;’ATP, Pick, and Item-Sourcing tab</p>
 
-<p>这不是JavaScript的设计缺陷。浮点数在运算过程中会产生误差，因为计算机无法精确表示无限循环小数。要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.abs(<span class="number">1</span> / <span class="number">3</span> - (<span class="number">1</span> - <span class="number">2</span> / <span class="number">3</span>)) &lt; <span class="number">0.0000001</span>; <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
       
 
       
@@ -632,22 +357,1002 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/15/nodejs/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/21/OM%20Pick%20Release/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Container setups and process" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/21/OM%20Container%20setups%20and%20process/">OM Container setups and process</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/21/OM%20Container%20setups%20and%20process/" class="archive-article-date">
+  	<time datetime="2020-05-21T14:29:11.811Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Container-setups-and-process"><a href="#Container-setups-and-process" class="headerlink" title="Container setups and process"></a>Container setups and process</h1><h2 id="Setups"><a href="#Setups" class="headerlink" title="Setups"></a>Setups</h2><ol>
+<li><p>Create containers<br>Items -&gt; Master Items</p>
+<p>Choose the Inventory Organization</p>
+<p>Under Main tab,<br>Primary UOM: Each, Item Status: active</p>
+<p>Under Physical Attributes<br>Weight UOM: Pounds, Unit Weight: 1, Voulme UOM: Cubic Foot, Unit Weight: 1, Container Flag: Checked, Container Type: Choose a value from the LOV,<br>Internal Volume: 2, Maximum Load Weight: 2, Minimum Fill Percent: 50</p>
+<p>under Order Management tab<br>Shippable flag: Checked</p>
+<p>Assign it to the inv organization.</p>
+</li>
+<li><p>Define a Ship-Container Load Relationship<br>OM Responsibility: Shipping -&gt; Setup -&gt; Container Load Details</p>
+</li>
+</ol>
+<p>Container Item, Load Item, Maximum Quantity, Preferred Flag</p>
+<h2 id="Process-Flow"><a href="#Process-Flow" class="headerlink" title="Process Flow"></a>Process Flow</h2><h3 id="1-Creating-LPNs-On-the-shipping-transaction-form"><a href="#1-Creating-LPNs-On-the-shipping-transaction-form" class="headerlink" title="1. Creating LPNs On the shipping transaction form"></a>1. Creating LPNs On the shipping transaction form</h3><p>Actions: Select Create LPNs and Click on Go button<br>In the LPN form enter Inventory Organization short name, Name Prefix, Base Number and Click on Ok.<br>Check the LPNs names created and Close the form.</p>
+<h4 id="2-1-Manual-Packing-Delivery"><a href="#2-1-Manual-Packing-Delivery" class="headerlink" title="2.1 Manual Packing Delivery"></a>2.1 Manual Packing Delivery</h4><p>Select Order line 1<br>Actions: Select Pack option and Click on Go button<br>Select the created container from the LOV.<br>On the shipping transactions form, for the line 1, click on Details button</p>
+<p>Check values for Line, Delivery, Parent LPN, Master LPN.</p>
+<p>Parent LPN should be the one you selected above and Master LPN could be Null or the same value as above</p>
+<p>Click on Done button</p>
+<h4 id="2-2-Auto-pack-Delivery-2"><a href="#2-2-Auto-pack-Delivery-2" class="headerlink" title="2.2 Auto-pack Delivery 2"></a>2.2 Auto-pack Delivery 2</h4><p> Select Order line 2<br>Actions: Select Auto-Pack option and Click on Go button<br>Click on Details button<br>Check values for Line, Delivery, Parent LPN &amp; Master LPN.<br>Parent LPN should be the one generated by the system and Master LPN could be Null or the same value as above<br>Click on Done button</p>
+<h4 id="2-3-Full-Manual-Packing-Delivery-line-3"><a href="#2-3-Full-Manual-Packing-Delivery-line-3" class="headerlink" title="2.3 Full Manual Packing Delivery line 3"></a>2.3 Full Manual Packing Delivery line 3</h4><p>Select Order line 3<br>Select (using CTRL-Click) couple of small LPNs not assigned yet<br>Actions: Packing Workbench<br>Click on Go button</p>
+<p>Under LPNs tab check pack column for all selected lines<br>Check Available Capacity</p>
+<p>Change to Lines tab<br>Check Pack column only for line of delivery 3.</p>
+<p>Packing mode : Choose Full option<br>Check Item Total values at the left of the screen<br>Click on Pack button</p>
+<p>Actions: Select Packing workbench again and Click on Go</p>
+<p>Under LPNs tab Select each of the LPNs selected above</p>
+<p>Check the Context section under same tab, for each one of the LPNs, it should be also one line under content. Check Item Name and Quantity</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/21/OM%20Container%20setups%20and%20process/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-How to move a file in Python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/15/How%20to%20move%20a%20file%20in%20Python/">How to move a file in Python</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/15/How%20to%20move%20a%20file%20in%20Python/" class="archive-article-date">
+  	<time datetime="2020-05-15T03:10:34.628Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-15</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="How-to-move-a-file-in-Python"><a href="#How-to-move-a-file-in-Python" class="headerlink" title="How to move a file in Python"></a>How to move a file in Python</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> shutil</span><br><span class="line"></span><br><span class="line">os.rename(<span class="string">"path/to/current/file.foo"</span>, <span class="string">"path/to/new/destination/for/file.foo"</span>)</span><br><span class="line">shutil.move(<span class="string">"path/to/current/file.foo"</span>, <span class="string">"path/to/new/destination/for/file.foo"</span>)</span><br><span class="line">os.replace(<span class="string">"path/to/current/file.foo"</span>, <span class="string">"path/to/new/destination/for/file.foo"</span>)</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/15/How%20to%20move%20a%20file%20in%20Python/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Turn off the process that takes up port 8080" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/12/Turn%20off%20the%20process%20that%20takes%20up%20port%208080/">Turn off the process that takes up port 8080</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/12/Turn%20off%20the%20process%20that%20takes%20up%20port%208080/" class="archive-article-date">
+  	<time datetime="2020-05-12T08:27:55.566Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Turn-off-the-process-that-takes-up-port-8080"><a href="#Turn-off-the-process-that-takes-up-port-8080" class="headerlink" title="Turn off the process that takes up port 8080"></a>Turn off the process that takes up port 8080</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">etstat -ano|findstr "8080"</span><br><span class="line"></span><br><span class="line">tasklist|findstr "3516"</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/12/Turn%20off%20the%20process%20that%20takes%20up%20port%208080/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-maven  web  srctestjava missing" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/04/maven%20%20web%20%20srctestjava%20missing/">maven  web  srctestjava missing</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/04/maven%20%20web%20%20srctestjava%20missing/" class="archive-article-date">
+  	<time datetime="2020-05-04T13:52:48.416Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="maven-web-src-test-java-missing"><a href="#maven-web-src-test-java-missing" class="headerlink" title="maven  web  src/test/java missing"></a>maven  web  src/test/java missing</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200504215210.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/04/maven%20%20web%20%20srctestjava%20missing/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Lunch user admin in Tomcat" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/04/Lunch%20user%20admin%20in%20Tomcat/">Lunch user admin in Tomcat</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/04/Lunch%20user%20admin%20in%20Tomcat/" class="archive-article-date">
+  	<time datetime="2020-05-04T06:39:12.614Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Lunch-user-admin-in-Tomcat"><a href="#Lunch-user-admin-in-Tomcat" class="headerlink" title="Lunch user admin in Tomcat"></a>Lunch user admin in Tomcat</h1><h2 id="add-password-for-Tomcat"><a href="#add-password-for-Tomcat" class="headerlink" title="add password for Tomcat"></a>add password for Tomcat</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"admin"</span> <span class="attr">password</span>=<span class="string">"admin"</span> <span class="attr">roles</span>=<span class="string">"manager-gui,admin-gui"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager-gui"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"admin-gui"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"admin"</span> <span class="attr">password</span>=<span class="string">"admin"</span> <span class="attr">roles</span>=<span class="string">"manager-gui,admin-gui"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="mvn-create-project"><a href="#mvn-create-project" class="headerlink" title="mvn create project"></a>mvn create project</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes \</span><br><span class="line">-DarchetypeArtifactId=maven-archetype-webapp \</span><br><span class="line">-DarchetypeVersion=<span class="number">1.4</span> \</span><br><span class="line">-DartifactId=sfg-app \</span><br><span class="line">-DgroupId=com.diodes \</span><br><span class="line">-DinteractiveMode=false</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="modify-Server-Locations"><a href="#modify-Server-Locations" class="headerlink" title="modify Server Locations"></a>modify Server Locations</h2><p>1.delete Web Modules</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200506112952.png" alt=""></p>
+<p>2.modify Server Locations</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200506113047.png" alt=""></p>
+<h2 id="Tomcat-At-least-one-JAR-was-scanned-for-TLDs-yet-contained-no-TLDs"><a href="#Tomcat-At-least-one-JAR-was-scanned-for-TLDs-yet-contained-no-TLDs" class="headerlink" title="Tomcat: At least one JAR was scanned for TLDs yet contained no TLDs"></a>Tomcat: At least one JAR was scanned for TLDs yet contained no TLDs</h2><ol>
+<li>modify catalina.properties</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line">tomcat.util.scan.StandardJarScanFilter.jarsToSkip=*.jar</span><br><span class="line"><span class="meta">#</span><span class="bash">\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">annotations-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">ant-junit*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">ant-launcher.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">ant.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">asm-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">aspectj*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">bootstrap.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-ant.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-ha.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-ssi.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-storeconfig.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-tribes.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">cglib-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">cobertura-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-beanutils*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-codec*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-collections*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-daemon.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-dbcp*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-digester*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-fileupload*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-httpclient*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-io*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-lang*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-logging*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-math*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-pool*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">dom4j-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">easymock-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">ecj-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">el-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">geronimo-spec-jaxrpc*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">h2*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">hamcrest-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">hibernate*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">httpclient*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">icu4j-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jasper-el.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jasper.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jaspic-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jaxb-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jaxen-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jdom-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jetty-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jmx-tools.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jmx.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jsp-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jstl.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jta*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">junit-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">junit.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">log4j*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">mail*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">objenesis-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">oraclepki.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">oro-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">servlet-api-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">servlet-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">slf4j*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">taglibs-standard-spec-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tagsoup-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-coyote.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-dbcp.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-i18n-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-jdbc.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-jni.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-juli-adapters.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-juli.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-util-scan.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-util.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-websocket.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tools.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">websocket-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">wsdl4j*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xercesImpl.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xml-apis.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xmlParserAPIs-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xmlParserAPIs.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xom-*.jar</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/04/Lunch%20user%20admin%20in%20Tomcat/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-库存事务处理接口表MTL_TRANSACTIONS_INTERFACE" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/04/%E5%BA%93%E5%AD%98%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E6%8E%A5%E5%8F%A3%E8%A1%A8MTL_TRANSACTIONS_INTERFACE/">库存事务处理接口表MTL_TRANSACTIONS_INTERFACE</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/04/%E5%BA%93%E5%AD%98%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E6%8E%A5%E5%8F%A3%E8%A1%A8MTL_TRANSACTIONS_INTERFACE/" class="archive-article-date">
+  	<time datetime="2020-05-04T06:34:55.477Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="库存事务处理接口表MTL-TRANSACTIONS-INTERFACE"><a href="#库存事务处理接口表MTL-TRANSACTIONS-INTERFACE" class="headerlink" title="库存事务处理接口表MTL_TRANSACTIONS_INTERFACE"></a>库存事务处理接口表MTL_TRANSACTIONS_INTERFACE</h1><p>UPDATE MTL_TRANSACTIONS_INTERFACE<br>   SET PROCESS_FLAG = ‘Y’<br>      ,LOCK_FLAG = ‘N’ OR NULL<br>      ,TRANSACTION_MODE = 3<br>      ,ERROR_CODE = NULL<br>      ,ERROR_EXPLANATION = NULL</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/04/%E5%BA%93%E5%AD%98%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E6%8E%A5%E5%8F%A3%E8%A1%A8MTL_TRANSACTIONS_INTERFACE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-INV Material Transaction Types Info" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/04/INV%20Material%20Transaction%20Types%20Info/">INV Material Transaction Types Info</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/04/INV%20Material%20Transaction%20Types%20Info/" class="archive-article-date">
+  	<time datetime="2020-05-04T06:31:45.589Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="INV-Material-Transaction-Types-Info"><a href="#INV-Material-Transaction-Types-Info" class="headerlink" title="INV Material Transaction Types Info"></a>INV Material Transaction Types Info</h1><table>
+<thead>
+<tr>
+<th>Transaction Type ID</th>
+<th>Transaction Type Name</th>
+<th>Transaction Type Name Description</th>
+<th>Transaction Source Type</th>
+<th>Transaction Action Type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Account issue</td>
+<td>Issue material against account</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Subinventory Transfer</td>
+<td>Transfer material betweensubinventories</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Direct Org Transfer</td>
+<td>Direct transfer betweentwo organizations</td>
+<td>13</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Cycle Count Adjust</td>
+<td>Record cycle count adjustments</td>
+<td>9</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Cycle Count Transfer</td>
+<td>Cycle Count Sub Transfer</td>
+<td>9</td>
+<td>2</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Physical Inv Adjust</td>
+<td>Physical Inventory adjustmenttransactions</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Physical Inv Transfer</td>
+<td>Physical Count Sub Transfer</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Intransit Receipt</td>
+<td>Receive from intransit</td>
+<td>13</td>
+<td>12</td>
+</tr>
+<tr>
+<td>15</td>
+<td>RMA Receipt</td>
+<td>Return material authorization</td>
+<td>12</td>
+<td>27</td>
+</tr>
+<tr>
+<td>17</td>
+<td>WIP Assembly Return</td>
+<td>Return assembly from storesto WIP</td>
+<td>5</td>
+<td>32</td>
+</tr>
+<tr>
+<td>18</td>
+<td>PO Receipt</td>
+<td>Receive Purchase Order</td>
+<td>1</td>
+<td>27</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Intransit Shipment</td>
+<td>Ship to intransit sourcedfrom Inventory</td>
+<td>13</td>
+<td>21</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Standard cost update</td>
+<td>Update standard cost information</td>
+<td>11</td>
+<td>24</td>
+</tr>
+<tr>
+<td>25</td>
+<td>WIP cost update</td>
+<td>Update cost of a WIP item</td>
+<td>5</td>
+<td>24</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Periodic Cost Update</td>
+<td>Update Periodic Cost</td>
+<td>14</td>
+<td>24</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Layer Cost Update</td>
+<td>Layer Cost Update</td>
+<td>15</td>
+<td>24</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Account alias issue</td>
+<td>Issue material against accountalias</td>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Miscellaneous issue</td>
+<td>Perform miscellaneous issueof material</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Sales order issue</td>
+<td>Ship Confirm external SalesOrder</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Internal order issue</td>
+<td>Ship Confirm Internal Order:Issue</td>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>35</td>
+<td>WIP component issue</td>
+<td>Issue components from storesto WIP</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Return to Vendor</td>
+<td>Return to vendor from stores</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>37</td>
+<td>RMA Return</td>
+<td>Return return material authorization</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>38</td>
+<td>WIP Neg Comp Issue</td>
+<td>Issue negative componentto WIP</td>
+<td>5</td>
+<td>33</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Account receipt</td>
+<td>Receive material againstaccount</td>
+<td>3</td>
+<td>27</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Account alias receipt</td>
+<td>Receive material againstaccount alias</td>
+<td>6</td>
+<td>27</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Miscellaneous receipt</td>
+<td>Perform miscellaneous receiptof material</td>
+<td>13</td>
+<td>27</td>
+</tr>
+<tr>
+<td>43</td>
+<td>WIP Component Return</td>
+<td>WIP component return transaction</td>
+<td>5</td>
+<td>27</td>
+</tr>
+<tr>
+<td>44</td>
+<td>WIP Assy Completion</td>
+<td>Complete assemblies fromWIP to stores</td>
+<td>5</td>
+<td>31</td>
+</tr>
+<tr>
+<td>48</td>
+<td>WIP Neg Comp Return</td>
+<td>Return negative componentfrom WIP</td>
+<td>5</td>
+<td>34</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Internal Order Xfer</td>
+<td>Subinventory transfer sourcedby Internal order</td>
+<td>8</td>
+<td>2</td>
+</tr>
+<tr>
+<td>51</td>
+<td>Backflush Transfer</td>
+<td>Backflush subinventory transfer</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>52</td>
+<td>Sales Order Pick</td>
+<td>Staging transfer on a Salesorder</td>
+<td>2</td>
+<td>28</td>
+</tr>
+<tr>
+<td>53</td>
+<td>Internal Order Pick</td>
+<td>Staging transfer on an Internalorder</td>
+<td>8</td>
+<td>28</td>
+</tr>
+<tr>
+<td>54</td>
+<td>Int Order Direct Ship</td>
+<td>Direct transfer betweentwo organizations on a internal order</td>
+<td>8</td>
+<td>3</td>
+</tr>
+<tr>
+<td>55</td>
+<td>WIP Lot Split</td>
+<td>Lot Split</td>
+<td>5</td>
+<td>40</td>
+</tr>
+<tr>
+<td>56</td>
+<td>WIP Lot Merge</td>
+<td>Lot Merge</td>
+<td>5</td>
+<td>41</td>
+</tr>
+<tr>
+<td>57</td>
+<td>Lot Bonus</td>
+<td>Lot Bonus</td>
+<td>5</td>
+<td>42</td>
+</tr>
+<tr>
+<td>58</td>
+<td>Lot Update Quantity</td>
+<td>Lot Update Quantity</td>
+<td>5</td>
+<td>43</td>
+</tr>
+<tr>
+<td>61</td>
+<td>Int Req Intr Rcpt</td>
+<td>Delivery of intransit materialsourced by Internal requisition</td>
+<td>7</td>
+<td>12</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Int Order Intr Ship</td>
+<td>Ship to intransit sourcedby Internal order</td>
+<td>8</td>
+<td>21</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Move Order Issue</td>
+<td>Transact Account Issue MoveOrder</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td>64</td>
+<td>Move Order Transfer</td>
+<td>Transact Subinventory TransferMove Order</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td>66</td>
+<td>Project Borrow</td>
+<td>Borrow from project in projectmanufacturing</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>67</td>
+<td>Project Transfer</td>
+<td>Transfer to project in projectmanufacturing</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>68</td>
+<td>Project Payback</td>
+<td>Payback to project in projectmanufacturing</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Shipment Rcpt Adjust</td>
+<td>Adjustment to receipt ofin-transit delivery</td>
+<td>13</td>
+<td>29</td>
+</tr>
+<tr>
+<td>71</td>
+<td>PO Rcpt Adjust</td>
+<td>Delivery adjustments ona Purchase order receipt</td>
+<td>1</td>
+<td>29</td>
+</tr>
+<tr>
+<td>72</td>
+<td>Int Req Rcpt Adjust</td>
+<td>Delivery adjustments onintransit receipt sourced by Internal req.</td>
+<td>7</td>
+<td>29</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Planning Transfer</td>
+<td>Planning Transfer</td>
+<td>13</td>
+<td>5</td>
+</tr>
+<tr>
+<td>77</td>
+<td>ProjectContract Issue</td>
+<td>Project contract Issue</td>
+<td>16</td>
+<td>1</td>
+</tr>
+<tr>
+<td>80</td>
+<td>Average cost update</td>
+<td>Update average cost information</td>
+<td>13</td>
+<td>24</td>
+</tr>
+<tr>
+<td>82</td>
+<td>Inventory Lot Split</td>
+<td>Lot Split</td>
+<td>13</td>
+<td>40</td>
+</tr>
+<tr>
+<td>83</td>
+<td>Inventory Lot Merge</td>
+<td>Lot Merge</td>
+<td>13</td>
+<td>41</td>
+</tr>
+<tr>
+<td>84</td>
+<td>Inventory Lot Translate</td>
+<td>Lot Translate</td>
+<td>13</td>
+<td>42</td>
+</tr>
+<tr>
+<td>86</td>
+<td>Cost Group Transfer</td>
+<td>Cost Group Transfer</td>
+<td>13</td>
+<td>55</td>
+</tr>
+<tr>
+<td>87</td>
+<td>Container Pack</td>
+<td>Container Pack</td>
+<td>13</td>
+<td>50</td>
+</tr>
+<tr>
+<td>88</td>
+<td>Container Unpack</td>
+<td>Container Unpack</td>
+<td>13</td>
+<td>51</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Container Split</td>
+<td>Container Split</td>
+<td>13</td>
+<td>52</td>
+</tr>
+<tr>
+<td>90</td>
+<td>WIP assembly scrap</td>
+<td>Scrap assemblies from WIP</td>
+<td>5</td>
+<td>30</td>
+</tr>
+<tr>
+<td>91</td>
+<td>WIP return from scrap</td>
+<td>Return assemblies scrappedto WIP</td>
+<td>5</td>
+<td>30</td>
+</tr>
+<tr>
+<td>92</td>
+<td>WIP estimated scrap</td>
+<td>WIP estimated scrap transaction</td>
+<td>5</td>
+<td>30</td>
+</tr>
+<tr>
+<td>93</td>
+<td>Field Service Usage</td>
+<td>Field Service Usage</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>94</td>
+<td>Field Service Recovery</td>
+<td>Field Service Recovery</td>
+<td>13</td>
+<td>27</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/04/INV%20Material%20Transaction%20Types%20Info/">展开全文 >></a>
         </p>
       
 
@@ -679,7 +1384,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
     </nav>
   
 

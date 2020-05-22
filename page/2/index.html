@@ -8,10 +8,12 @@
   <link rel="dns-prefetch" href="https://dejavn.github.io">
   <title>Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Oracle EBS,Python,Shell">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
 <meta property="og:url" content="https:&#x2F;&#x2F;dejavn.github.io&#x2F;page&#x2F;2&#x2F;index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="Oracle EBS,Python,Shell">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
   
@@ -151,20 +153,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-OM Defining Release Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Shipping Parameters" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Defining%20Release%20Rules/">OM Defining Release Rules</a>
+      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Parameters/">OM Shipping Parameters</a>
     </h1>
   
 
         
-        <a href="/2020/05/21/OM%20Defining%20Release%20Rules/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.819Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
+        <a href="/2020/05/22/OM%20Shipping%20Parameters/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:31:35.184Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -177,9 +179,15 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Defining-Release-Rules"><a href="#Defining-Release-Rules" class="headerlink" title="Defining Release Rules"></a>Defining Release Rules</h1><p>You can create default pick release rules that are applied at pick release in the Release Sales Orders window. Each rule can be set up with its own set of unique pick release parameters depending on the pick release criteria required.<br>When pick release is run, the pick release is performed based on the parameters set up in the selected pick release rule. For example, you can create a specific rule that pick releases only backordered lines.</p>
-<p><strong>Note:</strong> Although you can also enter the pick release criteria at pick release time without creating a rule, creating a rule is more efficient if you frequently run the same pick release. Also, note that it is required when releasing using SRS or when using the Auto Pick Pack and Ship features.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521215830.png" alt=""></p>
+        <h1 id="Shipping-Parameters"><a href="#Shipping-Parameters" class="headerlink" title="Shipping Parameters"></a>Shipping Parameters</h1><p>You can define the default values for basic shipping information such as units of measurement, pick release rules, weight and volume calculations, and delivery grouping rules. Shipping parameters are organization specific.<br>The parameters are arranged into the following tabbed regions in the Shipping Parameters window:</p>
+<p><strong>■ General:</strong> You can define shipping units of measurement such as weight, volume, and the unit of measure used for percent fill basis calculations.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093253.png" alt=""></p>
+<p><strong>■ Pick Release:</strong> You can define release rules, pick slip grouping rules, release sequence rules, and printing parameters</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093400.png" alt=""></p>
+<p><strong>■ Shipping Transaction:</strong> You can define automatic or manual weight and volume calculations, container volume calculations, container inventory control, and goods dispatched (COGS) account</p>
+<p><img src="http://www.oracleug.com/sites/default/files/users/oracleug/ug/om/oe/se101_0.PNG" alt="img"></p>
+<p><strong>■ Delivery Grouping</strong>: You can define how to group delivery lines for a delivery</p>
+<p><img src="http://www.oracleug.com/sites/default/files/users/oracleug/ug/om/oe/se102_0.PNG" alt="img"></p>
 
       
 
@@ -192,7 +200,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Defining%20Release%20Rules/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Parameters/">展开全文 >></a>
         </p>
       
 
@@ -222,20 +230,20 @@
 
 
   
-    <article id="post-OM Pick Release" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Defining Roles and Users" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Pick%20Release/">OM Pick Release</a>
+      <a class="article-title" href="/2020/05/22/OM%20Defining%20Roles%20and%20Users/">OM Defining Roles and Users</a>
     </h1>
   
 
         
-        <a href="/2020/05/21/OM%20Pick%20Release/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.814Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
+        <a href="/2020/05/22/OM%20Defining%20Roles%20and%20Users/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:28:58.250Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -248,30 +256,17 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Pick-Release"><a href="#Pick-Release" class="headerlink" title="Pick Release"></a>Pick Release</h1><p>The pick release process creates move orders which are pre-approved requests for sub inventory transfers to bring material from its source locations in the warehouse (stores/fg sub inventory) to a staging sub inventory.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222240.png" alt=""></p>
-<p><strong>1.</strong> If <strong>auto allocate and auto pick confirm</strong> both are set to NO then pick release does nothing except creating the move order.</p>
-<p>If the auto allocate is set to yes in release rule with the ware house and sub inventory name then pick process also does an allocation/detailing of the item in the pick from sub inventory.<br>**<br>Detailing** is the process by which Oracle Order Picking and Shipping uses the picking rules to determine where to source the material to fulfill a request line (move order line). The detailing process fills in the move order line details with the actual transactions to be performed. If adequate quantity is not available to detail the move order, this process can be repeated later. If no reservation exists before the detailing process, it also creates the reservation for the material. </p>
-<p>During the process of reservation in scheduling a demand line is created and can be seen in reservation form. At thaat point of time the system only does the reservation with type Inventory and w/o specifying the subinventory and locator. During pick release allocation/detailing the system populates the subinvenory and locator if applicable.</p>
-<p>If the <strong>auto pick confirm process is set to yes</strong> then pick release process also does the transact move order and at the end of pick release process the material moves automatically to the staging sub inventory. In this case the delivery line status in SE changes from ready to release to staged/pick confirmed but if either of the auto allocate/auto pick confirm is set to NO, then the status changes to released to ware house and the user needs to manually transact the move order created by the pick release process.</p>
-<p><strong>2.</strong> <strong>If there is no onhand</strong> then the order is back ordered and no move order is created. If there is not sufficient onhand then a move order is created for the available onahand and the delivery line splits in SE form.</p>
-<p><strong>3.</strong> <strong>Pick Slips</strong> can be created after the detailing process completes, and the quantity and source can be manually verified at pick confirm. Pick slip report contains the SO (line, item, quantity, ship set), Mover Order, Delivery and Trip numbers. A custmozied bill of lading &amp; packing slip can be generated after this if required.</p>
-<p><strong>4.</strong> You can run one or more releases and customize release criteria to meet your requirements. You can define:<br>■ Release Rules to specify your picking criteria and set the default Release Rule through Shipping Parameters Pick Release tab.<br>■ Release Sequence Rules to specify the order in which eligible delivery lines are allocated during pick release.<br>■ Pick Slip Grouping Rules to determine how released move order lines are grouped onto pick slips.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222334.png" alt=""></p>
-<p><strong>Picking Rules</strong><br>Move orders will use the picking rules set up in Oracle Inventory to locate the material required to fulfill the move order line. Together with item-sub inventory defaults (required if the staging sub inventory is locator controlled), the picking<br>rules suggest the staging transfer transaction lines with appropriate source information that will be required to obtain enough material in the staging location for the delivery. The process where the Picking Engine generates these transaction<br>line suggestions is called allocating.</p>
-<p>When you define an item you choose a <em>picking rule to determine the order in which revisions, lots, subinventories, and locators are picked for sales orders</em>. Oracle Shipping Execution submits requests to Oracle Inventory, which uses the information you enter in the Picking Rules window to generate pick lists for sales orders. If you choose None for any of the criteria fields, Inventory ignores that criterion. For example, if you choose None for Revision, Inventory picks units of an item without regard to revision levels. Oracle Inventory looks at the picking criteria in the order in which they appear in the Picking Rules window. Then, Inventory looks at the options (except for None options) for each criterion in the order in<br>which they appear beneath each criterion.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222417.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222444.png" alt=""></p>
-<p>Note: If you utilize Oracle Transportation, compatibility constraints can be used in the shipping process up through ship<br>confirmation. Compatibility Constraints enable you to define a variety of transportation related restrictions related to items (goods for shipment), carriers, modes of transport, facilities, organizations, and customers. Then, these restrictions are used by the application to warn or prevent further order processing if the defined undesirable condition is encountered. For example, you can define an item-carrier compatibility constraint stating that designated carriers cannot transport specific inventory items. When a delivery is created violating the constraint, an error or warning message will be generated. You determine the severity of the constraint violation; whether a warning or error should display.</p>
-<p><strong>Staging Locations</strong><br>The destination sub inventory for a pick wave move order is the staging location into which the picked material should be deposited. Each organization should designate at least one staging sub inventory. Staging sub inventories should be<br>reservable. Each batch created at pick release will have the same destination staging sub inventory. The default staging sub inventory and locator to be used for all pick wave move orders are specified through Oracle Shipping Execution’s Shipping<br>Parameters window. This location can be changed at pick release. To model different staging lanes within the staging area, facilities may choose to either create different sub inventories or designate staging lane locators within one staging sub<br>inventory.</p>
-<p><strong>Pick Release from shippng transaction form</strong><br>All the pick release setups can be done so that users can easily do pick release form shipping transaction form.<br>once you do a pick cofirm system fires below requests</p>
-<ul>
-<li>Pick Selection List Generation</li>
-<li>Pick Slip Report</li>
-<li>Shipping Exceptions Report</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200521222601.png" alt=""></p>
-<p>When pick release is done from shipping transaction form, the system picks up the auto –allocate and create delivery set up from shipping parameter. If the Pick Confirmation Required box in the Organization Parameters window is not enabled then the system would also does the auto-transaction.<br><strong>Notes:</strong><br>Do not check the Pick Confirmation Required box in the Organization Parameters window. If you check this box, the Auto Pick Confirm parameter on the shipping tab of the Pick Release form will be set to No. To change this you would navigate to Setup -&gt; Shipping -&gt; Organization Parameters-&gt;’ATP, Pick, and Item-Sourcing tab</p>
+        <h1 id="Defining-Roles-and-Users"><a href="#Defining-Roles-and-Users" class="headerlink" title="Defining Roles and Users"></a>Defining Roles and Users</h1><p>Shipping Execution provides data access controls called roles that control users’ access to the Actions list and Tools menu in the Shipping Transactions form. Roles are assigned to users using grants that control access to view or edit specific shipping data or actions.<br>This is useful, for example, if you want to assign a grant to inexperienced users that provides view-only access or assign grants that prevent unwanted actions such as unintentional pick releases across multiple organizations.</p>
+<p><em>First we define roles with different permissions of all the available functions in shipping execution form i.e role1 can have view access to few things and edit to the rest, role2 has different set of view/edit access in the SE form. After that we give grants to different users to the defined roles.</em></p>
+<p> <img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092914.png" alt=""></p>
+<p><strong>Define Roles</strong><br>For each role, you can select the following data access controls that control edit and view access to shipping entities such as trips, stops, deliveries, lines/LPNs.<br>■ Data Access Edit enables you to edit and view the data<br>■ Data Access View enables you to browse the data<br>■ Data Access None prevents you from editing and browsing data and performing actions</p>
+<p>A role can provide either view-only, edit-only, or a combination of view and edit access depending on the set up of the role. You can create customized roles by defining the access controls you want. During the set-up for each role, you can<br>quickly enable or disable actions by selecting the Disable or Enable Actions button.</p>
+<p><em>Set up -&gt; Shipping -&gt; Grant &amp; Roles Defination -&gt; Roles</em></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093002.png" alt=""></p>
+<p><strong>Granting a Role to a User</strong><br>You can grant a user a role in one organization or all organizations for a period of time. The role is assigned to a user by a grant. The grant is specific to a particular user and defines the role(s) assigned to the user, the organization where the grant is effective, the start date and optionally, an end date</p>
+<p>A grant can have one or all inventory organizations. If an organization is not specified, the grant is applicable to all organizations. If the user’s activities span more than one organization, for example, a stock picker who pick releases across multiple organizations (but not all), then separate grants for each organization must be created to associate the user, the user’s role, and effective dates for the grant. Alternately, if you do not select a specific organization, the stock picker can pick across all organizations.</p>
+<p><em>Set up -&gt; Shipping -&gt; Grant &amp; Roles Defination -&gt; User</em></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093032.png" alt=""></p>
 
       
 
@@ -284,7 +279,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Pick%20Release/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Defining%20Roles%20and%20Users/">展开全文 >></a>
         </p>
       
 
@@ -314,20 +309,20 @@
 
 
   
-    <article id="post-OM Container setups and process" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Internal Approval for Quotes &amp; Sales Agreements" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/21/OM%20Container%20setups%20and%20process/">OM Container setups and process</a>
+      <a class="article-title" href="/2020/05/22/OM%20Internal%20Approval%20for%20Quotes%20&%20Sales%20Agreements/">OM Internal Approval for Quotes &amp; Sales Agreements</a>
     </h1>
   
 
         
-        <a href="/2020/05/21/OM%20Container%20setups%20and%20process/" class="archive-article-date">
-  	<time datetime="2020-05-21T14:29:11.811Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-21</time>
+        <a href="/2020/05/22/OM%20Internal%20Approval%20for%20Quotes%20&%20Sales%20Agreements/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:23:40.715Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -340,31 +335,263 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Container-setups-and-process"><a href="#Container-setups-and-process" class="headerlink" title="Container setups and process"></a>Container setups and process</h1><h2 id="Setups"><a href="#Setups" class="headerlink" title="Setups"></a>Setups</h2><ol>
-<li><p>Create containers<br>Items -&gt; Master Items</p>
-<p>Choose the Inventory Organization</p>
-<p>Under Main tab,<br>Primary UOM: Each, Item Status: active</p>
-<p>Under Physical Attributes<br>Weight UOM: Pounds, Unit Weight: 1, Voulme UOM: Cubic Foot, Unit Weight: 1, Container Flag: Checked, Container Type: Choose a value from the LOV,<br>Internal Volume: 2, Maximum Load Weight: 2, Minimum Fill Percent: 50</p>
-<p>under Order Management tab<br>Shippable flag: Checked</p>
-<p>Assign it to the inv organization.</p>
-</li>
-<li><p>Define a Ship-Container Load Relationship<br>OM Responsibility: Shipping -&gt; Setup -&gt; Container Load Details</p>
-</li>
+        <h1 id="Internal-Approval-for-Quotes-amp-Sales-Agreements"><a href="#Internal-Approval-for-Quotes-amp-Sales-Agreements" class="headerlink" title="Internal Approval for Quotes &amp; Sales Agreements"></a>Internal Approval for Quotes &amp; Sales Agreements</h1><p>Quotes and Sales Agreements leverage the flexibility of Workflow to manage the quote life cycle. There are two phases for workflow: Negotiation and Fulfillment. Workflow flexibility allows you to tailor your Negotiation and Fulfillment phases to your specific processes. You can choose one of the following generic seeded header-level negotiation flows, these flows can be associated to transaction types for both Sales Orders and Sales Agreements. Both can be converted to an order. Quotes can be converted to sales orders in either the Entered or Booked status (if the booking activity is synchronous). The seeded workflows are as follows:</p>
+<p>• Negotiation Flow - Simple:This workflow does not require any approvals nor customer acceptance. However the quote can either expire or get lost if it does not progress to being converted to an order.<br>• Negotiation Flow—Generic: Simple negotiation flow, without approval. Prepares quote document, get customer final acceptance, convert quote to the Sales Order.<br>• Negotiation Flow—Generic with Approval: Flow with Approval. Prepare quote document, get management approval, get customer final acceptance, and convert the quote to an order.</p>
+<p>In support of a quote the following Status types are predefined:<br>Draft, Pending Internal Approval<br>Lost,  Pending Customer Acceptance<br>Draft Submitted, Internal Approved<br>Customer Accepted,<br>Offer Expired - This status does not apply to Sales Agreements.<br>Draft - Customer Accepted, Draft - Customer Rejected</p>
+<p>After a quote has been put together, it can be submitted for approval. The relevant documents can be routed to various people in the organization, including people from Sales, Business Practice, Legal, or Finance, for review.<br>The list of approvers is defined at the Transaction Type level. The document must be approved by each participant in the list before the transaction is eligible to move forward in the workflow. If the approver fails to respond within the time limit, the system will re-send the notification. If the approver again fails to respond, the system will either send the notification to the next approver (if the current approver is not the last approver), or reject the notification based on the system parameter setup.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092403.png" alt=""></p>
+<p>The Approver List can be accessed two ways:<br>\1. From the Transaction Type setup window: (N) &gt; Orders, Returns &gt; Setup &gt; Transaction Type &gt; Define. Select the Approvals button to bring up the Approver List.</p>
+<p>\2. Navigate directly to the window: (N) &gt; Orders, Returns &gt; Setup &gt; Transaction Type &gt; Approvals.</p>
+<p>If an approver is deleted from the list the notifications still need to be processed.</p>
+<p>If an approver is added to the list and any transaction is pending approval they will receive a notification.</p>
+<p>The user will receive a notification and must approve or reject.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Internal%20Approval%20for%20Quotes%20&%20Sales%20Agreements/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Assigning Workflows to Transaction Types" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Assigning%20Workflows%20to%20Transaction%20Types/">OM Assigning Workflows to Transaction Types</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Assigning%20Workflows%20to%20Transaction%20Types/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:22:46.343Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Assigning-Workflows-to-Transaction-Types"><a href="#Assigning-Workflows-to-Transaction-Types" class="headerlink" title="Assigning Workflows to Transaction Types"></a>Assigning Workflows to Transaction Types</h1><p>Select appropriate workflows for your order type and line types. Several header and line workflows are seeded. You can perform all standard OM processing including orders, returns, drop ship orders, orders for configured items and orders for assemble to order items using only seeded workflows. You may also define your own workflows if you need additional steps (such as notifications) or additional processes.</p>
+<p>The combination of the order type, the line type and the item type determine the workflow that a line will have. For this reason, you define the line workflows from the order type workflow definition window. Press the Assign Line Flows button. Enter the order type. For each combination of line type and item type that you want to use with this order enter a line in the Assign Workflow processes window. The line types are the ones that you defined. The item types are based on the definition of the items in the inventory module and include values such as standard item, kit, and PTO model. If you leave the item type blank the workflow process that you define will be used for all item types.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092306.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Assigning%20Workflows%20to%20Transaction%20Types/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Transaction Types" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Transaction%20Types/">OM Transaction Types</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Transaction%20Types/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:18:02.517Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OM-Transaction-Types"><a href="#OM-Transaction-Types" class="headerlink" title="OM Transaction Types"></a>OM Transaction Types</h1><p>Transaction Types are used to associate workflows for various phases of sales document (sales orders or sales agreements) processing. You can also associate various values like transaction phases, layout templates, approvers to a transaction type and these will be defaulted on the sales order or sales agreement</p>
+<h1 id="Transaction-Order-Line-Types"><a href="#Transaction-Order-Line-Types" class="headerlink" title="Transaction(Order/Line) Types"></a><strong>Transaction(Order/Line) Types</strong></h1><p>Transaction Types provide default information on orders and establish process controls.<br><em>Transaction type is the generic term that refers to both Order Transaction Types and Line Transaction Types in Order Management. This is not to be confused with the Receivables Transaction Type, which is a completely different object.</em></p>
+<p><em>The transaction type code may have values of Order or Line and determines whether the transaction type is an order transaction type or a line transaction type.</em> In this document order type is used synonymously with order transaction type and line type is used synonymously with line transaction type. A document sequence is a range of numbers that can be used for an order type and is defined by a numbering method (automatic, manual or gapless) and the beginning order number.</p>
+<p>A document category is a specific type of document such as a sales order or a purchase order. These are used in many Oracle applications for key entities. In Order Management when you create an order transaction type the system automatically creates a document category with the same name. This is used to assign the numbering sequence to the order type.</p>
+<p><strong><em>Some of the features of Transaction Types/Workflow are:</em></strong><br>■ Each line in an order has its own workflow so each line may follow a different flow. This allows you to have both order and return lines on the same order.<br>■ You can create new workflow activities from custom PL/SQL code. This makes it very easy to extend OM.<br>■ A workflow process can have subprocesses.<br>■ A workflow process can have an unlimited number of activities.<br>■ There is no limit to the number of custom workflow activities that can be defined in Order Management.<br>■ You can view the status of the workflow on an order or order line in either tabular or graphical format. In graphical format you can see not only the activities that the workflow has completed but also the activities that still require completion.</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><strong>Line Transaction Types</strong></p>
+<p>The Define Transaction Types window is used to define both order and line types.<br>Define your line types first. You should define line types for both order lines and return lines. To access the window from the order management navigation menu choose<br><em>Setup -&gt; Transaction Types -&gt; Define.</em><br>Except the operating unit and transaction type name the other mandatory fields in the header are <em>Order category, Transaction type and effective dates</em>. And we should also specify the sales document type(agreement type: SO/Blanket Agreement)</p>
+<p>\1. Enter a name for the line type in the Transaction Type field. Note that this name must be unique; you cannot create an order type and a line type with the same name.</p>
+<p>\2. <strong>Sales Documnet Type</strong> : Sales Order / Sales Agreement</p>
+<p>\3. <strong>Order Category</strong> : Order / Return /Mixed<br>Enter either Order or Return for the Order Category depending on whetheryour new line type is for sales lines or return lines. For Line transaction type choose wither order/return.<br>The value Mixed is selected for order type which can contains both sales order and return lines.</p>
+<p>\4. <strong>Transaction Type Code</strong> : Order/Line<br>Enter LINE for the Transaction Type Code.</p>
+<p>Many of the other fields on this window as well as the assign line flows button are not applicable to line types so<br>when you enter the transaction type code they will become inaccessible</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092051.png" alt=""></p>
+<p>On the <strong>Shipping tab</strong> the autoschedule flag is inaccessible because it only applies to order types. The inspection required flag determines whether inspection is required when return lines are received. There are five Scheduling level choices to control the way scheduling works at the time of order entry for lines of this type: ATP Only, Allow all scheduling actions, No reservations, Inactive Demand with Reservations and Inactive Demand without Reservations. The remainder of the fields can be used for defaulting.</p>
+<p>Two values on the Schedule Level LOV on the Shipping tab support different requirements for reservations: Inactive Demand with Reservations and Inactive Demand without Reservations. These levels can be set on the transaction types,<br>which would mean that the line will not be scheduled and will not be seen as demand in APS. When this level is set, Schedule Ship Date entered by the user will be accepted and no scheduling is done. If scheduling is done as an action or through WF, Request Date will be copied to the Schedule Ship Date if it is already not there.</p>
+<p>Shipping Source Type: External/Internal. Its used to default the values but can be changed in sales order. The shipping source type External is used for drop ship orders.</p>
+<p>The <strong>Finance tab</strong> fields contain information which affects the interfaces with the financial applications. The Invoicing Rule and Accounting Rule fields are used as defaulting sources for the sales order, and this information on the sales order is<br>passed to Autoinvoicing. For the fields Invoice Source, Non-Delivery Invoice Source, and Receivables Transaction Type these values are required for interfacing to Receivables but they are not on the sales order header or line. When the invoice<br>interface activity in the workflow is executed the system will look for a value in the following order: line transaction type, order transaction type, profile option. If no value is found the invoice interface activity will fail. The Cost of Goods Sold<br>Account can be used by the Account Generator function of the inventory interface when a line is ship confirmed.</p>
+<p><strong>Order Transaction Types</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092130.png" alt=""></p>
+<p>Here the transaction type could would be order.<br>If you want to use the order type as a defaulting source for Price List on the order you may enter a Price List on the Main tab. The Enforce List Price flag will determine whether a user can apply a manual discount to the order at the time of order entry. The Credit Check rules for ordering and shipping determine whether credit check will occur for this order type. If the fields are blank, no credit checking will occur for orders of this type.</p>
+<p>On the Shipping tab the autoschedule flag determines whether scheduling will try to autoschedule the lines on orders of this type. The inspection required flag is not accessible (it only applies to lines). The rest of the fields can be used for defaulting.</p>
+<p>The Finance tab fields are used for information which affects the interfaces with the financial applications. The Currency and Currency Conversion Type can be used as defaulting sources for the order header. The Invoicing Rule and Accounting Rule<br>fields are used as defaulting sources for the sales order line, and this information on the sales order is passed to Autoinvoicing.For the fields Invoice Source, Non-Delivery Invoice Source, and Receivables Transaction Type these values are required for interfacing to Receivables but they are not on the sales order header or line. When the invoice interface activity in the workflow is executed the system will look for a value in the following order: line transaction type, order transaction type, profile option. If no value is found the invoice interface activity will fail. The Cost of Goods Sold Account is used by the inventory interface when a line is ship confirmed.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522092210.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Transaction%20Types/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Price List" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Price%20List/">OM Price List</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Price%20List/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:15:21.212Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OM-Price-List"><a href="#OM-Price-List" class="headerlink" title="OM Price List"></a>OM Price List</h1><p>The pricing engine requires that all items, services, models, option class and options should be selected and displayed on price list.</p>
+<p>Fields such as payment terms, freight terms and freight carrier are available on the price list form. By defining the OM defaulting rules to use these fields from the price list window, you are able to default values directly into the SO based upon which price list has been selected for the order.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091557.png" alt=""></p>
+<p><strong>Price List Currency</strong><br>For international sales, you can record transactions in different currencies by defining a price list for each currency. After entering the currency for an order or return, you must choose a price list in the same currency.</p>
+<p>Multi-Currency Conversion Lists<br>For pricing in different currencies, multi-currency conversion lists enable you to maintain a single price list for multiple currencies. However, this is an Oracle Advanced Pricing feature which is available only if Oracle Advanced Pricing is<br>fully installed and multi-currency lists are enabled.</p>
+<p><strong>Round To Factor</strong><br>You can define the number of places to the right or left of the decimal point to which the pricing engine rounds prices from price lists and modifiers from modifier lists. If you enter a negative number, you increase the number of characters to the<br>Note: The pricing engine does select inactive price lists when doing a pricing request. Other applications can call an inactive price list and use relevant information.</p>
+<p>right of the decimal point. If you enter a positive number, you affect more columns to the left of the decimal point. If you enter zero, rounding occurs to whole decimals. Rounding factor -3 indicates rounding to the nearest thousands (for example,.1007 rounds to .101). Rounding factor of +2 indicates rounding to the nearest hundred; for example 107 rounds to 100).</p>
+<p><strong>Secondary Price List</strong><br>The pricing engine uses secondary price lists when it cannot determine the price for an item using the price list assigned to an order. Primary and secondary price lists have the same currency.</p>
+<ol>
+<li>You can assign the same secondary price list to multiple price lists but you can not assign a secondary price list to a secondary price list.</li>
+<li>If the item that you are ordering is not in the primary price list, the pricing engine uses the highest-precedence secondary price list (the secondary price list with the lowest value for the precedence field).</li>
+<li>Line-level discounts and modifiers that apply to the primary price list do not apply to the secondary price list.</li>
+<li>If an item appears on both the primary and a secondary price list with the same effective dates, the pricing engine uses the primary price list to price the item.</li>
+<li>If an item appears on the primary price list but is not active (the effective end date has passed), the pricing engine uses the price on the secondary price list.</li>
 </ol>
-<p>Container Item, Load Item, Maximum Quantity, Preferred Flag</p>
-<h2 id="Process-Flow"><a href="#Process-Flow" class="headerlink" title="Process Flow"></a>Process Flow</h2><h3 id="1-Creating-LPNs-On-the-shipping-transaction-form"><a href="#1-Creating-LPNs-On-the-shipping-transaction-form" class="headerlink" title="1. Creating LPNs On the shipping transaction form"></a>1. Creating LPNs On the shipping transaction form</h3><p>Actions: Select Create LPNs and Click on Go button<br>In the LPN form enter Inventory Organization short name, Name Prefix, Base Number and Click on Ok.<br>Check the LPNs names created and Close the form.</p>
-<h4 id="2-1-Manual-Packing-Delivery"><a href="#2-1-Manual-Packing-Delivery" class="headerlink" title="2.1 Manual Packing Delivery"></a>2.1 Manual Packing Delivery</h4><p>Select Order line 1<br>Actions: Select Pack option and Click on Go button<br>Select the created container from the LOV.<br>On the shipping transactions form, for the line 1, click on Details button</p>
-<p>Check values for Line, Delivery, Parent LPN, Master LPN.</p>
-<p>Parent LPN should be the one you selected above and Master LPN could be Null or the same value as above</p>
-<p>Click on Done button</p>
-<h4 id="2-2-Auto-pack-Delivery-2"><a href="#2-2-Auto-pack-Delivery-2" class="headerlink" title="2.2 Auto-pack Delivery 2"></a>2.2 Auto-pack Delivery 2</h4><p> Select Order line 2<br>Actions: Select Auto-Pack option and Click on Go button<br>Click on Details button<br>Check values for Line, Delivery, Parent LPN &amp; Master LPN.<br>Parent LPN should be the one generated by the system and Master LPN could be Null or the same value as above<br>Click on Done button</p>
-<h4 id="2-3-Full-Manual-Packing-Delivery-line-3"><a href="#2-3-Full-Manual-Packing-Delivery-line-3" class="headerlink" title="2.3 Full Manual Packing Delivery line 3"></a>2.3 Full Manual Packing Delivery line 3</h4><p>Select Order line 3<br>Select (using CTRL-Click) couple of small LPNs not assigned yet<br>Actions: Packing Workbench<br>Click on Go button</p>
-<p>Under LPNs tab check pack column for all selected lines<br>Check Available Capacity</p>
-<p>Change to Lines tab<br>Check Pack column only for line of delivery 3.</p>
-<p>Packing mode : Choose Full option<br>Check Item Total values at the left of the screen<br>Click on Pack button</p>
-<p>Actions: Select Packing workbench again and Click on Go</p>
-<p>Under LPNs tab Select each of the LPNs selected above</p>
-<p>Check the Context section under same tab, for each one of the LPNs, it should be also one line under content. Check Item Name and Quantity</p>
+<p><strong>Enter the price list line details as given below</strong><br>\1. Product context is always item.<br>\2. Depending on the value of Product Attribute, select an item number or an item category for the Product Value.<br>\3. Select a UOM (unit of measure).<br>Select Primary UOM if this price list line UOM is the primary pricing unit of measure for the item. Oracle Pricing uses the primary pricing unit of measure and the Oracle Inventory unit of measure conversion information to price an order whose unit of measure does not have a price list line.<br>Select an Application Method. Use Unit Price for inventory items and either the Unit Price or Percent Price for service items<br>\4. Enter Value and Formula as follows:<br>■ For inventory items, enter the base list price of the item in Value.<br>■ For service items, enter a value in the Value field. If Application Method is Unit Price, enter the base list price of the item. If Application Method is Percent Price, enter a percent of another item’s price.<br>■ Enter the name of a previously defined static formula in Static Formula.<br>If you enter a static formula, you must submit the concurrent program Update Formula Price’s to calculate the value. The result of the calculation changes the value of Value.<br>\5. Enter the starting and ending effectivity dates of this price list line in Start Date and End Date.<br>The dates should be within the start and end effectivity dates of the price list.<br>\6. Enter a numeric value in Precedence; this is the product precedence. When the pricing engine is trying to locate a price, it uses precedence to resolve conflicts when it selects more than one price list line from a price list.<br>\7. Save your work<br>**<br>Copying a Price List**<br>You can quickly create a new price list by copying an existing price list. Only active price list lines (those with an effective end date later than the current date) can be copied.</p>
+<p><strong>Adjusting a Price List</strong><br>Use this process to adjust the prices for a price list. You can adjust prices for the entire price list or selected items, item category sets, and item categories. You can define your criteria further by selecting the item status or creation date of the items to adjust.<br>For example, you can specify a category so that only the price list lines for the selected category are adjusted. If you leave any of the fields blank, pricing adjusts the price list regardless of that field. You can adjust the price by either an amount or percent:<br>■ Percent: Enter a value to adjust list prices by a certain percentage. For example, when adjusting by a percentage, entering 10 raises list prices by 10 percent while -10 lowers list prices by 10 percent.<br>■ Amount: Enter a value to adjust list prices by a fixed amount. For example, when adjusting by an amount, entering 5 increases list prices by five whole units of currency. Entering -5 decreases list prices by five whole units of currency.</p>
 
       
 
@@ -377,7 +604,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/21/OM%20Container%20setups%20and%20process/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Price%20List/">展开全文 >></a>
         </p>
       
 
@@ -407,20 +634,20 @@
 
 
   
-    <article id="post-How to move a file in Python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Order Import Sources" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/15/How%20to%20move%20a%20file%20in%20Python/">How to move a file in Python</a>
+      <a class="article-title" href="/2020/05/22/OM%20Order%20Import%20Sources/">OM Order Import Sources</a>
     </h1>
   
 
         
-        <a href="/2020/05/15/How%20to%20move%20a%20file%20in%20Python/" class="archive-article-date">
-  	<time datetime="2020-05-15T03:10:34.628Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-15</time>
+        <a href="/2020/05/22/OM%20Order%20Import%20Sources/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:13:31.838Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -433,8 +660,9 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="How-to-move-a-file-in-Python"><a href="#How-to-move-a-file-in-Python" class="headerlink" title="How to move a file in Python"></a>How to move a file in Python</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> shutil</span><br><span class="line"></span><br><span class="line">os.rename(<span class="string">"path/to/current/file.foo"</span>, <span class="string">"path/to/new/destination/for/file.foo"</span>)</span><br><span class="line">shutil.move(<span class="string">"path/to/current/file.foo"</span>, <span class="string">"path/to/new/destination/for/file.foo"</span>)</span><br><span class="line">os.replace(<span class="string">"path/to/current/file.foo"</span>, <span class="string">"path/to/new/destination/for/file.foo"</span>)</span><br></pre></td></tr></table></figure>
-
+        <h1 id="OM-Order-Import-Sources"><a href="#OM-Order-Import-Sources" class="headerlink" title="OM Order Import Sources"></a>OM Order Import Sources</h1><p>You can define Order Import Sources from which to import order information. You can import historical orders, orders from other quote or sales systems, and changes to orders. Oracle Order Management recommends that you define a unique name for each source of order information you are importing. When you run the Order Import program, you can enter the source or sources for each execution. You can run Order Import for multiple sources at one time.</p>
+<p><strong>Internal Sales Orders</strong><br>If you are importing internal sales orders from Oracle Purchasing, you need to define an Order Import source to be used when you transfer the internal requisition information from Oracle Purchasing to create an internal sales order in Order Management.<br>You need to choose an Order Import source (Currently Internal is the only option) for internal requisitions/internal sales orders when you define purchasing options in Oracle Purchasing. You choose this same Order Import source as a parameter when you run the Order Import program in Order Management.<br>**<br>To define an Order Import source**<br>\1. Navigate to the Order Import Sources window.<br>\2. Enter the Order Import source name and a description.<br>\3. Check Enabled to activate the Order Import source.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091353.png" alt=""></p>
 
       
 
@@ -447,7 +675,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/15/How%20to%20move%20a%20file%20in%20Python/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Order%20Import%20Sources/">展开全文 >></a>
         </p>
       
 
@@ -477,20 +705,20 @@
 
 
   
-    <article id="post-Turn off the process that takes up port 8080" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Defaulting Rules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/12/Turn%20off%20the%20process%20that%20takes%20up%20port%208080/">Turn off the process that takes up port 8080</a>
+      <a class="article-title" href="/2020/05/22/OM%20Defaulting%20Rules/">OM Defaulting Rules</a>
     </h1>
   
 
         
-        <a href="/2020/05/12/Turn%20off%20the%20process%20that%20takes%20up%20port%208080/" class="archive-article-date">
-  	<time datetime="2020-05-12T08:27:55.566Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
+        <a href="/2020/05/22/OM%20Defaulting%20Rules/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:09:42.832Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -503,8 +731,16 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Turn-off-the-process-that-takes-up-port-8080"><a href="#Turn-off-the-process-that-takes-up-port-8080" class="headerlink" title="Turn off the process that takes up port 8080"></a>Turn off the process that takes up port 8080</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">etstat -ano|findstr "8080"</span><br><span class="line"></span><br><span class="line">tasklist|findstr "3516"</span><br></pre></td></tr></table></figure>
-
+        <h1 id="Defaulting-Rules"><a href="#Defaulting-Rules" class="headerlink" title="Defaulting Rules"></a>Defaulting Rules</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090953.png" alt=""></p>
+<p>Defaulting Rules are used to populate values in fields(like order type, price list etc) on forms (SO form) automatically.<br>Values can be populated from various sourcs like customer’s record, item’s record, price list, profile option or PL/SQL Code.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091034.png" alt=""></p>
+<p>An <strong>Entity</strong> in this context is a group of related attributes that roughly correspond to a table or a form in Order Management. There are entities of Order Header, Order Line, Order Price Adjustment, Line Price Adjustment, and so on.</p>
+<p>An <strong>Attribute</strong> is a field or column that belongs to that entity. Therefore, the ordered unit of measure is an attribute of the Order Line entity. When you query up the Defaulting Setup window for a particular entity, a list of all the attributes for which you can define defaulting rules display. You will not be able to define defaulting rules for descriptive flexfields, since their defaulting is controlled by AOL’s flexfield routines.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091106.png" alt=""></p>
+<p>Conditions are rules set up that to control when a particular group of default sources will be looked at. Define one or more condition validation templates per entity based on common business rules to meet your business needs. Then you can use them over and over for the attributes of that entity. For example, you might set up a condition template for all return lines, or another one for all internal order lines. The ALWAYS condition is seeded for each entity. When defining a set of Conditions and using them in rules, be sure to place the ALWAYS condition last in the Precedence for Defaulting Conditions.</p>
+<p>(In condition template we define condition of the order for which we ‘ll define the defaulting rule. ALWAYS condtion is the default one but we can define one condtion for return, one condition for internal orders and so on. once we have defined the conditions we set the defaulting rule of each attribute for different conditions. So the defaulting value is a combination of <strong><em>entity, condition template &amp; attribute\</em></strong>)<br>*<br><strong>Notes: The Group Number is an arbitrary number used to control AND and OR conditions. Indicate that rules are to be connected by an AND rule by giving them the same group number. Rules to be connected with OR should be given different group numbers</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522091141.png" alt=""></p>
+<p>On the main Defaulting Setup screen, where all the attributes of the entity are listed, there is a column called Defaulting Sequence. This number determines the order in which attribute defaulting takes place. When attributes have equal sequence numbers, defaulting takes place alphabetically. All the attributes are seeded with a sequence of 50. You can change these sequences, if you need defaulting to happen in some different order. For example, you might define a sourcing rule that says default attribute A on the line from attribute B on the same line. In this case, you need to insure that the Attribute B gets its value before A is defaulted, or the rule will not work as expected.</p>
 
       
 
@@ -517,7 +753,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/12/Turn%20off%20the%20process%20that%20takes%20up%20port%208080/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Defaulting%20Rules/">展开全文 >></a>
         </p>
       
 
@@ -547,20 +783,20 @@
 
 
   
-    <article id="post-maven  web  srctestjava missing" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Step 11 Document Sequences" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/04/maven%20%20web%20%20srctestjava%20missing/">maven  web  srctestjava missing</a>
+      <a class="article-title" href="/2020/05/22/OM%20Step%2011%20Document%20Sequences/">OM Step 11 Document Sequences</a>
     </h1>
   
 
         
-        <a href="/2020/05/04/maven%20%20web%20%20srctestjava%20missing/" class="archive-article-date">
-  	<time datetime="2020-05-04T13:52:48.416Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
+        <a href="/2020/05/22/OM%20Step%2011%20Document%20Sequences/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:05:05.196Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -573,7 +809,21 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="maven-web-src-test-java-missing"><a href="#maven-web-src-test-java-missing" class="headerlink" title="maven  web  src/test/java missing"></a>maven  web  src/test/java missing</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200504215210.png" alt=""></p>
+        <h1 id="Document-Sequences"><a href="#Document-Sequences" class="headerlink" title="Document Sequences"></a>Document Sequences</h1><p><strong>Step 11: Document Sequences (Order Numbering)</strong></p>
+<p>Define Document Sequences for automatic or manual numbering of orders. This step is required.<br>Order Management uses AOL Document Sequence functionality for order numbering. You can define document sequences that automatically generate numbers for your orders and returns as you enter them. You can define a single document sequence to assign unique consecutive numbers to all your orders and returns, or you can define multiple document sequences that are assigned to different order types. In the latter case, an order or return is uniquely identified by its type and its number, since orders and returns of different types may share numbers.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090525.png" alt=""></p>
+<p>Order and return numbers cannot contain alphabetic characters.</p>
+<p>Following 4 steps need to be completed to enable document sequence<br><strong>1.</strong> Set the profile option <strong>Sequential Numbering</strong> to Always Used at the Order Management Application level</p>
+<p><strong>2. Define document sequence</strong><br>OM: Setup -&gt; Documents -&gt; Define</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090610.png" alt=""></p>
+<p>Many countries have legal and audit requirements for order numbers to be contiguous. You can set up a document sequences as gapless through the Define Documents Sequences window. In addition, Order Management prevents deletion of orders that have been numbered using the gapless numbering sequence. The application uses locks to ensure gapless numbering. If you are using gapless sequences, please save your changes frequently to minimize lock contention issues.</p>
+<p>Order Management enables you to enter the order numbers for certain types of orders. You can define a document sequence as manual and assign it to a desired order type. This order type can be used on orders that you want to manually enter order numbers. When an order number is specified for such an order, Order Management validates that it is unique for a given order type.</p>
+<p><strong><em>Steps for creating document sequence</em></strong><br>\1. Enter a name for the document sequence.<br>\2. Specify Oracle Order Management as the Application.<br>\3. You can define the sequence to be Automatic, Gapless or Manual.<br>■ Automatic sequences: The system will automatically increment document numbers. Automatic sequences do not guarantee contiguous numbering.<br>■ Gapless sequences: The system guarantees that the numbers returned are contiguous.<br>■ Manual: User must specify a unique document number.<br>For all types of numbering, the Order Management system validates that the number specified by you is unique for a given order type.<br>\4. Enter a starting number</p>
+<p><strong>3. Define document categories</strong><br>You can create a document category for shipping documents such as a bill of lading (BOL) and assign it to a location or all locations. You can create more than one document category for a document, for example, if you want each carrier to have its own Bill of Lading number series, you can set up a unique document category to accommodate this requirement.</p>
+<p>You must define a category for each bill of lading and packing slip you wish to create. You can create a bill of lading category for each ship method/carrier or define a single bill of lading category for all. When you use a different bill of lading sequence for each carrier, you can easily identify the carrier by looking at the bill of lading number.<br><strong><em>Whenever we create a new transaction type, a new document category gets created automatically\</em></strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090759.png" alt=""></p>
+<p><strong>4. Assign document sequences</strong><br>After defining document sequences and categories, assign document sequences to document categories. Assigning sequences is application and category specific.<br>You cannot change a document category definition. If you find incorrect information, create a new category with the correct information, re-assign document sequences to the new category, and disable the old category. Either leave alone the existing Category or Disable it cautiously since it may affect other documents using the setting. For that reason disabling cannot be undone.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522090832.png" alt=""></p>
 
       
 
@@ -586,7 +836,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/04/maven%20%20web%20%20srctestjava%20missing/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Step%2011%20Document%20Sequences/">展开全文 >></a>
         </p>
       
 
@@ -616,20 +866,20 @@
 
 
   
-    <article id="post-Lunch user admin in Tomcat" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OM Setup Steps  12 - 16" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/04/Lunch%20user%20admin%20in%20Tomcat/">Lunch user admin in Tomcat</a>
+      <a class="article-title" href="/2020/05/22/OM%20Setup%20Steps%20%2012%20-%2016/">OM Setup Steps  12 - 16</a>
     </h1>
   
 
         
-        <a href="/2020/05/04/Lunch%20user%20admin%20in%20Tomcat/" class="archive-article-date">
-  	<time datetime="2020-05-04T06:39:12.614Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
+        <a href="/2020/05/22/OM%20Setup%20Steps%20%2012%20-%2016/" class="archive-article-date">
+  	<time datetime="2020-05-22T01:03:36.810Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
         
 
@@ -642,31 +892,11 @@
     <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Lunch-user-admin-in-Tomcat"><a href="#Lunch-user-admin-in-Tomcat" class="headerlink" title="Lunch user admin in Tomcat"></a>Lunch user admin in Tomcat</h1><h2 id="add-password-for-Tomcat"><a href="#add-password-for-Tomcat" class="headerlink" title="add password for Tomcat"></a>add password for Tomcat</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"admin"</span> <span class="attr">password</span>=<span class="string">"admin"</span> <span class="attr">roles</span>=<span class="string">"manager-gui,admin-gui"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager-gui"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"admin-gui"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"admin"</span> <span class="attr">password</span>=<span class="string">"admin"</span> <span class="attr">roles</span>=<span class="string">"manager-gui,admin-gui"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h2 id="mvn-create-project"><a href="#mvn-create-project" class="headerlink" title="mvn create project"></a>mvn create project</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes \</span><br><span class="line">-DarchetypeArtifactId=maven-archetype-webapp \</span><br><span class="line">-DarchetypeVersion=<span class="number">1.4</span> \</span><br><span class="line">-DartifactId=sfg-app \</span><br><span class="line">-DgroupId=com.diodes \</span><br><span class="line">-DinteractiveMode=false</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="modify-Server-Locations"><a href="#modify-Server-Locations" class="headerlink" title="modify Server Locations"></a>modify Server Locations</h2><p>1.delete Web Modules</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200506112952.png" alt=""></p>
-<p>2.modify Server Locations</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200506113047.png" alt=""></p>
-<h2 id="Tomcat-At-least-one-JAR-was-scanned-for-TLDs-yet-contained-no-TLDs"><a href="#Tomcat-At-least-one-JAR-was-scanned-for-TLDs-yet-contained-no-TLDs" class="headerlink" title="Tomcat: At least one JAR was scanned for TLDs yet contained no TLDs"></a>Tomcat: At least one JAR was scanned for TLDs yet contained no TLDs</h2><ol>
-<li>modify catalina.properties</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line">tomcat.util.scan.StandardJarScanFilter.jarsToSkip=*.jar</span><br><span class="line"><span class="meta">#</span><span class="bash">\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">annotations-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">ant-junit*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">ant-launcher.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">ant.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">asm-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">aspectj*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">bootstrap.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-ant.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-ha.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-ssi.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-storeconfig.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina-tribes.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">catalina.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">cglib-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">cobertura-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-beanutils*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-codec*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-collections*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-daemon.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-dbcp*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-digester*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-fileupload*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-httpclient*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-io*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-lang*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-logging*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-math*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">commons-pool*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">dom4j-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">easymock-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">ecj-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">el-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">geronimo-spec-jaxrpc*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">h2*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">hamcrest-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">hibernate*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">httpclient*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">icu4j-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jasper-el.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jasper.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jaspic-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jaxb-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jaxen-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jdom-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jetty-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jmx-tools.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jmx.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jsp-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jstl.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">jta*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">junit-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">junit.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">log4j*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">mail*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">objenesis-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">oraclepki.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">oro-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">servlet-api-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">servlet-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">slf4j*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">taglibs-standard-spec-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tagsoup-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-coyote.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-dbcp.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-i18n-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-jdbc.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-jni.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-juli-adapters.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-juli.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-util-scan.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-util.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tomcat-websocket.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">tools.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">websocket-api.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">wsdl4j*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xercesImpl.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xml-apis.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xmlParserAPIs-*.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xmlParserAPIs.jar,\</span></span><br><span class="line"><span class="meta">#</span><span class="bash">xom-*.jar</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
+        <h1 id="Setup-Steps-12-16"><a href="#Setup-Steps-12-16" class="headerlink" title="Setup Steps : 12 - 16"></a>Setup Steps : 12 - 16</h1><p><strong>Step 12: Order Import Sources</strong><br>Define sources for importing orders into Order Management.<br>This step is required if you plan on importing orders or returns into Order Management.</p>
+<p><strong>Step 13: Units of Measure</strong><br>Define the units of measure in which you supply items. This step is required.</p>
+<p><strong>Step 14: Item Information</strong><br>Define item information, including item attribute controls, categories, and statuses.</p>
+<p><strong>Step 15: Items</strong><br>Define the items that you sell, as well as container items. This step is required.</p>
+<p><strong>Step 16: Configurations</strong><br>Define the configurations that you sell.<br>This step is required if you plan on generating orders or returns for configured<br>items. Several defaulting values are provided.</p>
 
       
 
@@ -679,671 +909,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/04/Lunch%20user%20admin%20in%20Tomcat/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-库存事务处理接口表MTL_TRANSACTIONS_INTERFACE" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/04/%E5%BA%93%E5%AD%98%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E6%8E%A5%E5%8F%A3%E8%A1%A8MTL_TRANSACTIONS_INTERFACE/">库存事务处理接口表MTL_TRANSACTIONS_INTERFACE</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/04/%E5%BA%93%E5%AD%98%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E6%8E%A5%E5%8F%A3%E8%A1%A8MTL_TRANSACTIONS_INTERFACE/" class="archive-article-date">
-  	<time datetime="2020-05-04T06:34:55.477Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="库存事务处理接口表MTL-TRANSACTIONS-INTERFACE"><a href="#库存事务处理接口表MTL-TRANSACTIONS-INTERFACE" class="headerlink" title="库存事务处理接口表MTL_TRANSACTIONS_INTERFACE"></a>库存事务处理接口表MTL_TRANSACTIONS_INTERFACE</h1><p>UPDATE MTL_TRANSACTIONS_INTERFACE<br>   SET PROCESS_FLAG = ‘Y’<br>      ,LOCK_FLAG = ‘N’ OR NULL<br>      ,TRANSACTION_MODE = 3<br>      ,ERROR_CODE = NULL<br>      ,ERROR_EXPLANATION = NULL</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/04/%E5%BA%93%E5%AD%98%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E6%8E%A5%E5%8F%A3%E8%A1%A8MTL_TRANSACTIONS_INTERFACE/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-INV Material Transaction Types Info" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/04/INV%20Material%20Transaction%20Types%20Info/">INV Material Transaction Types Info</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/04/INV%20Material%20Transaction%20Types%20Info/" class="archive-article-date">
-  	<time datetime="2020-05-04T06:31:45.589Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="INV-Material-Transaction-Types-Info"><a href="#INV-Material-Transaction-Types-Info" class="headerlink" title="INV Material Transaction Types Info"></a>INV Material Transaction Types Info</h1><table>
-<thead>
-<tr>
-<th>Transaction Type ID</th>
-<th>Transaction Type Name</th>
-<th>Transaction Type Name Description</th>
-<th>Transaction Source Type</th>
-<th>Transaction Action Type</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>Account issue</td>
-<td>Issue material against account</td>
-<td>3</td>
-<td>1</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Subinventory Transfer</td>
-<td>Transfer material betweensubinventories</td>
-<td>13</td>
-<td>2</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Direct Org Transfer</td>
-<td>Direct transfer betweentwo organizations</td>
-<td>13</td>
-<td>3</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Cycle Count Adjust</td>
-<td>Record cycle count adjustments</td>
-<td>9</td>
-<td>4</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Cycle Count Transfer</td>
-<td>Cycle Count Sub Transfer</td>
-<td>9</td>
-<td>2</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Physical Inv Adjust</td>
-<td>Physical Inventory adjustmenttransactions</td>
-<td>10</td>
-<td>8</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Physical Inv Transfer</td>
-<td>Physical Count Sub Transfer</td>
-<td>10</td>
-<td>2</td>
-</tr>
-<tr>
-<td>12</td>
-<td>Intransit Receipt</td>
-<td>Receive from intransit</td>
-<td>13</td>
-<td>12</td>
-</tr>
-<tr>
-<td>15</td>
-<td>RMA Receipt</td>
-<td>Return material authorization</td>
-<td>12</td>
-<td>27</td>
-</tr>
-<tr>
-<td>17</td>
-<td>WIP Assembly Return</td>
-<td>Return assembly from storesto WIP</td>
-<td>5</td>
-<td>32</td>
-</tr>
-<tr>
-<td>18</td>
-<td>PO Receipt</td>
-<td>Receive Purchase Order</td>
-<td>1</td>
-<td>27</td>
-</tr>
-<tr>
-<td>21</td>
-<td>Intransit Shipment</td>
-<td>Ship to intransit sourcedfrom Inventory</td>
-<td>13</td>
-<td>21</td>
-</tr>
-<tr>
-<td>24</td>
-<td>Standard cost update</td>
-<td>Update standard cost information</td>
-<td>11</td>
-<td>24</td>
-</tr>
-<tr>
-<td>25</td>
-<td>WIP cost update</td>
-<td>Update cost of a WIP item</td>
-<td>5</td>
-<td>24</td>
-</tr>
-<tr>
-<td>26</td>
-<td>Periodic Cost Update</td>
-<td>Update Periodic Cost</td>
-<td>14</td>
-<td>24</td>
-</tr>
-<tr>
-<td>28</td>
-<td>Layer Cost Update</td>
-<td>Layer Cost Update</td>
-<td>15</td>
-<td>24</td>
-</tr>
-<tr>
-<td>31</td>
-<td>Account alias issue</td>
-<td>Issue material against accountalias</td>
-<td>6</td>
-<td>1</td>
-</tr>
-<tr>
-<td>32</td>
-<td>Miscellaneous issue</td>
-<td>Perform miscellaneous issueof material</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>33</td>
-<td>Sales order issue</td>
-<td>Ship Confirm external SalesOrder</td>
-<td>2</td>
-<td>1</td>
-</tr>
-<tr>
-<td>34</td>
-<td>Internal order issue</td>
-<td>Ship Confirm Internal Order:Issue</td>
-<td>8</td>
-<td>1</td>
-</tr>
-<tr>
-<td>35</td>
-<td>WIP component issue</td>
-<td>Issue components from storesto WIP</td>
-<td>5</td>
-<td>1</td>
-</tr>
-<tr>
-<td>36</td>
-<td>Return to Vendor</td>
-<td>Return to vendor from stores</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>37</td>
-<td>RMA Return</td>
-<td>Return return material authorization</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>38</td>
-<td>WIP Neg Comp Issue</td>
-<td>Issue negative componentto WIP</td>
-<td>5</td>
-<td>33</td>
-</tr>
-<tr>
-<td>40</td>
-<td>Account receipt</td>
-<td>Receive material againstaccount</td>
-<td>3</td>
-<td>27</td>
-</tr>
-<tr>
-<td>41</td>
-<td>Account alias receipt</td>
-<td>Receive material againstaccount alias</td>
-<td>6</td>
-<td>27</td>
-</tr>
-<tr>
-<td>42</td>
-<td>Miscellaneous receipt</td>
-<td>Perform miscellaneous receiptof material</td>
-<td>13</td>
-<td>27</td>
-</tr>
-<tr>
-<td>43</td>
-<td>WIP Component Return</td>
-<td>WIP component return transaction</td>
-<td>5</td>
-<td>27</td>
-</tr>
-<tr>
-<td>44</td>
-<td>WIP Assy Completion</td>
-<td>Complete assemblies fromWIP to stores</td>
-<td>5</td>
-<td>31</td>
-</tr>
-<tr>
-<td>48</td>
-<td>WIP Neg Comp Return</td>
-<td>Return negative componentfrom WIP</td>
-<td>5</td>
-<td>34</td>
-</tr>
-<tr>
-<td>50</td>
-<td>Internal Order Xfer</td>
-<td>Subinventory transfer sourcedby Internal order</td>
-<td>8</td>
-<td>2</td>
-</tr>
-<tr>
-<td>51</td>
-<td>Backflush Transfer</td>
-<td>Backflush subinventory transfer</td>
-<td>13</td>
-<td>2</td>
-</tr>
-<tr>
-<td>52</td>
-<td>Sales Order Pick</td>
-<td>Staging transfer on a Salesorder</td>
-<td>2</td>
-<td>28</td>
-</tr>
-<tr>
-<td>53</td>
-<td>Internal Order Pick</td>
-<td>Staging transfer on an Internalorder</td>
-<td>8</td>
-<td>28</td>
-</tr>
-<tr>
-<td>54</td>
-<td>Int Order Direct Ship</td>
-<td>Direct transfer betweentwo organizations on a internal order</td>
-<td>8</td>
-<td>3</td>
-</tr>
-<tr>
-<td>55</td>
-<td>WIP Lot Split</td>
-<td>Lot Split</td>
-<td>5</td>
-<td>40</td>
-</tr>
-<tr>
-<td>56</td>
-<td>WIP Lot Merge</td>
-<td>Lot Merge</td>
-<td>5</td>
-<td>41</td>
-</tr>
-<tr>
-<td>57</td>
-<td>Lot Bonus</td>
-<td>Lot Bonus</td>
-<td>5</td>
-<td>42</td>
-</tr>
-<tr>
-<td>58</td>
-<td>Lot Update Quantity</td>
-<td>Lot Update Quantity</td>
-<td>5</td>
-<td>43</td>
-</tr>
-<tr>
-<td>61</td>
-<td>Int Req Intr Rcpt</td>
-<td>Delivery of intransit materialsourced by Internal requisition</td>
-<td>7</td>
-<td>12</td>
-</tr>
-<tr>
-<td>62</td>
-<td>Int Order Intr Ship</td>
-<td>Ship to intransit sourcedby Internal order</td>
-<td>8</td>
-<td>21</td>
-</tr>
-<tr>
-<td>63</td>
-<td>Move Order Issue</td>
-<td>Transact Account Issue MoveOrder</td>
-<td>4</td>
-<td>1</td>
-</tr>
-<tr>
-<td>64</td>
-<td>Move Order Transfer</td>
-<td>Transact Subinventory TransferMove Order</td>
-<td>4</td>
-<td>2</td>
-</tr>
-<tr>
-<td>66</td>
-<td>Project Borrow</td>
-<td>Borrow from project in projectmanufacturing</td>
-<td>13</td>
-<td>2</td>
-</tr>
-<tr>
-<td>67</td>
-<td>Project Transfer</td>
-<td>Transfer to project in projectmanufacturing</td>
-<td>13</td>
-<td>2</td>
-</tr>
-<tr>
-<td>68</td>
-<td>Project Payback</td>
-<td>Payback to project in projectmanufacturing</td>
-<td>13</td>
-<td>2</td>
-</tr>
-<tr>
-<td>70</td>
-<td>Shipment Rcpt Adjust</td>
-<td>Adjustment to receipt ofin-transit delivery</td>
-<td>13</td>
-<td>29</td>
-</tr>
-<tr>
-<td>71</td>
-<td>PO Rcpt Adjust</td>
-<td>Delivery adjustments ona Purchase order receipt</td>
-<td>1</td>
-<td>29</td>
-</tr>
-<tr>
-<td>72</td>
-<td>Int Req Rcpt Adjust</td>
-<td>Delivery adjustments onintransit receipt sourced by Internal req.</td>
-<td>7</td>
-<td>29</td>
-</tr>
-<tr>
-<td>73</td>
-<td>Planning Transfer</td>
-<td>Planning Transfer</td>
-<td>13</td>
-<td>5</td>
-</tr>
-<tr>
-<td>77</td>
-<td>ProjectContract Issue</td>
-<td>Project contract Issue</td>
-<td>16</td>
-<td>1</td>
-</tr>
-<tr>
-<td>80</td>
-<td>Average cost update</td>
-<td>Update average cost information</td>
-<td>13</td>
-<td>24</td>
-</tr>
-<tr>
-<td>82</td>
-<td>Inventory Lot Split</td>
-<td>Lot Split</td>
-<td>13</td>
-<td>40</td>
-</tr>
-<tr>
-<td>83</td>
-<td>Inventory Lot Merge</td>
-<td>Lot Merge</td>
-<td>13</td>
-<td>41</td>
-</tr>
-<tr>
-<td>84</td>
-<td>Inventory Lot Translate</td>
-<td>Lot Translate</td>
-<td>13</td>
-<td>42</td>
-</tr>
-<tr>
-<td>86</td>
-<td>Cost Group Transfer</td>
-<td>Cost Group Transfer</td>
-<td>13</td>
-<td>55</td>
-</tr>
-<tr>
-<td>87</td>
-<td>Container Pack</td>
-<td>Container Pack</td>
-<td>13</td>
-<td>50</td>
-</tr>
-<tr>
-<td>88</td>
-<td>Container Unpack</td>
-<td>Container Unpack</td>
-<td>13</td>
-<td>51</td>
-</tr>
-<tr>
-<td>89</td>
-<td>Container Split</td>
-<td>Container Split</td>
-<td>13</td>
-<td>52</td>
-</tr>
-<tr>
-<td>90</td>
-<td>WIP assembly scrap</td>
-<td>Scrap assemblies from WIP</td>
-<td>5</td>
-<td>30</td>
-</tr>
-<tr>
-<td>91</td>
-<td>WIP return from scrap</td>
-<td>Return assemblies scrappedto WIP</td>
-<td>5</td>
-<td>30</td>
-</tr>
-<tr>
-<td>92</td>
-<td>WIP estimated scrap</td>
-<td>WIP estimated scrap transaction</td>
-<td>5</td>
-<td>30</td>
-</tr>
-<tr>
-<td>93</td>
-<td>Field Service Usage</td>
-<td>Field Service Usage</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>94</td>
-<td>Field Service Recovery</td>
-<td>Field Service Recovery</td>
-<td>13</td>
-<td>27</td>
-</tr>
-</tbody></table>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/04/INV%20Material%20Transaction%20Types%20Info/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Create Maven project" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/04/Create%20Maven%20project/">Create Maven project</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/04/Create%20Maven%20project/" class="archive-article-date">
-  	<time datetime="2020-05-04T06:14:47.400Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Create-Maven-project"><a href="#Create-Maven-project" class="headerlink" title="Create Maven project"></a>Create Maven project</h1><h2 id="Ref001-and-Ref002"><a href="#Ref001-and-Ref002" class="headerlink" title="Ref001 and Ref002"></a><a href="https://blog.csdn.net/Goo_12138/article/details/83864306" target="_blank" rel="noopener">Ref001</a> and <a href="https://blog.csdn.net/ahau10/article/details/51232406" target="_blank" rel="noopener">Ref002</a></h2>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/04/Create%20Maven%20project/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/OM%20Setup%20Steps%20%2012%20-%2016/">展开全文 >></a>
         </p>
       
 
@@ -1375,7 +941,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
     </nav>
   
 
