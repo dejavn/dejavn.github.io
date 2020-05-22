@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dejavn.github.io">
-  <title>Archives | Blog</title>
+  <title>OM Pricing Formula | Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Oracle EBS,Python,Shell">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="https:&#x2F;&#x2F;dejavn.github.io&#x2F;archives&#x2F;index.html">
+  <meta name="description" content="Pricing FormulaFormulas are mathematical expressions that the pricing engine uses to determine the list prices of items and the discounts that apply to those items. You can use them to:  Create a pric">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OM Pricing Formula">
+<meta property="og:url" content="https:&#x2F;&#x2F;dejavn.github.io&#x2F;2020&#x2F;05&#x2F;22&#x2F;OM%20Pricing%20Formula&#x2F;index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="Oracle EBS,Python,Shell">
+<meta property="og:description" content="Pricing FormulaFormulas are mathematical expressions that the pricing engine uses to determine the list prices of items and the discounts that apply to those items. You can use them to:  Create a pric">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;dejavn&#x2F;Pictures&#x2F;master&#x2F;pic&#x2F;20200522155551.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;dejavn&#x2F;Pictures&#x2F;master&#x2F;pic&#x2F;20200522155627.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;dejavn&#x2F;Pictures&#x2F;master&#x2F;pic&#x2F;20200522155648.png">
+<meta property="og:updated_time" content="2020-05-22T07:57:22.735Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;dejavn&#x2F;Pictures&#x2F;master&#x2F;pic&#x2F;20200522155551.png">
   
     <link rel="alternative" href="/atom.xml" title="Blog" type="application/atom+xml">
   
@@ -151,295 +156,182 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-OM Pricing Formula" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      OM Pricing Formula
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Pricing%20Formula/" class="archive-article-date">
+
+        
+        <a href="/2020/05/22/OM%20Pricing%20Formula/" class="archive-article-date">
   	<time datetime="2020-05-22T07:55:31.519Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Pricing%20Formula/">OM Pricing Formula</a>
-    </h1>
-  
+        
 
-        <div class="article-info info-on-right">
-          
-          
+        
+          <span class="archive-article-date">
+              阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
 
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Pricing-Formula"><a href="#Pricing-Formula" class="headerlink" title="Pricing Formula"></a>Pricing Formula</h1><p>Formulas are mathematical expressions that the pricing engine uses to determine the list prices of items and the discounts that apply to those items. You can use them to:</p>
+<ul>
+<li>Create a price from a computation as an alternative to entering prices in a price list.</li>
+<li>Calculate a price adjustment. For example, you can instruct the pricing engine to calculate a discount by attaching a formula to a discount line.</li>
+</ul>
+<p>You can set up and maintain formulas based on one or more of the following formula component types:</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155551.png" alt=""></p>
+<p><strong>List price:</strong> The price of the item in a specific price list to which you have attached a formula. List Price and Price List Line are supported Formula types for Advanced Pricing.</p>
+<p><strong>Price list line:</strong> The price of the item in a specific line number of a specific price list.</p>
+<p><strong>Pricing attribute:</strong> The absolute value of a pricing attribute (such as thickness or height) of an item. Pricing attributes are characteristics of products and services that you can use to determine the price of a product or service. Distance, age of a related product, customer class, product family group, and level of service are examples of pricing attributes. You can specify one or more pricing attributes and assign them to a product or service. At order entry time, the pricing engine evaluates the attributes you have specified during formula setup to calculate the price.<br>You can define as many attributes as you need to meet your pricing business needs. For example, you may use the formula 1<em>2 to calculate the price of a glass item. Step 1 is a pricing attribute for thickness and step 2 is the list price to calculate the price of a glass item; if 100 is the base price of the glass item and 0.3 is the value of the thickness attribute of the glass then the pricing engine evaluates the formula as 0.3</em>100 which is 30.</p>
+<p><strong>Numeric constant:</strong> A numeric value.</p>
+<p><strong>Factor List:</strong> You can also relate multiple factor conditions. For example, if the base pricing attribute for glass thickness is between 0.1 and 0.3 mm AND the length of the glass is between 0.5 and 2 m, apply the factor of 3 OR if the base pricing attribute for glass thickness is between 0.4 and 0.8 mm AND the length of the glass is between 0.5 and 2 m, apply the factor of 5.</p>
+<p><strong>Creating a Pricing Formula</strong><br>You can set up and update formulas and formula lines in the Pricing Formulas window. A formula is a valid mathematical expression used to determine the list prices of items and the discounts applied to those items. The formula lines provide details about each part of the formula.<br>Note: The concurrent program Build Formula Package should be run after setting up or changing a formula to improve performance. This program can be accessed from the Tools menu within the Formulas Setup window.<br>The formula can contain any of the following:<br>• Parentheses: ()<br>• Mathematical operators: +, -, /, and *<br>• Built-in functions: NVL, SQRT, and MOD<br>• Operands: Operands are step numbers about which you provide more detail. You can use as many step numbers as you need, up to the limit of the field. You can repeat a step number in a formula, for example, 1+2*2..<br>Note: An operand is not a numeric constant. To use a numeric constant in a formula, you can:<br>• Create a step number in the formula expression.<br>• Assign the numeric constant to the step number in a formula line.</p>
+<p>For example, the valid formula (1+2*SQRT(3)) / 4 contains:<br>• 1, 2, 3, and 4 as operands<br>• +, *, and / as mathematical operators<br>• SQRT as a built-in function<br>• Parentheses to group the operands and operators<br>For each step number, create a formula line. In the previous formula example, four formula lines are created since the formula has four step numbers. When Oracle Pricing calculates a formula, it does not use the face value of the step<br>number. It refers to the formula line and evaluates it to obtain the value of the operand.</p>
+<p><strong>Attach Items to the pricing formula</strong><br>Link your formula to a price list by putting the formula name in the static formula field on the list line that has the item numbers that are to get their prices derived from the formula (don’t enter a price, let the processing program calculate the price value)</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155627.png" alt=""></p>
+<p>You must run the <strong>update formula prices</strong> after entering your formula name in the static formula field on the price list. This concurrent request will use your formula to calculate the price that will populate the list line’s value field. Link a formula to a freight and special charge modifier. With basic pricing you are restricted to three formula types, Numeric Constant, Pricing Attribute and Factor list. Basic Pricing uses the seeded pricing context which has up to 100 pricing attributes.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155648.png" alt=""></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>Thanks<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://dejavn.github.io/2020/05/22/OM%20Pricing%20Formula/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Usage%20of%20price%20agreement/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:53:45.233Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/05/22/OM%20Usage%20of%20price%20agreement/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">OM Usage of price agreement</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Usage%20of%20price%20agreement/">OM Usage of price agreement</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Revising%20an%20Existing%20Agreement/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:52:56.732Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Revising%20an%20Existing%20Agreement/">OM Revising an Existing Agreement</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Pricing%20Agreements/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:44:25.284Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Pricing%20Agreements/">OM Pricing Agreements</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Basic%20Pricing/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:39:15.863Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Basic%20Pricing/">OM Basic Pricing</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Holds/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:38:01.838Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Holds/">OM Holds</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Versioning/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:35:38.215Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Versioning/">OM Versioning</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Audit%20Trail/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:32:49.115Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Audit%20Trail/">OM Audit Trail</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Change%20Management/" class="archive-article-date">
-  	<time datetime="2020-05-22T07:29:54.470Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Change%20Management/">OM Change Management</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/22/OM%20Shipping%20Tolerances/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:53:18.692Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/22/OM%20Shipping%20Tolerances/">OM Shipping Tolerances</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/7/">7</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -471,8 +363,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

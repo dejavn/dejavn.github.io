@@ -153,6 +153,857 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-OM Pricing Formula" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Pricing%20Formula/">OM Pricing Formula</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Pricing%20Formula/" class="archive-article-date">
+  	<time datetime="2020-05-22T07:55:31.519Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Pricing-Formula"><a href="#Pricing-Formula" class="headerlink" title="Pricing Formula"></a>Pricing Formula</h1><p>Formulas are mathematical expressions that the pricing engine uses to determine the list prices of items and the discounts that apply to those items. You can use them to:</p>
+<ul>
+<li>Create a price from a computation as an alternative to entering prices in a price list.</li>
+<li>Calculate a price adjustment. For example, you can instruct the pricing engine to calculate a discount by attaching a formula to a discount line.</li>
+</ul>
+<p>You can set up and maintain formulas based on one or more of the following formula component types:</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155551.png" alt=""></p>
+<p><strong>List price:</strong> The price of the item in a specific price list to which you have attached a formula. List Price and Price List Line are supported Formula types for Advanced Pricing.</p>
+<p><strong>Price list line:</strong> The price of the item in a specific line number of a specific price list.</p>
+<p><strong>Pricing attribute:</strong> The absolute value of a pricing attribute (such as thickness or height) of an item. Pricing attributes are characteristics of products and services that you can use to determine the price of a product or service. Distance, age of a related product, customer class, product family group, and level of service are examples of pricing attributes. You can specify one or more pricing attributes and assign them to a product or service. At order entry time, the pricing engine evaluates the attributes you have specified during formula setup to calculate the price.<br>You can define as many attributes as you need to meet your pricing business needs. For example, you may use the formula 1<em>2 to calculate the price of a glass item. Step 1 is a pricing attribute for thickness and step 2 is the list price to calculate the price of a glass item; if 100 is the base price of the glass item and 0.3 is the value of the thickness attribute of the glass then the pricing engine evaluates the formula as 0.3</em>100 which is 30.</p>
+<p><strong>Numeric constant:</strong> A numeric value.</p>
+<p><strong>Factor List:</strong> You can also relate multiple factor conditions. For example, if the base pricing attribute for glass thickness is between 0.1 and 0.3 mm AND the length of the glass is between 0.5 and 2 m, apply the factor of 3 OR if the base pricing attribute for glass thickness is between 0.4 and 0.8 mm AND the length of the glass is between 0.5 and 2 m, apply the factor of 5.</p>
+<p><strong>Creating a Pricing Formula</strong><br>You can set up and update formulas and formula lines in the Pricing Formulas window. A formula is a valid mathematical expression used to determine the list prices of items and the discounts applied to those items. The formula lines provide details about each part of the formula.<br>Note: The concurrent program Build Formula Package should be run after setting up or changing a formula to improve performance. This program can be accessed from the Tools menu within the Formulas Setup window.<br>The formula can contain any of the following:<br>• Parentheses: ()<br>• Mathematical operators: +, -, /, and *<br>• Built-in functions: NVL, SQRT, and MOD<br>• Operands: Operands are step numbers about which you provide more detail. You can use as many step numbers as you need, up to the limit of the field. You can repeat a step number in a formula, for example, 1+2*2..<br>Note: An operand is not a numeric constant. To use a numeric constant in a formula, you can:<br>• Create a step number in the formula expression.<br>• Assign the numeric constant to the step number in a formula line.</p>
+<p>For example, the valid formula (1+2*SQRT(3)) / 4 contains:<br>• 1, 2, 3, and 4 as operands<br>• +, *, and / as mathematical operators<br>• SQRT as a built-in function<br>• Parentheses to group the operands and operators<br>For each step number, create a formula line. In the previous formula example, four formula lines are created since the formula has four step numbers. When Oracle Pricing calculates a formula, it does not use the face value of the step<br>number. It refers to the formula line and evaluates it to obtain the value of the operand.</p>
+<p><strong>Attach Items to the pricing formula</strong><br>Link your formula to a price list by putting the formula name in the static formula field on the list line that has the item numbers that are to get their prices derived from the formula (don’t enter a price, let the processing program calculate the price value)</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155627.png" alt=""></p>
+<p>You must run the <strong>update formula prices</strong> after entering your formula name in the static formula field on the price list. This concurrent request will use your formula to calculate the price that will populate the list line’s value field. Link a formula to a freight and special charge modifier. With basic pricing you are restricted to three formula types, Numeric Constant, Pricing Attribute and Factor list. Basic Pricing uses the seeded pricing context which has up to 100 pricing attributes.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155648.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Pricing%20Formula/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Usage of price agreement" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Usage%20of%20price%20agreement/">OM Usage of price agreement</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Usage%20of%20price%20agreement/" class="archive-article-date">
+  	<time datetime="2020-05-22T07:53:45.233Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Usage-of-price-agreement"><a href="#Usage-of-price-agreement" class="headerlink" title="Usage of price agreement"></a>Usage of price agreement</h1><p>Price agreement can be used while entering a SO and in that case price list, payment terms, fright terms</p>
+<p><img src="http://www.oracleug.com/sites/default/files/users/oracleug/ug/om/oe/1001so_1_0.png" alt="img"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Usage%20of%20price%20agreement/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Revising an Existing Agreement" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Revising%20an%20Existing%20Agreement/">OM Revising an Existing Agreement</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Revising%20an%20Existing%20Agreement/" class="archive-article-date">
+  	<time datetime="2020-05-22T07:52:56.732Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Revising-an-Existing-Agreement"><a href="#Revising-an-Existing-Agreement" class="headerlink" title="Revising an Existing Agreement"></a>Revising an Existing Agreement</h1><p>To make minor changes to an existing agreement such as changing the payment terms, you can simply update the existing agreement and save your changes.<br>However, if significant changes are required and you want to track versions of your changes, you can create a new revision. When a revision is created, a new version of the original agreement is created. This is useful for tracking and managing multiple<br>versions of the same agreement. You must determine when changes warrant a new agreement version, and then you can<br>manually create a new revision with a new revision number. It is helpful to use a logical numbering sequence such as 1, 2, and 3 to number your revisions. Once the new agreement revision is created, you can update the agreement header information.</p>
+<p>Note: You must end the current revision before creating a new revision. An agreement can have multiple revisions but the effective dates cannot overlap. Only one revision can be effective for a given range of effective dates.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522155313.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Revising%20an%20Existing%20Agreement/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Pricing Agreements" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Pricing%20Agreements/">OM Pricing Agreements</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Pricing%20Agreements/" class="archive-article-date">
+  	<time datetime="2020-05-22T07:44:25.284Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Pricing-Agreements"><a href="#Pricing-Agreements" class="headerlink" title="Pricing Agreements"></a>Pricing Agreements</h1><p>Oracle Order Management enables you to establish agreements with your customers that let you define the prices, payment terms and freight terms that you negotiated in the agreement.</p>
+<p>When pricing, the pricing engine ignores qualifiers attached to a price list associated with an agreement if the agreement is chosen at the time of order entry. The pricing engine, will however, still check for product and pricing attributes in the price list associated with the agreement.</p>
+<p><strong>Agreement</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154720.png" alt=""></p>
+<ol>
+<li><p>In the Agreement tab, enter an Agreement Name. Use a naming convention that is consistent and meaningful. Consider using separate naming conventions for Standard Agreements versus Pricing Agreements.</p>
+</li>
+<li><p>Enter an Agreement Number. A consistent, meaningful naming convention should be considered and business practices established. This field is optional.<br>Enter a Revision number. The Revision number defaults to 1 at setup time. Additional versions of the same agreement can be maintained by updating the revision number for each new revision.</p>
+</li>
+<li><p>If you want this Agreement to be used only for a particular customer and their related customers, enter the customer name in Customer. The customer number displays in Cust Number.<br>Alternatively, you can enter the Customer number in Cust Number field and the customer’s name will default to Customer field.<br>If you want this agreement to be available for any customer, leave the Customer and Cust Number fields blank.</p>
+</li>
+<li><p>Select an Agreement Type to classify agreements by type for reporting or control purposes.</p>
+</li>
+</ol>
+<p><strong>Pricing</strong><br>Select an Agreement price list type from the Price List Type field. Once a Pricing Agreement has been saved, you cannot update or change the value for Price List Type. Select from:</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154750.png" alt=""></p>
+<p><strong>Pricing Agreements using Standard Price List</strong></p>
+<ul>
+<li>Agreements using Standard Price List cannot have any agreement lines</li>
+<li>Price list and price list lines can only be viewed and maintained through the Price List Setup window</li>
+<li>A Standard Price List can be used with any number of Standard Agreements or to price orders which are not associated with a specific agreement</li>
+<li>You cannot create revisions for price list lines</li>
+<li>The Agreement Number is not automatically created as a qualifier for the associated price list</li>
+</ul>
+<p><strong>Pricing Agreements using Agreement Price List</strong></p>
+<ul>
+<li>Pricing Agreements must have at least one agreement line</li>
+<li>Pricing Agreements can only be viewed and maintained through the Pricing Agreement Setup window</li>
+<li>Pricing Agreements must be associated with an Agreement price list</li>
+<li>An Agreement Price List can be used with any number of pricing agreements but cannot be used to price an order which is not associated with a pricing agreement</li>
+<li>Revisions can be created on pricing agreement lines through the Pricing Agreement Setup window</li>
+<li>Price list will always have the Agreement Number as a qualifier (and hence can only be used when the pricing agreement is specified on the Order Line)</li>
+</ul>
+<p>Note: If you select Standard Price List, the price list must be an existing price list, and additional fields within this window will default from the standard price list selected. You can update the defaulted fields in the Agreements window, and the values will be used as defaulting sources for any orders using these agreements.<br>Note: If you select Agreement Price List, you can create or make changes to price list lines, and you can enter values for:</p>
+<ol>
+<li>Description</li>
+<li>Currency</li>
+<li>Rounding Factor</li>
+<li>Freight Carrier</li>
+<li>Freight Terms</li>
+<li>Comments</li>
+</ol>
+<p><strong>Payment</strong></p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154840.png" alt=""></p>
+<ol>
+<li>Select the Payment Terms.</li>
+<li>Enter the Bill To name in Invoice To.</li>
+<li>Enter the Bill To Address.</li>
+<li>Enter the Bill To contact in Invoice Contact.</li>
+<li>In the Rules region, enter a default Accounting Rule.</li>
+<li>Enter an Invoicing rule.</li>
+</ol>
+<p><strong>Agreement Price List</strong><br>If you have selected price list type as “Agreement Price List” in pricing tab then in the line level you can add item to the price list:</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154922.png" alt=""></p>
+<ol>
+<li>Enter a Customer Item number. Customer item is a pricing attribute.<br>When you enter a customer item, pricing creates one pricing attribute and one product attribute for the agreement line for the customer item and its corresponding internal inventory item.</li>
+<li>Enter a customer Address and Address Category.</li>
+<li>Enter an inventory item number in Product Value.<br>Note: You cannot enter an item category in Product Value. If you entered a customer item which is associated with more that one inventory item, you must select the correct inventory item for the agreement line.</li>
+<li>Enter a UOM (unit of measure).</li>
+<li>Select Unit Price for the Application Method.</li>
+<li>Enter base price in Value.</li>
+<li>Enter the effective Start/End Dates.</li>
+<li>Select Price List Line in Line Type.</li>
+<li>Select Primary UOM if this price list line unit of measure is the primary pricing unit of measure for the item.<br>Order Management uses the primary pricing unit of measure and the Oracle Inventory unit of measure conversion information to price an order whose unit of measure does not have a price list line.<br>For example, a price list has two price list lines for item A11111, one with unit of measure EA—the primary UOM—and one for boxes. When the pricing engine receives an order in unit of measure CS, it accesses the unit of measure conversion tables to convert CS to EA.</li>
+<li>Select a Line Type:<br>• Price List Line<br>• Price Break Header: This option enables you to set up a price breaks, and is only available if Agreement Price List has been selected as the Price List Type.</li>
+<li>Select Unit Price as the Application Method..</li>
+<li>Enter the base price in Value.</li>
+<li>Enter the effective Start and End Dates.**<br>Defining Price Breaks for an Agreement Price List**<br>You can create price breaks or “bracket pricing” for Agreement price lists to define prices that vary depending on the quantity ordered. For example, if a customer buys 10 items the price is $20 per item, but if the customer buys more, then they get a lower per unit price.<br>Note: If you define a price break for an item category, all the items within the category are eligible for the price break.</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154958.png" alt=""></p>
+<p>In Basic Pricing, you can use Point Break as the Price Break Type. This calculates the price based on the price break bracket in which the total quantity falls.<br>For example, if you ordered 14 units of Item A11111, the total quantity falls into the Price Break 2 bracket where the unit price is $19. So the price for all units is the price defined for Price Break 2. The total price is calculated as follows:<br>Total price = 14 * $19 each = $266</p>
+<p><strong>To define price breaks:</strong></p>
+<ol>
+<li>Complete the Agreement header information as outlined in the preceding section.<br>Note: You can create price breaks only for Agreement price lists using the Pricing Agreements window. You cannot create price breaks in the Price List window.</li>
+<li>In the Pricing tab of the agreement, ensure the Price List Type is Agreement Price List. You can only set up price breaks for an Agreement Price List.</li>
+<li>For the agreement line, complete the values (where required) for Customer Item, Address, Address Category, Product Value, Product Description, and UOM, Primary UOM, the Line Type.</li>
+<li>Select Price Break Header as the Line Type.<br>The Price Break Type is Point which means the pricing engine charges each unit of volume at the price of the break within which the total falls.</li>
+<li>Select Unit Price as the Application Method.</li>
+<li>Enter the Break UOM.</li>
+<li>Enter the effective Start and End Dates.</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Pricing%20Agreements/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Basic Pricing" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Basic%20Pricing/">OM Basic Pricing</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Basic%20Pricing/" class="archive-article-date">
+  	<time datetime="2020-05-22T07:39:15.863Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Basic-Pricing"><a href="#Basic-Pricing" class="headerlink" title="Basic Pricing"></a>Basic Pricing</h1><p>The Basic Pricing component of Oracle Order Management provides the capability to price orders according to price lists, pricing formulas, or agreements. You can also apply discounts, control the lowest level price that may be given in order to comply with General Services Administration Agency (GSA) regulations, and apply freight and logistics related charges to orders.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153935.png" alt=""></p>
+<p>In OM the pricing engine prices the items after the order is entered or booked (depending on the pricing setup). Once the order is booked, it proceeds through the workflow process. If it is a shipping item and the quantities are available, the order is processed by SE. During shipping, the freight and special charges can be calculated and the price of the item is adjusted accordingly.</p>
+<p><strong>Customer Hierarchy</strong><br>The customer hierarchy in Basic Pricing enables you to roll up individual customers according to the following structure:<br>■ The sold-to organization<br>■ The ship-to organization<br>■ The bill-to organization<br>■ Site<br>■ Customer Class<br>You can use elements of the customer hierarchy as defaults to control the operation of price lists and modifiers.<br>**<br><strong>**Pricing Engine</strong><br>The pricing engine is the program module called by Order Management that prices the order as orders are entered or order data changed.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522154105.png" alt=""></p>
+<p>The pricing engine works through open APIs to provide the pricing results to the calling application. It consists of a search engine and a calculation engine. From the pricing request, the pricing engine evaluates the appropriate modifiers and price lists, resolve incompatibility issues, retrieves the list price, and calculates the unit selling price and adjustments. The search engine receives pricing information from entities like price lists, modifier, qualifiers, formulas, products and pricing attributes.</p>
+<p><strong>Inputs to the Pricing Engine</strong><br><strong>Pricing qualifiers:</strong> Determines who is eligible for a price or modifier list, for example, customer class, customer site, buying group, and sales territory.<br><strong>Pricing Attribute:</strong> Determines what is being priced or modified on a price or modifier list, for example, product group, brand, location, distance, age, volume. Based on the inputs, the pricing engine selects the appropriate price list and adjusts the price by the chosen modifiers.<br><strong>Modifiers:</strong> Determines how the eligible pricing request or pricing request line should be adjusted, for example, discounts, surcharges, coupon issue, item upgrade, other item discount, terms substitution, freight charge, and promotional goods. You can define price lists and modifiers from the most general level to the most specific level, for example, Price List B is for all products and all customers and Price List A is for Product 1 and Customer 1.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Basic%20Pricing/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Holds" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Holds/">OM Holds</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Holds/" class="archive-article-date">
+  	<time datetime="2020-05-22T07:38:01.838Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Holds"><a href="#Holds" class="headerlink" title="Holds"></a>Holds</h1><p>When you prevent further processing on an order through an exception, you are placing a hold on the order.</p>
+<p>Order Management enables you to hold an order, return, order line, or return line from continuing to progress through its workflow by utilizing the holds feature. Holds can be applied manually or automatically based on a set of criteria you define, such as a credit check hold.</p>
+<p><strong>System Holds</strong></p>
+<ul>
+<li><strong>GSA</strong> (USA General Services Administration): Automatically stops order lines on which a GSA customer does not receive the lowest price for an item on all price lists.</li>
+<li><strong>Credit hold</strong>: Automatically stops orders exceeding credit limits.</li>
+<li><strong>Margin Hold</strong>: If the system is setup for margin calculation, and orders are enabled for same, any order or order line not meeting a minimum margin percentage is put on hold</li>
+<li><strong>Export Compliance Hold</strong>: Order Management now provides inbuilt adapters to connect to partner International Trade Management applications for providing export screening on order <strong>lines. An order line failing the export compliance check would be automatically put on hold</strong></li>
+</ul>
+<p><strong>User-defined:</strong></p>
+<ul>
+<li>Item</li>
+<li>Customer</li>
+<li>Customer site</li>
+<li>Warehouse</li>
+<li>Combination</li>
+</ul>
+<p>In release 11i Oracle Order Management, applying and releasing holds can be performed directly from the Sales Order Pad. You can manually send a notification through Oracle Workflow to specific individuals when an order hold is applied. A concurrent program can automatically release holds based on the Hold Until date. Additionally, you can track and view history information on holds at the order and/or line level.</p>
+<p><strong>Notes</strong></p>
+<ul>
+<li>Holds are assigned a Hold Type and are authorized for application and release for specific Responsibilities.</li>
+<li>You can define holds that are effective only at certain steps of the order or line workflow, as well as, holds that apply regardless of the stage in the order’s flow.  Holds can be defined to be specific for pick, pack, or ship activities.</li>
+<li>Holds may be designed to be applied automatically, or may be applied manually based on a set criteria you define.</li>
+<li><strong>Hold Sources</strong></li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153837.png" alt=""></p>
+<ul>
+<li><p>Hold sources allow you to apply a particular hold to a group of existing orders, returns, or their lines, and to new orders or lines meeting your criteria. A hold source is the combination of a parameter (i.e. customer, item, order, wh) and hold name that you specify. Hold sources are valuable when you want to hold all current and future orders for an item, customer, order, warehouse or customer site (bill-to and ship-to locations). For example, you create a hold source to hold an unreleased item. Once the item is available, you simply remove the hold source for the item, and all holds on individual order lines are released. A hold source can:<br>•  Hold all existing and new orders, returns, or their lines that meet your hold source criteria.<br>•  Hold some existing and new orders, returns, or their lines from the Order Organizer window.<br>•  Hold only new orders, returns, or their lines that meet your hold criteria.</p>
+</li>
+<li><p><strong>Credit Checking</strong><br>You can automatically prevent shipping of products to customers with unacceptable outstanding credit exposure using automatic credit checking.<br>In the Transaction Order Type set-up you may opt to have Credit Checking occur at Sales Order Booking, at Shipping, or both (which you may want if you have long lead times between Booking and Shipping).<br>The Credit Checking can be enabled in the following 3 places:<br>•  For the specific Payment Term<br>•  For the specific Customer<br>•  For the specific Transaction Order Type</p>
+</li>
+<li><p>You must define Credit Limits for each of your Customers. You can determine balances to include when calculating total credit exposure, and set total exposure limits for a customer or customer site.<br>These limits may default in with the Profile Class or be manually maintained in the Profile: Amounts alternate region in the Customer Master.<br>You must define a Credit Limit which is the total limit at any one time for the Customer, as well as an Order Credit Limit, which is specific to an individual sales order.<br>Oracle uses all of these criteria to place sales orders on Credit Check Hold.</p>
+</li>
+<li><p>You can control who is authorized to release Credit Check holds when you want to make an exception or when the customer’s credit balance is acceptable.<br>Also, Oracle maintains a complete audit trail of credit check holds so you can track who applied or removed each hold, the date it was applied or removed, and why.<br>**<br>Hold Release**<br>Holds are released automatically when you supply a hold expiration date. Once the date is reached, the<br>Order can proceed along its workflow. Releasing a hold source release all the orders, returns, and lines to which that hold source applied.</p>
+</li>
+<li><p>Note: You must set up and run Release Expired Holds concurrent program on a nightly basis to take advantage of the expiration date based release of holds.</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Holds/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Versioning" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Versioning/">OM Versioning</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Versioning/" class="archive-article-date">
+  	<time datetime="2020-05-22T07:35:38.215Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Versioning"><a href="#Versioning" class="headerlink" title="Versioning"></a>Versioning</h1><p>Versioning is a method to capture changes and updates made to a transaction. Versioning is currently available for sales orders, quotes and Blanket Sales agreements. There is support for both manual versioning as well as automatic versioning.</p>
+<p><strong>Versioning includes the following:</strong></p>
+<ul>
+<li>Version Control: Capture of changes and updates made to Sales Orders, Quotes and Blanket Sales Agreements. This feature offers:</li>
+</ul>
+<ol>
+<li>Version generation</li>
+<li>Validation of version number</li>
+<li>Version history maintenance and comparison</li>
+<li>Searching prior versions</li>
+<li>Reasons and comments for versioning</li>
+<li>Tracking Clause versions in Blanket Sales Agreements</li>
+<li>API’s and Order Import: Versioning support for sales transactions created or updated from multiple modes</li>
+</ol>
+<ul>
+<li>Versions can be created, managed, viewed and compared, providing comprehensive information about a given transaction</li>
+<li>Assists during the negotiation phase of a sales transaction by maintaining a history of the transaction cycle</li>
+</ul>
+<p>Note: Price Lists and Modifiers are not versioned on a Blanket Sales Agreement.</p>
+<p><strong>Version Generation</strong><br>Versioning is manual by default. If you want to enable automatic versioning, you must set up the appropriate processing constraints. For example, you can use validation templates to drive versioning by transaction type as a condition. By<br>using the processing constraints and workflow activity, you can determine when to increment the version and which statuses are available to version. For example, you can increment a version only when specific attributes of the transaction are changed/updated. You can increment the version number Versioning whenever there is a change in order quantity, payment terms, price list, required date, or other attributes.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153635.png" alt=""></p>
+<p>You can link versioning control to workflow activities statuses. Version generation functionality includes:<br>■ Manual / Automatic option<br>■ Version number as a whole number and as separate field, following the document number<br>■ Update manually at any time, provided the setup allows amendment in a specific status<br>■ Option to retain the document number during the transition to a Sales Order<br>■ Specify the required conditions for automatic versioning</p>
+<p><strong>Version History</strong><br>Version history maintenance is useful for reference and comparison. This is particularly true of quotes and Blanket Sale Agreements (BSAs) with a negotiation phase where the transaction document changes a number of times before it is approved. This may occur with complex products that are frequently redesigned to meet customer requirements, or with a loyal customer who negotiates for a long time for the best price with the promise of higher order quantities over an extended period of time.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153716.png" alt=""></p>
+<p>Versioning maintains the history of previous versions, when the active version is changed. However, one can use the previous versions as templates for creating new sales order, quotes or blanket sale agreements at any time with the copy feature. Version history maintenance and comparison enables:<br>■ Maintenance of transaction history of previous versions<br>■ Ability to amend the current version of the transaction<br>■ Tracking changes over a period of time and view those changes<br>■ Comparison of changes made to transactions across versions<br>■ Copy any version of a Quote to a Sales Order</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Versioning/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Audit Trail" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Audit%20Trail/">OM Audit Trail</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Audit%20Trail/" class="archive-article-date">
+  	<time datetime="2020-05-22T07:32:49.115Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Audit-Trail"><a href="#Audit-Trail" class="headerlink" title="Audit Trail"></a>Audit Trail</h1><p>Audit Trail records and tracks updates to specified order attributes as they occur. Reports of comprehensive audit trail updates of Oracle Order Management are generated using Processing Constraints, Lookups, a system parameter, and the Audit Trail Consolidator concurrent program. Current Processing Constraints functionality enables you to specify exactly what business functions, by entity you wish to control when performing order modifications. You can define new processing constraints that specify when, and for what attributes of an order, audit trail updates are recorded. The Order Management system parameter Audit Trail must be enabled to use this feature.</p>
+<p><strong>Process Flow</strong><br>Oracle Order Management gives businesses the flexibility to audit as much or as little of their order process as they require. Each business can decide what order attributes are so critical that an audit needs to be maintained and then set up the<br>processing constraints accordingly. Once the constraints are defined, users can enter and change orders as they always have. If a change is made to an attribute that has been defined as requiring a reason to change it, then the user is prompted to select a reason code from a user-defined list.<br>Finally, queries can be run or reports produced to show what actual changes have been made to auditable attributes, who made the changes and when.</p>
+<p><strong>Versioning V/S Audit Trial</strong></p>
+<ol>
+<li>Versioning works in conjunction with audit trail only when the transaction enters the fulfillment phase, not during the negotiation phase.</li>
+<li>Version control applies to all sales documents including Sales Orders, Quotes and Blanket Sales Agreements but audit trail is ONLY applicable to Sales Orders.</li>
+<li>Versioning can be manual or automatic.</li>
+<li>Audit trail captures changes within a version but version control captures changes that increment a version. The audit trail may track all sales order changes that may not necessarily constitute revising the sales order to a new version. You cannot track a single change with both Versioning and Audit Trail. The user must decide what method they wish to use to track the change history.</li>
+<li>Version Control records the entire business object, allowing users to view the changes to the document real time and online. Whereas, Audit Trail records a single change in order to capture who made the change and what the change was.</li>
+<li>Version control can compare against previous versions where audit trail cannot.</li>
+</ol>
+<p><strong>Example</strong><br>Business requirement is that whenever the currency code is changed in sales order header an audit trial needs to be generated.<br><strong>1. Setups</strong></p>
+<ul>
+<li>Enable audit trial in system parameters.</li>
+<li>Set up Processing Constraints to indicate which attributes on the order you want to have audit trail recorded for currency change.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153423.png" alt=""></p>
+<p><strong>2. Process</strong></p>
+<ul>
+<li>Change the currency of the sales order.</li>
+<li>Run the request Audit History Consolidator with correct parameters</li>
+<li>Verify the record in audit history window</li>
+</ul>
+<p><strong>Setups</strong><br>\1. Set the OM System Parameter Audit Trail.<br>Navigate to Order Management &gt; Setup &gt; System Parameters &gt; Values.<br>Select your Operating Unit.<br>Select Generic Parameters from the list of values.<br>For the Audit Trail Parameter, select from the list of values: “Enable when Order is Booked,” “Enable when Order is Entered,” or “Disabled.”</p>
+<p>\2. Set up Processing Constraints to indicate which attributes on the order you want to have audit trail recorded for<br>Create some new Validation Templates if you have specific conditions to control whether or not to record audit information.</p>
+<p>\3. Add “View Audit History” menu option to the Order Management menu for those responsibilities that need to be able to view the new Audit History forms - this menu option will be created through seed data.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153458.png" alt=""></p>
+<p>\4. Schedule the Consolidator program (<strong>Audit History Consolidator</strong>) to run periodically to make audit information available to query and report.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Audit%20Trail/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-OM Change Management" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/22/OM%20Change%20Management/">OM Change Management</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/22/OM%20Change%20Management/" class="archive-article-date">
+  	<time datetime="2020-05-22T07:29:54.470Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+</a>
+        
+
+        
+
+      </header>
+    
+    <!-- 目录内容 -->
+    		
+    <!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Change-Management"><a href="#Change-Management" class="headerlink" title="Change Management"></a>Change Management</h1><p>This chapter covers the following topics:</p>
+<ul>
+<li>Processing Constraints</li>
+<li>Versioning</li>
+<li>Audit Trail</li>
+<li>Open Interface Considerations</li>
+</ul>
+<p><strong>Processing Constraints</strong><br>Processing Constraints enable you to control changes to sales documents in Oracle Order Management.</p>
+<ul>
+<li>Processing constraints are rules that control <strong>who</strong> can change <strong>what</strong> and <strong>when</strong> they can change it. Who can make changes based on responsibility. A constraint (rule) may apply to all responsibilities, to only a list of constrained responsibilities or to all except a list of authorized responsibilities.</li>
+<li>Processing constraints can prevent certain changes, but can also be set up to perform actions based on those changes. They can define actions that can result from these changes, such as requiring a reason for the change, triggering an action in Audit Trail or Versioning, or raising an Integration Event.</li>
+<li>More than just what can be updated. The following operations can be controlled: Create, update, delete, cancel, and split all at the entity level. For example, given a set of conditions you may not want to allow a user to create a new order line. You can also control the update operation down to the attribute level. For example, given a set of conditions, you could choose to allow update to the warehouse field of an order line but not to the price list field.</li>
+<li>Changes based on a group of conditions. The conditions must be collectively true for the constraint to fire or prevent the changes. The conditions may be based on either the state of a workflow activity (where the entity is in the flow) or a value in a table. A condition may also be based on a custom API, which means that you can call your own PL/SQL code to evaluate the condition.<br>Multiple conditions can be combined using either AND logic (all the conditions must be true) or OR logic (at least one of the conditions must be true.) A custom message can display when an attempt is made to violate a constraint.</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ol>
+<li>No one can change the customer purchase order at the line level; your company requires that one sales order can relate to only one customer purchase order.</li>
+<li>No one can add a line to an order after any of the lines on the order have been invoice interfaced.</li>
+<li>A reason is required to cancel an order line after it has been booked.</li>
+<li>Only the Customer Service Manager can change the discount percentage on an order line after the line has been shipped.</li>
+<li>Require all return orders, identified by order type = Return, to be shipped to a central returns processing facility.</li>
+</ol>
+<p><strong>Defining Processing Constraints</strong><br>Navigate to the Processing Constraints window. Order Management &gt; Setup &gt; Rules &gt; Security &gt; Processing Constraints.</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153129.png" alt=""></p>
+<p>Note that the window is divided into several regions. The top region has fields for the Application and the Entity. Any one of the OM entities are the valid values for the entity field. This is used for querying—you cannot create new entities. When you query an entity you will see all the constraints defined against that entity.</p>
+<p><strong>1. Constraints</strong><br>The Constraints region is where most of the details of a processing constraint are defined. The region enables you to view the seeded constraints, view, or update the constraints that were created for your company. You can create new constraints, but you cannot change the seeded constraints with the system check box marked.</p>
+<p><strong>1.1. Operation Field</strong><br>The Operation field can have the values of Create, Update, and Delete for any of the entities, Cancel for Order Header and Order Line entities only, and Split for the Order Line Entity only.</p>
+<p><strong>1.2. Attribute Field</strong><br>The Attribute field can only be used if the operation selected is UPDATE. You may enter a value here, and the constraint will only apply to that field. For instance you may define a constraint that affects only the warehouse field on the order line. If the Attribute field is left blank the constraint will be in effect for all the attributes of the entity. For instance, you may define a constraint which prevents updates to any of the fields of an order line. Please note that only when constrainable attributes are updated, processing constraints execute. All attributes are not constrainable, therefore processing constraints will not execute for such attributes, even though the operation selected is UPDATE.</p>
+<p><strong>1.3 Action Field</strong><br>The Action field allows you to select the action to be taken if the constraining conditions are met.<br>Note: There is no unique Require Reason action; it must be used in conjunction with Versioning or Audit.<br>Actions of Require Reason and Require Reasons and Require History for audit history are supported only for the UPDATE operation. Constraints are evaluated in the following order (Only one constraint may take effect for a change):</p>
+<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522153201.png" alt=""></p>
+<p>Actions that Require Reason take precedence over actions that do not.</p>
+<p><strong>Example</strong><br>Assume that both versioning and audit constraints apply to update of price list. Only version is captured as it takes precedence and audit history is not available for this update. However, if audit constraint is on a different attribute like update of payment term and you change the payment term and price list, both version and audit history are captured.</p>
+<p><strong>1.4</strong> <strong>Applies To Field</strong><br>The Applies To field is used to define whether the constraint is applicable in the Negotiation or Fulfillment transaction phase. If the field is blank, then it is applicable to both phases.</p>
+<p><strong>1.5 System Changes Field</strong><br>Use the System Changes field to indicate if system changes are allowed even if the constraining conditions are met. The system changes here refer to an attribute initially getting a default value or being re-defaulted when a source attribute changes. This is applicable only for attribute or field level UPDATE operations. The possible values are:<br>• Never after Insert: System changes are allowed to this field only if the entity has not yet been saved to the database. This is the default value.<br>• Always: System changes are always allowed on the attribute</p>
+<p><strong>1.6 User Changes Field</strong><br>Use the User Changes field to indicate when the user performing the operation is constrained. This is applicable only for attribute or field level UPDATE operations. The possible values are:<br>• Never after Insert: You can change this field only if the entity has not yet been saved to the database. This is the default value.<br>• Always: You can never enter a value for this attribute, even if the entity (for example an order) is being created for the first time.</p>
+<p><strong>1.7 System Field</strong><br>The System Field indicates if a constraint included with the OM system is user updateable. System constraints help prevent data integrity problems and cannot be updated. Any operation, field, action, or list of responsibilities attached to these<br>constraints cannot be modified. However, additional validation conditions can be included as long as they do not have the same group number.</p>
+<p><strong>1.8 Enabled Field</strong><br>The Enabled field indicates whether the current Condition is active. This allows conditions to be temporarily disabled if necessary. Note that if all conditions are disabled and the constraint itself is not disabled, the constraint always applies for that change. Care must be taken to ensure that the disabling of conditions does not introduce problems in the business flow.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/22/OM%20Change%20Management/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-OM Shipping Tolerances" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -242,724 +1093,9 @@
 
 
   
-    <article id="post-OM Shipping Exceptions" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Exceptions/">OM Shipping Exceptions</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Shipping%20Exceptions/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:52:06.194Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Shipping-Exceptions"><a href="#Shipping-Exceptions" class="headerlink" title="Shipping Exceptions"></a>Shipping Exceptions</h1><p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095212.png" alt=""></p>
-<p>During the shipping and transportation of goods, unforeseen shipping exceptions can occur that conflict with the actual requirements of the shipper, transportation carrier, or customer.</p>
-<p>If these exceptions are not handled promptly or properly, it could result in reduced customer satisfaction and loss of business and revenue for a company. Tracking exceptions can also be helpful to identify and correct defects in the business process. The seeded exceptions are logged automatically against delivery lines, LPNs, deliveries, and trip stops when specific change management events occur.</p>
-<p>The change management events are shown in the descriptions below:</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095238.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Exceptions/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Shipping Document Sets" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Shipping%20Document%20Sets/">OM Shipping Document Sets</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Shipping%20Document%20Sets/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:51:10.132Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Shipping-Document-Sets"><a href="#Shipping-Document-Sets" class="headerlink" title="Shipping Document Sets"></a>Shipping Document Sets</h1><p>You can group related shipping documents and other reports in a set that can be printed at <strong>pick release or ship confirm.</strong> You can include a variety of shipping documents in a set such as a Bill of Lading and Packing Slip Report and determine the print sequence.</p>
-<p>Shipping Execution provides three pre-defined (seeded) document sets:<br>■ All Pick Release documents: You can set the default Pick Release Document Set in the Pick Release tab of the Shipping Parameters window.<br>■ Ship Confirm documents: You can set the default in the Document Set field of the ship confirm window.<br>■ Pack Slip only (at ship confirm): You can set the default in the Document Set field of the ship confirm window.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095125.png" alt=""></p>
-<p>Shipping document sets are used to run and print a standard/customized report at the end of picking/shipping. Steps of the processes are given below<br>\1. Decide the report needs to be run after the pick release/shipment. If required then develop a customized report.<br>\2. Create a new document set and select the appropriate usage – Ship confirm/Pick Release<br>\3. Assign the reports in the documents with the correct sequence<br>\4. Assign the document set in Shipping parameter in pick release /shipping transaction tab.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Shipping%20Document%20Sets/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Ship Confirm Rule" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Ship%20Confirm%20Rule/">OM Ship Confirm Rule</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Ship%20Confirm%20Rule/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:50:03.293Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Ship-Confirm-Rule"><a href="#Ship-Confirm-Rule" class="headerlink" title="Ship Confirm Rule"></a>Ship Confirm Rule</h1><p>You define Ship Confirm Rules within the Ship Confirm Rules window.<br>To define a Ship Confirm Rule:</p>
-<ol>
-<li><p>Navigate to the Ship Confirm Rules window.<br> Shipping -&gt; Set up -&gt; Ship Confirm Rules</p>
-</li>
-<li><p>Enter a unique rule name in the Ship Confirm Rule field &amp; Optionally, select an Effective date.</p>
-</li>
-<li><p>Within the Ship Options region, select one of the following options from the<br>Action list of values:<br>■ Ship Entered Quantities: To ship the quantities entered<br>■ Ship All: To ship all<br>■ Backorder All: To backorder all<br>■ Cycle Count All: To cycle count all</p>
-</li>
-<li><p>The Ship Options region also enables you to determine the action to perform with Unspecified Quantities. Select one of the following options:<br>■ Ship<br>■ Backorder<br>■ Stage<br>■ Cycle Count</p>
-</li>
-<li><p>Determine whether you want to Create Delivery for Staged Quantities.<br>If this option is selected, the system will create deliveries for delivery lines that are staged but not yet assigned to a delivery, and subsequently perform the other operations defined by this Ship Confirm Rule. If this option is not selected, delivery lines not assigned to deliveries will not be considered for ship confirm using this rule.</p>
-</li>
-<li><p>Within the Trip Options region, select a Ship Method using the list of values.</p>
-</li>
-<li><p>The remaining options within the Trip Options region also require attention.<br>These options include the following:<br>■ Set Delivery In-Transit<br>■ Close Trip<br>■ Defer Interface<br>■ Create Bill of Lading</p>
-</li>
-<li><p>Optionally, select a Document Set that will print with the shipment.</p>
-</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522095031.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Ship%20Confirm%20Rule/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Reports" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Reports/">OM Reports</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Reports/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:46:32.061Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Reports"><a href="#Reports" class="headerlink" title="Reports"></a>Reports</h1><p>There are 5 reports that are mostly used in picking and shipping process.</p>
-<ol>
-<li><p><strong>Pick slip report</strong> – Generated after the end of pick release.<br>This is a standard report and is attached to a document set. The document set given in pick release tab of the shipping parameter gives the name of the customized report (if any) which runs automatically after pick release.</p>
-</li>
-<li><p><strong>Bill of lading :</strong><br>Bill of Lading and or Packing Slip for a delivery can be generated as part of a document set that can be run at the completion of ship confirmation, or the documents can be created individually from the document request menu. The<br>documents should also be generated automatically when you click Generate BOL and Create Packing List. A Delivery must meet the following prerequisites in order for a Bill of Lading to be created.</p>
-</li>
-<li><p><strong>Packing Report</strong>:<br>You can create a Packing Slip at any point in the shipping process providing a delivery has been created and a delivery line has been assigned to the delivery.</p>
-</li>
-<li><p><strong>Excise Invoice(India Only):</strong><br>As per the Excise rules, a document called ‘Excise Invoice’ has to accompany the consignments to the customer. This<br>documents shows the details about the Excise duty levied; like the Base Value, Applicable Abatement if any,Assessable<br>Value,Basic excise Duty, Education Cess, Secondary and Higher Education cess, etc. at item level and as an aggregated sum at the bottom of document. It also gives the excise chapter ID for each item and the Excise Duty rate applicable for that Chapter ID. The base value can be either the manufacturing cost of the goods or Maximum Retail Price as prescribed by Excise Rules, depending upon the nature of goods sold.</p>
-</li>
-<li><p><strong>Commercial Invoice</strong>:<br>Apart from the Excise Invoice, another document called ‘Commercial Invoice’ also accompanies the consignment. This document shows the commercial details of the sale like Basic Price, Discounts/Mark-ups if any, VAT/CST as applicable, Transport and Handling Charges, etc. In short, the commercial terms as agreed between the Seller and the Buyer. These values are shown at item level as well as the aggregated sum at the end of the document. The sum value of this document is taken for calculating the levies like Octroi and for payments to the seller by the buyer.</p>
-</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522094751.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Reports/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Shipment Transit Times" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Shipment%20Transit%20Times/">OM Shipment Transit Times</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Shipment%20Transit%20Times/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:42:01.793Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Shipment-Transit-Times"><a href="#Shipment-Transit-Times" class="headerlink" title="Shipment Transit Times"></a>Shipment Transit Times</h1><p>Within the Inter-Org Shipping Methods window, you can specify the Ship Method, Intransit Times, Load Weight and the Volume Capacity for any movement between two location types.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522094227.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Shipment%20Transit%20Times/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Freight Costs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Freight%20Costs/">OM Freight Costs</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Freight%20Costs/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:40:01.245Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Freight-Costs"><a href="#Freight-Costs" class="headerlink" title="Freight Costs"></a>Freight Costs</h1><p>You can define allowable freight costs and suggested amounts for shipments. These amounts are applied at ship confirm or once a delivery line is planned(Action LOV in transaction form). You can add multiple freight costs to a shipment from the list of allowable freight cost types that you define.</p>
-<p>You can also define multiple freight costs for a specific freight cost type. For example, if you want to track different types of insurance, you can create different insurance costs under the insurance freight cost type such as liability insurance or shipping insurance.</p>
-<p>When you add freight costs at ship confirmation for a foreign currency order, you can use either your functional currency or the order’s foreign currency. If you use your functional currency, the freight charges are converted to the order currency<br>through Oracle Receivables.</p>
-<p>If you want to pass freight costs entered in the Shipping Transactions form to Oracle Order Management for invoicing, then you have to set up a pricing modifier.</p>
-<p><strong><em>Navigation : Setup -&gt; Shipping -&gt; Fright carriers, Cost type -&gt; Fright Cost types</em></strong></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522094024.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522094038.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Freight%20Costs/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Freight Carrier Ship Methods" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Freight%20Carrier%20Ship%20Methods/">OM Freight Carrier Ship Methods</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Freight%20Carrier%20Ship%20Methods/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:38:22.481Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Freight-Carrier-Ship-Methods"><a href="#Freight-Carrier-Ship-Methods" class="headerlink" title="Freight Carrier Ship Methods"></a>Freight Carrier Ship Methods</h1><p>A freight carrier is a commercial company that transports shipments to and from customers, suppliers, and internal organizations. You must set up each carrier’s information as a party in Oracle Shipping Execution before shipping goods; you<br>should assign a carrier to each delivery. You also must associate a general ledger account with each carrier to collect associated costs.<br>Before you set up the carriers:<br>■ Collect general information about each carrier<br>■ Determine the types of services that your carriers offer and that you use</p>
-<p>To define a freight carrier:</p>
-<ol>
-<li><p>Navigate to the Carriers window.</p>
-</li>
-<li><p>Enter the Name and Short Name for the carrier.</p>
-</li>
-<li><p>Enable the Active and Enable Manifesting check boxes if applicable.</p>
-</li>
-<li><p>In SCAC Code, enter the standard carrier alpha code.</p>
-</li>
-<li><p>Enter the carrier’s Default Currency.</p>
-</li>
-<li><p>In the top portion of the Main tabbed region, enter address and site information for the carrier.</p>
-</li>
-<li><p>Navigate to the Services tabbed region.</p>
-</li>
-<li><p>Select the Service Level for this carrier.<br>Examples of Service Level include: next day air, ground, and next day air early AM.</p>
-</li>
-<li><p>Select the Mode (of transportation) for the carrier.</p>
-</li>
-</ol>
-<p><strong><em>After you enter each Service Level and Mode combination, Oracle Shipping Execution assigns a ship method and displays it in the Ship Method field. The format of the generated ship method is –, for example, Truck-LTL-Ground.</em></strong></p>
-<ol start="10">
-<li><p>Select Enable if you will be assigning this ship method to organizations and to deliveries in Oracle Shipping Execution. Select Web Enable if you will be assigning this ship method in Oracle iStore.</p>
-</li>
-<li><p>Save your work.</p>
-</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093848.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Freight%20Carrier%20Ship%20Methods/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM System Parameters" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20System%20Parameters/">OM System Parameters</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20System%20Parameters/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:37:13.139Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="System-Parameters"><a href="#System-Parameters" class="headerlink" title="System Parameters"></a>System Parameters</h1><p>Following options are available in new system parameter setup<br>\1. Allow Multiple Payments<br>\2. Item validation org - In OM we create orders in Operating unit level so in order to get the organization attriutes like Sales account and TAX code we use an item validation org.<br>\3. Default Order Type</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093734.png" alt=""></p>
-<p><strong>Show Discount Details On Invoice</strong><br>This parameter determines whether the discount details are passed to Oracle Receivables for printing on an invoice. Default value is No. If you set this parameter to No, then Extended Amounts will includes discounts.</p>
-<p>In Order Management, you have the option to send items and prices to Receivables net of any price adjustments or to send the list price and then send separate adjustment lines for each discount. This is controlled by the system parameter Show Discount Details on Invoice. If you choose to show discounts, they are sent as regular invoice lines to Receivables with a negative price, and are accounted for like the item to which they belong. The Description field for the discount lines is the name of the discount. This feature provides visibility to discounts for printing on invoices, but does not provide separate accounting for discounts.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20System%20Parameters/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-OM Global Parameters" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/22/OM%20Global%20Parameters/">OM Global Parameters</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/22/OM%20Global%20Parameters/" class="archive-article-date">
-  	<time datetime="2020-05-22T01:35:38.115Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
-</a>
-        
-
-        
-
-      </header>
-    
-    <!-- 目录内容 -->
-    		
-    <!-- 目录内容结束 -->
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Global-Parameters"><a href="#Global-Parameters" class="headerlink" title="Global Parameters"></a>Global Parameters</h1><p>Global General parameters enable you to define miscellaneous parameters and unit of measure (UOM) defaults for all of your organizations.</p>
-<p><img src="https://raw.githubusercontent.com/dejavn/Pictures/master/pic/20200522093603.png" alt=""></p>
-<p><strong>1.</strong> Select the <strong>Enforce Ship Method</strong> check box to enforce that a ship method (carrier) is entered and recorded for each shipment. This is recommended if your business practices require a record of the ship method/carrier for each shipment.<br><strong>Selected:</strong> During order processing, if a ship method has not been entered, then an error message is displayed at ship confirm and you are prevented from ship confirming until a ship method is entered. You can enter the ship method in the Confirm Delivery window, the Delivery tab of the Shipping Transactions form, or the Sales Order window.<br><strong>Cleared:</strong> The ship method is not enforced at ship confirm and an error message is not displayed. For example, if your organization uses the same ship method (carrier) for all shipments, you may not want to enforce the selection of a ship method.<br>**<br>2.** <strong>Allow Future Ship Date.</strong><br><strong>Selected:</strong> You can enter a future date as the Actual Departure Date while ship confirming the delivery<br><strong>Cleared:</strong> you should not enter a future date as the Actual Departure Date while ship confirming the delivery because you receive an error</p>
-<p><strong>3. Select the Defer Interface</strong> check box if you want to defer shipping interfaces from initiating updates to the Oracle Order Management and Oracle Inventory interface tables.<br><strong>Selected:</strong> You must manually run the interface to update the interface tables. For example, if you defer the Inventory Interface, the inventory tables are not updated until you manually run the Inventory Interface in the Shipping Interfaces window.<br><strong>Cleared:</strong> The interfaces are run automatically at ship confirmation.</p>
-<p><strong>4. Select Consolidate Backordered Lines</strong> if you want to consolidate a line that was split and subsequently backordered. The line will be automatically consolidated with other backordered lines that it was part of originally.</p>
-<p><strong>5. Within the Global UOM Defaults</strong> region,<br>The Weight Class default controls:</p>
-<ul>
-<li>Default weight UOM in deliveries, stops and containers for their respective weights</li>
-<li>Default handling UOMs for facilities</li>
-<li>Default weight UOM in Carrier/Carrier Services Rating/Mode Limits tab</li>
-</ul>
-<p>The Volume Class default controls:</p>
-<ul>
-<li>Default volume UOM in deliveries, stops and containers for their respective volumes</li>
-<li>Default handling UOMs for facilities</li>
-<li>Default volume UOM in Carrier/Carrier Services Rating/Mode Limits tab</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/OM%20Global%20Parameters/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
     </nav>
   
 
